@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="player-portrait-miracast-1" transform="translate(-151.000000, -354.000000)" fill="#FFFFFF">
+            <g id="Controls" transform="translate(17.000000, 348.000000)">
+                <g id="Play" transform="translate(121.000000, 4.000000)">
+                    <path d="M56,32 L36,44 L36,20 L56,32 Z M43,2 C26.44,2 13,15.44 13,32 C13,48.56 26.44,62 43,62 C59.56,62 73,48.56 73,32 C73,15.44 59.56,2 43,2 Z M43,56 C29.77,56 19,45.23 19,32 C19,18.77 29.77,8 43,8 C56.23,8 67,18.77 67,32 C67,45.23 56.23,56 43,56 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

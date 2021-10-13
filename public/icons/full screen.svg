@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.495923913">
+        <g id="player-portrait-miracast-1" transform="translate(-323.000000, -375.000000)" fill="#FFFFFF">
+            <g id="Controls" transform="translate(17.000000, 348.000000)">
+                <g id="Repeat" transform="translate(303.000000, 24.000000)">
+                    <path d="M18.9124684,18.8678768 L14.6470588,18.8678768 L14.6470588,21 L21,21 L21,14.646 L18.9124684,14.646 L18.9124684,18.8678768 Z M14.6470588,3 L14.6470588,5.11111989 L18.9124684,5.11111989 L18.9124684,9.35188235 L21,9.35188235 L21,3 L14.6470588,3 Z M5.13625919,14.6449412 L3,14.646 L3,21 L9.35294118,21 L9.35294118,19.0149644 L9.35294118,18.8678768 L5.13625919,18.8668181 L5.13625919,14.6449412 Z M3,9.35188235 L5.13625919,9.35188235 L5.13625919,5.11111989 L9.35294118,5.11111989 L9.35294118,3 L3,3 L3,9.35188235 Z" id="Fill-1"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

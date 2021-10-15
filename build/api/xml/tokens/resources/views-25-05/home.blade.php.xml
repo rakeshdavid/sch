@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-25-05" file="home.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-25-05/home.blade.php" size="412" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="091bcfa479d81f89bbe8697f80b45339a477bc22" relative="resources/views-25-05/home.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layouts.app')</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">&lt;div class="container"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">    &lt;div class="row"&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">        &lt;div class="col-md-10 col-md-offset-1"&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">            &lt;div class="panel panel-default"&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">                &lt;div class="panel-heading"&gt;Dashboard&lt;/div&gt;</token>
+  </line>
+  <line no="9"/>
+  <line no="10">
+    <token name="T_INLINE_HTML">                &lt;div class="panel-body"&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">                    You are logged in!</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="18"/>
+</source>

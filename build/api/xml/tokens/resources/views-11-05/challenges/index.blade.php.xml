@@ -1,0 +1,403 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-11-05/challenges" file="index.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-11-05/challenges/index.blade.php" size="7133" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="bba216821cb011e67a95c8e3a9d1ef68242c5ebe" relative="resources/views-11-05/challenges/index.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layouts.user')</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">	&lt;div class="main-content challenges-wrap"&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">        &lt;div class="container-fluid"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">                &lt;div class="col-xl-6"&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">                    &lt;div class="coach-list"&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">                        &lt;h3 class="page-title"&gt;List of Challenges&lt;/h3&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">                        &lt;div class="top-box mb-0"&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">                        	&lt;form method="post" action="{{url('challenges')}}"&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">                            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">                            	</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">                					{!! csrf_field() !!}</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">	                                &lt;div class="col-lg-12"&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">	                                    &lt;input type="search" name="challenge-name" class="form-control" placeholder="Search by name&#x2026;" value="{{$filter['name']}}"&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">	                                &lt;/div&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">	                              </token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">                        &lt;/form&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">						@if (count($challenges) &gt; 0)</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">						@foreach($challenges as $challenge)</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">                        &lt;div class="media"&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">                            &lt;div class="left-box"&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">                            	@if($challenge-&gt;gift)</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">                                &lt;span class="challenge-title"&gt;{{$challenge-&gt;gift}}&lt;/span&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">                                &lt;hr&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">                                @endif</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">                                @if($challenge-&gt;additional_gift)</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">                                </token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">                                &lt;span class="challenge-title"&gt;{{$challenge-&gt;additional_gift}}&lt;/span&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">                                @endif</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">                            &lt;div class="media-body"&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">                                &lt;div class="info-box"&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">                                    &lt;h3&gt;{{$challenge-&gt;challenges_name}}&lt;/h3&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">                                    &lt;div class="user-name"&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">                                    	&lt;p&gt;{{ $challenge-&gt;short_desc}}&lt;/p&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">                                &lt;div class="right-list"&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">                                    &lt;ul&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">                                        &lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;$ {{$challenge-&gt;challenges_fee}}&lt;/span&gt;Entry Fee &lt;div class="hover-text"&gt;See participation&lt;/div&gt;&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">                                    &lt;/ul&gt;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">                        @endforeach</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">                        @else</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">                        	&lt;h2&gt;No Challenge found&lt;/h2&gt;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">                        @endif</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="54"/>
+  <line no="55">
+    <token name="T_INLINE_HTML">                &lt;div class="col-xl-6"&gt;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">                    &lt;div class="audition-info"&gt;</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">                    	@if (count($challenges) &gt; 0)</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">						@foreach($challenges as $challenge)</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">                        &lt;div class="media"&gt;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">                            &lt;div class="img-box"&gt;</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">                            	@if($challenge-&gt;header_image)</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">                            	&lt;img src="{{ asset('/uploads/challenge/') }}/{{$challenge-&gt;header_image}}" alt="" class="img-fluid"&gt;</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">                                </token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">                                @endif</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">                            &lt;div class="media-body"&gt;</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">                                &lt;div class="top-content"&gt;</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">                                    &lt;div class="designation"&gt;{{$challenge-&gt;title}}&lt;/div&gt;</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">                                    &lt;h3&gt;{{$challenge-&gt;challenges_name}}&lt;/h3&gt;</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">                                    &lt;div class="deadline"&gt;Deadline: {{ date('j.m', strtotime($challenge-&gt;deadline)) }}&lt;/div&gt;</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">                                &lt;div class="audition"&gt;</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">                                    &lt;div class="right-content"&gt;</token>
+  </line>
+  <line no="74"/>
+  <line no="75">
+    <token name="T_INLINE_HTML">                                        &lt;ul class="info-list"&gt;</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">                                        	@if($challenge-&gt;gift)</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">                                            &lt;li&gt;</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">                                                &lt;h4&gt;{{$challenge-&gt;gift}}&lt;/h4&gt;</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">                                            &lt;/li&gt;</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">                                            @endif</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">                                            @if($challenge-&gt;additional_gift)</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">                                            &lt;li&gt;</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">                                                &lt;h4&gt;{{$challenge-&gt;additional_gift}}&lt;/h4&gt;</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">                                            &lt;/li&gt;</token>
+  </line>
+  <line no="85">
+    <token name="T_INLINE_HTML">                                            @endif</token>
+  </line>
+  <line no="86">
+    <token name="T_INLINE_HTML">                                        &lt;/ul&gt;</token>
+  </line>
+  <line no="87">
+    <token name="T_INLINE_HTML">                                        &lt;h5&gt;Prize&lt;/h5&gt;</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="90">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="91">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="92"/>
+  <line no="93">
+    <token name="T_INLINE_HTML">                        &lt;div class="entry-info"&gt;</token>
+  </line>
+  <line no="94">
+    <token name="T_INLINE_HTML">                            &lt;div class="price"&gt;&lt;sub&gt;$&lt;/sub&gt; {{$challenge-&gt;challenges_fee}}&lt;/div&gt;</token>
+  </line>
+  <line no="95">
+    <token name="T_INLINE_HTML">                            &lt;h4&gt;Entry Fee&lt;/h4&gt;</token>
+  </line>
+  <line no="96">
+    <token name="T_INLINE_HTML">                            &lt;div class="package-title"&gt;This package includes:&lt;/div&gt;</token>
+  </line>
+  <line no="97">
+    <token name="T_INLINE_HTML">                            {!! $challenge-&gt;challenges_detail !!}</token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">                            &lt;a href="{{ url('challenge/participation') }}/{{$challenge-&gt;id}}" class="btn btn-danger"&gt;Participate&lt;/a&gt;</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="100"/>
+  <line no="101">
+    <token name="T_INLINE_HTML">                        &lt;div id="accordion" class="accordion"&gt;</token>
+  </line>
+  <line no="102">
+    <token name="T_INLINE_HTML">                        	@if($challenge-&gt;description)</token>
+  </line>
+  <line no="103">
+    <token name="T_INLINE_HTML">                            &lt;div class="card"&gt;</token>
+  </line>
+  <line no="104">
+    <token name="T_INLINE_HTML">                                &lt;div class="card-header" id="headingOne"&gt;</token>
+  </line>
+  <line no="105">
+    <token name="T_INLINE_HTML">                                    &lt;a href="#" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"&gt; Description &lt;/a&gt;</token>
+  </line>
+  <line no="106">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="107"/>
+  <line no="108">
+    <token name="T_INLINE_HTML">                                &lt;div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion"&gt;</token>
+  </line>
+  <line no="109">
+    <token name="T_INLINE_HTML">                                    &lt;div class="card-body"&gt;</token>
+  </line>
+  <line no="110">
+    <token name="T_INLINE_HTML">                                        &lt;p&gt;{!! $challenge-&gt;description !!}&lt;/p&gt;</token>
+  </line>
+  <line no="111">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="112">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="113">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="114">
+    <token name="T_INLINE_HTML">                            @endif</token>
+  </line>
+  <line no="115">
+    <token name="T_INLINE_HTML">                            @if($challenge-&gt;requirement)</token>
+  </line>
+  <line no="116">
+    <token name="T_INLINE_HTML">                            &lt;div class="card"&gt;</token>
+  </line>
+  <line no="117">
+    <token name="T_INLINE_HTML">                                &lt;div class="card-header" id="headingTwo"&gt;</token>
+  </line>
+  <line no="118">
+    <token name="T_INLINE_HTML">                                    &lt;a href="#" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"&gt; Requirements&lt;/a&gt;</token>
+  </line>
+  <line no="119">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="120">
+    <token name="T_INLINE_HTML">                                &lt;div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion"&gt;</token>
+  </line>
+  <line no="121">
+    <token name="T_INLINE_HTML">                                    &lt;div class="card-body"&gt;</token>
+  </line>
+  <line no="122">
+    <token name="T_INLINE_HTML">                                        &lt;p&gt;{!! $challenge-&gt;requirement !!}&lt;/p&gt;</token>
+  </line>
+  <line no="123">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="124">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="125">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="126">
+    <token name="T_INLINE_HTML">                            @endif</token>
+  </line>
+  <line no="127">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="128">
+    <token name="T_INLINE_HTML">                        @break</token>
+  </line>
+  <line no="129">
+    <token name="T_INLINE_HTML">                        @endforeach</token>
+  </line>
+  <line no="130">
+    <token name="T_INLINE_HTML">                        @endif</token>
+  </line>
+  <line no="131">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="132">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="133">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="134"/>
+  <line no="135">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="136">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="137">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+</source>

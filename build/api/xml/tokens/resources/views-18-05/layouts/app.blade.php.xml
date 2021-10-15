@@ -1,0 +1,1011 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-18-05/layouts" file="app.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-18-05/layouts/app.blade.php" size="21813" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="43867f53ac2185294799849b25e5e69aba92449f" relative="resources/views-18-05/layouts/app.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;!doctype html&gt;</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">&lt;html lang="en"&gt;</token>
+  </line>
+  <line no="3"/>
+  <line no="4">
+    <token name="T_INLINE_HTML">&lt;head&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">    &lt;meta charset="utf-8"&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">    &lt;title&gt;Showcase&lt;/title&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">    &lt;meta name="description" content="Showcase"&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">    &lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">    &lt;meta name="csrf-token" content="{{ csrf_token() }}"&gt;</token>
+  </line>
+  <line no="10"/>
+  <line no="11">
+    <token name="T_INLINE_HTML">    &lt;link rel="shortcut icon" href="/favicon.ico"&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">    &lt;!--[if IE]&gt;</token>
+  </line>
+  <line no="13"/>
+  <line no="14">
+    <token name="T_INLINE_HTML">    &lt;script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="15"/>
+  <line no="16">
+    <token name="T_INLINE_HTML">    &lt;script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">    &lt;![endif]--&gt;&lt;!-- global stylesheets --&gt;</token>
+  </line>
+  <line no="18"/>
+  <line no="19">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="{{url('/')}}/assets/marino/styles/components/bootstrap.css"&gt;</token>
+  </line>
+  <line no="20"/>
+  <line no="21">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"&gt;</token>
+  </line>
+  <line no="22"/>
+  <line no="23">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css"&gt;</token>
+  </line>
+  <line no="24"/>
+  <line no="25">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"&gt;</token>
+  </line>
+  <line no="26"/>
+  <line no="27">
+    <token name="T_INLINE_HTML">    &lt;link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"&gt;</token>
+  </line>
+  <line no="28"/>
+  <line no="29">
+    <token name="T_INLINE_HTML">    &lt;link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/1.0.0/css/flag-icon.min.css" rel="stylesheet" type="text/css"&gt;</token>
+  </line>
+  <line no="30"/>
+  <line no="31">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="{{url('/')}}/assets/marino/styles/main.css"&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="{{url('/')}}/assets/marino/bower_components/chartist/dist/chartist.min.css"&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="{{url('/')}}/assets/marino/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css"&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="{{url('/')}}/assets/marino/bower_components/mjolnic-bootstrap-colorpicker/dist/css/bootstrap-colorpicker.css"&gt;</token>
+  </line>
+  <line no="35"/>
+  <line no="36">
+    <token name="T_INLINE_HTML">    &lt;style&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">        body[data-layout="collapsed-sidebar"] .sidebar-1 .sidebar-section &gt; a &gt; .main-logo-img {</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">            width  : 60px;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">            margin : 10px;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">            content:url('/images/logo-mini.png');</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="42"/>
+  <line no="43">
+    <token name="T_INLINE_HTML">        body[data-layout="default-sidebar"] .sidebar-1 .sidebar-section &gt; a &gt; .main-logo-img {</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">            width         : 180px;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">            margin        : 20px;</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">            margin-bottom : 0;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="48"/>
+  <line no="49">
+    <token name="T_INLINE_HTML">        [data-layout="collapsed-sidebar"] .sidebar-1 .section-content &gt; li &gt; a &gt; .title {</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">            display: block !important;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">            font-size: 9px !important;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">            position: absolute;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">            bottom: 0px;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">            left: 0;</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">            right: 0;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">            width: 100%;}</token>
+  </line>
+  <line no="57"/>
+  <line no="58">
+    <token name="T_INLINE_HTML">    &lt;/style&gt;</token>
+  </line>
+  <line no="59"/>
+  <line no="60">
+    <token name="T_INLINE_HTML">    @yield('css')</token>
+  </line>
+  <line no="61"/>
+  <line no="62">
+    <token name="T_INLINE_HTML">    @if(request()-&gt;getHost() == env('COACH_PLATFORM_DOMAIN'))</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">        &lt;!-- Begin Inspectlet Embed Code --&gt;</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">            &lt;script type="text/javascript" id="inspectletjs"&gt;</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">                (function() {</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">                    window.__insp = window.__insp || [];</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">                    __insp.push(['wid', 901653424]);</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">                    var ldinsp = function(){ if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=901653424&amp;r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">                    setTimeout(ldinsp, 0);</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">                })();</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">            &lt;/script&gt;</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">            &lt;!-- End Inspectlet Embed Code --&gt;</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">    @endif</token>
+  </line>
+  <line no="74"/>
+  <line no="75">
+    <token name="T_INLINE_HTML">&lt;/head&gt;</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">&lt;body data-layout="empty-layout" data-palette="palette-4" data-direction="none"&gt;</token>
+  </line>
+  <line no="77"/>
+  <line no="78">
+    <token name="T_INLINE_HTML">&lt;div class="pace pace-inactive"&gt;</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">    &lt;div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);"&gt;</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">        &lt;div class="pace-progress-inner"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">    &lt;div class="pace-activity"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">&lt;nav class="navbar navbar-fixed-top navbar-1"&gt;</token>
+  </line>
+  <line no="85">
+    <token name="T_INLINE_HTML">    &lt;!--&lt;a class="navbar-brand" href="/"&gt; &lt;img style="width: 30px" src="/images/main_logo.png"&gt;&lt;/a&gt;--&gt;</token>
+  </line>
+  <line no="86">
+    <token name="T_INLINE_HTML">    &lt;ul class="nav navbar-nav pull-left toggle-layout"&gt;</token>
+  </line>
+  <line no="87">
+    <token name="T_INLINE_HTML">        &lt;li class="nav-item"&gt;&lt;a class="nav-link" data-click="toggle-layout"&gt; &lt;i class="zmdi zmdi-menu"&gt;&lt;/i&gt; &lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">    &lt;/ul&gt;</token>
+  </line>
+  <line no="89"/>
+  <line no="90">
+    <token name="T_INLINE_HTML">    @if(Auth::user()-&gt;role == 2)</token>
+  </line>
+  <line no="91">
+    <token name="T_INLINE_HTML">        &lt;ul class="nav navbar-nav pull-left toggle-search"&gt;</token>
+  </line>
+  <line no="92">
+    <token name="T_INLINE_HTML">            &lt;li class="nav-item"&gt;&lt;a class="nav-link" data-click="toggle-search"&gt; &lt;i class="zmdi zmdi-search"&gt;&lt;/i&gt; &lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="93">
+    <token name="T_INLINE_HTML">        &lt;/ul&gt;</token>
+  </line>
+  <line no="94">
+    <token name="T_INLINE_HTML">        &lt;div class="navbar-drawer pull-left hidden-lg-down"&gt;</token>
+  </line>
+  <line no="95">
+    <token name="T_INLINE_HTML">            &lt;form class="form-inline navbar-form" method="GET" action="/myreviews"&gt;</token>
+  </line>
+  <line no="96">
+    <token name="T_INLINE_HTML">                &lt;input class="form-control" type="text" placeholder="Search" name="search" autocomplete="off"&gt;</token>
+  </line>
+  <line no="97">
+    <token name="T_INLINE_HTML">            &lt;/form&gt;</token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">    @endif</token>
+  </line>
+  <line no="100">
+    <token name="T_INLINE_HTML">    &lt;ul class="nav navbar-nav pull-right hidden-lg-down navbar-notifications"&gt;</token>
+  </line>
+  <line no="101">
+    <token name="T_INLINE_HTML">        &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="102">
+    <token name="T_INLINE_HTML">            &lt;a class="nav-link" data-click="toggle-right-sidebar" id="notification_btn"&gt;</token>
+  </line>
+  <line no="103">
+    <token name="T_INLINE_HTML">                &lt;i class="zmdi zmdi-notifications-active"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="104">
+    <token name="T_INLINE_HTML">                &lt;span class="label label-rounded label-danger label-xs" id="nitification_counter"&gt;0&lt;/span&gt;</token>
+  </line>
+  <line no="105">
+    <token name="T_INLINE_HTML">            &lt;/a&gt;</token>
+  </line>
+  <line no="106">
+    <token name="T_INLINE_HTML">        &lt;/li&gt;</token>
+  </line>
+  <line no="107">
+    <token name="T_INLINE_HTML">    &lt;/ul&gt;</token>
+  </line>
+  <line no="108">
+    <token name="T_INLINE_HTML">    &lt;ul class="nav navbar-nav pull-right hidden-lg-down navbar-profile"&gt;</token>
+  </line>
+  <line no="109">
+    <token name="T_INLINE_HTML">        &lt;li class="nav-item dropdown"&gt;</token>
+  </line>
+  <line no="110">
+    <token name="T_INLINE_HTML">            &lt;a class="nav-link dropdown-toggle no-after" data-toggle="dropdown"&gt; &lt;img class="img-circle img-fluid profile-image" src="{{Auth::user()-&gt;avatar}}"&gt; &lt;/a&gt;</token>
+  </line>
+  <line no="111">
+    <token name="T_INLINE_HTML">            &lt;div class="dropdown-menu dropdown-menu-scale from-right dropdown-menu-right"&gt;</token>
+  </line>
+  <line no="112">
+    <token name="T_INLINE_HTML">                &lt;a class="dropdown-item animated fadeIn" href="/profile"&gt; &lt;i class="zmdi zmdi-settings-square"&gt;&lt;/i&gt; &lt;span class="dropdown-text"&gt;Profile&lt;/span&gt; &lt;/a&gt;</token>
+  </line>
+  <line no="113">
+    <token name="T_INLINE_HTML">                &lt;a class="dropdown-item animated fadeIn" href="/auth/logout"&gt; &lt;i class="zmdi zmdi-power"&gt;&lt;/i&gt; &lt;span class="dropdown-text"&gt;Logout&lt;/span&gt; &lt;/a&gt;</token>
+  </line>
+  <line no="114">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="115">
+    <token name="T_INLINE_HTML">        &lt;/li&gt;</token>
+  </line>
+  <line no="116">
+    <token name="T_INLINE_HTML">    &lt;/ul&gt;</token>
+  </line>
+  <line no="117">
+    <token name="T_INLINE_HTML">    &lt;ul class="nav navbar-nav pull-right hidden-lg-down navbar-profile"&gt;</token>
+  </line>
+  <line no="118">
+    <token name="T_INLINE_HTML">        &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="/profile"&gt;{{Auth::user()-&gt;first_name}} {{Auth::user()-&gt;last_name}}&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="119">
+    <token name="T_INLINE_HTML">    &lt;/ul&gt;</token>
+  </line>
+  <line no="120">
+    <token name="T_INLINE_HTML">&lt;/nav&gt;</token>
+  </line>
+  <line no="121">
+    <token name="T_INLINE_HTML">&lt;div class="container-fluid"&gt;</token>
+  </line>
+  <line no="122">
+    <token name="T_INLINE_HTML">    &lt;div class="row"&gt;</token>
+  </line>
+  <line no="123">
+    <token name="T_INLINE_HTML">        &lt;div class="sidebar-placeholder"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="124">
+    <token name="T_INLINE_HTML">        &lt;div class="sidebar-outer-wrapper"&gt;</token>
+  </line>
+  <line no="125">
+    <token name="T_INLINE_HTML">            &lt;div class="sidebar-inner-wrapper"&gt;</token>
+  </line>
+  <line no="126">
+    <token name="T_INLINE_HTML">                &lt;div class="sidebar-1"&gt;</token>
+  </line>
+  <line no="127">
+    <token name="T_INLINE_HTML">                    &lt;div class="sidebar-section"&gt;</token>
+  </line>
+  <line no="128">
+    <token name="T_INLINE_HTML">                        @if(Auth::user()-&gt;role == \App\Models\User::getCoachRole())</token>
+  </line>
+  <line no="129">
+    <token name="T_INLINE_HTML">                            &lt;a href="/myreviews"&gt;</token>
+  </line>
+  <line no="130">
+    <token name="T_INLINE_HTML">                                &lt;img class="main-logo-img" src="/images/logo-white.png"&gt;</token>
+  </line>
+  <line no="131">
+    <token name="T_INLINE_HTML">                            &lt;/a&gt;</token>
+  </line>
+  <line no="132">
+    <token name="T_INLINE_HTML">                        @elseif(Auth::user()-&gt;role == App\Models\User::getUserRole())</token>
+  </line>
+  <line no="133">
+    <token name="T_INLINE_HTML">                            &lt;a href="/video"&gt;</token>
+  </line>
+  <line no="134">
+    <token name="T_INLINE_HTML">                                &lt;img class="main-logo-img" src="/images/logo-white.png"&gt;</token>
+  </line>
+  <line no="135">
+    <token name="T_INLINE_HTML">                            &lt;/a&gt;</token>
+  </line>
+  <line no="136">
+    <token name="T_INLINE_HTML">                        @elseif(Auth::user()-&gt;role == \App\Models\User::getAdminRole())</token>
+  </line>
+  <line no="137">
+    <token name="T_INLINE_HTML">                            &lt;a href="/profile"&gt;</token>
+  </line>
+  <line no="138">
+    <token name="T_INLINE_HTML">                                &lt;img class="main-logo-img" src="/images/logo-white.png"&gt;</token>
+  </line>
+  <line no="139">
+    <token name="T_INLINE_HTML">                            &lt;/a&gt;</token>
+  </line>
+  <line no="140">
+    <token name="T_INLINE_HTML">                        @endif</token>
+  </line>
+  <line no="141">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="142">
+    <token name="T_INLINE_HTML">                    &lt;div class="sidebar-nav"&gt;</token>
+  </line>
+  <line no="143">
+    <token name="T_INLINE_HTML">                        &lt;div class="sidebar-section"&gt;</token>
+  </line>
+  <line no="144">
+    <token name="T_INLINE_HTML">                            &lt;div class="section-title"&gt;Account&lt;/div&gt;</token>
+  </line>
+  <line no="145">
+    <token name="T_INLINE_HTML">                            &lt;ul class="list-unstyled section-content"&gt;</token>
+  </line>
+  <line no="146">
+    <token name="T_INLINE_HTML">                                @if(Auth::user()-&gt;role == App\Models\User::getUserRole())</token>
+  </line>
+  <line no="147">
+    <token name="T_INLINE_HTML">                                    &lt;li&gt;</token>
+  </line>
+  <line no="148">
+    <token name="T_INLINE_HTML">                                        &lt;a class="sideline {{ strpos(url()-&gt;current(), '/video') !== false &amp;&amp;</token>
+  </line>
+  <line no="149">
+    <token name="T_INLINE_HTML">                                        strpos(url()-&gt;current(), '/video/') === false ? 'sideline-active' : '' }}"</token>
+  </line>
+  <line no="150">
+    <token name="T_INLINE_HTML">                                           href="/video"&gt;</token>
+  </line>
+  <line no="151">
+    <token name="T_INLINE_HTML">                                            &lt;i class="zmdi zmdi-collection-video md-icon pull-left"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="152">
+    <token name="T_INLINE_HTML">                                            &lt;span class="title"&gt;My Videos&lt;/span&gt;</token>
+  </line>
+  <line no="153">
+    <token name="T_INLINE_HTML">                                        &lt;/a&gt;</token>
+  </line>
+  <line no="154">
+    <token name="T_INLINE_HTML">                                    &lt;/li&gt;</token>
+  </line>
+  <line no="155">
+    <token name="T_INLINE_HTML">                                @endif</token>
+  </line>
+  <line no="156"/>
+  <line no="157">
+    <token name="T_INLINE_HTML">                                @php</token>
+  </line>
+  <line no="158">
+    <token name="T_INLINE_HTML">                                ( isset($flag) ) ? $browse_coach_page = true : $browse_coach_page = false;</token>
+  </line>
+  <line no="159">
+    <token name="T_INLINE_HTML">                                @endphp</token>
+  </line>
+  <line no="160">
+    <token name="T_INLINE_HTML">                                @if(Auth::user()-&gt;role == App\Models\User::getUserRole())</token>
+  </line>
+  <line no="161">
+    <token name="T_INLINE_HTML">                                    &lt;li&gt;</token>
+  </line>
+  <line no="162">
+    <token name="T_INLINE_HTML">                                        &lt;a class="sideline {{ (strpos(url()-&gt;current(), '/customer/coach/search') !== false || $browse_coach_page ) ? 'sideline-active' :</token>
+  </line>
+  <line no="163">
+    <token name="T_INLINE_HTML">                                           (strpos(url()-&gt;current(), '/video/create') !== false ? 'sideline-active' : '') }}"</token>
+  </line>
+  <line no="164">
+    <token name="T_INLINE_HTML">                                           data-id="docs" href="{{ route('customerActions-searchCoach') }}"&gt;</token>
+  </line>
+  <line no="165">
+    <token name="T_INLINE_HTML">                                            &lt;i class="zmdi zmdi-youtube-play md-icon pull-left"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="166">
+    <token name="T_INLINE_HTML">                                            &lt;span class="title ws2"&gt;Browse Coaches&lt;/span&gt;</token>
+  </line>
+  <line no="167">
+    <token name="T_INLINE_HTML">                                        &lt;/a&gt;</token>
+  </line>
+  <line no="168">
+    <token name="T_INLINE_HTML">                                    &lt;/li&gt;</token>
+  </line>
+  <line no="169">
+    <token name="T_INLINE_HTML">                                @endif</token>
+  </line>
+  <line no="170">
+    <token name="T_INLINE_HTML">                                @if(Auth::user()-&gt;role == \App\Models\User::getCoachRole())</token>
+  </line>
+  <line no="171">
+    <token name="T_INLINE_HTML">                                    &lt;li&gt;</token>
+  </line>
+  <line no="172">
+    <token name="T_INLINE_HTML">                                        &lt;a class="sideline {{ strpos(url()-&gt;current(), '/myreviews') !== false ? 'sideline-active' : '' }}"</token>
+  </line>
+  <line no="173">
+    <token name="T_INLINE_HTML">                                           data-id="docs" href="/myreviews"&gt;</token>
+  </line>
+  <line no="174">
+    <token name="T_INLINE_HTML">                                            &lt;i class="zmdi zmdi-comments md-icon pull-left"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="175">
+    <token name="T_INLINE_HTML">                                            &lt;span class="title"&gt;My Reviews&lt;/span&gt;</token>
+  </line>
+  <line no="176">
+    <token name="T_INLINE_HTML">                                        &lt;/a&gt;</token>
+  </line>
+  <line no="177">
+    <token name="T_INLINE_HTML">                                    &lt;/li&gt;</token>
+  </line>
+  <line no="178">
+    <token name="T_INLINE_HTML">                                @endif</token>
+  </line>
+  <line no="179"/>
+  <line no="180">
+    <token name="T_INLINE_HTML">                                @if(Auth::user()-&gt;role == \App\Models\User::getAdminRole())</token>
+  </line>
+  <line no="181">
+    <token name="T_INLINE_HTML">                                    &lt;ul class="l1 list-unstyled section-content"&gt;</token>
+  </line>
+  <line no="182">
+    <token name="T_INLINE_HTML">                                        &lt;li&gt;</token>
+  </line>
+  <line no="183">
+    <token name="T_INLINE_HTML">                                            &lt;a class="sideline {{ Route::currentRouteName() == 'admin.analytics.index' ? 'sideline-active' : '' }}" href="{{ route('admin.analytics.index') }}"&gt;</token>
+  </line>
+  <line no="184">
+    <token name="T_INLINE_HTML">                                                &lt;i class="zmdi zmdi-view-dashboard md-icon pull-left"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="185">
+    <token name="T_INLINE_HTML">                                                &lt;span class="title"&gt;Dashboard&lt;/span&gt;</token>
+  </line>
+  <line no="186">
+    <token name="T_INLINE_HTML">                                            &lt;/a&gt;</token>
+  </line>
+  <line no="187">
+    <token name="T_INLINE_HTML">                                        &lt;/li&gt;</token>
+  </line>
+  <line no="188">
+    <token name="T_INLINE_HTML">                                    &lt;/ul&gt;</token>
+  </line>
+  <line no="189">
+    <token name="T_INLINE_HTML">                                    &lt;ul class="l1 list-unstyled section-content"&gt;</token>
+  </line>
+  <line no="190">
+    <token name="T_INLINE_HTML">                                        &lt;li&gt;</token>
+  </line>
+  <line no="191">
+    <token name="T_INLINE_HTML">                                            &lt;a class="sideline" data-id="tables" data-click="toggle-section"&gt;</token>
+  </line>
+  <line no="192">
+    <token name="T_INLINE_HTML">                                                &lt;i class="pull-right fa fa-caret-down icon-tables"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="193">
+    <token name="T_INLINE_HTML">                                                &lt;i class="fa fa-users md-icon pull-left"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="194">
+    <token name="T_INLINE_HTML">                                                &lt;span class="title"&gt;Coaches&lt;/span&gt;</token>
+  </line>
+  <line no="195">
+    <token name="T_INLINE_HTML">                                            &lt;/a&gt;</token>
+  </line>
+  <line no="196">
+    <token name="T_INLINE_HTML">                                            &lt;ul class="list-unstyled section-tables l2 {{ Route::getCurrentRoute()-&gt;getPrefix() == '/coaches'  ? 'active' : '' }}"&gt;</token>
+  </line>
+  <line no="197">
+    <token name="T_INLINE_HTML">                                                &lt;li&gt;</token>
+  </line>
+  <line no="198">
+    <token name="T_INLINE_HTML">                                                    &lt;a class="sideline {{ Route::currentRouteName() == 'admin.coaches.index' ? 'sideline-active' : '' }}" href="{{ route('admin.coaches.index') }}"&gt;</token>
+  </line>
+  <line no="199">
+    <token name="T_INLINE_HTML">                                                        &lt;span class="title"&gt;List&lt;/span&gt;</token>
+  </line>
+  <line no="200">
+    <token name="T_INLINE_HTML">                                                    &lt;/a&gt;</token>
+  </line>
+  <line no="201">
+    <token name="T_INLINE_HTML">                                                &lt;/li&gt;</token>
+  </line>
+  <line no="202">
+    <token name="T_INLINE_HTML">                                                &lt;li&gt;</token>
+  </line>
+  <line no="203">
+    <token name="T_INLINE_HTML">                                                    &lt;a class="sideline {{ Route::currentRouteName() == 'admin.coaches.create' ? 'sideline-active' : '' }}" href="{{ route('admin.coaches.create') }}"&gt;</token>
+  </line>
+  <line no="204">
+    <token name="T_INLINE_HTML">                                                        &lt;span class="title"&gt;Create new&lt;/span&gt;</token>
+  </line>
+  <line no="205">
+    <token name="T_INLINE_HTML">                                                    &lt;/a&gt;</token>
+  </line>
+  <line no="206">
+    <token name="T_INLINE_HTML">                                                &lt;/li&gt;</token>
+  </line>
+  <line no="207">
+    <token name="T_INLINE_HTML">                                                &lt;li&gt;</token>
+  </line>
+  <line no="208">
+    <token name="T_INLINE_HTML">                                                    &lt;a class="sideline {{ Route::currentRouteName() == 'admin.coaches.invites' ? 'sideline-active' : '' }}" href="{{ route('admin.coaches.invites') }}"&gt;</token>
+  </line>
+  <line no="209">
+    <token name="T_INLINE_HTML">                                                        &lt;span class="title"&gt;Invites&lt;/span&gt;</token>
+  </line>
+  <line no="210">
+    <token name="T_INLINE_HTML">                                                    &lt;/a&gt;</token>
+  </line>
+  <line no="211">
+    <token name="T_INLINE_HTML">                                                &lt;/li&gt;</token>
+  </line>
+  <line no="212">
+    <token name="T_INLINE_HTML">                                            &lt;/ul&gt;</token>
+  </line>
+  <line no="213">
+    <token name="T_INLINE_HTML">                                        &lt;/li&gt;</token>
+  </line>
+  <line no="214">
+    <token name="T_INLINE_HTML">                                    &lt;/ul&gt;</token>
+  </line>
+  <line no="215">
+    <token name="T_INLINE_HTML">                                    &lt;ul class="l1 list-unstyled section-content"&gt;</token>
+  </line>
+  <line no="216">
+    <token name="T_INLINE_HTML">                                        &lt;li&gt;</token>
+  </line>
+  <line no="217">
+    <token name="T_INLINE_HTML">                                            &lt;a class="sideline" data-id="users" data-click="toggle-section"&gt;</token>
+  </line>
+  <line no="218">
+    <token name="T_INLINE_HTML">                                                &lt;i class="pull-right fa fa-caret-down icon-tables"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="219">
+    <token name="T_INLINE_HTML">                                                &lt;i class="fa fa-users md-icon pull-left"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="220">
+    <token name="T_INLINE_HTML">                                                &lt;span class="title"&gt;Users&lt;/span&gt;</token>
+  </line>
+  <line no="221">
+    <token name="T_INLINE_HTML">                                            &lt;/a&gt;</token>
+  </line>
+  <line no="222">
+    <token name="T_INLINE_HTML">                                            &lt;ul class="list-unstyled section-users l2 {{ Route::getCurrentRoute()-&gt;getPrefix() == '/users' ? 'active' : '' }}"&gt;</token>
+  </line>
+  <line no="223">
+    <token name="T_INLINE_HTML">                                                &lt;li&gt;</token>
+  </line>
+  <line no="224">
+    <token name="T_INLINE_HTML">                                                    &lt;a class="sideline {{ Route::currentRouteName() == 'admin.users.index' ? 'sideline-active' : '' }}" href="{{ route('admin.users.index') }}"&gt;</token>
+  </line>
+  <line no="225">
+    <token name="T_INLINE_HTML">                                                        &lt;span class="title"&gt;List&lt;/span&gt;</token>
+  </line>
+  <line no="226">
+    <token name="T_INLINE_HTML">                                                    &lt;/a&gt;</token>
+  </line>
+  <line no="227">
+    <token name="T_INLINE_HTML">                                                &lt;/li&gt;</token>
+  </line>
+  <line no="228">
+    <token name="T_INLINE_HTML">                                                &lt;li&gt;</token>
+  </line>
+  <line no="229">
+    <token name="T_INLINE_HTML">                                                    &lt;a class="sideline {{ Route::currentRouteName() == 'admin.users.create' ? 'sideline-active' : '' }}" href="{{ route('admin.users.create') }}"&gt;</token>
+  </line>
+  <line no="230">
+    <token name="T_INLINE_HTML">                                                        &lt;span class="title"&gt;Create new&lt;/span&gt;</token>
+  </line>
+  <line no="231">
+    <token name="T_INLINE_HTML">                                                    &lt;/a&gt;</token>
+  </line>
+  <line no="232">
+    <token name="T_INLINE_HTML">                                                &lt;/li&gt;</token>
+  </line>
+  <line no="233">
+    <token name="T_INLINE_HTML">                                            &lt;/ul&gt;</token>
+  </line>
+  <line no="234">
+    <token name="T_INLINE_HTML">                                        &lt;/li&gt;</token>
+  </line>
+  <line no="235">
+    <token name="T_INLINE_HTML">                                    &lt;/ul&gt;</token>
+  </line>
+  <line no="236">
+    <token name="T_INLINE_HTML">                                    {{--&lt;ul class="l1 list-unstyled section-content"&gt;--}}</token>
+  </line>
+  <line no="237">
+    <token name="T_INLINE_HTML">                                        {{--&lt;li&gt;--}}</token>
+  </line>
+  <line no="238">
+    <token name="T_INLINE_HTML">                                            {{--&lt;a class="sideline {{ Route::currentRouteName() == 'admin.coaches.index' ? 'sideline-active' : '' }}"--}}</token>
+  </line>
+  <line no="239">
+    <token name="T_INLINE_HTML">                                               {{--data-id="docs" href="{{ route('admin.coaches.index') }}" data-click="toggle-section"&gt;--}}</token>
+  </line>
+  <line no="240">
+    <token name="T_INLINE_HTML">                                                {{--&lt;i class="pull-right fa fa-caret-down icon-dashboards fa-rotate-180"&gt;&lt;/i&gt;--}}</token>
+  </line>
+  <line no="241">
+    <token name="T_INLINE_HTML">                                                {{--&lt;i class="fa fa-users md-icon pull-left"&gt;&lt;/i&gt;--}}</token>
+  </line>
+  <line no="242">
+    <token name="T_INLINE_HTML">                                                {{--&lt;span class="title"&gt;Coaches&lt;/span&gt;--}}</token>
+  </line>
+  <line no="243">
+    <token name="T_INLINE_HTML">                                            {{--&lt;/a&gt;--}}</token>
+  </line>
+  <line no="244">
+    <token name="T_INLINE_HTML">                                        {{--&lt;/li&gt;--}}</token>
+  </line>
+  <line no="245">
+    <token name="T_INLINE_HTML">                                    {{--&lt;/ul&gt;--}}</token>
+  </line>
+  <line no="246">
+    <token name="T_INLINE_HTML">                                    {{--&lt;li&gt;--}}</token>
+  </line>
+  <line no="247">
+    <token name="T_INLINE_HTML">                                        {{--&lt;a class="sideline {{ Route::currentRouteName() == 'admin.users.index' ? 'sideline-active' : '' }}"--}}</token>
+  </line>
+  <line no="248">
+    <token name="T_INLINE_HTML">                                           {{--data-id="docs" href="{{ route('admin.users.index') }}"&gt;--}}</token>
+  </line>
+  <line no="249">
+    <token name="T_INLINE_HTML">                                            {{--&lt;i class="fa fa-users md-icon pull-left"&gt;&lt;/i&gt;--}}</token>
+  </line>
+  <line no="250">
+    <token name="T_INLINE_HTML">                                            {{--&lt;span class="title"&gt;Users&lt;/span&gt;--}}</token>
+  </line>
+  <line no="251">
+    <token name="T_INLINE_HTML">                                        {{--&lt;/a&gt;--}}</token>
+  </line>
+  <line no="252">
+    <token name="T_INLINE_HTML">                                    {{--&lt;/li&gt;--}}</token>
+  </line>
+  <line no="253">
+    <token name="T_INLINE_HTML">                                @endif</token>
+  </line>
+  <line no="254"/>
+  <line no="255">
+    <token name="T_INLINE_HTML">                                &lt;li&gt;</token>
+  </line>
+  <line no="256">
+    <token name="T_INLINE_HTML">                                    &lt;a class="sideline {{ (strpos(url()-&gt;current(), '/profile') !== false &amp;&amp; !$browse_coach_page ) ? 'sideline-active' : '' }}" href="/profile"&gt;</token>
+  </line>
+  <line no="257">
+    <token name="T_INLINE_HTML">                                        &lt;i class="zmdi zmdi-account-circle md-icon pull-left"&gt;&lt;/i&gt;&lt;span class="title"&gt;My Profile&lt;/span&gt;</token>
+  </line>
+  <line no="258">
+    <token name="T_INLINE_HTML">                                    &lt;/a&gt;</token>
+  </line>
+  <line no="259">
+    <token name="T_INLINE_HTML">                                &lt;/li&gt;</token>
+  </line>
+  <line no="260">
+    <token name="T_INLINE_HTML">                                    @if(auth()-&gt;user()-&gt;isAdmin())</token>
+  </line>
+  <line no="261">
+    <token name="T_INLINE_HTML">                                &lt;li&gt;</token>
+  </line>
+  <line no="262">
+    <token name="T_INLINE_HTML">                                    &lt;a class="sideline {{ Route::currentRouteName() == 'admin.settings.index' ? 'sideline-active' : '' }}" href="{{ route('admin.settings.index') }}"&gt;</token>
+  </line>
+  <line no="263">
+    <token name="T_INLINE_HTML">                                        &lt;i class="fa fa-cogs md-icon pull-left"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="264">
+    <token name="T_INLINE_HTML">                                        &lt;span class="title"&gt;Settings&lt;/span&gt;</token>
+  </line>
+  <line no="265">
+    <token name="T_INLINE_HTML">                                    &lt;/a&gt;</token>
+  </line>
+  <line no="266">
+    <token name="T_INLINE_HTML">                                &lt;/li&gt;</token>
+  </line>
+  <line no="267">
+    <token name="T_INLINE_HTML">                                    @endif</token>
+  </line>
+  <line no="268">
+    <token name="T_INLINE_HTML">                                &lt;li&gt;&lt;a class="sideline" href="/auth/logout"&gt;&lt;i class="zmdi zmdi-power md-icon pull-left"&gt;&lt;/i&gt;&lt;span class="title"&gt;Logout&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="269">
+    <token name="T_INLINE_HTML">                            &lt;/ul&gt;</token>
+  </line>
+  <line no="270">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="271">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="272">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="273">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="274">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="275">
+    <token name="T_INLINE_HTML">        &lt;div class="right-sidebar-outer"&gt;</token>
+  </line>
+  <line no="276">
+    <token name="T_INLINE_HTML">            &lt;div class="right-sidebar-inner"&gt;</token>
+  </line>
+  <line no="277">
+    <token name="T_INLINE_HTML">                &lt;div class="right-sidebar"&gt;</token>
+  </line>
+  <line no="278">
+    <token name="T_INLINE_HTML">                    &lt;div class="bs-nav-tabs nav-tabs-warning justified"&gt;</token>
+  </line>
+  <line no="279">
+    <token name="T_INLINE_HTML">                        &lt;div class="tab-content"&gt;</token>
+  </line>
+  <line no="280">
+    <token name="T_INLINE_HTML">                            &lt;div class="tab-pane fade in active" id="rtab-left"&gt;</token>
+  </line>
+  <line no="281">
+    <token name="T_INLINE_HTML">                                &lt;h5 id="notification_tittle"&gt;No notifications&lt;/h5&gt;</token>
+  </line>
+  <line no="282">
+    <token name="T_INLINE_HTML">                                &lt;div class="timeline-widget-4" id="notification_blk"&gt;</token>
+  </line>
+  <line no="283">
+    <token name="T_INLINE_HTML">                                    &lt;div class="row bg-odd-color" id="notification_tpl" hidden&gt;</token>
+  </line>
+  <line no="284">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col-xs-12 timeline timeline-warning"&gt;</token>
+  </line>
+  <line no="285">
+    <token name="T_INLINE_HTML">                                            &lt;div class="p-10"&gt;</token>
+  </line>
+  <line no="286">
+    <token name="T_INLINE_HTML">                                                &lt;p class="notification_msg"&gt;&lt;/p&gt;</token>
+  </line>
+  <line no="287">
+    <token name="T_INLINE_HTML">                                                &lt;p&gt;&lt;a class="review_link" href="#"&gt;&lt;span class="label label-warning"&gt;Show review&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</token>
+  </line>
+  <line no="288">
+    <token name="T_INLINE_HTML">                                                &lt;p class="text-sm text-muted notification_date"&gt;&lt;/p&gt;</token>
+  </line>
+  <line no="289">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="290">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="291">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="292">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="293">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="294">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="295">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="296">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="297">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="298">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="299">
+    <token name="T_INLINE_HTML">        &lt;div class="col-xs-12 main" id="main" style="min-height: 990px;"&gt;</token>
+  </line>
+  <line no="300">
+    <token name="T_INLINE_HTML">            &lt;div class="row m-b-40"&gt;</token>
+  </line>
+  <line no="301">
+    <token name="T_INLINE_HTML">                @yield('content')</token>
+  </line>
+  <line no="302">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="303">
+    <token name="T_INLINE_HTML">            &lt;div class="footer"&gt;</token>
+  </line>
+  <line no="304">
+    <token name="T_INLINE_HTML">                &lt;div class="row"&gt;</token>
+  </line>
+  <line no="305">
+    <token name="T_INLINE_HTML">                    &lt;div class="col-xs-12"&gt;</token>
+  </line>
+  <line no="306">
+    <token name="T_INLINE_HTML">                        &#xA9; {{ date('Y') }}. Showcase.</token>
+  </line>
+  <line no="307">
+    <token name="T_INLINE_HTML">                        &lt;!--&lt;a href="/" target="_blank"&gt;Buy Showcase&lt;/a&gt;--&gt;</token>
+  </line>
+  <line no="308">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="309">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="310">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="311">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="312"/>
+  <line no="313">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="314">
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+  <line no="315"/>
+  <line no="316">
+    <token name="T_INLINE_HTML">&lt;/body&gt;</token>
+  </line>
+  <line no="317">
+    <token name="T_INLINE_HTML">&lt;script src="/assets/marino/bower_components/jquery/dist/jquery.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="318">
+    <token name="T_INLINE_HTML">&lt;script src="/assets/marino/bower_components/tether/dist/js/tether.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="319">
+    <token name="T_INLINE_HTML">&lt;script src="/assets/marino/bower_components/bootstrap/dist/js/bootstrap.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="320">
+    <token name="T_INLINE_HTML">&lt;script src="/assets/marino/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="321">
+    <token name="T_INLINE_HTML">&lt;script src="/assets/marino/bower_components/mjolnic-bootstrap-colorpicker/dist/js/bootstrap-colorpicker.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="322">
+    <token name="T_INLINE_HTML">&lt;script src="/assets/marino/scripts/forms-pickers.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="323">
+    <token name="T_INLINE_HTML">&lt;!--&lt;script src="/assets/marino/bower_components/bootstrap-datetimepicker/dist/js/bootstrap-datetimepicker.min.js"&gt;&lt;/script&gt;--&gt;</token>
+  </line>
+  <line no="324">
+    <token name="T_INLINE_HTML">&lt;!--    &lt;script type="text/javascript"&gt;</token>
+  </line>
+  <line no="325">
+    <token name="T_INLINE_HTML">            $(function () {</token>
+  </line>
+  <line no="326">
+    <token name="T_INLINE_HTML">                $('#datetimepicker1').datetimepicker();</token>
+  </line>
+  <line no="327">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="328">
+    <token name="T_INLINE_HTML">        &lt;/script&gt;--&gt;</token>
+  </line>
+  <line no="329">
+    <token name="T_INLINE_HTML">&lt;script src="/assets/marino/bower_components/PACE/pace.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="330">
+    <token name="T_INLINE_HTML">&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.0.0/lodash.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="331">
+    <token name="T_INLINE_HTML">&lt;script src="/assets/marino/bower_components/jquery-storage-api/jquery.storageapi.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="332">
+    <token name="T_INLINE_HTML">&lt;script src="/assets/marino/bower_components/wow/dist/wow.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="333">
+    <token name="T_INLINE_HTML">&lt;script src="/assets/marino/scripts/functions.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="334">
+    <token name="T_INLINE_HTML">&lt;script src="/assets/marino/scripts/colors.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="335">
+    <token name="T_INLINE_HTML">&lt;script src="/assets/marino/scripts/left-sidebar.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="336">
+    <token name="T_INLINE_HTML">&lt;script src="/assets/marino/scripts/navbar.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="337">
+    <token name="T_INLINE_HTML">&lt;script src="/assets/marino/scripts/horizontal-navigation-1.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="338"/>
+  <line no="339">
+    <token name="T_INLINE_HTML">&lt;script src="/assets/marino/scripts/horizontal-navigation-2.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="340">
+    <token name="T_INLINE_HTML">&lt;script src="/assets/js/app.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="341">
+    <token name="T_INLINE_HTML">&lt;script src="/assets/marino/scripts/horizontal-navigation-3.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="342">
+    <token name="T_INLINE_HTML">&lt;script src="/assets/marino/scripts/main.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="343">
+    <token name="T_INLINE_HTML">&lt;script src="/assets/marino/bower_components/notifyjs/dist/notify.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="344">
+    <token name="T_INLINE_HTML">&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="345">
+    <token name="T_INLINE_HTML">&lt;script src="/assets/marino/bower_components/chartist/dist/chartist.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="346">
+    <token name="T_INLINE_HTML">&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="347">
+    <token name="T_INLINE_HTML">&lt;script src="/assets/marino/bower_components/d3/d3.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="348">
+    <token name="T_INLINE_HTML">&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="349">
+    <token name="T_INLINE_HTML">&lt;!--&lt;script src="http://bower.batchthemes.com/bower_components/datamaps/dist/datamaps.all.js"&gt;&lt;/script&gt;--&gt;</token>
+  </line>
+  <line no="350">
+    <token name="T_INLINE_HTML">&lt;!--&lt;script src="/assets/marino/scripts/dashboards.js"&gt;&lt;/script&gt;--&gt;</token>
+  </line>
+  <line no="351">
+    <token name="T_INLINE_HTML">&lt;!--&lt;script src="/assets/marino/scripts/index.js"&gt;&lt;/script&gt;--&gt;</token>
+  </line>
+  <line no="352">
+    <token name="T_INLINE_HTML">@yield('js')</token>
+  </line>
+  <line no="353">
+    <token name="T_INLINE_HTML">&lt;/html&gt;</token>
+  </line>
+</source>

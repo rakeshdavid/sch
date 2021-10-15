@@ -1,0 +1,2737 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views/review" file="my-reviews.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views/review/my-reviews.blade.php" size="61080" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="583374a29a2777c01bc630ca3ba3c418ecd8eadb" relative="resources/views/review/my-reviews.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layouts.user')</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">&lt;div class="main-content my-reviews-content"&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">            &lt;div class="container-fluid"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">                &lt;div class="top-box review-fix"&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">                    &lt;div class="row align-items-center"&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">                        &lt;div class="col-xl-5"&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">                            &lt;input type="search" name="" class="form-control" placeholder="Search by name&#x2026;"&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">                        &lt;div class="col-xl-7"&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">                            &lt;ul class="nav" id="myTab" role="tablist"&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">                                &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">                                    &lt;a class="nav-link active" id="view-all-tab" data-toggle="tab" href="#view-all" role="tab" aria-controls="view-all" aria-selected="true"&gt;View All&lt;/a&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">                                &lt;/li&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">                                &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">                                    &lt;a class="nav-link" id="reviewed-tab" data-toggle="tab" href="#advanced" role="tab" aria-controls="reviewed" aria-selected="false"&gt;Advanced&lt;/a&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">                                &lt;/li&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">                                &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">                                    &lt;a class="nav-link" id="waiting-review-tab" data-toggle="tab" href="#intermediate" role="tab" aria-controls="waiting-review" aria-selected="false"&gt;Intermediate&lt;/a&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">                                &lt;/li&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">                                &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">                                    &lt;a class="nav-link" id="payment-tab" data-toggle="tab" href="#begginer" role="tab" aria-controls="payment" aria-selected="false"&gt;Begginer&lt;/a&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">                                &lt;/li&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">                            &lt;/ul&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">                &lt;/div&gt; </token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">                &lt;div class="tab-content" id="myTabContent"&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">                    &lt;div class="tab-pane fade show active" id="view-all" role="tabpanel" aria-labelledby="view-all-tab"&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">                        &lt;div class="videos-wrap reviews-wrap"&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">                            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">                            	@foreach($reviews as $review)</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">                                &lt;div class="col-xl-4 col-md-6"&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">                                    &lt;div class="card"&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">                                        &lt;div class="videos-box"&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">                                        	&lt;video data-videoid="all-video-{{$review-&gt;id}}" width="100%" height="300" controls class="embed-responsive-item video-pause" id="all-video-{{$review-&gt;id}}" onplay="stopall(this)"&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">					                            &lt;source src="{{url('/') . config('video.completed_review_path') . $review-&gt;review_url}}"&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">					                            Your browser does not support HTML5 video.</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">					                        &lt;/video&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">                                            @if($review-&gt;thumbnail !='')</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">                                                &lt;img class="video-thumb" data-videoid="all-video-{{$review-&gt;id}}" src="{{url('/') . config('video.thumbnail_path')}}/{{$review-&gt;thumbnail}}" /&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">                                            @endif</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">                                        &lt;div class="card-body"&gt;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">                                            &lt;h3  class="cursor-pointer" data-toggle="modal" data-target="#modal-right-{{$review-&gt;id}}"&gt;</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">												{!! Str::words($review-&gt;video_name,5,'...') !!}</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">                                            &lt;/h3&gt;</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">                                            &lt;div class="level"&gt; Level: </token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">											@if($review-&gt;performance_level_id == 3)</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">												Advance</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">											@elseif($review-&gt;performance_level_id == 2)</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">												Intermediate</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">											@else</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">											Beginner</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">											@endif</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">                                            &lt;div class="rating"&gt;&lt;span class="rating-text"&gt;{{number_format($review-&gt;overall_rating,1)}}&lt;/span&gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">                                        	@if($review-&gt;overall_rating)</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">                                                @for ($i = 1; $i &lt;= $review-&gt;overall_rating; $i++)</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">                                                    &lt;i class="fas fa-star"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">                                                @endfor</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">                                                @for($review-&gt;overall_rating;$review-&gt;overall_rating&lt;5;$review-&gt;overall_rating++)</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">                                                    &lt;span class="grey-star"&gt;&lt;i class="fas fa-star"&gt;&lt;/i&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">                                                @endfor</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">                                            @endif</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">                                            	</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">                                @endforeach</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">                                </token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="76"/>
+  <line no="77">
+    <token name="T_INLINE_HTML">                    &lt;div class="tab-pane fade" id="advanced" role="tabpanel" aria-labelledby="waiting-review-tab"&gt;</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">                    	&lt;div class="videos-wrap reviews-wrap"&gt;</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">                            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">                            	@if($advance)</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">	                            	@foreach($advance as $review)</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">	                                &lt;div class="col-xl-4 col-md-6"&gt;</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">	                                    &lt;div class="card"&gt;</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">	                                        &lt;div class="videos-box"&gt;</token>
+  </line>
+  <line no="85">
+    <token name="T_INLINE_HTML">	                                        	&lt;video data-videoid="advance-video-{{$review-&gt;id}}" width="100%" height="300" controls class="embed-responsive-item video-pause" id="advance-video-{{$review-&gt;id}}" onplay="stopall(this)"&gt;</token>
+  </line>
+  <line no="86">
+    <token name="T_INLINE_HTML">						                            &lt;source src="{{url('/') . config('video.completed_review_path') . $review-&gt;review_url}}"&gt;</token>
+  </line>
+  <line no="87">
+    <token name="T_INLINE_HTML">						                            Your browser does not support HTML5 video.</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">						                        &lt;/video&gt;</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">	                                            @if($review-&gt;thumbnail !='')</token>
+  </line>
+  <line no="90">
+    <token name="T_INLINE_HTML">                                                	&lt;img class="video-thumb" data-videoid="advance-video-{{$review-&gt;id}}" src="{{url('/') . config('video.thumbnail_path')}}/{{$review-&gt;thumbnail}}" /&gt;</token>
+  </line>
+  <line no="91">
+    <token name="T_INLINE_HTML">                                            	@endif</token>
+  </line>
+  <line no="92">
+    <token name="T_INLINE_HTML">	                                        &lt;/div&gt;</token>
+  </line>
+  <line no="93">
+    <token name="T_INLINE_HTML">	                                        &lt;div class="card-body"&gt;</token>
+  </line>
+  <line no="94">
+    <token name="T_INLINE_HTML">	                                            &lt;h3  class="cursor-pointer" data-toggle="modal" data-target="#modal-right-{{$review-&gt;id}}"&gt;</token>
+  </line>
+  <line no="95">
+    <token name="T_INLINE_HTML">													{!! Str::words($review-&gt;video_name,5,'...') !!}</token>
+  </line>
+  <line no="96">
+    <token name="T_INLINE_HTML">                                            	&lt;/h3&gt;</token>
+  </line>
+  <line no="97">
+    <token name="T_INLINE_HTML">	                                            &lt;div class="level"&gt; Level: </token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">												@if($review-&gt;performance_level_id == 3)</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">													Advance</token>
+  </line>
+  <line no="100">
+    <token name="T_INLINE_HTML">												@elseif($review-&gt;performance_level_id == 2)</token>
+  </line>
+  <line no="101">
+    <token name="T_INLINE_HTML">													Intermediate</token>
+  </line>
+  <line no="102">
+    <token name="T_INLINE_HTML">												@else</token>
+  </line>
+  <line no="103">
+    <token name="T_INLINE_HTML">													Beginner</token>
+  </line>
+  <line no="104">
+    <token name="T_INLINE_HTML">												@endif</token>
+  </line>
+  <line no="105">
+    <token name="T_INLINE_HTML">	                                            &lt;/div&gt;</token>
+  </line>
+  <line no="106">
+    <token name="T_INLINE_HTML">	                                            &lt;div class="rating"&gt;&lt;span class="rating-text"&gt;{{number_format($review-&gt;overall_rating,1)}}&lt;/span&gt;</token>
+  </line>
+  <line no="107">
+    <token name="T_INLINE_HTML">	                                            	@if($review-&gt;overall_rating)</token>
+  </line>
+  <line no="108">
+    <token name="T_INLINE_HTML">		                                                @for ($i = 1; $i &lt;= $review-&gt;overall_rating; $i++)</token>
+  </line>
+  <line no="109">
+    <token name="T_INLINE_HTML">		                                                    &lt;i class="fas fa-star"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="110">
+    <token name="T_INLINE_HTML">		                                                @endfor</token>
+  </line>
+  <line no="111">
+    <token name="T_INLINE_HTML">		                                                @for($review-&gt;overall_rating;$review-&gt;overall_rating&lt;5;$review-&gt;overall_rating++)</token>
+  </line>
+  <line no="112">
+    <token name="T_INLINE_HTML">		                                                    &lt;span class="grey-star"&gt;&lt;i class="fas fa-star"&gt;&lt;/i&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="113">
+    <token name="T_INLINE_HTML">		                                                @endfor</token>
+  </line>
+  <line no="114">
+    <token name="T_INLINE_HTML">		                                            @endif</token>
+  </line>
+  <line no="115">
+    <token name="T_INLINE_HTML">	                                            &lt;/div&gt;</token>
+  </line>
+  <line no="116">
+    <token name="T_INLINE_HTML">	                                        &lt;/div&gt;</token>
+  </line>
+  <line no="117">
+    <token name="T_INLINE_HTML">	                                    &lt;/div&gt;</token>
+  </line>
+  <line no="118">
+    <token name="T_INLINE_HTML">	                                &lt;/div&gt;</token>
+  </line>
+  <line no="119">
+    <token name="T_INLINE_HTML">	                                @endforeach</token>
+  </line>
+  <line no="120">
+    <token name="T_INLINE_HTML">                                @else</token>
+  </line>
+  <line no="121">
+    <token name="T_INLINE_HTML">                                &lt;div class="col-md-12"&gt;</token>
+  </line>
+  <line no="122">
+    <token name="T_INLINE_HTML">	                            	&lt;h2&gt;No Advence Video Found&lt;/h2&gt;</token>
+  </line>
+  <line no="123">
+    <token name="T_INLINE_HTML">	                            &lt;/div&gt;</token>
+  </line>
+  <line no="124">
+    <token name="T_INLINE_HTML">                                @endif</token>
+  </line>
+  <line no="125">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="126">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="127"/>
+  <line no="128">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="129"/>
+  <line no="130">
+    <token name="T_INLINE_HTML">                    &lt;div class="tab-pane fade" id="intermediate" role="tabpanel" aria-labelledby="waiting-review-tab"&gt;</token>
+  </line>
+  <line no="131">
+    <token name="T_INLINE_HTML">                    	&lt;div class="videos-wrap reviews-wrap"&gt;</token>
+  </line>
+  <line no="132">
+    <token name="T_INLINE_HTML">                            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="133">
+    <token name="T_INLINE_HTML">                            	@if($intermediate)</token>
+  </line>
+  <line no="134">
+    <token name="T_INLINE_HTML">	                            	@foreach($intermediate as $review)</token>
+  </line>
+  <line no="135">
+    <token name="T_INLINE_HTML">	                                &lt;div class="col-xl-4 col-md-6"&gt;</token>
+  </line>
+  <line no="136">
+    <token name="T_INLINE_HTML">	                                    &lt;div class="card"&gt;</token>
+  </line>
+  <line no="137">
+    <token name="T_INLINE_HTML">	                                        &lt;div class="videos-box"&gt;</token>
+  </line>
+  <line no="138">
+    <token name="T_INLINE_HTML">	                                        	&lt;video data-videoid="inter-video-{{$review-&gt;id}}" width="100%" height="300" controls class="embed-responsive-item video-pause" id="inter-video-{{$review-&gt;id}}" onplay="stopall(this)"&gt;</token>
+  </line>
+  <line no="139">
+    <token name="T_INLINE_HTML">						                            &lt;source src="{{url('/') . config('video.completed_review_path') . $review-&gt;review_url}}"&gt;</token>
+  </line>
+  <line no="140">
+    <token name="T_INLINE_HTML">						                            Your browser does not support HTML5 video.</token>
+  </line>
+  <line no="141">
+    <token name="T_INLINE_HTML">						                        &lt;/video&gt;</token>
+  </line>
+  <line no="142">
+    <token name="T_INLINE_HTML">	                                            @if($review-&gt;thumbnail !='')</token>
+  </line>
+  <line no="143">
+    <token name="T_INLINE_HTML">                                                	&lt;img class="video-thumb" data-videoid="inter-video-{{$review-&gt;id}}" src="{{url('/') . config('video.thumbnail_path')}}/{{$review-&gt;thumbnail}}" /&gt;</token>
+  </line>
+  <line no="144">
+    <token name="T_INLINE_HTML">                                            	@endif</token>
+  </line>
+  <line no="145">
+    <token name="T_INLINE_HTML">	                                        &lt;/div&gt;</token>
+  </line>
+  <line no="146">
+    <token name="T_INLINE_HTML">	                                        &lt;div class="card-body"&gt;</token>
+  </line>
+  <line no="147">
+    <token name="T_INLINE_HTML">	                                            &lt;h3  class="cursor-pointer" data-toggle="modal" data-target="#modal-right-{{$review-&gt;id}}"&gt;</token>
+  </line>
+  <line no="148">
+    <token name="T_INLINE_HTML">													{!! Str::words($review-&gt;video_name,5,'...') !!}</token>
+  </line>
+  <line no="149">
+    <token name="T_INLINE_HTML">                                            	&lt;/h3&gt;</token>
+  </line>
+  <line no="150">
+    <token name="T_INLINE_HTML">	                                            &lt;div class="level"&gt; Level: </token>
+  </line>
+  <line no="151">
+    <token name="T_INLINE_HTML">												@if($review-&gt;performance_level_id == 3)</token>
+  </line>
+  <line no="152">
+    <token name="T_INLINE_HTML">													Advance</token>
+  </line>
+  <line no="153">
+    <token name="T_INLINE_HTML">												@elseif($review-&gt;performance_level_id == 2)</token>
+  </line>
+  <line no="154">
+    <token name="T_INLINE_HTML">													Intermediate</token>
+  </line>
+  <line no="155">
+    <token name="T_INLINE_HTML">												@else</token>
+  </line>
+  <line no="156">
+    <token name="T_INLINE_HTML">												Beginner</token>
+  </line>
+  <line no="157">
+    <token name="T_INLINE_HTML">												@endif</token>
+  </line>
+  <line no="158">
+    <token name="T_INLINE_HTML">	                                            &lt;/div&gt;</token>
+  </line>
+  <line no="159">
+    <token name="T_INLINE_HTML">	                                            &lt;div class="rating"&gt;&lt;span class="rating-text"&gt;{{number_format($review-&gt;overall_rating,1)}}&lt;/span&gt;</token>
+  </line>
+  <line no="160">
+    <token name="T_INLINE_HTML">	                                            	@if($review-&gt;overall_rating)</token>
+  </line>
+  <line no="161">
+    <token name="T_INLINE_HTML">		                                                @for ($i = 1; $i &lt;= $review-&gt;overall_rating; $i++)</token>
+  </line>
+  <line no="162">
+    <token name="T_INLINE_HTML">		                                                    &lt;i class="fas fa-star"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="163">
+    <token name="T_INLINE_HTML">		                                                @endfor</token>
+  </line>
+  <line no="164">
+    <token name="T_INLINE_HTML">		                                                @for($review-&gt;overall_rating;$review-&gt;overall_rating&lt;5;$review-&gt;overall_rating++)</token>
+  </line>
+  <line no="165">
+    <token name="T_INLINE_HTML">		                                                    &lt;span class="grey-star"&gt;&lt;i class="fas fa-star"&gt;&lt;/i&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="166">
+    <token name="T_INLINE_HTML">		                                                @endfor</token>
+  </line>
+  <line no="167">
+    <token name="T_INLINE_HTML">		                                            @endif</token>
+  </line>
+  <line no="168">
+    <token name="T_INLINE_HTML">	                                            &lt;/div&gt;</token>
+  </line>
+  <line no="169">
+    <token name="T_INLINE_HTML">	                                        &lt;/div&gt;</token>
+  </line>
+  <line no="170">
+    <token name="T_INLINE_HTML">	                                    &lt;/div&gt;</token>
+  </line>
+  <line no="171">
+    <token name="T_INLINE_HTML">	                                &lt;/div&gt;</token>
+  </line>
+  <line no="172">
+    <token name="T_INLINE_HTML">	                                @endforeach</token>
+  </line>
+  <line no="173">
+    <token name="T_INLINE_HTML">	                            @else</token>
+  </line>
+  <line no="174">
+    <token name="T_INLINE_HTML">	                            &lt;div class="col-md-12"&gt;</token>
+  </line>
+  <line no="175">
+    <token name="T_INLINE_HTML">	                            	&lt;h2&gt;No Intermediate Video Found&lt;/h2&gt;</token>
+  </line>
+  <line no="176">
+    <token name="T_INLINE_HTML">	                            &lt;/div&gt;</token>
+  </line>
+  <line no="177">
+    <token name="T_INLINE_HTML">	                            @endif</token>
+  </line>
+  <line no="178">
+    <token name="T_INLINE_HTML">                                </token>
+  </line>
+  <line no="179">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="180">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="181">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="182">
+    <token name="T_INLINE_HTML">					&lt;div class="tab-pane fade" id="begginer" role="tabpanel" aria-labelledby="reviewed-tab"&gt;</token>
+  </line>
+  <line no="183">
+    <token name="T_INLINE_HTML">						&lt;div class="videos-wrap reviews-wrap"&gt;</token>
+  </line>
+  <line no="184">
+    <token name="T_INLINE_HTML">                            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="185">
+    <token name="T_INLINE_HTML">                            	@if($beginners)</token>
+  </line>
+  <line no="186">
+    <token name="T_INLINE_HTML">	                            	@foreach($beginners as $review)</token>
+  </line>
+  <line no="187">
+    <token name="T_INLINE_HTML">	                                &lt;div class="col-xl-4 col-md-6"&gt;</token>
+  </line>
+  <line no="188">
+    <token name="T_INLINE_HTML">	                                    &lt;div class="card"&gt;</token>
+  </line>
+  <line no="189">
+    <token name="T_INLINE_HTML">	                                        &lt;div class="videos-box"&gt;</token>
+  </line>
+  <line no="190">
+    <token name="T_INLINE_HTML">	                                        	&lt;video data-videoid="beg-video-{{$review-&gt;id}}" width="100%" height="300" controls class="embed-responsive-item video-pause" id="beg-video-{{$review-&gt;id}}" onplay="stopall(this)"&gt;</token>
+  </line>
+  <line no="191">
+    <token name="T_INLINE_HTML">						                            &lt;source src="{{url('/') . config('video.completed_review_path') . $review-&gt;review_url}}"&gt;</token>
+  </line>
+  <line no="192">
+    <token name="T_INLINE_HTML">						                            Your browser does not support HTML5 video.</token>
+  </line>
+  <line no="193">
+    <token name="T_INLINE_HTML">						                        &lt;/video&gt;</token>
+  </line>
+  <line no="194">
+    <token name="T_INLINE_HTML">	                                            @if($review-&gt;thumbnail !='')</token>
+  </line>
+  <line no="195">
+    <token name="T_INLINE_HTML">                                                	&lt;img class="video-thumb" data-videoid="beg-video-{{$review-&gt;id}}" src="{{url('/') . config('video.thumbnail_path')}}/{{$review-&gt;thumbnail}}" /&gt;</token>
+  </line>
+  <line no="196">
+    <token name="T_INLINE_HTML">                                            	@endif</token>
+  </line>
+  <line no="197">
+    <token name="T_INLINE_HTML">	                                        &lt;/div&gt;</token>
+  </line>
+  <line no="198">
+    <token name="T_INLINE_HTML">	                                        &lt;div class="card-body"&gt;</token>
+  </line>
+  <line no="199">
+    <token name="T_INLINE_HTML">	                                            &lt;!-- &lt;h3&gt;{{$review-&gt;video_name}}&lt;/h3&gt; --&gt;</token>
+  </line>
+  <line no="200">
+    <token name="T_INLINE_HTML">	                                            &lt;h3  class="cursor-pointer" data-toggle="modal" data-target="#modal-right-{{$review-&gt;id}}"&gt;</token>
+  </line>
+  <line no="201">
+    <token name="T_INLINE_HTML">												{!! Str::words($review-&gt;video_name,5,'...') !!}</token>
+  </line>
+  <line no="202">
+    <token name="T_INLINE_HTML">                                            &lt;/h3&gt;</token>
+  </line>
+  <line no="203">
+    <token name="T_INLINE_HTML">	                                            &lt;div class="level"&gt; Level: </token>
+  </line>
+  <line no="204">
+    <token name="T_INLINE_HTML">												@if($review-&gt;performance_level_id == 3)</token>
+  </line>
+  <line no="205">
+    <token name="T_INLINE_HTML">													Advance</token>
+  </line>
+  <line no="206">
+    <token name="T_INLINE_HTML">												@elseif($review-&gt;performance_level_id == 2)</token>
+  </line>
+  <line no="207">
+    <token name="T_INLINE_HTML">													Intermediate</token>
+  </line>
+  <line no="208">
+    <token name="T_INLINE_HTML">												@else</token>
+  </line>
+  <line no="209">
+    <token name="T_INLINE_HTML">												Beginner</token>
+  </line>
+  <line no="210">
+    <token name="T_INLINE_HTML">												@endif</token>
+  </line>
+  <line no="211">
+    <token name="T_INLINE_HTML">	                                            &lt;/div&gt;</token>
+  </line>
+  <line no="212">
+    <token name="T_INLINE_HTML">	                                            &lt;div class="rating"&gt;&lt;span class="rating-text"&gt;{{number_format($review-&gt;overall_rating,1)}}&lt;/span&gt;</token>
+  </line>
+  <line no="213">
+    <token name="T_INLINE_HTML">	                                            	@if($review-&gt;overall_rating)</token>
+  </line>
+  <line no="214">
+    <token name="T_INLINE_HTML">		                                                @for ($i = 1; $i &lt;= $review-&gt;overall_rating; $i++)</token>
+  </line>
+  <line no="215">
+    <token name="T_INLINE_HTML">		                                                    &lt;i class="fas fa-star"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="216">
+    <token name="T_INLINE_HTML">		                                                @endfor</token>
+  </line>
+  <line no="217">
+    <token name="T_INLINE_HTML">		                                                @for($review-&gt;overall_rating;$review-&gt;overall_rating&lt;5;$review-&gt;overall_rating++)</token>
+  </line>
+  <line no="218">
+    <token name="T_INLINE_HTML">		                                                    &lt;span class="grey-star"&gt;&lt;i class="fas fa-star"&gt;&lt;/i&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="219">
+    <token name="T_INLINE_HTML">		                                                @endfor</token>
+  </line>
+  <line no="220">
+    <token name="T_INLINE_HTML">		                                            @endif</token>
+  </line>
+  <line no="221">
+    <token name="T_INLINE_HTML">	                                            &lt;/div&gt;</token>
+  </line>
+  <line no="222">
+    <token name="T_INLINE_HTML">	                                        &lt;/div&gt;</token>
+  </line>
+  <line no="223">
+    <token name="T_INLINE_HTML">	                                    &lt;/div&gt;</token>
+  </line>
+  <line no="224">
+    <token name="T_INLINE_HTML">	                                &lt;/div&gt;</token>
+  </line>
+  <line no="225">
+    <token name="T_INLINE_HTML">	                                @endforeach</token>
+  </line>
+  <line no="226">
+    <token name="T_INLINE_HTML">	                            @else</token>
+  </line>
+  <line no="227">
+    <token name="T_INLINE_HTML">	                            &lt;div class="col-md-12"&gt;</token>
+  </line>
+  <line no="228">
+    <token name="T_INLINE_HTML">	                            	&lt;h2&gt;No Begginer Video Found&lt;/h2&gt;</token>
+  </line>
+  <line no="229">
+    <token name="T_INLINE_HTML">	                            &lt;/div&gt;</token>
+  </line>
+  <line no="230">
+    <token name="T_INLINE_HTML">	                            @endif</token>
+  </line>
+  <line no="231">
+    <token name="T_INLINE_HTML">                                </token>
+  </line>
+  <line no="232">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="233">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="234">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="235">
+    <token name="T_INLINE_HTML">                    </token>
+  </line>
+  <line no="236"/>
+  <line no="237">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="238">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="239">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="240">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="241">
+    <token name="T_INLINE_HTML">@section("modal-right")</token>
+  </line>
+  <line no="242">
+    <token name="T_INLINE_HTML">	@foreach($allreview as $review1)</token>
+  </line>
+  <line no="243">
+    <token name="T_INLINE_HTML">		&lt;div class="modal fade firs-modal right" id="modal-right-{{$review1-&gt;id}}" tabindex="-1" role="dialog"&gt;</token>
+  </line>
+  <line no="244">
+    <token name="T_INLINE_HTML">	        &lt;div class="modal-dialog" role="document"&gt;</token>
+  </line>
+  <line no="245">
+    <token name="T_INLINE_HTML">	            &lt;div class="modal-content"&gt;</token>
+  </line>
+  <line no="246">
+    <token name="T_INLINE_HTML">	                &lt;a href="#" class="close" data-dismiss="modal" aria-label="Close"&gt;&lt;img src="/assets/img/close.png" class="img-fluid pause-video"&gt;&lt;/a&gt;</token>
+  </line>
+  <line no="247">
+    <token name="T_INLINE_HTML">	                &lt;div class="firs-snow-content"&gt;</token>
+  </line>
+  <line no="248">
+    <token name="T_INLINE_HTML">	                    &lt;div class="videos-box reviewed-video-box"&gt;</token>
+  </line>
+  <line no="249">
+    <token name="T_INLINE_HTML">	                        @if(strpos($review1-&gt;video_url, 'youtube') !== false)</token>
+  </line>
+  <line no="250"/>
+  <line no="251">
+    <token name="T_INLINE_HTML">                                @php</token>
+  </line>
+  <line no="252">
+    <token name="T_INLINE_HTML">                                $query ="";</token>
+  </line>
+  <line no="253">
+    <token name="T_INLINE_HTML">                                    $parts = parse_url($review1-&gt;video_url);</token>
+  </line>
+  <line no="254">
+    <token name="T_INLINE_HTML">                                    if(array_key_exists('query',$parts)){</token>
+  </line>
+  <line no="255">
+    <token name="T_INLINE_HTML">                                        parse_str($parts['query'], $query);</token>
+  </line>
+  <line no="256">
+    <token name="T_INLINE_HTML">                                        $videoID = $query['v'];</token>
+  </line>
+  <line no="257">
+    <token name="T_INLINE_HTML">                                        $youtubeurl = "https://www.youtube.com/embed/".$videoID; </token>
+  </line>
+  <line no="258">
+    <token name="T_INLINE_HTML">                                    }else{</token>
+  </line>
+  <line no="259">
+    <token name="T_INLINE_HTML">                                        $youtubeurl = $review1-&gt;video_url; </token>
+  </line>
+  <line no="260">
+    <token name="T_INLINE_HTML">                                    }</token>
+  </line>
+  <line no="261">
+    <token name="T_INLINE_HTML">                                    </token>
+  </line>
+  <line no="262">
+    <token name="T_INLINE_HTML">                                    </token>
+  </line>
+  <line no="263">
+    <token name="T_INLINE_HTML">                                @endphp</token>
+  </line>
+  <line no="264">
+    <token name="T_INLINE_HTML">                                    &lt;iframe width="100%" height="300" src="{{$youtubeurl}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</token>
+  </line>
+  <line no="265">
+    <token name="T_INLINE_HTML">                                    </token>
+  </line>
+  <line no="266">
+    <token name="T_INLINE_HTML">                            @else</token>
+  </line>
+  <line no="267">
+    <token name="T_INLINE_HTML">                                &lt;video class="video-pause" id="review-video-{{$review1-&gt;id}}" width="100%" height="300" controls &gt;</token>
+  </line>
+  <line no="268">
+    <token name="T_INLINE_HTML">                                	&lt;source src="{{url('/') . config('video.completed_review_path') . $review1-&gt;review_url}}"&gt;</token>
+  </line>
+  <line no="269">
+    <token name="T_INLINE_HTML">                                    &lt;!-- &lt;source src="{{url('/') . config('video.user_video_path') . $review1-&gt;video_url}}"&gt; --&gt;</token>
+  </line>
+  <line no="270">
+    <token name="T_INLINE_HTML">                                    Your browser does not support HTML5 video.</token>
+  </line>
+  <line no="271">
+    <token name="T_INLINE_HTML">                                &lt;/video&gt;</token>
+  </line>
+  <line no="272">
+    <token name="T_INLINE_HTML">                                @if($review1-&gt;thumbnail !='')</token>
+  </line>
+  <line no="273">
+    <token name="T_INLINE_HTML">                                    &lt;img class="video-thumb review-thumbnail" data-videoid="review-video-{{$review1-&gt;id}}" src="{{url('/') . config('video.thumbnail_path')}}/{{$review1-&gt;thumbnail}}" /&gt;</token>
+  </line>
+  <line no="274">
+    <token name="T_INLINE_HTML">                                @endif    </token>
+  </line>
+  <line no="275">
+    <token name="T_INLINE_HTML">                            @endif</token>
+  </line>
+  <line no="276">
+    <token name="T_INLINE_HTML">	                    &lt;/div&gt;</token>
+  </line>
+  <line no="277">
+    <token name="T_INLINE_HTML">	                    &lt;h3&gt;{!! Str::words($review1-&gt;video_name,5,'...') !!}&lt;/h3&gt;</token>
+  </line>
+  <line no="278">
+    <token name="T_INLINE_HTML">	                    &lt;div class="level"&gt;Level: </token>
+  </line>
+  <line no="279">
+    <token name="T_INLINE_HTML">	                    	@if($review1-&gt;performance_level_id == 3)</token>
+  </line>
+  <line no="280">
+    <token name="T_INLINE_HTML">								Advance</token>
+  </line>
+  <line no="281">
+    <token name="T_INLINE_HTML">							@elseif($review1-&gt;performance_level_id == 2)</token>
+  </line>
+  <line no="282">
+    <token name="T_INLINE_HTML">								Intermediate</token>
+  </line>
+  <line no="283">
+    <token name="T_INLINE_HTML">							@else</token>
+  </line>
+  <line no="284">
+    <token name="T_INLINE_HTML">								Beginner</token>
+  </line>
+  <line no="285">
+    <token name="T_INLINE_HTML">							@endif</token>
+  </line>
+  <line no="286">
+    <token name="T_INLINE_HTML">						&lt;/div&gt;</token>
+  </line>
+  <line no="287">
+    <token name="T_INLINE_HTML">	                    &lt;div class="updated"&gt;Uploaded on @php</token>
+  </line>
+  <line no="288">
+    <token name="T_INLINE_HTML">                                    $v_data = new \Carbon\Carbon($review1-&gt;created_at);</token>
+  </line>
+  <line no="289">
+    <token name="T_INLINE_HTML">                                    echo $v_data-&gt;format("m.d.Y g:i A");</token>
+  </line>
+  <line no="290">
+    <token name="T_INLINE_HTML">                                    @endphp&lt;/div&gt;</token>
+  </line>
+  <line no="291">
+    <token name="T_INLINE_HTML">	                    &lt;ul class="nav" id="myTab" role="tablist"&gt;</token>
+  </line>
+  <line no="292">
+    <token name="T_INLINE_HTML">	                        &lt;li class="nav-item @if($review1-&gt;package_id == 1) width-50 @endif"&gt;</token>
+  </line>
+  <line no="293">
+    <token name="T_INLINE_HTML">	                            &lt;a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview-{{$review1-&gt;id}}" role="tab" aria-controls="overview" aria-selected="true"&gt;Overview&lt;/a&gt;</token>
+  </line>
+  <line no="294">
+    <token name="T_INLINE_HTML">	                        &lt;/li&gt;</token>
+  </line>
+  <line no="295">
+    <token name="T_INLINE_HTML">	                        @if($review1-&gt;package_id == 1)</token>
+  </line>
+  <line no="296">
+    <token name="T_INLINE_HTML">                                &lt;li class="nav-item @if($review1-&gt;package_id == 1) width-50 @endif"&gt;</token>
+  </line>
+  <line no="297">
+    <token name="T_INLINE_HTML">                                    &lt;a class="nav-link" id="score-tab" data-toggle="tab" href="#all-score-{{$review1-&gt;id}}" role="tab" aria-controls="technique" aria-selected="false"&gt;Score&lt;/a&gt;</token>
+  </line>
+  <line no="298">
+    <token name="T_INLINE_HTML">                                &lt;/li&gt;</token>
+  </line>
+  <line no="299">
+    <token name="T_INLINE_HTML">                            @else</token>
+  </line>
+  <line no="300">
+    <token name="T_INLINE_HTML">	                        &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="301">
+    <token name="T_INLINE_HTML">	                            &lt;a class="nav-link" id="technique-tab" data-toggle="tab" href="#technique-{{$review1-&gt;id}}" role="tab" aria-controls="technique" aria-selected="false"&gt;Technique&lt;/a&gt;</token>
+  </line>
+  <line no="302">
+    <token name="T_INLINE_HTML">	                        &lt;/li&gt;</token>
+  </line>
+  <line no="303">
+    <token name="T_INLINE_HTML">	                        &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="304">
+    <token name="T_INLINE_HTML">	                            &lt;a class="nav-link" id="expression-tab" data-toggle="tab" href="#expression-{{$review1-&gt;id}}" role="tab" aria-controls="expression" aria-selected="false"&gt;Expression&lt;/a&gt;</token>
+  </line>
+  <line no="305">
+    <token name="T_INLINE_HTML">	                        &lt;/li&gt;</token>
+  </line>
+  <line no="306">
+    <token name="T_INLINE_HTML">	                        &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="307">
+    <token name="T_INLINE_HTML">	                            &lt;a class="nav-link" id="choreography-tab" data-toggle="tab" href="#choreography-{{$review1-&gt;id}}" role="tab" aria-controls="choreography" aria-selected="false"&gt;Choreography&lt;/a&gt;</token>
+  </line>
+  <line no="308">
+    <token name="T_INLINE_HTML">	                        &lt;/li&gt;</token>
+  </line>
+  <line no="309">
+    <token name="T_INLINE_HTML">	                        @endif</token>
+  </line>
+  <line no="310">
+    <token name="T_INLINE_HTML">	                    &lt;/ul&gt;</token>
+  </line>
+  <line no="311"/>
+  <line no="312">
+    <token name="T_INLINE_HTML">	                    &lt;div class="tab-content" id="nav-tabContent"&gt;</token>
+  </line>
+  <line no="313">
+    <token name="T_INLINE_HTML">	                        &lt;div class="tab-pane fade show active" id="overview-{{$review1-&gt;id}}" role="tabpanel" aria-labelledby="overview-tab"&gt;</token>
+  </line>
+  <line no="314">
+    <token name="T_INLINE_HTML">	                            &lt;div class="rating overal-rating"&gt;</token>
+  </line>
+  <line no="315">
+    <token name="T_INLINE_HTML">	                                &lt;div class="left-text"&gt;{{number_format($review1-&gt;overall_rating_backup,1)}}&lt;/div&gt;</token>
+  </line>
+  <line no="316">
+    <token name="T_INLINE_HTML">	                                &lt;div class="right-star"&gt;</token>
+  </line>
+  <line no="317">
+    <token name="T_INLINE_HTML">	                                	@if($review1-&gt;overall_rating_backup)</token>
+  </line>
+  <line no="318">
+    <token name="T_INLINE_HTML">                                            @for ($i = 1; $i &lt;= $review1-&gt;overall_rating_backup; $i++)</token>
+  </line>
+  <line no="319">
+    <token name="T_INLINE_HTML">                                                &lt;i class="fas fa-star"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="320">
+    <token name="T_INLINE_HTML">                                            @endfor</token>
+  </line>
+  <line no="321">
+    <token name="T_INLINE_HTML">                                            @for($review1-&gt;overall_rating_backup;$review1-&gt;overall_rating_backup&lt;5;$review1-&gt;overall_rating_backup++)</token>
+  </line>
+  <line no="322">
+    <token name="T_INLINE_HTML">                                                &lt;span class="grey-star"&gt;&lt;i class="fas fa-star"&gt;&lt;/i&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="323">
+    <token name="T_INLINE_HTML">                                            @endfor</token>
+  </line>
+  <line no="324">
+    <token name="T_INLINE_HTML">                                        @endif</token>
+  </line>
+  <line no="325">
+    <token name="T_INLINE_HTML">	                                    &lt;span class="overal"&gt;Overall Rating&lt;/span&gt;</token>
+  </line>
+  <line no="326">
+    <token name="T_INLINE_HTML">	                                &lt;/div&gt;</token>
+  </line>
+  <line no="327"/>
+  <line no="328">
+    <token name="T_INLINE_HTML">	                            &lt;/div&gt;</token>
+  </line>
+  <line no="329">
+    <token name="T_INLINE_HTML">	                            &lt;div class="content-list"&gt;</token>
+  </line>
+  <line no="330">
+    <token name="T_INLINE_HTML">	                                &lt;div class="left-box"&gt;</token>
+  </line>
+  <line no="331">
+    <token name="T_INLINE_HTML">	                                	@if($review1-&gt;message !="")</token>
+  </line>
+  <line no="332">
+    <token name="T_INLINE_HTML">	                                		@if($review1-&gt;package_id != 1)</token>
+  </line>
+  <line no="333">
+    <token name="T_INLINE_HTML">		                                    &lt;h4&gt;Feedback Summary&lt;/h4&gt;</token>
+  </line>
+  <line no="334">
+    <token name="T_INLINE_HTML">		                                    @else</token>
+  </line>
+  <line no="335">
+    <token name="T_INLINE_HTML">		                                    &lt;h4&gt;Notes&lt;/h4&gt;</token>
+  </line>
+  <line no="336">
+    <token name="T_INLINE_HTML">		                                    @endif</token>
+  </line>
+  <line no="337">
+    <token name="T_INLINE_HTML">		                                    &lt;p&gt;{!! $review1-&gt;message !!}&lt;/p&gt;</token>
+  </line>
+  <line no="338">
+    <token name="T_INLINE_HTML">	                                    @endif</token>
+  </line>
+  <line no="339">
+    <token name="T_INLINE_HTML">	                                &lt;/div&gt;</token>
+  </line>
+  <line no="340">
+    <token name="T_INLINE_HTML">	                            &lt;/div&gt;</token>
+  </line>
+  <line no="341">
+    <token name="T_INLINE_HTML">	                            &lt;div class="content-list d-block"&gt;</token>
+  </line>
+  <line no="342">
+    <token name="T_INLINE_HTML">	                            	@php</token>
+  </line>
+  <line no="343">
+    <token name="T_INLINE_HTML">	                                    $coach = $model-&gt;getCoachDetailByVideoId($review1-&gt;video_id);</token>
+  </line>
+  <line no="344">
+    <token name="T_INLINE_HTML">	                                @endphp</token>
+  </line>
+  <line no="345">
+    <token name="T_INLINE_HTML">	                                @if($coach)</token>
+  </line>
+  <line no="346">
+    <token name="T_INLINE_HTML">	                                &lt;div class="media"&gt;</token>
+  </line>
+  <line no="347">
+    <token name="T_INLINE_HTML">	                                    </token>
+  </line>
+  <line no="348">
+    <token name="T_INLINE_HTML">	                                    &lt;div class="left-box"&gt;</token>
+  </line>
+  <line no="349">
+    <token name="T_INLINE_HTML">	                                        &lt;h4&gt;Coach&lt;/h4&gt;</token>
+  </line>
+  <line no="350">
+    <token name="T_INLINE_HTML">	                                        &lt;h3&gt;{{$coach-&gt;first_name}} {!! Str::words($coach-&gt;last_name,1,'...') !!}&lt;/h3&gt;</token>
+  </line>
+  <line no="351">
+    <token name="T_INLINE_HTML">	                                    &lt;/div&gt;</token>
+  </line>
+  <line no="352">
+    <token name="T_INLINE_HTML">	                                    &lt;div class="img-box coach-image"&gt;</token>
+  </line>
+  <line no="353">
+    <token name="T_INLINE_HTML">	                                        @if($coach-&gt;avatar !='')</token>
+  </line>
+  <line no="354">
+    <token name="T_INLINE_HTML">                                                @if(Str::startsWith($coach-&gt;avatar,'http'))</token>
+  </line>
+  <line no="355">
+    <token name="T_INLINE_HTML">                                                    &lt;img src="{{url('/')}}{{$coach-&gt;avatar}}" class="img-fluid"&gt;</token>
+  </line>
+  <line no="356">
+    <token name="T_INLINE_HTML">                                                @else</token>
+  </line>
+  <line no="357">
+    <token name="T_INLINE_HTML">                                                    &lt;img src="{{url('/')}}@if( ! Str::startsWith($coach-&gt;avatar,'/'))/@endif{{ $coach-&gt;avatar }}" class="img-fluid"&gt;</token>
+  </line>
+  <line no="358">
+    <token name="T_INLINE_HTML">                                                    </token>
+  </line>
+  <line no="359">
+    <token name="T_INLINE_HTML">                                                @endif</token>
+  </line>
+  <line no="360">
+    <token name="T_INLINE_HTML">                                            @else</token>
+  </line>
+  <line no="361">
+    <token name="T_INLINE_HTML">                                                &lt;img src="{{url('/')}}/images/default_avatar_new.png" class="img-fluid"&gt;</token>
+  </line>
+  <line no="362">
+    <token name="T_INLINE_HTML">                                            @endif</token>
+  </line>
+  <line no="363">
+    <token name="T_INLINE_HTML">	                                    &lt;/div&gt;</token>
+  </line>
+  <line no="364">
+    <token name="T_INLINE_HTML">	                                &lt;/div&gt;</token>
+  </line>
+  <line no="365">
+    <token name="T_INLINE_HTML">	                                @endif</token>
+  </line>
+  <line no="366">
+    <token name="T_INLINE_HTML">	                                @php</token>
+  </line>
+  <line no="367">
+    <token name="T_INLINE_HTML">                                        $questions = $model-&gt;getReviewQuestion($review1-&gt;video_id);</token>
+  </line>
+  <line no="368">
+    <token name="T_INLINE_HTML">                                        $index=1;</token>
+  </line>
+  <line no="369">
+    <token name="T_INLINE_HTML">                                    @endphp</token>
+  </line>
+  <line no="370">
+    <token name="T_INLINE_HTML">	                                @if($review1-&gt;package_id != 1)</token>
+  </line>
+  <line no="371">
+    <token name="T_INLINE_HTML">		                                &lt;ul class="question-list"&gt;</token>
+  </line>
+  <line no="372">
+    <token name="T_INLINE_HTML">		                                    </token>
+  </line>
+  <line no="373">
+    <token name="T_INLINE_HTML">	                                        @if(count($questions) &gt; 0)</token>
+  </line>
+  <line no="374">
+    <token name="T_INLINE_HTML">	                                            @foreach($questions as $question)</token>
+  </line>
+  <line no="375">
+    <token name="T_INLINE_HTML">	                                                &lt;li&gt;</token>
+  </line>
+  <line no="376">
+    <token name="T_INLINE_HTML">	                                                    &lt;h4&gt;Question {{$index++}}:&lt;/h4&gt;</token>
+  </line>
+  <line no="377">
+    <token name="T_INLINE_HTML">	                                                    &lt;h3&gt;{{$question-&gt;question}}&lt;/h3&gt;</token>
+  </line>
+  <line no="378">
+    <token name="T_INLINE_HTML">	                                                    @if($question-&gt;answer !='')</token>
+  </line>
+  <line no="379">
+    <token name="T_INLINE_HTML">	                                                        &lt;p&gt;{{$question-&gt;answer}}&lt;/p&gt;</token>
+  </line>
+  <line no="380">
+    <token name="T_INLINE_HTML">	                                                    @else</token>
+  </line>
+  <line no="381">
+    <token name="T_INLINE_HTML">	                                                        &lt;p&gt;Waiting for reply&lt;/p&gt;</token>
+  </line>
+  <line no="382">
+    <token name="T_INLINE_HTML">	                                                    @endif</token>
+  </line>
+  <line no="383">
+    <token name="T_INLINE_HTML">	                                                &lt;/li&gt;</token>
+  </line>
+  <line no="384">
+    <token name="T_INLINE_HTML">	                                            @endforeach</token>
+  </line>
+  <line no="385">
+    <token name="T_INLINE_HTML">	                                        @endif</token>
+  </line>
+  <line no="386">
+    <token name="T_INLINE_HTML">		                                &lt;/ul&gt;</token>
+  </line>
+  <line no="387">
+    <token name="T_INLINE_HTML">		                            </token>
+  </line>
+  <line no="388">
+    <token name="T_INLINE_HTML">	                                &lt;div class="new-question"&gt;</token>
+  </line>
+  <line no="389">
+    <token name="T_INLINE_HTML">	                                    &lt;form method="post" class="question-form" action="" id="ask-question-{{$review1-&gt;video_id}}"&gt;</token>
+  </line>
+  <line no="390">
+    <token name="T_INLINE_HTML">                                            {!! csrf_field() !!}</token>
+  </line>
+  <line no="391">
+    <token name="T_INLINE_HTML">                                            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="392">
+    <token name="T_INLINE_HTML">                                                &lt;div class="col-lg-12"&gt;</token>
+  </line>
+  <line no="393">
+    <token name="T_INLINE_HTML">                                                    &lt;input type="hidden" name="video-id" value="{{$review1-&gt;video_id}}" /&gt;</token>
+  </line>
+  <line no="394">
+    <token name="T_INLINE_HTML">                                                    &lt;input type="text" name="question-title" class="form-control" placeholder="Ask your question..." /&gt;</token>
+  </line>
+  <line no="395">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="396">
+    <token name="T_INLINE_HTML">                                                &lt;div class="col-lg-12 pt-3"&gt;</token>
+  </line>
+  <line no="397"/>
+  <line no="398">
+    <token name="T_INLINE_HTML">                                                    &lt;button class="btn btn-outline-danger submit-question" data-videoid="{{$review1-&gt;video_id}}"&gt;Ask Question&lt;/button&gt;</token>
+  </line>
+  <line no="399">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="400">
+    <token name="T_INLINE_HTML">                                                &lt;div class="col-lg-12 response"&gt;</token>
+  </line>
+  <line no="401">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="402">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="403">
+    <token name="T_INLINE_HTML">                                        &lt;/form&gt;</token>
+  </line>
+  <line no="404">
+    <token name="T_INLINE_HTML">                                        @if(count($questions) &lt; 3)</token>
+  </line>
+  <line no="405">
+    <token name="T_INLINE_HTML">                                        	&lt;a href="javascript:void(0)" class="btn btn-outline-danger new-question1" data-videoid="{{$review1-&gt;video_id}}"&gt;New Question&lt;/a&gt;</token>
+  </line>
+  <line no="406">
+    <token name="T_INLINE_HTML">                                        @endif</token>
+  </line>
+  <line no="407">
+    <token name="T_INLINE_HTML">	                                &lt;/div&gt;</token>
+  </line>
+  <line no="408">
+    <token name="T_INLINE_HTML">	                                @endif</token>
+  </line>
+  <line no="409">
+    <token name="T_INLINE_HTML">	                            &lt;/div&gt;</token>
+  </line>
+  <line no="410">
+    <token name="T_INLINE_HTML">	                        &lt;/div&gt;</token>
+  </line>
+  <line no="411">
+    <token name="T_INLINE_HTML">	                        @if($review1-&gt;package_id == 1)</token>
+  </line>
+  <line no="412">
+    <token name="T_INLINE_HTML">                                &lt;div class="tab-pane fade" id="all-score-{{$review1-&gt;id}}" role="tabpanel" aria-labelledby="score-tab"&gt;</token>
+  </line>
+  <line no="413">
+    <token name="T_INLINE_HTML">                                    @if($review1 !="" )</token>
+  </line>
+  <line no="414">
+    <token name="T_INLINE_HTML">                                    &lt;ul class="tab-list"&gt;</token>
+  </line>
+  <line no="415">
+    <token name="T_INLINE_HTML">                                        </token>
+  </line>
+  <line no="416">
+    <token name="T_INLINE_HTML">                                        @if($review1-&gt;performance_quality !=NULL)</token>
+  </line>
+  <line no="417">
+    <token name="T_INLINE_HTML">                                        &lt;li&gt;</token>
+  </line>
+  <line no="418">
+    <token name="T_INLINE_HTML">                                            &lt;div class="content-list"&gt;</token>
+  </line>
+  <line no="419">
+    <token name="T_INLINE_HTML">                                                &lt;div class="left-box"&gt;</token>
+  </line>
+  <line no="420">
+    <token name="T_INLINE_HTML">                                                    &lt;h4&gt;Performance Quality&lt;/h4&gt;</token>
+  </line>
+  <line no="421">
+    <token name="T_INLINE_HTML">                                                    &lt;p&gt;{!! $review1-&gt;performance_quality !!}&lt;/p&gt;</token>
+  </line>
+  <line no="422">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="423">
+    <token name="T_INLINE_HTML">                                                &lt;div class="right-box"&gt;</token>
+  </line>
+  <line no="424">
+    <token name="T_INLINE_HTML">                                                    &lt;div class="rating"&gt;</token>
+  </line>
+  <line no="425">
+    <token name="T_INLINE_HTML">                                                        &lt;div class="left-text"&gt;</token>
+  </line>
+  <line no="426">
+    <token name="T_INLINE_HTML">                                                        	{{ number_format($review1-&gt;performance_quality_rating, 1) }}</token>
+  </line>
+  <line no="427">
+    <token name="T_INLINE_HTML">                                                        &lt;/div&gt;</token>
+  </line>
+  <line no="428">
+    <token name="T_INLINE_HTML">                                                        @if($review1-&gt;performance_quality_rating)</token>
+  </line>
+  <line no="429">
+    <token name="T_INLINE_HTML">                                                            @for ($i = 1; $i &lt;= $review1-&gt;performance_quality_rating; $i++)</token>
+  </line>
+  <line no="430">
+    <token name="T_INLINE_HTML">                                                                &lt;i class="fas fa-star"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="431">
+    <token name="T_INLINE_HTML">                                                            @endfor</token>
+  </line>
+  <line no="432">
+    <token name="T_INLINE_HTML">                                                            @for($review1-&gt;performance_quality_rating;$review1-&gt;performance_quality_rating&lt;5;$review1-&gt;performance_quality_rating++)</token>
+  </line>
+  <line no="433">
+    <token name="T_INLINE_HTML">                                                                &lt;span class="grey-star"&gt;&lt;i class="fas fa-star"&gt;&lt;/i&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="434">
+    <token name="T_INLINE_HTML">                                                            @endfor</token>
+  </line>
+  <line no="435">
+    <token name="T_INLINE_HTML">                                                        @endif</token>
+  </line>
+  <line no="436">
+    <token name="T_INLINE_HTML">                                                    &lt;/div&gt;</token>
+  </line>
+  <line no="437">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="438">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="439">
+    <token name="T_INLINE_HTML">                                        &lt;/li&gt;</token>
+  </line>
+  <line no="440">
+    <token name="T_INLINE_HTML">                                        @endif</token>
+  </line>
+  <line no="441">
+    <token name="T_INLINE_HTML">                                        @if($review1-&gt;technical_ability)</token>
+  </line>
+  <line no="442">
+    <token name="T_INLINE_HTML">                                        &lt;li&gt;</token>
+  </line>
+  <line no="443">
+    <token name="T_INLINE_HTML">                                            &lt;div class="content-list"&gt;</token>
+  </line>
+  <line no="444">
+    <token name="T_INLINE_HTML">                                                &lt;div class="left-box"&gt;</token>
+  </line>
+  <line no="445">
+    <token name="T_INLINE_HTML">                                                    &lt;h4&gt;Technical Ability&lt;/h4&gt;</token>
+  </line>
+  <line no="446">
+    <token name="T_INLINE_HTML">                                                    &lt;p&gt;{!! $review1-&gt;technical_ability !!}&lt;/p&gt;</token>
+  </line>
+  <line no="447">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="448">
+    <token name="T_INLINE_HTML">                                                &lt;div class="right-box"&gt;</token>
+  </line>
+  <line no="449">
+    <token name="T_INLINE_HTML">                                                    &lt;div class="rating"&gt;</token>
+  </line>
+  <line no="450">
+    <token name="T_INLINE_HTML">                                                        &lt;div class="left-text"&gt;</token>
+  </line>
+  <line no="451">
+    <token name="T_INLINE_HTML">                                                        	{{ number_format($review1-&gt;technical_ability_rating, 1) }}</token>
+  </line>
+  <line no="452"/>
+  <line no="453">
+    <token name="T_INLINE_HTML">                                                        &lt;/div&gt;</token>
+  </line>
+  <line no="454">
+    <token name="T_INLINE_HTML">                                                        @if($review1-&gt;technical_ability_rating)</token>
+  </line>
+  <line no="455">
+    <token name="T_INLINE_HTML">                                                            @for ($i = 1; $i &lt;= $review1-&gt;technical_ability_rating; $i++)</token>
+  </line>
+  <line no="456">
+    <token name="T_INLINE_HTML">                                                                &lt;i class="fas fa-star"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="457">
+    <token name="T_INLINE_HTML">                                                            @endfor</token>
+  </line>
+  <line no="458">
+    <token name="T_INLINE_HTML">                                                            @for($review1-&gt;technical_ability_rating;$review1-&gt;technical_ability_rating&lt;5;$review1-&gt;technical_ability_rating++)</token>
+  </line>
+  <line no="459">
+    <token name="T_INLINE_HTML">                                                                &lt;span class="grey-star"&gt;&lt;i class="fas fa-star"&gt;&lt;/i&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="460">
+    <token name="T_INLINE_HTML">                                                            @endfor</token>
+  </line>
+  <line no="461">
+    <token name="T_INLINE_HTML">                                                        @endif</token>
+  </line>
+  <line no="462">
+    <token name="T_INLINE_HTML">                                                    &lt;/div&gt;</token>
+  </line>
+  <line no="463">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="464">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="465">
+    <token name="T_INLINE_HTML">                                        &lt;/li&gt;</token>
+  </line>
+  <line no="466">
+    <token name="T_INLINE_HTML">                                        @endif</token>
+  </line>
+  <line no="467">
+    <token name="T_INLINE_HTML">                                        @if($review1-&gt;energy_style)</token>
+  </line>
+  <line no="468">
+    <token name="T_INLINE_HTML">                                        &lt;li&gt;</token>
+  </line>
+  <line no="469">
+    <token name="T_INLINE_HTML">                                            &lt;div class="content-list"&gt;</token>
+  </line>
+  <line no="470">
+    <token name="T_INLINE_HTML">                                                &lt;div class="left-box"&gt;</token>
+  </line>
+  <line no="471">
+    <token name="T_INLINE_HTML">                                                    &lt;h4&gt;Energy/Style&lt;/h4&gt;</token>
+  </line>
+  <line no="472">
+    <token name="T_INLINE_HTML">                                                    &lt;p&gt;{!! $review1-&gt;energy_style !!}&lt;/p&gt;</token>
+  </line>
+  <line no="473">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="474">
+    <token name="T_INLINE_HTML">                                                &lt;div class="right-box"&gt;</token>
+  </line>
+  <line no="475">
+    <token name="T_INLINE_HTML">                                                    &lt;div class="rating"&gt;</token>
+  </line>
+  <line no="476">
+    <token name="T_INLINE_HTML">                                                        &lt;div class="left-text"&gt;</token>
+  </line>
+  <line no="477">
+    <token name="T_INLINE_HTML">                                                   {{ number_format($review1-&gt;energy_style_rating, 1) }} </token>
+  </line>
+  <line no="478">
+    <token name="T_INLINE_HTML">                                                        &lt;/div&gt;</token>
+  </line>
+  <line no="479">
+    <token name="T_INLINE_HTML">                                                        @if($review1-&gt;energy_style_rating)</token>
+  </line>
+  <line no="480">
+    <token name="T_INLINE_HTML">                                                            @for ($i = 1; $i &lt;= $review1-&gt;energy_style_rating; $i++)</token>
+  </line>
+  <line no="481">
+    <token name="T_INLINE_HTML">                                                                &lt;i class="fas fa-star"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="482">
+    <token name="T_INLINE_HTML">                                                            @endfor</token>
+  </line>
+  <line no="483">
+    <token name="T_INLINE_HTML">                                                            @for($review1-&gt;energy_style_rating;$review1-&gt;energy_style_rating&lt;5;$review1-&gt;energy_style_rating++)</token>
+  </line>
+  <line no="484">
+    <token name="T_INLINE_HTML">                                                                &lt;span class="grey-star"&gt;&lt;i class="fas fa-star"&gt;&lt;/i&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="485">
+    <token name="T_INLINE_HTML">                                                            @endfor</token>
+  </line>
+  <line no="486">
+    <token name="T_INLINE_HTML">                                                        @endif</token>
+  </line>
+  <line no="487">
+    <token name="T_INLINE_HTML">                                                    &lt;/div&gt;</token>
+  </line>
+  <line no="488">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="489">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="490">
+    <token name="T_INLINE_HTML">                                        &lt;/li&gt;</token>
+  </line>
+  <line no="491">
+    <token name="T_INLINE_HTML">                                        @endif</token>
+  </line>
+  <line no="492">
+    <token name="T_INLINE_HTML">                                        @if($review1-&gt;storytelling)</token>
+  </line>
+  <line no="493">
+    <token name="T_INLINE_HTML">                                        &lt;li&gt;</token>
+  </line>
+  <line no="494">
+    <token name="T_INLINE_HTML">                                            &lt;div class="content-list"&gt;</token>
+  </line>
+  <line no="495">
+    <token name="T_INLINE_HTML">                                                &lt;div class="left-box"&gt;</token>
+  </line>
+  <line no="496">
+    <token name="T_INLINE_HTML">                                                    &lt;h4&gt;Storytelling&lt;/h4&gt;</token>
+  </line>
+  <line no="497">
+    <token name="T_INLINE_HTML">                                                    &lt;p&gt;{!! $review1-&gt;storytelling !!}&lt;/p&gt;</token>
+  </line>
+  <line no="498">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="499">
+    <token name="T_INLINE_HTML">                                                &lt;div class="right-box"&gt;</token>
+  </line>
+  <line no="500">
+    <token name="T_INLINE_HTML">                                                    &lt;div class="rating"&gt;</token>
+  </line>
+  <line no="501">
+    <token name="T_INLINE_HTML">                                                        &lt;div class="left-text"&gt;</token>
+  </line>
+  <line no="502">
+    <token name="T_INLINE_HTML">                                                   {{ number_format($review1-&gt;storytelling_rating, 1) }} </token>
+  </line>
+  <line no="503">
+    <token name="T_INLINE_HTML">                                                        &lt;/div&gt;</token>
+  </line>
+  <line no="504">
+    <token name="T_INLINE_HTML">                                                        @if($review1-&gt;storytelling_rating)</token>
+  </line>
+  <line no="505">
+    <token name="T_INLINE_HTML">                                                            @for ($i = 1; $i &lt;= $review1-&gt;storytelling_rating; $i++)</token>
+  </line>
+  <line no="506">
+    <token name="T_INLINE_HTML">                                                                &lt;i class="fas fa-star"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="507">
+    <token name="T_INLINE_HTML">                                                            @endfor</token>
+  </line>
+  <line no="508">
+    <token name="T_INLINE_HTML">                                                            @for($review1-&gt;storytelling_rating;$review1-&gt;storytelling_rating&lt;5;$review1-&gt;storytelling_rating++)</token>
+  </line>
+  <line no="509">
+    <token name="T_INLINE_HTML">                                                                &lt;span class="grey-star"&gt;&lt;i class="fas fa-star"&gt;&lt;/i&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="510">
+    <token name="T_INLINE_HTML">                                                            @endfor</token>
+  </line>
+  <line no="511">
+    <token name="T_INLINE_HTML">                                                        @endif</token>
+  </line>
+  <line no="512">
+    <token name="T_INLINE_HTML">                                                    &lt;/div&gt;</token>
+  </line>
+  <line no="513">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="514">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="515">
+    <token name="T_INLINE_HTML">                                        &lt;/li&gt;</token>
+  </line>
+  <line no="516">
+    <token name="T_INLINE_HTML">                                        @endif</token>
+  </line>
+  <line no="517">
+    <token name="T_INLINE_HTML">                                        @if($review1-&gt;look_appearance)</token>
+  </line>
+  <line no="518">
+    <token name="T_INLINE_HTML">                                        &lt;li&gt;</token>
+  </line>
+  <line no="519">
+    <token name="T_INLINE_HTML">                                            &lt;div class="content-list"&gt;</token>
+  </line>
+  <line no="520">
+    <token name="T_INLINE_HTML">                                                &lt;div class="left-box"&gt;</token>
+  </line>
+  <line no="521">
+    <token name="T_INLINE_HTML">                                                    &lt;h4&gt;Look/Appearance&lt;/h4&gt;</token>
+  </line>
+  <line no="522">
+    <token name="T_INLINE_HTML">                                                    &lt;p&gt;{!! $review1-&gt;look_appearance !!}&lt;/p&gt;</token>
+  </line>
+  <line no="523">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="524">
+    <token name="T_INLINE_HTML">                                                &lt;div class="right-box"&gt;</token>
+  </line>
+  <line no="525">
+    <token name="T_INLINE_HTML">                                                    &lt;div class="rating"&gt;</token>
+  </line>
+  <line no="526">
+    <token name="T_INLINE_HTML">                                                        &lt;div class="left-text"&gt; </token>
+  </line>
+  <line no="527">
+    <token name="T_INLINE_HTML">                                                        	{{ number_format($review1-&gt;look_appearance_rating, 1) }}</token>
+  </line>
+  <line no="528">
+    <token name="T_INLINE_HTML">                                                        &lt;/div&gt;</token>
+  </line>
+  <line no="529">
+    <token name="T_INLINE_HTML">                                                        @if($review1-&gt;look_appearance_rating)</token>
+  </line>
+  <line no="530">
+    <token name="T_INLINE_HTML">                                                            @for ($i = 1; $i &lt;= $review1-&gt;look_appearance_rating; $i++)</token>
+  </line>
+  <line no="531">
+    <token name="T_INLINE_HTML">                                                                &lt;i class="fas fa-star"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="532">
+    <token name="T_INLINE_HTML">                                                            @endfor</token>
+  </line>
+  <line no="533">
+    <token name="T_INLINE_HTML">                                                            @for($review1-&gt;look_appearance_rating;$review1-&gt;look_appearance_rating&lt;5;$review1-&gt;look_appearance_rating++)</token>
+  </line>
+  <line no="534">
+    <token name="T_INLINE_HTML">                                                                &lt;span class="grey-star"&gt;&lt;i class="fas fa-star"&gt;&lt;/i&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="535">
+    <token name="T_INLINE_HTML">                                                            @endfor</token>
+  </line>
+  <line no="536">
+    <token name="T_INLINE_HTML">                                                        @endif</token>
+  </line>
+  <line no="537">
+    <token name="T_INLINE_HTML">                                                    &lt;/div&gt;</token>
+  </line>
+  <line no="538">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="539">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="540">
+    <token name="T_INLINE_HTML">                                        &lt;/li&gt;</token>
+  </line>
+  <line no="541">
+    <token name="T_INLINE_HTML">                                        @endif</token>
+  </line>
+  <line no="542">
+    <token name="T_INLINE_HTML">                                    &lt;/ul&gt;</token>
+  </line>
+  <line no="543">
+    <token name="T_INLINE_HTML">                                    </token>
+  </line>
+  <line no="544">
+    <token name="T_INLINE_HTML">                                    @else</token>
+  </line>
+  <line no="545">
+    <token name="T_INLINE_HTML">                                         &lt;h3&gt;We are still reviewing your video Please wait.&lt;/h3&gt;</token>
+  </line>
+  <line no="546">
+    <token name="T_INLINE_HTML">                                    @endif</token>
+  </line>
+  <line no="547">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="548">
+    <token name="T_INLINE_HTML">                            @else</token>
+  </line>
+  <line no="549">
+    <token name="T_INLINE_HTML">	                        &lt;div class="tab-pane fade" id="technique-{{$review1-&gt;id}}" role="tabpanel" aria-labelledby="technique-tab"&gt;</token>
+  </line>
+  <line no="550">
+    <token name="T_INLINE_HTML">	                            &lt;ul class="tab-list"&gt;</token>
+  </line>
+  <line no="551">
+    <token name="T_INLINE_HTML">                                    </token>
+  </line>
+  <line no="552">
+    <token name="T_INLINE_HTML">                                    &lt;li&gt;</token>
+  </line>
+  <line no="553">
+    <token name="T_INLINE_HTML">                                        &lt;div class="content-list"&gt;</token>
+  </line>
+  <line no="554">
+    <token name="T_INLINE_HTML">                                            &lt;div class="left-box"&gt;</token>
+  </line>
+  <line no="555">
+    <token name="T_INLINE_HTML">                                                &lt;h4&gt;Footwork&lt;/h4&gt;</token>
+  </line>
+  <line no="556">
+    <token name="T_INLINE_HTML">                                                &lt;p&gt;{!! $review1-&gt;footwork_comment !!}&lt;/p&gt;</token>
+  </line>
+  <line no="557">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="558">
+    <token name="T_INLINE_HTML">                                            &lt;div class="right-box"&gt;</token>
+  </line>
+  <line no="559">
+    <token name="T_INLINE_HTML">                                                &lt;div class="rating"&gt;</token>
+  </line>
+  <line no="560">
+    <token name="T_INLINE_HTML">                                                    &lt;div class="left-text"&gt;</token>
+  </line>
+  <line no="561">
+    <token name="T_INLINE_HTML">                                                    	{{ number_format($review1-&gt;footwork, 1) }} &lt;/div&gt;</token>
+  </line>
+  <line no="562">
+    <token name="T_INLINE_HTML">                                                    @if($review1-&gt;footwork)</token>
+  </line>
+  <line no="563">
+    <token name="T_INLINE_HTML">                                                        @for ($i = 1; $i &lt;= $review1-&gt;footwork; $i++)</token>
+  </line>
+  <line no="564">
+    <token name="T_INLINE_HTML">                                                            &lt;i class="fas fa-star"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="565">
+    <token name="T_INLINE_HTML">                                                        @endfor</token>
+  </line>
+  <line no="566">
+    <token name="T_INLINE_HTML">                                                        @for($review1-&gt;footwork;$review1-&gt;footwork&lt;5;$review1-&gt;footwork++)</token>
+  </line>
+  <line no="567">
+    <token name="T_INLINE_HTML">                                                            &lt;span class="grey-star"&gt;&lt;i class="fas fa-star"&gt;&lt;/i&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="568">
+    <token name="T_INLINE_HTML">                                                        @endfor</token>
+  </line>
+  <line no="569">
+    <token name="T_INLINE_HTML">                                                    @endif</token>
+  </line>
+  <line no="570">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="571">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="572">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="573">
+    <token name="T_INLINE_HTML">                                    &lt;/li&gt;</token>
+  </line>
+  <line no="574">
+    <token name="T_INLINE_HTML">                                    &lt;li&gt;</token>
+  </line>
+  <line no="575">
+    <token name="T_INLINE_HTML">                                        &lt;div class="content-list"&gt;</token>
+  </line>
+  <line no="576">
+    <token name="T_INLINE_HTML">                                            &lt;div class="left-box"&gt;</token>
+  </line>
+  <line no="577">
+    <token name="T_INLINE_HTML">                                                &lt;h4&gt;Alignment&lt;/h4&gt;</token>
+  </line>
+  <line no="578">
+    <token name="T_INLINE_HTML">                                                &lt;p&gt;{!! $review1-&gt;alingment_comment !!}&lt;/p&gt;</token>
+  </line>
+  <line no="579">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="580">
+    <token name="T_INLINE_HTML">                                            &lt;div class="right-box"&gt;</token>
+  </line>
+  <line no="581">
+    <token name="T_INLINE_HTML">                                                &lt;div class="rating"&gt;</token>
+  </line>
+  <line no="582">
+    <token name="T_INLINE_HTML">                                                    &lt;div class="left-text"&gt;</token>
+  </line>
+  <line no="583">
+    <token name="T_INLINE_HTML">                                                    	{{ number_format($review1-&gt;alingment, 1) }}&lt;/div&gt;</token>
+  </line>
+  <line no="584">
+    <token name="T_INLINE_HTML">                                                    @if($review1-&gt;alingment)</token>
+  </line>
+  <line no="585">
+    <token name="T_INLINE_HTML">                                                        @for ($i = 1; $i &lt;= $review1-&gt;alingment; $i++)</token>
+  </line>
+  <line no="586">
+    <token name="T_INLINE_HTML">                                                            &lt;i class="fas fa-star"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="587">
+    <token name="T_INLINE_HTML">                                                        @endfor</token>
+  </line>
+  <line no="588">
+    <token name="T_INLINE_HTML">                                                        @for($review1-&gt;alingment;$review1-&gt;alingment&lt;5;$review1-&gt;alingment++)</token>
+  </line>
+  <line no="589">
+    <token name="T_INLINE_HTML">                                                            &lt;span class="grey-star"&gt;&lt;i class="fas fa-star"&gt;&lt;/i&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="590">
+    <token name="T_INLINE_HTML">                                                        @endfor</token>
+  </line>
+  <line no="591">
+    <token name="T_INLINE_HTML">                                                    @endif</token>
+  </line>
+  <line no="592">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="593">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="594">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="595">
+    <token name="T_INLINE_HTML">                                    &lt;/li&gt;</token>
+  </line>
+  <line no="596">
+    <token name="T_INLINE_HTML">                                    &lt;li&gt;</token>
+  </line>
+  <line no="597">
+    <token name="T_INLINE_HTML">                                        &lt;div class="content-list"&gt;</token>
+  </line>
+  <line no="598">
+    <token name="T_INLINE_HTML">                                            &lt;div class="left-box"&gt;</token>
+  </line>
+  <line no="599">
+    <token name="T_INLINE_HTML">                                                &lt;h4&gt;Balance&lt;/h4&gt;</token>
+  </line>
+  <line no="600">
+    <token name="T_INLINE_HTML">                                                &lt;p&gt;{!! $review1-&gt;balance_comment !!}&lt;/p&gt;</token>
+  </line>
+  <line no="601">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="602">
+    <token name="T_INLINE_HTML">                                            &lt;div class="right-box"&gt;</token>
+  </line>
+  <line no="603">
+    <token name="T_INLINE_HTML">                                                &lt;div class="rating"&gt;</token>
+  </line>
+  <line no="604">
+    <token name="T_INLINE_HTML">                                                    &lt;div class="left-text"&gt;</token>
+  </line>
+  <line no="605">
+    <token name="T_INLINE_HTML">                                                    	{{ number_format($review1-&gt;balance, 1) }}&lt;/div&gt;</token>
+  </line>
+  <line no="606">
+    <token name="T_INLINE_HTML">                                                    @if($review1-&gt;balance)</token>
+  </line>
+  <line no="607">
+    <token name="T_INLINE_HTML">                                                        @for ($i = 1; $i &lt;= $review1-&gt;balance; $i++)</token>
+  </line>
+  <line no="608">
+    <token name="T_INLINE_HTML">                                                            &lt;i class="fas fa-star"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="609">
+    <token name="T_INLINE_HTML">                                                        @endfor</token>
+  </line>
+  <line no="610">
+    <token name="T_INLINE_HTML">                                                        @for($review1-&gt;balance;$review1-&gt;balance&lt;5;$review1-&gt;balance++)</token>
+  </line>
+  <line no="611">
+    <token name="T_INLINE_HTML">                                                            &lt;span class="grey-star"&gt;&lt;i class="fas fa-star"&gt;&lt;/i&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="612">
+    <token name="T_INLINE_HTML">                                                        @endfor</token>
+  </line>
+  <line no="613">
+    <token name="T_INLINE_HTML">                                                    @endif</token>
+  </line>
+  <line no="614">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="615">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="616">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="617">
+    <token name="T_INLINE_HTML">                                    &lt;/li&gt;</token>
+  </line>
+  <line no="618">
+    <token name="T_INLINE_HTML">                                    &lt;li&gt;</token>
+  </line>
+  <line no="619">
+    <token name="T_INLINE_HTML">                                        &lt;div class="content-list"&gt;</token>
+  </line>
+  <line no="620">
+    <token name="T_INLINE_HTML">                                            &lt;div class="left-box"&gt;</token>
+  </line>
+  <line no="621">
+    <token name="T_INLINE_HTML">                                                &lt;h4&gt;Focus&lt;/h4&gt;</token>
+  </line>
+  <line no="622">
+    <token name="T_INLINE_HTML">                                                &lt;p&gt;{!! $review1-&gt;focus_comment !!}&lt;/p&gt;</token>
+  </line>
+  <line no="623">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="624">
+    <token name="T_INLINE_HTML">                                            &lt;div class="right-box"&gt;</token>
+  </line>
+  <line no="625">
+    <token name="T_INLINE_HTML">                                                &lt;div class="rating"&gt;</token>
+  </line>
+  <line no="626">
+    <token name="T_INLINE_HTML">                                                    &lt;div class="left-text"&gt;</token>
+  </line>
+  <line no="627">
+    <token name="T_INLINE_HTML">                                                    	{{ number_format($review1-&gt;focus, 1) }}&lt;/div&gt;</token>
+  </line>
+  <line no="628">
+    <token name="T_INLINE_HTML">                                                    @if($review1-&gt;focus)</token>
+  </line>
+  <line no="629">
+    <token name="T_INLINE_HTML">                                                        @for ($i = 1; $i &lt;= $review1-&gt;focus; $i++)</token>
+  </line>
+  <line no="630">
+    <token name="T_INLINE_HTML">                                                            &lt;i class="fas fa-star"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="631">
+    <token name="T_INLINE_HTML">                                                        @endfor</token>
+  </line>
+  <line no="632">
+    <token name="T_INLINE_HTML">                                                        @for($review1-&gt;focus;$review1-&gt;focus&lt;5;$review1-&gt;focus++)</token>
+  </line>
+  <line no="633">
+    <token name="T_INLINE_HTML">                                                            &lt;span class="grey-star"&gt;&lt;i class="fas fa-star"&gt;&lt;/i&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="634">
+    <token name="T_INLINE_HTML">                                                        @endfor</token>
+  </line>
+  <line no="635">
+    <token name="T_INLINE_HTML">                                                    @endif</token>
+  </line>
+  <line no="636">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="637">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="638">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="639">
+    <token name="T_INLINE_HTML">                                    &lt;/li&gt;</token>
+  </line>
+  <line no="640">
+    <token name="T_INLINE_HTML">                                    &lt;li&gt;</token>
+  </line>
+  <line no="641">
+    <token name="T_INLINE_HTML">                                        &lt;div class="content-list"&gt;</token>
+  </line>
+  <line no="642">
+    <token name="T_INLINE_HTML">                                            &lt;div class="left-box"&gt;</token>
+  </line>
+  <line no="643">
+    <token name="T_INLINE_HTML">                                                &lt;h4&gt;Precision&lt;/h4&gt;</token>
+  </line>
+  <line no="644">
+    <token name="T_INLINE_HTML">                                                &lt;p&gt;{!! $review1-&gt;precision_comment !!}&lt;/p&gt;</token>
+  </line>
+  <line no="645">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="646">
+    <token name="T_INLINE_HTML">                                            &lt;div class="right-box"&gt;</token>
+  </line>
+  <line no="647">
+    <token name="T_INLINE_HTML">                                                &lt;div class="rating"&gt;</token>
+  </line>
+  <line no="648">
+    <token name="T_INLINE_HTML">                                                    &lt;div class="left-text"&gt;</token>
+  </line>
+  <line no="649">
+    <token name="T_INLINE_HTML">                                                    	{{ number_format($review1-&gt;precision, 1) }}&lt;/div&gt;</token>
+  </line>
+  <line no="650">
+    <token name="T_INLINE_HTML">                                                    @if($review1-&gt;precision)</token>
+  </line>
+  <line no="651">
+    <token name="T_INLINE_HTML">                                                        @for ($i = 1; $i &lt;= $review1-&gt;precision; $i++)</token>
+  </line>
+  <line no="652">
+    <token name="T_INLINE_HTML">                                                            &lt;i class="fas fa-star"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="653">
+    <token name="T_INLINE_HTML">                                                        @endfor</token>
+  </line>
+  <line no="654">
+    <token name="T_INLINE_HTML">                                                        @for($review1-&gt;precision;$review1-&gt;precision&lt;5;$review1-&gt;precision++)</token>
+  </line>
+  <line no="655">
+    <token name="T_INLINE_HTML">                                                            &lt;span class="grey-star"&gt;&lt;i class="fas fa-star"&gt;&lt;/i&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="656">
+    <token name="T_INLINE_HTML">                                                        @endfor</token>
+  </line>
+  <line no="657">
+    <token name="T_INLINE_HTML">                                                    @endif</token>
+  </line>
+  <line no="658">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="659">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="660">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="661">
+    <token name="T_INLINE_HTML">                                    &lt;/li&gt;</token>
+  </line>
+  <line no="662">
+    <token name="T_INLINE_HTML">                                &lt;/ul&gt;</token>
+  </line>
+  <line no="663">
+    <token name="T_INLINE_HTML">	                        &lt;/div&gt;</token>
+  </line>
+  <line no="664"/>
+  <line no="665">
+    <token name="T_INLINE_HTML">	                        &lt;div class="tab-pane fade" id="expression-{{$review1-&gt;id}}" role="tabpanel" aria-labelledby="expression-tab"&gt;</token>
+  </line>
+  <line no="666">
+    <token name="T_INLINE_HTML">	                            &lt;ul class="tab-list"&gt;</token>
+  </line>
+  <line no="667">
+    <token name="T_INLINE_HTML">                                    &lt;!-- &lt;li&gt;</token>
+  </line>
+  <line no="668">
+    <token name="T_INLINE_HTML">                                        &lt;div class="content-list"&gt;</token>
+  </line>
+  <line no="669">
+    <token name="T_INLINE_HTML">                                            &lt;div class="left-box"&gt;</token>
+  </line>
+  <line no="670">
+    <token name="T_INLINE_HTML">                                                &lt;h4&gt;Feedback Summary&lt;/h4&gt;</token>
+  </line>
+  <line no="671">
+    <token name="T_INLINE_HTML">                                                &lt;p&gt;{!! $review1-&gt;feedback_comment !!}&lt;/p&gt;</token>
+  </line>
+  <line no="672">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="673">
+    <token name="T_INLINE_HTML">                                            &lt;div class="right-box"&gt;</token>
+  </line>
+  <line no="674">
+    <token name="T_INLINE_HTML">                                                &lt;div class="rating"&gt;</token>
+  </line>
+  <line no="675">
+    <token name="T_INLINE_HTML">                                                    &lt;div class="left-text"&gt;{{$review1-&gt;feedback}}&lt;/div&gt;</token>
+  </line>
+  <line no="676">
+    <token name="T_INLINE_HTML">                                                    @if($review1-&gt;feedback)</token>
+  </line>
+  <line no="677">
+    <token name="T_INLINE_HTML">                                                        @for ($i = 1; $i &lt;= $review1-&gt;feedback; $i++)</token>
+  </line>
+  <line no="678">
+    <token name="T_INLINE_HTML">                                                            &lt;i class="fas fa-star"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="679">
+    <token name="T_INLINE_HTML">                                                        @endfor</token>
+  </line>
+  <line no="680">
+    <token name="T_INLINE_HTML">                                                        @for($review1-&gt;feedback;$review1-&gt;feedback&lt;5;$review1-&gt;feedback++)</token>
+  </line>
+  <line no="681">
+    <token name="T_INLINE_HTML">                                                            &lt;span class="grey-star"&gt;&lt;i class="fas fa-star"&gt;&lt;/i&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="682">
+    <token name="T_INLINE_HTML">                                                        @endfor</token>
+  </line>
+  <line no="683">
+    <token name="T_INLINE_HTML">                                                    @endif</token>
+  </line>
+  <line no="684">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="685">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="686">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="687">
+    <token name="T_INLINE_HTML">                                    &lt;/li&gt; --&gt;</token>
+  </line>
+  <line no="688">
+    <token name="T_INLINE_HTML">                                    &lt;li&gt;</token>
+  </line>
+  <line no="689">
+    <token name="T_INLINE_HTML">                                        &lt;div class="content-list"&gt;</token>
+  </line>
+  <line no="690">
+    <token name="T_INLINE_HTML">                                            &lt;div class="left-box"&gt;</token>
+  </line>
+  <line no="691">
+    <token name="T_INLINE_HTML">                                                &lt;h4&gt;Energy&lt;/h4&gt;</token>
+  </line>
+  <line no="692">
+    <token name="T_INLINE_HTML">                                                &lt;p&gt;{!! $review1-&gt;energy_comment !!}&lt;/p&gt;</token>
+  </line>
+  <line no="693">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="694">
+    <token name="T_INLINE_HTML">                                            &lt;div class="right-box"&gt;</token>
+  </line>
+  <line no="695">
+    <token name="T_INLINE_HTML">                                                &lt;div class="rating"&gt;</token>
+  </line>
+  <line no="696">
+    <token name="T_INLINE_HTML">                                                    &lt;div class="left-text"&gt;</token>
+  </line>
+  <line no="697">
+    <token name="T_INLINE_HTML">                                                    	{{ number_format($review1-&gt;energy, 1) }}&lt;/div&gt;</token>
+  </line>
+  <line no="698">
+    <token name="T_INLINE_HTML">                                                    @if($review1-&gt;energy)</token>
+  </line>
+  <line no="699">
+    <token name="T_INLINE_HTML">                                                        @for ($i = 1; $i &lt;= $review1-&gt;energy; $i++)</token>
+  </line>
+  <line no="700">
+    <token name="T_INLINE_HTML">                                                            &lt;i class="fas fa-star"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="701">
+    <token name="T_INLINE_HTML">                                                        @endfor</token>
+  </line>
+  <line no="702">
+    <token name="T_INLINE_HTML">                                                        @for($review1-&gt;energy;$review1-&gt;energy&lt;5;$review1-&gt;energy++)</token>
+  </line>
+  <line no="703">
+    <token name="T_INLINE_HTML">                                                            &lt;span class="grey-star"&gt;&lt;i class="fas fa-star"&gt;&lt;/i&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="704">
+    <token name="T_INLINE_HTML">                                                        @endfor</token>
+  </line>
+  <line no="705">
+    <token name="T_INLINE_HTML">                                                    @endif</token>
+  </line>
+  <line no="706">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="707">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="708">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="709">
+    <token name="T_INLINE_HTML">                                    &lt;/li&gt;</token>
+  </line>
+  <line no="710">
+    <token name="T_INLINE_HTML">                                    &lt;li&gt;</token>
+  </line>
+  <line no="711">
+    <token name="T_INLINE_HTML">                                        &lt;div class="content-list"&gt;</token>
+  </line>
+  <line no="712">
+    <token name="T_INLINE_HTML">                                            &lt;div class="left-box"&gt;</token>
+  </line>
+  <line no="713">
+    <token name="T_INLINE_HTML">                                                &lt;h4&gt;Style&lt;/h4&gt;</token>
+  </line>
+  <line no="714">
+    <token name="T_INLINE_HTML">                                                &lt;p&gt;{!! $review1-&gt;style_comment !!}&lt;/p&gt;</token>
+  </line>
+  <line no="715">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="716">
+    <token name="T_INLINE_HTML">                                            &lt;div class="right-box"&gt;</token>
+  </line>
+  <line no="717">
+    <token name="T_INLINE_HTML">                                                &lt;div class="rating"&gt;</token>
+  </line>
+  <line no="718">
+    <token name="T_INLINE_HTML">                                                    &lt;div class="left-text"&gt;</token>
+  </line>
+  <line no="719">
+    <token name="T_INLINE_HTML">                                                    	{{ number_format($review1-&gt;style, 1) }}&lt;/div&gt;</token>
+  </line>
+  <line no="720">
+    <token name="T_INLINE_HTML">                                                    @if($review1-&gt;style)</token>
+  </line>
+  <line no="721">
+    <token name="T_INLINE_HTML">                                                        @for ($i = 1; $i &lt;= $review1-&gt;style; $i++)</token>
+  </line>
+  <line no="722">
+    <token name="T_INLINE_HTML">                                                            &lt;i class="fas fa-star"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="723">
+    <token name="T_INLINE_HTML">                                                        @endfor</token>
+  </line>
+  <line no="724">
+    <token name="T_INLINE_HTML">                                                        @for($review1-&gt;style;$review1-&gt;style&lt;5;$review1-&gt;style++)</token>
+  </line>
+  <line no="725">
+    <token name="T_INLINE_HTML">                                                            &lt;span class="grey-star"&gt;&lt;i class="fas fa-star"&gt;&lt;/i&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="726">
+    <token name="T_INLINE_HTML">                                                        @endfor</token>
+  </line>
+  <line no="727">
+    <token name="T_INLINE_HTML">                                                    @endif</token>
+  </line>
+  <line no="728">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="729">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="730">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="731">
+    <token name="T_INLINE_HTML">                                    &lt;/li&gt;</token>
+  </line>
+  <line no="732">
+    <token name="T_INLINE_HTML">                                    &lt;li&gt;</token>
+  </line>
+  <line no="733">
+    <token name="T_INLINE_HTML">                                        &lt;div class="content-list"&gt;</token>
+  </line>
+  <line no="734">
+    <token name="T_INLINE_HTML">                                            &lt;div class="left-box"&gt;</token>
+  </line>
+  <line no="735">
+    <token name="T_INLINE_HTML">                                                &lt;h4&gt;Creativity&lt;/h4&gt;</token>
+  </line>
+  <line no="736">
+    <token name="T_INLINE_HTML">                                                &lt;p&gt;{!! $review1-&gt;creativity_comment !!}&lt;/p&gt;</token>
+  </line>
+  <line no="737">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="738">
+    <token name="T_INLINE_HTML">                                            &lt;div class="right-box"&gt;</token>
+  </line>
+  <line no="739">
+    <token name="T_INLINE_HTML">                                                &lt;div class="rating"&gt;</token>
+  </line>
+  <line no="740">
+    <token name="T_INLINE_HTML">                                                    &lt;div class="left-text"&gt;</token>
+  </line>
+  <line no="741">
+    <token name="T_INLINE_HTML">                                                    	{{ number_format($review1-&gt;creativity, 1) }} &lt;/div&gt;</token>
+  </line>
+  <line no="742">
+    <token name="T_INLINE_HTML">                                                    @if($review1-&gt;creativity)</token>
+  </line>
+  <line no="743">
+    <token name="T_INLINE_HTML">                                                        @for ($i = 1; $i &lt;= $review1-&gt;creativity; $i++)</token>
+  </line>
+  <line no="744">
+    <token name="T_INLINE_HTML">                                                            &lt;i class="fas fa-star"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="745">
+    <token name="T_INLINE_HTML">                                                        @endfor</token>
+  </line>
+  <line no="746">
+    <token name="T_INLINE_HTML">                                                        @for($review1-&gt;creativity;$review1-&gt;creativity&lt;5;$review1-&gt;creativity++)</token>
+  </line>
+  <line no="747">
+    <token name="T_INLINE_HTML">                                                            &lt;span class="grey-star"&gt;&lt;i class="fas fa-star"&gt;&lt;/i&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="748">
+    <token name="T_INLINE_HTML">                                                        @endfor</token>
+  </line>
+  <line no="749">
+    <token name="T_INLINE_HTML">                                                    @endif</token>
+  </line>
+  <line no="750">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="751">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="752">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="753">
+    <token name="T_INLINE_HTML">                                    &lt;/li&gt;</token>
+  </line>
+  <line no="754">
+    <token name="T_INLINE_HTML">                                    &lt;li&gt;</token>
+  </line>
+  <line no="755">
+    <token name="T_INLINE_HTML">                                        &lt;div class="content-list"&gt;</token>
+  </line>
+  <line no="756">
+    <token name="T_INLINE_HTML">                                            &lt;div class="left-box"&gt;</token>
+  </line>
+  <line no="757">
+    <token name="T_INLINE_HTML">                                                &lt;h4&gt;Interpretation&lt;/h4&gt;</token>
+  </line>
+  <line no="758">
+    <token name="T_INLINE_HTML">                                                &lt;p&gt;{!! $review1-&gt;interpretation_comment !!}&lt;/p&gt;</token>
+  </line>
+  <line no="759">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="760">
+    <token name="T_INLINE_HTML">                                            &lt;div class="right-box"&gt;</token>
+  </line>
+  <line no="761">
+    <token name="T_INLINE_HTML">                                                &lt;div class="rating"&gt;</token>
+  </line>
+  <line no="762">
+    <token name="T_INLINE_HTML">                                                    &lt;div class="left-text"&gt;</token>
+  </line>
+  <line no="763">
+    <token name="T_INLINE_HTML">                                                    	{{ number_format($review1-&gt;interpretation, 1) }} &lt;/div&gt;</token>
+  </line>
+  <line no="764">
+    <token name="T_INLINE_HTML">                                                    @if($review1-&gt;interpretation)</token>
+  </line>
+  <line no="765">
+    <token name="T_INLINE_HTML">                                                        @for ($i = 1; $i &lt;= $review1-&gt;interpretation; $i++)</token>
+  </line>
+  <line no="766">
+    <token name="T_INLINE_HTML">                                                            &lt;i class="fas fa-star"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="767">
+    <token name="T_INLINE_HTML">                                                        @endfor</token>
+  </line>
+  <line no="768">
+    <token name="T_INLINE_HTML">                                                        @for($review1-&gt;interpretation;$review1-&gt;interpretation&lt;5;$review1-&gt;interpretation++)</token>
+  </line>
+  <line no="769">
+    <token name="T_INLINE_HTML">                                                            &lt;span class="grey-star"&gt;&lt;i class="fas fa-star"&gt;&lt;/i&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="770">
+    <token name="T_INLINE_HTML">                                                        @endfor</token>
+  </line>
+  <line no="771">
+    <token name="T_INLINE_HTML">                                                    @endif</token>
+  </line>
+  <line no="772">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="773">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="774">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="775">
+    <token name="T_INLINE_HTML">                                    &lt;/li&gt;</token>
+  </line>
+  <line no="776">
+    <token name="T_INLINE_HTML">                                    </token>
+  </line>
+  <line no="777">
+    <token name="T_INLINE_HTML">                                &lt;/ul&gt;</token>
+  </line>
+  <line no="778">
+    <token name="T_INLINE_HTML">	                        &lt;/div&gt;</token>
+  </line>
+  <line no="779"/>
+  <line no="780">
+    <token name="T_INLINE_HTML">	                        &lt;div class="tab-pane fade" id="choreography-{{$review1-&gt;id}}" role="tabpanel" aria-labelledby="choreography-tab"&gt;</token>
+  </line>
+  <line no="781">
+    <token name="T_INLINE_HTML">	                            &lt;ul class="tab-list"&gt;</token>
+  </line>
+  <line no="782">
+    <token name="T_INLINE_HTML">                                    &lt;!-- &lt;li&gt;</token>
+  </line>
+  <line no="783">
+    <token name="T_INLINE_HTML">                                        &lt;div class="content-list"&gt;</token>
+  </line>
+  <line no="784">
+    <token name="T_INLINE_HTML">                                            &lt;div class="left-box"&gt;</token>
+  </line>
+  <line no="785">
+    <token name="T_INLINE_HTML">                                                &lt;h4&gt;Feedback Summary&lt;/h4&gt;</token>
+  </line>
+  <line no="786">
+    <token name="T_INLINE_HTML">                                                &lt;p&gt;{!! $review1-&gt;feedback_comment !!}&lt;/p&gt;</token>
+  </line>
+  <line no="787">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="788">
+    <token name="T_INLINE_HTML">                                            &lt;div class="right-box"&gt;</token>
+  </line>
+  <line no="789">
+    <token name="T_INLINE_HTML">                                                &lt;div class="rating"&gt;</token>
+  </line>
+  <line no="790">
+    <token name="T_INLINE_HTML">                                                    &lt;div class="left-text"&gt;{{$review1-&gt;feedback}}&lt;/div&gt;</token>
+  </line>
+  <line no="791">
+    <token name="T_INLINE_HTML">                                                    @if($review1-&gt;feedback)</token>
+  </line>
+  <line no="792">
+    <token name="T_INLINE_HTML">                                                        @for ($i = 1; $i &lt;= $review1-&gt;feedback; $i++)</token>
+  </line>
+  <line no="793">
+    <token name="T_INLINE_HTML">                                                            &lt;i class="fas fa-star"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="794">
+    <token name="T_INLINE_HTML">                                                        @endfor</token>
+  </line>
+  <line no="795">
+    <token name="T_INLINE_HTML">                                                        @for($review1-&gt;feedback;$review1-&gt;feedback&lt;5;$review1-&gt;feedback++)</token>
+  </line>
+  <line no="796">
+    <token name="T_INLINE_HTML">                                                            &lt;span class="grey-star"&gt;&lt;i class="fas fa-star"&gt;&lt;/i&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="797">
+    <token name="T_INLINE_HTML">                                                        @endfor</token>
+  </line>
+  <line no="798">
+    <token name="T_INLINE_HTML">                                                    @endif</token>
+  </line>
+  <line no="799">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="800">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="801">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="802">
+    <token name="T_INLINE_HTML">                                    &lt;/li&gt; --&gt;</token>
+  </line>
+  <line no="803">
+    <token name="T_INLINE_HTML">                                    &lt;li&gt;</token>
+  </line>
+  <line no="804">
+    <token name="T_INLINE_HTML">                                        &lt;div class="content-list"&gt;</token>
+  </line>
+  <line no="805">
+    <token name="T_INLINE_HTML">                                            &lt;div class="left-box"&gt;</token>
+  </line>
+  <line no="806">
+    <token name="T_INLINE_HTML">                                                &lt;h4&gt;Formation&lt;/h4&gt;</token>
+  </line>
+  <line no="807">
+    <token name="T_INLINE_HTML">                                                &lt;p&gt;{!! $review1-&gt;formation_comment !!}&lt;/p&gt;</token>
+  </line>
+  <line no="808">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="809">
+    <token name="T_INLINE_HTML">                                            &lt;div class="right-box"&gt;</token>
+  </line>
+  <line no="810">
+    <token name="T_INLINE_HTML">                                                &lt;div class="rating"&gt;</token>
+  </line>
+  <line no="811">
+    <token name="T_INLINE_HTML">                                                    &lt;div class="left-text"&gt;</token>
+  </line>
+  <line no="812">
+    <token name="T_INLINE_HTML">                                                    	{{ number_format($review1-&gt;formation, 1) }} &lt;/div&gt;</token>
+  </line>
+  <line no="813">
+    <token name="T_INLINE_HTML">                                                    @if($review1-&gt;formation)</token>
+  </line>
+  <line no="814">
+    <token name="T_INLINE_HTML">                                                        @for ($i = 1; $i &lt;= $review1-&gt;formation; $i++)</token>
+  </line>
+  <line no="815">
+    <token name="T_INLINE_HTML">                                                            &lt;i class="fas fa-star"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="816">
+    <token name="T_INLINE_HTML">                                                        @endfor</token>
+  </line>
+  <line no="817">
+    <token name="T_INLINE_HTML">                                                        @for($review1-&gt;formation;$review1-&gt;formation&lt;5;$review1-&gt;formation++)</token>
+  </line>
+  <line no="818">
+    <token name="T_INLINE_HTML">                                                            &lt;span class="grey-star"&gt;&lt;i class="fas fa-star"&gt;&lt;/i&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="819">
+    <token name="T_INLINE_HTML">                                                        @endfor</token>
+  </line>
+  <line no="820">
+    <token name="T_INLINE_HTML">                                                    @endif</token>
+  </line>
+  <line no="821">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="822">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="823">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="824">
+    <token name="T_INLINE_HTML">                                    &lt;/li&gt;</token>
+  </line>
+  <line no="825">
+    <token name="T_INLINE_HTML">                                    &lt;li&gt;</token>
+  </line>
+  <line no="826">
+    <token name="T_INLINE_HTML">                                        &lt;div class="content-list"&gt;</token>
+  </line>
+  <line no="827">
+    <token name="T_INLINE_HTML">                                            &lt;div class="left-box"&gt;</token>
+  </line>
+  <line no="828">
+    <token name="T_INLINE_HTML">                                                &lt;h4&gt;Artisty&lt;/h4&gt;</token>
+  </line>
+  <line no="829">
+    <token name="T_INLINE_HTML">                                                &lt;p&gt;{!! $review1-&gt;artisty_comment !!}&lt;/p&gt;</token>
+  </line>
+  <line no="830">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="831">
+    <token name="T_INLINE_HTML">                                            &lt;div class="right-box"&gt;</token>
+  </line>
+  <line no="832">
+    <token name="T_INLINE_HTML">                                                &lt;div class="rating"&gt;</token>
+  </line>
+  <line no="833">
+    <token name="T_INLINE_HTML">                                                    &lt;div class="left-text"&gt;</token>
+  </line>
+  <line no="834">
+    <token name="T_INLINE_HTML">                                                    	{{ number_format($review1-&gt;artisty, 1) }} &lt;/div&gt;</token>
+  </line>
+  <line no="835">
+    <token name="T_INLINE_HTML">                                                    @if($review1-&gt;artisty)</token>
+  </line>
+  <line no="836">
+    <token name="T_INLINE_HTML">                                                        @for ($i = 1; $i &lt;= $review1-&gt;artisty; $i++)</token>
+  </line>
+  <line no="837">
+    <token name="T_INLINE_HTML">                                                            &lt;i class="fas fa-star"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="838">
+    <token name="T_INLINE_HTML">                                                        @endfor</token>
+  </line>
+  <line no="839">
+    <token name="T_INLINE_HTML">                                                        @for($review1-&gt;artisty;$review1-&gt;artisty&lt;5;$review1-&gt;artisty++)</token>
+  </line>
+  <line no="840">
+    <token name="T_INLINE_HTML">                                                            &lt;span class="grey-star"&gt;&lt;i class="fas fa-star"&gt;&lt;/i&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="841">
+    <token name="T_INLINE_HTML">                                                        @endfor</token>
+  </line>
+  <line no="842">
+    <token name="T_INLINE_HTML">                                                    @endif</token>
+  </line>
+  <line no="843">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="844">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="845">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="846">
+    <token name="T_INLINE_HTML">                                    &lt;/li&gt;</token>
+  </line>
+  <line no="847">
+    <token name="T_INLINE_HTML">                                   </token>
+  </line>
+  <line no="848">
+    <token name="T_INLINE_HTML">                                &lt;/ul&gt;</token>
+  </line>
+  <line no="849">
+    <token name="T_INLINE_HTML">                                @if($review1-&gt;additional_tips)</token>
+  </line>
+  <line no="850">
+    <token name="T_INLINE_HTML">                                    &lt;div class="content-list pl-2 pt-4"&gt;</token>
+  </line>
+  <line no="851">
+    <token name="T_INLINE_HTML">                                        &lt;div class="left-box"&gt;</token>
+  </line>
+  <line no="852"/>
+  <line no="853">
+    <token name="T_INLINE_HTML">                                            &lt;h4&gt;Additional Tips&lt;/h4&gt;</token>
+  </line>
+  <line no="854">
+    <token name="T_INLINE_HTML">                                            &lt;p&gt;{!! $review1-&gt;additional_tips !!}&lt;/p&gt;</token>
+  </line>
+  <line no="855">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="856">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="857">
+    <token name="T_INLINE_HTML">                                @endif</token>
+  </line>
+  <line no="858">
+    <token name="T_INLINE_HTML">	                        &lt;/div&gt;</token>
+  </line>
+  <line no="859">
+    <token name="T_INLINE_HTML">	                        @endif</token>
+  </line>
+  <line no="860">
+    <token name="T_INLINE_HTML">	                    &lt;/div&gt;</token>
+  </line>
+  <line no="861">
+    <token name="T_INLINE_HTML">	                &lt;/div&gt;</token>
+  </line>
+  <line no="862">
+    <token name="T_INLINE_HTML">	            &lt;/div&gt;</token>
+  </line>
+  <line no="863">
+    <token name="T_INLINE_HTML">	        &lt;/div&gt;</token>
+  </line>
+  <line no="864">
+    <token name="T_INLINE_HTML">	    &lt;/div&gt;</token>
+  </line>
+  <line no="865">
+    <token name="T_INLINE_HTML">	@endforeach</token>
+  </line>
+  <line no="866">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="867">
+    <token name="T_INLINE_HTML">@section('js')</token>
+  </line>
+  <line no="868">
+    <token name="T_INLINE_HTML">    </token>
+  </line>
+  <line no="869">
+    <token name="T_INLINE_HTML">    &lt;script&gt;</token>
+  </line>
+  <line no="870">
+    <token name="T_INLINE_HTML">        $(document).ready(function () {</token>
+  </line>
+  <line no="871">
+    <token name="T_INLINE_HTML">            $('.video-thumb').click(function(e){</token>
+  </line>
+  <line no="872">
+    <token name="T_INLINE_HTML">            	e.stopPropagation();</token>
+  </line>
+  <line no="873">
+    <token name="T_INLINE_HTML">                var videoid = "#"+$(this).data('videoid');</token>
+  </line>
+  <line no="874">
+    <token name="T_INLINE_HTML">                $(this).hide();</token>
+  </line>
+  <line no="875">
+    <token name="T_INLINE_HTML">                $(videoid)[0].play();</token>
+  </line>
+  <line no="876">
+    <token name="T_INLINE_HTML">               </token>
+  </line>
+  <line no="877">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="878"/>
+  <line no="879">
+    <token name="T_INLINE_HTML">            $('.new-question1').click(function(){</token>
+  </line>
+  <line no="880">
+    <token name="T_INLINE_HTML">                var formid = "#ask-question-"+$(this).data('videoid');</token>
+  </line>
+  <line no="881">
+    <token name="T_INLINE_HTML">                $(this).hide();</token>
+  </line>
+  <line no="882">
+    <token name="T_INLINE_HTML">                $(formid).show();</token>
+  </line>
+  <line no="883">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="884">
+    <token name="T_INLINE_HTML">             $('.submit-question').click(function(e){</token>
+  </line>
+  <line no="885">
+    <token name="T_INLINE_HTML">                e.preventDefault();</token>
+  </line>
+  <line no="886">
+    <token name="T_INLINE_HTML">                var formid = "#ask-question-"+$(this).data('videoid');</token>
+  </line>
+  <line no="887">
+    <token name="T_INLINE_HTML">                if( $(formid + ' input[name="question-title"]').val() !=""){</token>
+  </line>
+  <line no="888">
+    <token name="T_INLINE_HTML">                    var formdata = $(formid).serialize(); // here $(this) refere to the form its submitting</token>
+  </line>
+  <line no="889">
+    <token name="T_INLINE_HTML">                    $.ajax({</token>
+  </line>
+  <line no="890">
+    <token name="T_INLINE_HTML">                        type: 'POST',</token>
+  </line>
+  <line no="891">
+    <token name="T_INLINE_HTML">                        url: "{{ url('/') }}/ask-question",</token>
+  </line>
+  <line no="892">
+    <token name="T_INLINE_HTML">                        data: formdata, // here $(this) refers to the ajax object not form</token>
+  </line>
+  <line no="893">
+    <token name="T_INLINE_HTML">                        success: function (data) {</token>
+  </line>
+  <line no="894">
+    <token name="T_INLINE_HTML">                           console.log(data);</token>
+  </line>
+  <line no="895">
+    <token name="T_INLINE_HTML">                           $(formid + ' .response').html('&lt;h4&gt;Question has been posted.&lt;/h4&gt;');</token>
+  </line>
+  <line no="896">
+    <token name="T_INLINE_HTML">                           $(formid + ' input[name="question-title"]').val('');</token>
+  </line>
+  <line no="897">
+    <token name="T_INLINE_HTML">                        },</token>
+  </line>
+  <line no="898">
+    <token name="T_INLINE_HTML">                    });</token>
+  </line>
+  <line no="899">
+    <token name="T_INLINE_HTML">                }else{</token>
+  </line>
+  <line no="900">
+    <token name="T_INLINE_HTML">                    $(formid + ' input[name="question-title"]').css('border-color','red');</token>
+  </line>
+  <line no="901">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="902">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="903">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="904"/>
+  <line no="905"/>
+  <line no="906">
+    <token name="T_INLINE_HTML">        </token>
+  </line>
+  <line no="907">
+    <token name="T_INLINE_HTML">    &lt;/script&gt;</token>
+  </line>
+  <line no="908">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="909">
+    <token name="T_INLINE_HTML">@section('js')</token>
+  </line>
+  <line no="910">
+    <token name="T_INLINE_HTML">    </token>
+  </line>
+  <line no="911">
+    <token name="T_INLINE_HTML">    &lt;script&gt;</token>
+  </line>
+  <line no="912">
+    <token name="T_INLINE_HTML">        $(document).ready(function () {</token>
+  </line>
+  <line no="913">
+    <token name="T_INLINE_HTML">            $('.video-thumb').click(function(){</token>
+  </line>
+  <line no="914">
+    <token name="T_INLINE_HTML">                var videoid = "#"+$(this).data('videoid');</token>
+  </line>
+  <line no="915">
+    <token name="T_INLINE_HTML">                $(this).hide();</token>
+  </line>
+  <line no="916">
+    <token name="T_INLINE_HTML">                $(videoid)[0].play();</token>
+  </line>
+  <line no="917">
+    <token name="T_INLINE_HTML">                $(videoid)[0].play();</token>
+  </line>
+  <line no="918">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="919">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="920">
+    <token name="T_INLINE_HTML">    &lt;/script&gt;</token>
+  </line>
+  <line no="921">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+</source>

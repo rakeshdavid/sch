@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views/profile" file="index.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views/profile/index.blade.php" size="103" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="e163a92f096ee1b67031649825fc7339f8ef2167" relative="resources/views/profile/index.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@if($user-&gt;role == 1)</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">  @include('profile.userprofile')</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">@else</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">  @include('profile.adminprofile')</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">@endif</token>
+  </line>
+</source>

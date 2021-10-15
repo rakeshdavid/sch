@@ -1,0 +1,371 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-11-05/profile" file="index.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-11-05/profile/index.blade.php" size="6320" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="2975f5c86ac687765f8304b695bac272fb843c23" relative="resources/views-11-05/profile/index.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layouts.user')</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">&lt;div class="main-content profile-wrap"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">    &lt;div class="container-fluid"&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">        &lt;div class="row justify-content-center"&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">            &lt;div class="col-xl-8 col-lg-12"&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">                &lt;form action="/profile/{{$user-&gt;id}}" method="post" enctype="multipart/form-data"&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">                     &lt;div class="user-profile"&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">                    &lt;div class="media"&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">                     &lt;div class="img-box"&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">                        @if($user-&gt;avatar)</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">                        &lt;img class="img-fluid rounded" src="{{$user-&gt;avatar}}" alt="michelle-barber"&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">                        @endif</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">                    &lt;div class="media-body"&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">                        &lt;div class="info-box"&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">                            &lt;a href="javascript:void(0)" class="user-name"&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">                                &lt;h3&gt;{{$user-&gt;first_name}} @if($user-&gt;last_name){{$user-&gt;last_name}}@endif&lt;/h3&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">                                &lt;input type="text" name="first_name" class="form-control" placeholder="{{$user-&gt;first_name}} @if($user-&gt;first_name){{$user-&gt;first_name}}@endif" value="{{$user-&gt;first_name}} @if($user-&gt;last_name){{$user-&gt;last_name}}@endif"&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">                                &lt;div class="edit"&gt;&lt;i class="fas fa-edit"&gt;&lt;/i&gt;&lt;/div&gt;&lt;/a&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">                          </token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">                            &lt;div class="experience"&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">                            @php</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">                                $performance_levels = "";</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">                                if($user-&gt;performance_levels-&gt;count() &gt; 0) {</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">                                    $performance_levels = implode("/ ", $user-&gt;performance_levels-&gt;lists("name")-&gt;all());</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">                                }</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">                            @endphp</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">                            {{ $performance_levels }}</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt; </token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">                             @php</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">                                $activity_genres = "";</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">                                if($user-&gt;activity_genres-&gt;count() &gt; 0) {</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">                                    $activity_genres = implode(", ", $user-&gt;activity_genres-&gt;lists("name")-&gt;all());</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">                                }</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">                            @endphp</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">                            &lt;div class="dance-style-list"&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">                               </token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">                                &lt;input type="text" value="{{$activity_genres}}" data-role="tagsinput" class="form-control" /&gt;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">                 &lt;/div&gt;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">                    &lt;a href="javascript:void(0)" class="description"&gt;</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">                         &lt;p&gt;{{ strip_tags($user-&gt;about) }}&lt;/p&gt;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">                         &lt;textarea class="form-control" &gt;{{ strip_tags($user-&gt;about) }}</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">                         &lt;/textarea&gt;</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">                        &lt;div class="edit"&gt;&lt;i class="fas fa-edit"&gt;&lt;/i&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">                    &lt;/a&gt;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">                  &lt;div class="user-details"&gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">                    &lt;div class="form-row"&gt;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">                        &lt;div class="form-group col-sm-6 "&gt;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">                          &lt;div class="icon-box"&gt;&lt;img src="/assets/img/Calendar.png" alt="" class="img-fluid"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">                            &lt;div class="right-box"&gt;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">                               &lt;label&gt;Birth date&lt;/label&gt;</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">                                 &lt;input type="text" class="form-control hasDatepicker" placeholder="{{$user-&gt;birthday}}" name="birthday" id="birthday" value="{{$user-&gt;birthday}}"&gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">                          &lt;/div&gt;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">                        &lt;div class="form-group col-sm-6 location"&gt;</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">                              &lt;div class="icon-box"&gt;&lt;img src="/assets/img/Place.png" alt="" class="img-fluid"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">                                &lt;div class="right-box "&gt;</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">                                    &lt;label&gt;Location&lt;/label&gt;&lt;br/&gt;</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">                                    &lt;a href="javascript:void(0)" class="user-name"&gt;</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">                                        &lt;h3&gt;{{ $user-&gt;location }} &lt;/h3&gt;</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">                                        &lt;input type="text" name="location" class="form-control" autocomplete="off" value="{{ $user-&gt;location }}" &gt;</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">                                        &lt;div class="edit"&gt;&lt;i class="fas fa-edit"&gt;&lt;/i&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">                                    &lt;/a&gt;</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;       </token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">                          &lt;/div&gt; </token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">                     &lt;/div&gt;</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">                     &lt;div class="form-row"&gt;</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">                        &lt;div class="form-group col-sm-6"&gt;</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">                           &lt;div class="icon-box"&gt;&lt;img src="/assets/img/Phone.png" alt="" class="img-fluid"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">                            &lt;div class="right-box"&gt;</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">                               &lt;label&gt;Phone Number&lt;/label&gt;</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">                                &lt;input type="number" value="{{$user-&gt;phone}}" class="form-control" placeholder="Add Number&#x2026;" name="phone" autocomplete="off" /&gt;</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">                          &lt;/div&gt;</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">                        &lt;div class="form-group col-sm-6"&gt;</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">                            &lt;div class="icon-box"&gt;&lt;img src="/assets/img/Web.png" alt="" class="img-fluid"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">                            &lt;div class="right-box"&gt;</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">                               &lt;label&gt;Website&lt;/label&gt;</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">                                &lt;input type="url" name="wevsites" value="{{$user-&gt;wevsites}}" class="form-control"  placeholder="Add Website&#x2026;"&gt;</token>
+  </line>
+  <line no="85">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="86">
+    <token name="T_INLINE_HTML">                          &lt;/div&gt; </token>
+  </line>
+  <line no="87">
+    <token name="T_INLINE_HTML">                     &lt;/div&gt;</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">                 &lt;/div&gt;</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">                    &lt;div class="submit-btn text-center"&gt;</token>
+  </line>
+  <line no="90">
+    <token name="T_INLINE_HTML">                        &lt;input type="submit" name="profile-update" class="btn btn-outline-danger" value="Save" /&gt;</token>
+  </line>
+  <line no="91">
+    <token name="T_INLINE_HTML">                        &lt;a href="#" class="cancel"&gt;CANCEL&lt;/a&gt;</token>
+  </line>
+  <line no="92">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="93">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="94">
+    <token name="T_INLINE_HTML">                &lt;/form&gt;</token>
+  </line>
+  <line no="95">
+    <token name="T_INLINE_HTML">               </token>
+  </line>
+  <line no="96">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="97">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="98"/>
+  <line no="99"/>
+  <line no="100">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="101">
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+  <line no="102">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="103">
+    <token name="T_INLINE_HTML">@section('js')</token>
+  </line>
+  <line no="104">
+    <token name="T_INLINE_HTML">    &lt;script&gt;</token>
+  </line>
+  <line no="105"/>
+  <line no="106"/>
+  <line no="107">
+    <token name="T_INLINE_HTML">        // datepicker</token>
+  </line>
+  <line no="108">
+    <token name="T_INLINE_HTML">    var dateformat = 'mm.dd.yyyy';</token>
+  </line>
+  <line no="109"/>
+  <line no="110">
+    <token name="T_INLINE_HTML">        $('.hasDatepicker').datepicker({</token>
+  </line>
+  <line no="111">
+    <token name="T_INLINE_HTML">          format: dateformat,</token>
+  </line>
+  <line no="112">
+    <token name="T_INLINE_HTML">          autoclose: true</token>
+  </line>
+  <line no="113">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="114">
+    <token name="T_INLINE_HTML">    function updateDateFormat(i,elem) {</token>
+  </line>
+  <line no="115">
+    <token name="T_INLINE_HTML">        var d = $(elem).datepicker('getDate');</token>
+  </line>
+  <line no="116">
+    <token name="T_INLINE_HTML">      </token>
+  </line>
+  <line no="117">
+    <token name="T_INLINE_HTML">        $(elem).datepicker('destroy');  </token>
+  </line>
+  <line no="118">
+    <token name="T_INLINE_HTML">        $(elem).datepicker({</token>
+  </line>
+  <line no="119">
+    <token name="T_INLINE_HTML">            autoclose: true,</token>
+  </line>
+  <line no="120">
+    <token name="T_INLINE_HTML">            format: dateformat</token>
+  </line>
+  <line no="121">
+    <token name="T_INLINE_HTML">          });</token>
+  </line>
+  <line no="122">
+    <token name="T_INLINE_HTML">        $(elem).datepicker('setDate', d);</token>
+  </line>
+  <line no="123">
+    <token name="T_INLINE_HTML">        </token>
+  </line>
+  <line no="124">
+    <token name="T_INLINE_HTML">    };</token>
+  </line>
+  <line no="125">
+    <token name="T_INLINE_HTML">    &lt;/script&gt;</token>
+  </line>
+  <line no="126"/>
+  <line no="127">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+</source>

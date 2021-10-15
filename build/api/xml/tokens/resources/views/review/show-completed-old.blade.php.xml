@@ -1,0 +1,860 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views/review" file="show-completed-old.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views/review/show-completed-old.blade.php" size="18593" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="ddd0d0ebebccb9b2c549f2bff50a52268411eaba" relative="resources/views/review/show-completed-old.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layouts.app')</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">@section('css')</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="/assets/js/rateit/rateit.css"&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">    &lt;link type="text/css" rel="stylesheet" href="/assets/js/sweetalert/sweet-alert.css"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">    &lt;div class="container"&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">        &lt;h1 class="f-s-48 f-w-400 text-uppercase text-danger text-center m-b-20"&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">            {{ $review-&gt;video-&gt;user-&gt;first_name . ' ' . $review-&gt;video-&gt;user-&gt;last_name }} - Review</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">        &lt;/h1&gt;</token>
+  </line>
+  <line no="11"/>
+  <line no="12">
+    <token name="T_INLINE_HTML">        &lt;div class="row m-b-20"&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">            &lt;div class="col-xs-12"&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">                &lt;h3 class="text-center m-b-0"&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">                    &lt;span class="f-s-18 text-uppercase f-w-500 text-gray"&gt;Level:&lt;/span&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">                    &lt;span class="f-s-18"&gt;{{ $review-&gt;video-&gt;performance_level-&gt;name }}&lt;/span&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">                &lt;/h3&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="20"/>
+  <line no="21">
+    <token name="T_INLINE_HTML">        &lt;div class="row"&gt;</token>
+  </line>
+  <line no="22"/>
+  <line no="23">
+    <token name="T_INLINE_HTML">            &lt;div class="col-xs-12 col-md-10 col-md-offset-1"&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">                &lt;div class="row" &gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">                    &lt;div align="center" class="embed-responsive embed-responsive-16by9"&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">                        &lt;video width="728" height="410" controls class="embed-responsive-item"&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">                            &lt;source id="review_src" src="{{url('/') . config('video.completed_review_path') . $review-&gt;review_url}}"&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">                            Your browser does not support HTML5 video.</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">                        &lt;/video&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">            &lt;div class="col-xs-12"&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">                &lt;div class="row"&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">                    &lt;div class="col-xs-12 col-md-10 col-md-offset-1"&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">                        &lt;div class="row m-t-15"&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">                            &lt;div class="col-xs-12 col-md-6"&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">                                &lt;h2 class="text-danger f-s-22 f-w-500 text-uppercase"&gt;Profile&lt;/h2&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">                                &lt;ul class="p-l-20"&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">                                    &lt;li&gt; &lt;span class="text-uppercase"&gt;Location: &lt;/span&gt; {{ $review-&gt;video-&gt;user-&gt;location }}&lt;/li&gt;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">                                    @php</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">                                        $age = '';</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">                                        try {</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">                                            $age = Carbon\Carbon::parse($review-&gt;video-&gt;user-&gt;birthday);</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">                                            $age = $age-&gt;diffInYears(Carbon\Carbon::now());</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">                                        } catch (\Exception $e) {</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">                                            $age = '';</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">                                        }</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">                                    @endphp</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">                                    &lt;li&gt; &lt;span class="text-uppercase"&gt;Age: &lt;/span&gt; {{ $age }}&lt;/li&gt;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">                                    &lt;li&gt; &lt;span class="text-uppercase"&gt;Activity experience &lt;/span&gt;(years): {{ $review-&gt;video-&gt;activity_experience }}&lt;/li&gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">                                    &lt;li&gt; &lt;span class="text-uppercase"&gt;Seeking auditions: &lt;/span&gt;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">                                        &lt;span class="text-capitalize"&gt;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">                                            {{ str_replace('_', ' ', $review-&gt;video-&gt;seeking_auditions)}}</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">                                        &lt;/span&gt;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">                                    &lt;/li&gt;</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">                                &lt;/ul&gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">                                @if(!is_null($review-&gt;performance_level_placement))</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">                                    &lt;div class="row"&gt;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col-xs-12"&gt;</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">                                            &lt;h4 class="f-s-18 f-w-500"&gt;</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">                                                Level: {{ $review-&gt;performance_level_placement-&gt;name }}&lt;/h4&gt;</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">                                @endif</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">                                &lt;div class="row"&gt;</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">                                    &lt;div class="col-xs-12"&gt;</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">                                        &lt;h4 class="f-s-18 f-w-500" style="display: inline;"&gt;Overall rating: &lt;/h4&gt;</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">                                        &lt;div class="f-s-18 f-w-500 m-r-5" style="display: inline;"&gt;</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">                                            {{ strlen($review-&gt;overall_rating) == 1 ? $review-&gt;overall_rating . '.0' : $review-&gt;overall_rating}}</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">                                        &lt;div class="rateit bigstars" data-rateit-value="{{$review-&gt;overall_rating}}"</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">                                             data-rateit-ispreset="true" data-rateit-readonly="true"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="76"/>
+  <line no="77">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">                            &lt;div class="col-xs-12 col-md-6"&gt;</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">                                &lt;h2 class="text-danger f-s-22 f-w-500 text-uppercase"&gt;Feedback Summary&lt;/h2&gt;</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">                                &lt;p style="overflow-x: hidden" &gt; {{ $review-&gt;message }}&lt;/p&gt;</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">                        &lt;div style="display: none;"&gt;</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">                            &lt;span id="video_id" data-video-id="{{$review-&gt;video-&gt;id}}"&gt;{{$review-&gt;video-&gt;name}}&lt;/span&gt;</token>
+  </line>
+  <line no="85">
+    <token name="T_INLINE_HTML">                            &lt;span id="user_id" data-user-id="{{$review-&gt;video-&gt;user_id}}"&gt;{{$review-&gt;video-&gt;user_first_name}}  {{$review-&gt;video-&gt;user_last_name}}&lt;/span&gt;</token>
+  </line>
+  <line no="86">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="87">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">                &lt;hr&gt;</token>
+  </line>
+  <line no="90">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="91"/>
+  <line no="92">
+    <token name="T_INLINE_HTML">            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="93">
+    <token name="T_INLINE_HTML">                &lt;div class="col-md-12"&gt;</token>
+  </line>
+  <line no="94">
+    <token name="T_INLINE_HTML">                    &lt;p class="text-center text-danger f-w-500 f-s-22"&gt;TECHNIQUE SCORE&lt;/p&gt;</token>
+  </line>
+  <line no="95">
+    <token name="T_INLINE_HTML">                    &lt;div class="row"&gt;</token>
+  </line>
+  <line no="96">
+    <token name="T_INLINE_HTML">                        &lt;div class="col-xs-12 col-md-4"&gt;</token>
+  </line>
+  <line no="97">
+    <token name="T_INLINE_HTML">                            &lt;span style="display: block" class="m-b-5 capitalize"&gt;Timing {{number_format($review-&gt;timing,1)}}&lt;/span&gt;</token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">                            &lt;div class="rateit pull-right" data-rateit-value="{{$review-&gt;timing}}"</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">                                 data-rateit-ispreset="true" data-rateit-readonly="true"</token>
+  </line>
+  <line no="100">
+    <token name="T_INLINE_HTML">                                 style="display: block; float: left; width: 100%"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="101">
+    <token name="T_INLINE_HTML">                            &lt;fieldset style="float: left"&gt;</token>
+  </line>
+  <line no="102">
+    <token name="T_INLINE_HTML">                                &lt;blockquote style="display: block; border-left: 1px solid #262932;" class="p-l-10"&gt;</token>
+  </line>
+  <line no="103">
+    <token name="T_INLINE_HTML">                                    Comments: {{ $review-&gt;timing_comment ? $review-&gt;timing_comment : 'none' }}</token>
+  </line>
+  <line no="104">
+    <token name="T_INLINE_HTML">                                &lt;/blockquote&gt;</token>
+  </line>
+  <line no="105">
+    <token name="T_INLINE_HTML">                            &lt;/fieldset&gt;</token>
+  </line>
+  <line no="106">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="107">
+    <token name="T_INLINE_HTML">                        &lt;div class="col-xs-12 col-md-4"&gt;</token>
+  </line>
+  <line no="108">
+    <token name="T_INLINE_HTML">                            &lt;span style="display: block" class="m-b-5 capitalize"&gt;Footwork {{number_format($review-&gt;footwork,1)}}&lt;/span&gt;</token>
+  </line>
+  <line no="109">
+    <token name="T_INLINE_HTML">                            &lt;div class="rateit pull-right" data-rateit-value="{{$review-&gt;footwork}}"</token>
+  </line>
+  <line no="110">
+    <token name="T_INLINE_HTML">                                 data-rateit-ispreset="true" data-rateit-readonly="true"</token>
+  </line>
+  <line no="111">
+    <token name="T_INLINE_HTML">                                 style="display: block; float: left; width: 100%"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="112">
+    <token name="T_INLINE_HTML">                            &lt;fieldset style="float: left"&gt;</token>
+  </line>
+  <line no="113">
+    <token name="T_INLINE_HTML">                                &lt;blockquote style="display: block; border-left: 1px solid #262932;" class="p-l-10"&gt;</token>
+  </line>
+  <line no="114">
+    <token name="T_INLINE_HTML">                                    Comments: {{ $review-&gt;footwork_comment ? $review-&gt;footwork_comment : 'none' }}</token>
+  </line>
+  <line no="115">
+    <token name="T_INLINE_HTML">                                &lt;/blockquote&gt;</token>
+  </line>
+  <line no="116">
+    <token name="T_INLINE_HTML">                            &lt;/fieldset&gt;</token>
+  </line>
+  <line no="117">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="118">
+    <token name="T_INLINE_HTML">                        &lt;div class="col-xs-12 col-md-4"&gt;</token>
+  </line>
+  <line no="119">
+    <token name="T_INLINE_HTML">                            &lt;span style="display: block" class="m-b-5 capitalize"&gt;Alignment {{number_format($review-&gt;alingment,1)}}&lt;/span&gt;</token>
+  </line>
+  <line no="120">
+    <token name="T_INLINE_HTML">                            &lt;div class="rateit pull-right" data-rateit-value="{{$review-&gt;alingment}}"</token>
+  </line>
+  <line no="121">
+    <token name="T_INLINE_HTML">                                 data-rateit-ispreset="true" data-rateit-readonly="true"</token>
+  </line>
+  <line no="122">
+    <token name="T_INLINE_HTML">                                 style="display: block; float: left; width: 100%"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="123">
+    <token name="T_INLINE_HTML">                            &lt;fieldset style="float: left"&gt;</token>
+  </line>
+  <line no="124">
+    <token name="T_INLINE_HTML">                                &lt;blockquote style="display: block; border-left: 1px solid #262932;" class="p-l-10"&gt;</token>
+  </line>
+  <line no="125">
+    <token name="T_INLINE_HTML">                                    Comments: {{ $review-&gt;alingment_comment ? $review-&gt;alingment_comment : 'none' }}</token>
+  </line>
+  <line no="126">
+    <token name="T_INLINE_HTML">                                &lt;/blockquote&gt;</token>
+  </line>
+  <line no="127">
+    <token name="T_INLINE_HTML">                            &lt;/fieldset&gt;</token>
+  </line>
+  <line no="128">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="129">
+    <token name="T_INLINE_HTML">                        &lt;div class="col-xs-12 col-md-4"&gt;</token>
+  </line>
+  <line no="130">
+    <token name="T_INLINE_HTML">                            &lt;span style="display: block" class="m-b-5 capitalize"&gt;balance {{number_format($review-&gt;balance,1)}}&lt;/span&gt;</token>
+  </line>
+  <line no="131">
+    <token name="T_INLINE_HTML">                            &lt;div class="rateit pull-right" data-rateit-value="{{$review-&gt;balance}}"</token>
+  </line>
+  <line no="132">
+    <token name="T_INLINE_HTML">                                 data-rateit-ispreset="true" data-rateit-readonly="true"</token>
+  </line>
+  <line no="133">
+    <token name="T_INLINE_HTML">                                 style="display: block; float: left; width: 100%"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="134">
+    <token name="T_INLINE_HTML">                            &lt;fieldset style="float: left"&gt;</token>
+  </line>
+  <line no="135">
+    <token name="T_INLINE_HTML">                                &lt;blockquote style="display: block; border-left: 1px solid #262932;" class="p-l-10"&gt;</token>
+  </line>
+  <line no="136">
+    <token name="T_INLINE_HTML">                                    Comments: {{ $review-&gt;balance_comment ? $review-&gt;balance_comment : 'none' }}</token>
+  </line>
+  <line no="137">
+    <token name="T_INLINE_HTML">                                &lt;/blockquote&gt;</token>
+  </line>
+  <line no="138">
+    <token name="T_INLINE_HTML">                            &lt;/fieldset&gt;</token>
+  </line>
+  <line no="139">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="140">
+    <token name="T_INLINE_HTML">                        &lt;div class="col-xs-12 col-md-4"&gt;</token>
+  </line>
+  <line no="141">
+    <token name="T_INLINE_HTML">                            &lt;span style="display: block" class="m-b-5 capitalize"&gt;focus {{number_format($review-&gt;focus,1)}}&lt;/span&gt;</token>
+  </line>
+  <line no="142">
+    <token name="T_INLINE_HTML">                            &lt;div class="rateit pull-right" data-rateit-value="{{$review-&gt;focus}}"</token>
+  </line>
+  <line no="143">
+    <token name="T_INLINE_HTML">                                 data-rateit-ispreset="true" data-rateit-readonly="true"</token>
+  </line>
+  <line no="144">
+    <token name="T_INLINE_HTML">                                 style="display: block; float: left; width: 100%"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="145">
+    <token name="T_INLINE_HTML">                            &lt;fieldset style="float: left"&gt;</token>
+  </line>
+  <line no="146">
+    <token name="T_INLINE_HTML">                                &lt;blockquote style="display: block; border-left: 1px solid #262932;" class="p-l-10"&gt;</token>
+  </line>
+  <line no="147">
+    <token name="T_INLINE_HTML">                                    Comments: {{ $review-&gt;focus_comment ? $review-&gt;focus_comment : 'none' }}</token>
+  </line>
+  <line no="148">
+    <token name="T_INLINE_HTML">                                &lt;/blockquote&gt;</token>
+  </line>
+  <line no="149">
+    <token name="T_INLINE_HTML">                            &lt;/fieldset&gt;</token>
+  </line>
+  <line no="150">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="151">
+    <token name="T_INLINE_HTML">                        &lt;div class="col-xs-12 col-md-4"&gt;</token>
+  </line>
+  <line no="152">
+    <token name="T_INLINE_HTML">                            &lt;span style="display: block" class="m-b-5 capitalize"&gt;precision {{number_format($review-&gt;precision,1)}}&lt;/span&gt;</token>
+  </line>
+  <line no="153">
+    <token name="T_INLINE_HTML">                            &lt;div class="rateit pull-right" data-rateit-value="{{$review-&gt;precision}}"</token>
+  </line>
+  <line no="154">
+    <token name="T_INLINE_HTML">                                 data-rateit-ispreset="true" data-rateit-readonly="true"</token>
+  </line>
+  <line no="155">
+    <token name="T_INLINE_HTML">                                 style="display: block; float: left; width: 100%"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="156">
+    <token name="T_INLINE_HTML">                            &lt;fieldset style="float: left"&gt;</token>
+  </line>
+  <line no="157">
+    <token name="T_INLINE_HTML">                                &lt;blockquote style="display: block; border-left: 1px solid #262932;" class="p-l-10"&gt;</token>
+  </line>
+  <line no="158">
+    <token name="T_INLINE_HTML">                                    Comments: {{ $review-&gt;precision_comment ? $review-&gt;precision_comment : 'none' }}</token>
+  </line>
+  <line no="159">
+    <token name="T_INLINE_HTML">                                &lt;/blockquote&gt;</token>
+  </line>
+  <line no="160">
+    <token name="T_INLINE_HTML">                            &lt;/fieldset&gt;</token>
+  </line>
+  <line no="161">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="162">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="163">
+    <token name="T_INLINE_HTML">                    &lt;hr&gt;</token>
+  </line>
+  <line no="164">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="165"/>
+  <line no="166">
+    <token name="T_INLINE_HTML">                &lt;div class="col-md-12"&gt;</token>
+  </line>
+  <line no="167">
+    <token name="T_INLINE_HTML">                    &lt;p class="text-center text-danger f-w-500 f-s-22 uppercase"&gt;Expression&lt;/p&gt;</token>
+  </line>
+  <line no="168">
+    <token name="T_INLINE_HTML">                    &lt;div class="row"&gt;</token>
+  </line>
+  <line no="169">
+    <token name="T_INLINE_HTML">                        &lt;div class="col-xs-12 col-md-3"&gt;</token>
+  </line>
+  <line no="170">
+    <token name="T_INLINE_HTML">                            &lt;span style="display: block" class="m-b-5 capitalize"&gt;energy {{number_format($review-&gt;energy,1)}}&lt;/span&gt;</token>
+  </line>
+  <line no="171">
+    <token name="T_INLINE_HTML">                            &lt;div class="rateit pull-right" data-rateit-value="{{$review-&gt;energy}}"</token>
+  </line>
+  <line no="172">
+    <token name="T_INLINE_HTML">                                 data-rateit-ispreset="true" data-rateit-readonly="true"</token>
+  </line>
+  <line no="173">
+    <token name="T_INLINE_HTML">                                 style="display: block; float: left; width: 100%"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="174">
+    <token name="T_INLINE_HTML">                            &lt;fieldset style="float: left"&gt;</token>
+  </line>
+  <line no="175">
+    <token name="T_INLINE_HTML">                                &lt;blockquote style="display: block; border-left: 1px solid #262932;" class="p-l-10"&gt;</token>
+  </line>
+  <line no="176">
+    <token name="T_INLINE_HTML">                                    Comments: {{ $review-&gt;energy_comment ? $review-&gt;energy_comment : 'none' }}</token>
+  </line>
+  <line no="177">
+    <token name="T_INLINE_HTML">                                &lt;/blockquote&gt;</token>
+  </line>
+  <line no="178">
+    <token name="T_INLINE_HTML">                            &lt;/fieldset&gt;</token>
+  </line>
+  <line no="179">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="180">
+    <token name="T_INLINE_HTML">                        &lt;div class="col-xs-12 col-md-3"&gt;</token>
+  </line>
+  <line no="181">
+    <token name="T_INLINE_HTML">                            &lt;span style="display: block" class="m-b-5 capitalize"&gt;style {{number_format($review-&gt;style,1)}}&lt;/span&gt;</token>
+  </line>
+  <line no="182">
+    <token name="T_INLINE_HTML">                            &lt;div class="rateit pull-right" data-rateit-value="{{$review-&gt;style}}"</token>
+  </line>
+  <line no="183">
+    <token name="T_INLINE_HTML">                                 data-rateit-ispreset="true" data-rateit-readonly="true"</token>
+  </line>
+  <line no="184">
+    <token name="T_INLINE_HTML">                                 style="display: block; float: left; width: 100%"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="185">
+    <token name="T_INLINE_HTML">                            &lt;fieldset style="float: left"&gt;</token>
+  </line>
+  <line no="186">
+    <token name="T_INLINE_HTML">                                &lt;blockquote style="display: block; border-left: 1px solid #262932;" class="p-l-10"&gt;</token>
+  </line>
+  <line no="187">
+    <token name="T_INLINE_HTML">                                    Comments: {{ $review-&gt;style_comment ? $review-&gt;style_comment : 'none' }}</token>
+  </line>
+  <line no="188">
+    <token name="T_INLINE_HTML">                                &lt;/blockquote&gt;</token>
+  </line>
+  <line no="189">
+    <token name="T_INLINE_HTML">                            &lt;/fieldset&gt;</token>
+  </line>
+  <line no="190">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="191">
+    <token name="T_INLINE_HTML">                        &lt;div class="col-xs-12 col-md-3"&gt;</token>
+  </line>
+  <line no="192">
+    <token name="T_INLINE_HTML">                            &lt;span style="display: block" class="m-b-5 capitalize"&gt;creativity {{number_format($review-&gt;creativity,1)}}&lt;/span&gt;</token>
+  </line>
+  <line no="193">
+    <token name="T_INLINE_HTML">                            &lt;div class="rateit pull-right" data-rateit-value="{{$review-&gt;creativity}}"</token>
+  </line>
+  <line no="194">
+    <token name="T_INLINE_HTML">                                 data-rateit-ispreset="true" data-rateit-readonly="true"</token>
+  </line>
+  <line no="195">
+    <token name="T_INLINE_HTML">                                 style="display: block; float: left; width: 100%"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="196">
+    <token name="T_INLINE_HTML">                            &lt;fieldset style="float: left"&gt;</token>
+  </line>
+  <line no="197">
+    <token name="T_INLINE_HTML">                                &lt;blockquote style="display: block; border-left: 1px solid #262932;" class="p-l-10"&gt;</token>
+  </line>
+  <line no="198">
+    <token name="T_INLINE_HTML">                                    Comments: {{ $review-&gt;creativity_comment ? $review-&gt;creativity_comment : 'none' }}</token>
+  </line>
+  <line no="199">
+    <token name="T_INLINE_HTML">                                &lt;/blockquote&gt;</token>
+  </line>
+  <line no="200">
+    <token name="T_INLINE_HTML">                            &lt;/fieldset&gt;</token>
+  </line>
+  <line no="201">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="202">
+    <token name="T_INLINE_HTML">                        &lt;div class="col-xs-12 col-md-3"&gt;</token>
+  </line>
+  <line no="203">
+    <token name="T_INLINE_HTML">                            &lt;span style="display: block" class="m-b-5 capitalize"&gt;interpretation {{number_format($review-&gt;interpretation,1)}}&lt;/span&gt;</token>
+  </line>
+  <line no="204">
+    <token name="T_INLINE_HTML">                            &lt;div class="rateit pull-right" data-rateit-value="{{$review-&gt;interpretation}}"</token>
+  </line>
+  <line no="205">
+    <token name="T_INLINE_HTML">                                 data-rateit-ispreset="true" data-rateit-readonly="true"</token>
+  </line>
+  <line no="206">
+    <token name="T_INLINE_HTML">                                 style="display: block; float: left; width: 100%"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="207">
+    <token name="T_INLINE_HTML">                            &lt;fieldset style="float: left"&gt;</token>
+  </line>
+  <line no="208">
+    <token name="T_INLINE_HTML">                                &lt;blockquote style="display: block; border-left: 1px solid #262932;" class="p-l-10"&gt;</token>
+  </line>
+  <line no="209">
+    <token name="T_INLINE_HTML">                                    Comments: {{ $review-&gt;interpretation_comment ? $review-&gt;interpretation_comment : 'none' }}</token>
+  </line>
+  <line no="210">
+    <token name="T_INLINE_HTML">                                &lt;/blockquote&gt;</token>
+  </line>
+  <line no="211">
+    <token name="T_INLINE_HTML">                            &lt;/fieldset&gt;</token>
+  </line>
+  <line no="212">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="213">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="214">
+    <token name="T_INLINE_HTML">                    &lt;hr&gt;</token>
+  </line>
+  <line no="215">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="216"/>
+  <line no="217">
+    <token name="T_INLINE_HTML">                &lt;div class="col-md-12"&gt;</token>
+  </line>
+  <line no="218">
+    <token name="T_INLINE_HTML">                    &lt;p class="text-center text-danger f-w-500 f-s-22 uppercase"&gt;Choreography&lt;/p&gt;</token>
+  </line>
+  <line no="219">
+    <token name="T_INLINE_HTML">                    &lt;div class="row"&gt;</token>
+  </line>
+  <line no="220">
+    <token name="T_INLINE_HTML">                        &lt;div class="col-xs-12 col-md-4"&gt;</token>
+  </line>
+  <line no="221">
+    <token name="T_INLINE_HTML">                            &lt;span style="display: block" class="m-b-5 f-s-18 capitalize"&gt;formation {{number_format($review-&gt;formation,1)}}&lt;/span&gt;</token>
+  </line>
+  <line no="222">
+    <token name="T_INLINE_HTML">                            &lt;div class="rateit pull-right" data-rateit-value="{{$review-&gt;formation}}"</token>
+  </line>
+  <line no="223">
+    <token name="T_INLINE_HTML">                                 data-rateit-ispreset="true" data-rateit-readonly="true"</token>
+  </line>
+  <line no="224">
+    <token name="T_INLINE_HTML">                                 style="display: block; float: left; width: 100%"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="225">
+    <token name="T_INLINE_HTML">                            &lt;fieldset style="float: left"&gt;</token>
+  </line>
+  <line no="226">
+    <token name="T_INLINE_HTML">                                &lt;blockquote style="display: block; border-left: 1px solid #262932;" class="p-l-10"&gt;</token>
+  </line>
+  <line no="227">
+    <token name="T_INLINE_HTML">                                    Comments: {{ $review-&gt;formation_comment ? $review-&gt;formation_comment : 'none' }}</token>
+  </line>
+  <line no="228">
+    <token name="T_INLINE_HTML">                                &lt;/blockquote&gt;</token>
+  </line>
+  <line no="229">
+    <token name="T_INLINE_HTML">                            &lt;/fieldset&gt;</token>
+  </line>
+  <line no="230">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="231">
+    <token name="T_INLINE_HTML">                        &lt;div class="col-xs-12 col-md-4"&gt;</token>
+  </line>
+  <line no="232">
+    <token name="T_INLINE_HTML">                            &lt;span style="display: block" class="m-b-5 f-s-18 capitalize"&gt;artistry {{number_format($review-&gt;formation,1)}}&lt;/span&gt;</token>
+  </line>
+  <line no="233">
+    <token name="T_INLINE_HTML">                            &lt;div class="rateit pull-right" data-rateit-value="{{$review-&gt;artisty}}"</token>
+  </line>
+  <line no="234">
+    <token name="T_INLINE_HTML">                                 data-rateit-ispreset="true" data-rateit-readonly="true"</token>
+  </line>
+  <line no="235">
+    <token name="T_INLINE_HTML">                                 style="display: block; float: left; width: 100%"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="236">
+    <token name="T_INLINE_HTML">                            &lt;fieldset style="float: left"&gt;</token>
+  </line>
+  <line no="237">
+    <token name="T_INLINE_HTML">                                &lt;blockquote style="display: block; border-left: 1px solid #262932;" class="p-l-10"&gt;</token>
+  </line>
+  <line no="238">
+    <token name="T_INLINE_HTML">                                    Comments: {{ $review-&gt;artisty_comment ? $review-&gt;artisty_comment : 'none' }}</token>
+  </line>
+  <line no="239">
+    <token name="T_INLINE_HTML">                                &lt;/blockquote&gt;</token>
+  </line>
+  <line no="240">
+    <token name="T_INLINE_HTML">                            &lt;/fieldset&gt;</token>
+  </line>
+  <line no="241">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="242">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="243">
+    <token name="T_INLINE_HTML">                    &lt;hr&gt;</token>
+  </line>
+  <line no="244">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="245">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="246">
+    <token name="T_INLINE_HTML">            @if($review-&gt;video-&gt;questions-&gt;count())</token>
+  </line>
+  <line no="247">
+    <token name="T_INLINE_HTML">                &lt;div class="xol-xs-12"&gt;</token>
+  </line>
+  <line no="248">
+    <token name="T_INLINE_HTML">                    &lt;div class="row"&gt;</token>
+  </line>
+  <line no="249">
+    <token name="T_INLINE_HTML">                        &lt;h3 class="text-danger text-uppercase f-s-22 f-w-500 text-center m-b-15"&gt;</token>
+  </line>
+  <line no="250">
+    <token name="T_INLINE_HTML">                            Questions and answers</token>
+  </line>
+  <line no="251">
+    <token name="T_INLINE_HTML">                        &lt;/h3&gt;</token>
+  </line>
+  <line no="252">
+    <token name="T_INLINE_HTML">                        @foreach($review-&gt;video-&gt;questions as $QA)</token>
+  </line>
+  <line no="253">
+    <token name="T_INLINE_HTML">                            &lt;div style="overflow-x: hidden" class="col-xs-12 col-md-4"&gt;</token>
+  </line>
+  <line no="254">
+    <token name="T_INLINE_HTML">                                &lt;strong&gt;{{ $QA-&gt;question }}&lt;/strong&gt;</token>
+  </line>
+  <line no="255">
+    <token name="T_INLINE_HTML">                                &lt;p&gt;{{ $QA-&gt;answer }}&lt;/p&gt;</token>
+  </line>
+  <line no="256">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="257">
+    <token name="T_INLINE_HTML">                        @endforeach</token>
+  </line>
+  <line no="258">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="259">
+    <token name="T_INLINE_HTML">                    &lt;hr&gt;</token>
+  </line>
+  <line no="260">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="261">
+    <token name="T_INLINE_HTML">            @endif</token>
+  </line>
+  <line no="262">
+    <token name="T_INLINE_HTML">            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="263">
+    <token name="T_INLINE_HTML">                &lt;div class="col-xs-12"&gt;</token>
+  </line>
+  <line no="264">
+    <token name="T_INLINE_HTML">                    &lt;h4 class="f-s-22 uppercase text-danger f-w-500 m-b-15"&gt;</token>
+  </line>
+  <line no="265">
+    <token name="T_INLINE_HTML">                        Additional tips for {{ $review-&gt;video-&gt;user-&gt;first_name }}</token>
+  </line>
+  <line no="266">
+    <token name="T_INLINE_HTML">                    &lt;/h4&gt;</token>
+  </line>
+  <line no="267">
+    <token name="T_INLINE_HTML">                    &lt;p class="card-text" style="word-break:break-all;"&gt;</token>
+  </line>
+  <line no="268">
+    <token name="T_INLINE_HTML">                        {{ $review-&gt;additional_tips  }}</token>
+  </line>
+  <line no="269">
+    <token name="T_INLINE_HTML">                    &lt;/p&gt;</token>
+  </line>
+  <line no="270">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="271">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="272">
+    <token name="T_INLINE_HTML">            &lt;hr&gt;</token>
+  </line>
+  <line no="273"/>
+  <line no="274">
+    <token name="T_INLINE_HTML">            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="275">
+    <token name="T_INLINE_HTML">                &lt;div class="col-xs-12"&gt;</token>
+  </line>
+  <line no="276">
+    <token name="T_INLINE_HTML">                        &lt;a class="btn btn-danger" href="{{route('review.rewrite', $video_id)}}"&gt;</token>
+  </line>
+  <line no="277">
+    <token name="T_INLINE_HTML">                            &lt;i class="btn-icon fa fa-exclamation-circle"&gt;&lt;/i&gt;Review again</token>
+  </line>
+  <line no="278">
+    <token name="T_INLINE_HTML">                        &lt;/a&gt;</token>
+  </line>
+  <line no="279">
+    <token name="T_INLINE_HTML">                        &lt;a class="btn btn-success" href="{{url('/myreviews')}}"&gt;</token>
+  </line>
+  <line no="280">
+    <token name="T_INLINE_HTML">                       Show My Reviews</token>
+  </line>
+  <line no="281">
+    <token name="T_INLINE_HTML">                        &lt;/a&gt;</token>
+  </line>
+  <line no="282">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="283">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="284">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="285">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="286">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="287"/>
+  <line no="288">
+    <token name="T_INLINE_HTML">@section('js')</token>
+  </line>
+  <line no="289">
+    <token name="T_INLINE_HTML">    &lt;script type="text/javascript" src="/assets/js/sweetalert/sweet-alert.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="290">
+    <token name="T_INLINE_HTML">    &lt;script src="/assets/js/rateit/jquery.rateit.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="291">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="292"/>
+</source>

@@ -1,0 +1,2562 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-22-05/profile" file="edit.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-22-05/profile/edit.blade.php" size="56485" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="26df89ba26c2033b7b289dc65be3956ff310ebc3" relative="resources/views-22-05/profile/edit.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layouts.app')</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_INLINE_HTML">@section('css')</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="/assets/css/select2.min.css"/&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/5.3.4/sweetalert2.min.css"&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="/assets/marino/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css"/&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">    &lt;link type="text/css" rel="stylesheet" href="/assets/js/toastr/toastr.min.css"&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="9"/>
+  <line no="10">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="11"/>
+  <line no="12">
+    <token name="T_INLINE_HTML">    @include('profile.header')</token>
+  </line>
+  <line no="13"/>
+  <line no="14">
+    <token name="T_INLINE_HTML">    &lt;div class="row m-b-20"&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">        &lt;div class="col-xs-12 col-lg-10"&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">            &lt;div class="bs-nav-tabs nav-tabs-warning"&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">                &lt;ul class="nav nav-tabs nav-animated-border-from-left"&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">                    &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">                        &lt;a class="nav-link" href="/profile"&gt;View Profile&lt;/a&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">                    &lt;/li&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">                    &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">                        &lt;a class="nav-link active" href="/profile"&gt;Edit Profile&lt;/a&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">                    &lt;/li&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">                    &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">                        &lt;a class="nav-link" href="/profile/account_settings"&gt;Account settings&lt;/a&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">                    &lt;/li&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">                &lt;/ul&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">                &lt;div class="tab-content"&gt;</token>
+  </line>
+  <line no="29"/>
+  <line no="30">
+    <token name="T_INLINE_HTML">                    &lt;div role="tabpanel" class="tab-pane in active" id="nav-tabs-0-3"&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">                        &lt;h4 class="m-b-20"&gt;My Profile&lt;/h4&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">                        &lt;div class="p-t-20"&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">                            &lt;form action="/profile/{{ $user-&gt;id }}" method="POST" class="form-horizontal" enctype="multipart/form-data"&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">                                &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">                                    &lt;label class="col-sm-3 form-control-label" for="first_name"&gt;First name&lt;/label&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">                                    &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">                                        &lt;input type="text" maxlength="254" class="form-control" name="first_name" autocomplete="off"</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">                                               value="{{ $user-&gt;first_name }}"&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">                                &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">                                    &lt;label class="col-sm-3 form-control-label" for="last_name"&gt;Last name&lt;/label&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">                                    &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">                                        &lt;input type="text" maxlength="254" class="form-control" name="last_name" autocomplete="off"</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">                                               value="{{ $user-&gt;last_name }}"&gt;</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">                                @if($user-&gt;isCoach())</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">                                    &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">                                        &lt;label class="col-sm-3 form-control-label"&gt;Title&lt;/label&gt;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">                                            &lt;input type="text" maxlength="254" class="form-control" name="title" autocomplete="off"</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">                                                   value="{{ $user-&gt;title }}"&gt;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">                                @else</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">                                    &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">                                        &lt;label class="col-sm-3 form-control-label"&gt;Birth date&lt;/label&gt;</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">                                            &lt;input type="text" maxlength="254" class="form-control" name="birthday"</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">                                                   id="birthday" value="{{$user-&gt;birthday}}"&gt;</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">                                    &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">                                        &lt;label class="col-sm-3 form-control-label" for="gender"&gt;Gender&lt;/label&gt;</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col-sm-9 m-t-5"&gt;</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">                                            &lt;label class="c-input c-radio"&gt;</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">                                                &lt;input type="radio" name="gender" id="inlineRadio1" value="famale" @if($user-&gt;gender == "famale") {{"checked"}} @endif &gt;</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">                                                &lt;span class="c-indicator c-indicator-warning"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">                                                Female</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">                                            &lt;/label&gt;</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">                                            &lt;label class="c-input c-radio"&gt;</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">                                                &lt;input type="radio" name="gender" id="inlineRadio2" value="male"  @if($user-&gt;gender == "male") {{"checked"}} @endif &gt;</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">                                                &lt;span class="c-indicator c-indicator-warning"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">                                                Male</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">                                            &lt;/label&gt;</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">                                @endif</token>
+  </line>
+  <line no="80"/>
+  <line no="81">
+    <token name="T_INLINE_HTML">                                {{--&lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">                                    &lt;label class="col-sm-3 form-control-label"&gt;Activity type&lt;/label&gt;</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">                                    &lt;div class="col-sm-9 m-t-5"&gt;</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">                                        &lt;select class="form-control" name="activity_type" id="activity_type" autocomplete="off"&gt;</token>
+  </line>
+  <line no="85">
+    <token name="T_INLINE_HTML">                                            &lt;option&gt;&lt;/option&gt;</token>
+  </line>
+  <line no="86">
+    <token name="T_INLINE_HTML">                                            @foreach($activity_types as $activity_type)</token>
+  </line>
+  <line no="87">
+    <token name="T_INLINE_HTML">                                                &lt;option value="{{ $activity_type-&gt;id }}" {{ $user-&gt;activity_types-&gt;first() ?</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">                                                $user-&gt;activity_types-&gt;first()-&gt;id == $activity_type-&gt;id ? 'selected' : '' : ''}}&gt;</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">                                                    {{ $activity_type-&gt;name }}</token>
+  </line>
+  <line no="90">
+    <token name="T_INLINE_HTML">                                                &lt;/option&gt;</token>
+  </line>
+  <line no="91">
+    <token name="T_INLINE_HTML">                                            @endforeach</token>
+  </line>
+  <line no="92">
+    <token name="T_INLINE_HTML">                                        &lt;/select&gt;</token>
+  </line>
+  <line no="93">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="94">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;--}}</token>
+  </line>
+  <line no="95"/>
+  <line no="96">
+    <token name="T_INLINE_HTML">                                    &lt;select class="form-control" name="activity_type" style="display: none"&gt; {{--crunch--}}</token>
+  </line>
+  <line no="97">
+    <token name="T_INLINE_HTML">                                            &lt;option value="1" selected&gt;</token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">                                                Dance</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">                                            &lt;/option&gt;</token>
+  </line>
+  <line no="100">
+    <token name="T_INLINE_HTML">                                    &lt;/select&gt;</token>
+  </line>
+  <line no="101"/>
+  <line no="102">
+    <token name="T_INLINE_HTML">                                @php</token>
+  </line>
+  <line no="103">
+    <token name="T_INLINE_HTML">                                    $user_act = $user-&gt;activity_genres;</token>
+  </line>
+  <line no="104">
+    <token name="T_INLINE_HTML">                                @endphp</token>
+  </line>
+  <line no="105"/>
+  <line no="106">
+    <token name="T_INLINE_HTML">                                @if(!$user-&gt;isAdmin())</token>
+  </line>
+  <line no="107">
+    <token name="T_INLINE_HTML">                                    &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="108">
+    <token name="T_INLINE_HTML">                                        &lt;label class="col-sm-3 form-control-label" for="genres"&gt;Genre/s&lt;/label&gt;</token>
+  </line>
+  <line no="109">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col-sm-9 m-t-5" id="genres_container"&gt;</token>
+  </line>
+  <line no="110"/>
+  <line no="111">
+    <token name="T_INLINE_HTML">                                            {{-- //TODO:: delete after test --}}</token>
+  </line>
+  <line no="112">
+    <token name="T_INLINE_HTML">                                            {{--@foreach($activity_genres as $activity_genre)</token>
+  </line>
+  <line no="113">
+    <token name="T_INLINE_HTML">                                                &lt;label class="c-input c-checkbox"&gt;</token>
+  </line>
+  <line no="114">
+    <token name="T_INLINE_HTML">                                                    &lt;input type="checkbox" name="genres[]" autocomplete="off" value="{{ $activity_genre-&gt;id }}"</token>
+  </line>
+  <line no="115">
+    <token name="T_INLINE_HTML">                                                            {{ $user_act-&gt;where('id', $activity_genre-&gt;id)-&gt;first() ? 'checked' : ''}}&gt;</token>
+  </line>
+  <line no="116">
+    <token name="T_INLINE_HTML">                                                    &lt;span class="c-indicator c-indicator-warning"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="117">
+    <token name="T_INLINE_HTML">                                                    &lt;span class="c-input-text"&gt; {{ $activity_genre-&gt;name }} &lt;/span&gt;</token>
+  </line>
+  <line no="118">
+    <token name="T_INLINE_HTML">                                                &lt;/label&gt;</token>
+  </line>
+  <line no="119">
+    <token name="T_INLINE_HTML">                                            @endforeach--}}</token>
+  </line>
+  <line no="120"/>
+  <line no="121">
+    <token name="T_INLINE_HTML">                                            &lt;select class="form-control" name="genres[]" id="activity_type_genres"</token>
+  </line>
+  <line no="122">
+    <token name="T_INLINE_HTML">                                                autocomplete="off" multiple="multiple"&gt;</token>
+  </line>
+  <line no="123">
+    <token name="T_INLINE_HTML">                                                @foreach($activity_genres as $activity_genre)</token>
+  </line>
+  <line no="124">
+    <token name="T_INLINE_HTML">                                                    &lt;option value="{{ $activity_genre-&gt;id }}"</token>
+  </line>
+  <line no="125">
+    <token name="T_INLINE_HTML">                                                        {{ $user_act-&gt;where('id', $activity_genre-&gt;id)-&gt;first() ? 'selected' : ''}}&gt;{{ $activity_genre-&gt;name }}</token>
+  </line>
+  <line no="126">
+    <token name="T_INLINE_HTML">                                                    &lt;/option&gt;</token>
+  </line>
+  <line no="127">
+    <token name="T_INLINE_HTML">                                                @endforeach</token>
+  </line>
+  <line no="128">
+    <token name="T_INLINE_HTML">                                            &lt;/select&gt;</token>
+  </line>
+  <line no="129"/>
+  <line no="130">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="131">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="132">
+    <token name="T_INLINE_HTML">                                @endif</token>
+  </line>
+  <line no="133">
+    <token name="T_INLINE_HTML">                                &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="134">
+    <token name="T_INLINE_HTML">                                    &lt;label class="col-sm-3 form-control-label"&gt;City&lt;/label&gt;</token>
+  </line>
+  <line no="135">
+    <token name="T_INLINE_HTML">                                    &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="136">
+    <token name="T_INLINE_HTML">                                        &lt;input type="text" maxlength="254" class="form-control" name="location" autocomplete="off"</token>
+  </line>
+  <line no="137">
+    <token name="T_INLINE_HTML">                                               value="{{ $user-&gt;location }}"&gt;</token>
+  </line>
+  <line no="138">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="139">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="140">
+    <token name="T_INLINE_HTML">                                &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="141">
+    <token name="T_INLINE_HTML">                                    &lt;label class="col-sm-3 form-control-label"&gt;State&lt;/label&gt;</token>
+  </line>
+  <line no="142">
+    <token name="T_INLINE_HTML">                                    &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="143">
+    <token name="T_INLINE_HTML">                                        &lt;input type="text" maxlength="254" class="form-control" name="location_state" autocomplete="off"</token>
+  </line>
+  <line no="144">
+    <token name="T_INLINE_HTML">                                               value="{{ $user-&gt;location_state }}"&gt;</token>
+  </line>
+  <line no="145">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="146">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="147">
+    <token name="T_INLINE_HTML">                                &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="148">
+    <token name="T_INLINE_HTML">                                    &lt;label class="col-sm-3 form-control-label" for="avatar"&gt;Upload Profile Photo &lt;/label&gt;</token>
+  </line>
+  <line no="149">
+    <token name="T_INLINE_HTML">                                    &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="150">
+    <token name="T_INLINE_HTML">                                        &lt;input type="file" name="avatar" accept="image/x-png,image/gif,image/jpeg"&gt;(jpg, png, gif)</token>
+  </line>
+  <line no="151">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="152">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="153">
+    <token name="T_INLINE_HTML">                                &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="154">
+    <token name="T_INLINE_HTML">                                    &lt;label class="col-sm-3 form-control-label"&gt;{{ $user-&gt;isCoach() ? 'Overview' : 'About me' }}&lt;/label&gt;</token>
+  </line>
+  <line no="155">
+    <token name="T_INLINE_HTML">                                    &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="156">
+    <token name="T_INLINE_HTML">                                        @php</token>
+  </line>
+  <line no="157">
+    <token name="T_INLINE_HTML">                                            $review = $user-&gt;isCoach() ? $user-&gt;about : strip_tags($user-&gt;about);</token>
+  </line>
+  <line no="158">
+    <token name="T_INLINE_HTML">                                            if($user-&gt;isCoach()) {</token>
+  </line>
+  <line no="159">
+    <token name="T_INLINE_HTML">                                                $review = str_replace("&lt;p&gt;", "", $review);</token>
+  </line>
+  <line no="160">
+    <token name="T_INLINE_HTML">                                                $review = str_replace("&lt;/p&gt;", "\n", $review);</token>
+  </line>
+  <line no="161">
+    <token name="T_INLINE_HTML">                                            }</token>
+  </line>
+  <line no="162">
+    <token name="T_INLINE_HTML">                                        @endphp</token>
+  </line>
+  <line no="163">
+    <token name="T_INLINE_HTML">                                        &lt;textarea class="form-control" name="overview" rows="5"&gt;{!! $review !!}&lt;/textarea&gt;</token>
+  </line>
+  <line no="164">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="165">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="166">
+    <token name="T_INLINE_HTML">                                @if($user-&gt;isCoach())</token>
+  </line>
+  <line no="167">
+    <token name="T_INLINE_HTML">                                    &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="168">
+    <token name="T_INLINE_HTML">                                        &lt;label class="col-sm-3 form-control-label"&gt;Certifications&lt;/label&gt;</token>
+  </line>
+  <line no="169">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="170">
+    <token name="T_INLINE_HTML">                                            &lt;input type="text" maxlength="254" class="form-control" name="certifications" autocomplete="off"</token>
+  </line>
+  <line no="171">
+    <token name="T_INLINE_HTML">                                                   value="{{ $user-&gt;certifications }}" data-toggle="tooltip" data-placement="top" title=""</token>
+  </line>
+  <line no="172">
+    <token name="T_INLINE_HTML">                                                   data-original-title='For separate Certifications use ";"'&gt;</token>
+  </line>
+  <line no="173">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="174">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="175">
+    <token name="T_INLINE_HTML">                                    &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="176">
+    <token name="T_INLINE_HTML">                                        &lt;label class="col-sm-3 form-control-label"&gt;Teaching Positions&lt;/label&gt;</token>
+  </line>
+  <line no="177">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="178">
+    <token name="T_INLINE_HTML">                                            &lt;input type="text" maxlength="254" class="form-control" name="teaching_positions" autocomplete="off"</token>
+  </line>
+  <line no="179">
+    <token name="T_INLINE_HTML">                                                   value="{{ $user-&gt;teaching_positions }}" data-toggle="tooltip" data-placement="top" title=""</token>
+  </line>
+  <line no="180">
+    <token name="T_INLINE_HTML">                                                   data-original-title='For separate Teaching Positions use ";"'&gt;</token>
+  </line>
+  <line no="181">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="182">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="183">
+    <token name="T_INLINE_HTML">                                    &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="184">
+    <token name="T_INLINE_HTML">                                        &lt;label class="col-sm-3 form-control-label"&gt;Performance Credits&lt;/label&gt;</token>
+  </line>
+  <line no="185">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="186">
+    <token name="T_INLINE_HTML">                                            &lt;input type="text" maxlength="254" class="form-control" name="performance_credits" autocomplete="off"</token>
+  </line>
+  <line no="187">
+    <token name="T_INLINE_HTML">                                                   value="{{ $user-&gt;performance_credits }}" data-toggle="tooltip" data-placement="top" title=""</token>
+  </line>
+  <line no="188">
+    <token name="T_INLINE_HTML">                                                   data-original-title='For separate Performance Credits use ";"'&gt;</token>
+  </line>
+  <line no="189">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="190">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="191">
+    <token name="T_INLINE_HTML">                                @endif</token>
+  </line>
+  <line no="192">
+    <token name="T_INLINE_HTML">                                &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="193">
+    <token name="T_INLINE_HTML">                                    &lt;label class="col-sm-3 form-control-label"&gt;{{ $user-&gt;isCoach() ? 'Gives feedback to'</token>
+  </line>
+  <line no="194">
+    <token name="T_INLINE_HTML">                                    : 'Performance Level/s' }}&lt;/label&gt;</token>
+  </line>
+  <line no="195">
+    <token name="T_INLINE_HTML">                                    &lt;div class="col-sm-9 m-t-5"&gt;</token>
+  </line>
+  <line no="196">
+    <token name="T_INLINE_HTML">                                        @php</token>
+  </line>
+  <line no="197">
+    <token name="T_INLINE_HTML">                                            $user_performance_level = $user-&gt;performance_levels;</token>
+  </line>
+  <line no="198">
+    <token name="T_INLINE_HTML">                                        @endphp</token>
+  </line>
+  <line no="199">
+    <token name="T_INLINE_HTML">                                        @if($user-&gt;isCoach())</token>
+  </line>
+  <line no="200">
+    <token name="T_INLINE_HTML">                                            @foreach($performance_levels as $performance_level)</token>
+  </line>
+  <line no="201">
+    <token name="T_INLINE_HTML">                                                &lt;label class="c-input {{ $user-&gt;isCoach() ? 'c-checkbox' : 'c-radio' }}"&gt;</token>
+  </line>
+  <line no="202">
+    <token name="T_INLINE_HTML">                                                    &lt;input type="{{ $user-&gt;isCoach() ? 'checkbox' : 'radio' }}" name="level[]"</token>
+  </line>
+  <line no="203">
+    <token name="T_INLINE_HTML">                                                           value="{{ $performance_level-&gt;id }}"</token>
+  </line>
+  <line no="204">
+    <token name="T_INLINE_HTML">                                                        autocomplete="off" {{ $user_performance_level-&gt;all() ?</token>
+  </line>
+  <line no="205">
+    <token name="T_INLINE_HTML">                                                        $user_performance_level-&gt;where('id', $performance_level-&gt;id)-&gt;first()</token>
+  </line>
+  <line no="206">
+    <token name="T_INLINE_HTML">                                                            ? 'checked' : '' : '' }}&gt;</token>
+  </line>
+  <line no="207">
+    <token name="T_INLINE_HTML">                                                    &lt;span class="c-indicator c-indicator-warning"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="208">
+    <token name="T_INLINE_HTML">                                                    {{ $performance_level-&gt;name }}</token>
+  </line>
+  <line no="209">
+    <token name="T_INLINE_HTML">                                                &lt;/label&gt;</token>
+  </line>
+  <line no="210">
+    <token name="T_INLINE_HTML">                                            @endforeach</token>
+  </line>
+  <line no="211">
+    <token name="T_INLINE_HTML">                                        @else</token>
+  </line>
+  <line no="212">
+    <token name="T_INLINE_HTML">                                           &lt;select class="form-control" name="level[]" id="performance_level_select" autocomplete="off"&gt;</token>
+  </line>
+  <line no="213">
+    <token name="T_INLINE_HTML">                                                @foreach($performance_levels as $performance_level)</token>
+  </line>
+  <line no="214">
+    <token name="T_INLINE_HTML">                                                    &lt;option value="{{$performance_level-&gt;id}}" {{ $user_performance_level-&gt;all() ?</token>
+  </line>
+  <line no="215">
+    <token name="T_INLINE_HTML">                                                        $user_performance_level-&gt;where('id', $performance_level-&gt;id)-&gt;first()</token>
+  </line>
+  <line no="216">
+    <token name="T_INLINE_HTML">                                                            ? 'selected' : '' : '' }}&gt;</token>
+  </line>
+  <line no="217">
+    <token name="T_INLINE_HTML">                                                        {{ $performance_level-&gt;name }}</token>
+  </line>
+  <line no="218">
+    <token name="T_INLINE_HTML">                                                    &lt;/option&gt;</token>
+  </line>
+  <line no="219">
+    <token name="T_INLINE_HTML">                                                @endforeach</token>
+  </line>
+  <line no="220">
+    <token name="T_INLINE_HTML">                                            &lt;/select&gt;</token>
+  </line>
+  <line no="221">
+    <token name="T_INLINE_HTML">                                        @endif</token>
+  </line>
+  <line no="222">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="223">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="224">
+    <token name="T_INLINE_HTML">                                @if($user-&gt;isCoach())</token>
+  </line>
+  <line no="225">
+    <token name="T_INLINE_HTML">                                    &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="226">
+    <token name="T_INLINE_HTML">                                        &lt;label class="col-sm-3 form-control-label"&gt;Upload Gallery Images&lt;/label&gt;</token>
+  </line>
+  <line no="227">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col-sm-9 m-t-5"&gt;</token>
+  </line>
+  <line no="228">
+    <token name="T_INLINE_HTML">                                            &lt;div id="upload_container"&gt;</token>
+  </line>
+  <line no="229">
+    <token name="T_INLINE_HTML">                                                &lt;button id="pick_files" type="button" class="btn btn-primary m-r-5"</token>
+  </line>
+  <line no="230">
+    <token name="T_INLINE_HTML">                                                        data-toggle="tooltip" data-placement="top" title=""</token>
+  </line>
+  <line no="231">
+    <token name="T_INLINE_HTML">                                                        data-original-title="Maximum allowed file size: {{ env("PHOTO_MAX_UPLOAD_SIZE", 2) }}Mb"&gt;</token>
+  </line>
+  <line no="232">
+    <token name="T_INLINE_HTML">                                                    &lt;i class="btn-icon fa fa-folder-open"&gt;&lt;/i&gt;Select photos</token>
+  </line>
+  <line no="233">
+    <token name="T_INLINE_HTML">                                                &lt;/button&gt;</token>
+  </line>
+  <line no="234">
+    <token name="T_INLINE_HTML">                                                &lt;button id="upload_files" type="button" class="btn btn-success m-r-5"&gt;</token>
+  </line>
+  <line no="235">
+    <token name="T_INLINE_HTML">                                                    &lt;i class="btn-icon fa fa-upload"&gt;&lt;/i&gt;Upload photos</token>
+  </line>
+  <line no="236">
+    <token name="T_INLINE_HTML">                                                &lt;/button&gt;</token>
+  </line>
+  <line no="237">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="238">
+    <token name="T_INLINE_HTML">                                            &lt;div id="file_list" class="m-t-10"&gt;Your browser doesn't have HTML5 support.&lt;/div&gt;</token>
+  </line>
+  <line no="239">
+    <token name="T_INLINE_HTML">                                            &lt;input type="hidden" name="gallery_photos" id="gallery_photos" autocomplete="off"&gt;</token>
+  </line>
+  <line no="240">
+    <token name="T_INLINE_HTML">                                            &lt;input type="hidden" name="deleted_gallery_items" id="deleted_gallery_items"</token>
+  </line>
+  <line no="241">
+    <token name="T_INLINE_HTML">                                                   autocomplete="off"&gt;</token>
+  </line>
+  <line no="242">
+    <token name="T_INLINE_HTML">                                            &lt;div class="m-t-10"&gt;</token>
+  </line>
+  <line no="243">
+    <token name="T_INLINE_HTML">                                                @if($user-&gt;gallery-&gt;count() &gt; 0)</token>
+  </line>
+  <line no="244">
+    <token name="T_INLINE_HTML">                                                    &lt;div class="row"&gt;</token>
+  </line>
+  <line no="245">
+    <token name="T_INLINE_HTML">                                                        &lt;div class="col-xs-12"&gt;</token>
+  </line>
+  <line no="246">
+    <token name="T_INLINE_HTML">                                                            &lt;label&gt;Your current gallery:&lt;/label&gt;</token>
+  </line>
+  <line no="247">
+    <token name="T_INLINE_HTML">                                                        &lt;/div&gt;</token>
+  </line>
+  <line no="248">
+    <token name="T_INLINE_HTML">                                                    &lt;/div&gt;</token>
+  </line>
+  <line no="249">
+    <token name="T_INLINE_HTML">                                                @endif</token>
+  </line>
+  <line no="250">
+    <token name="T_INLINE_HTML">                                                &lt;div class="row"&gt;</token>
+  </line>
+  <line no="251">
+    <token name="T_INLINE_HTML">                                                    @foreach($user-&gt;gallery as $gallery_item)</token>
+  </line>
+  <line no="252">
+    <token name="T_INLINE_HTML">                                                        @if ($gallery_item-&gt;type == 'image')</token>
+  </line>
+  <line no="253">
+    <token name="T_INLINE_HTML">                                                            &lt;div class="col-xs-12 col-md-6 m-t-10 gallery-item-container m-l-0 m-r-0"&gt;</token>
+  </line>
+  <line no="254">
+    <token name="T_INLINE_HTML">                                                                &lt;img class="w-100 img-thumbnail" src="{{ $gallery_item-&gt;type</token>
+  </line>
+  <line no="255">
+    <token name="T_INLINE_HTML">                                                                     == 'image' ? '/gallery/'.$gallery_item-&gt;path : 'http://img.youtube.com/vi/'</token>
+  </line>
+  <line no="256">
+    <token name="T_INLINE_HTML">                                                                     . $gallery_item-&gt;path . '/1.jpg' }}"&gt;</token>
+  </line>
+  <line no="257">
+    <token name="T_INLINE_HTML">                                                                &lt;a href="{{ $gallery_item-&gt;type == 'image' ? '/gallery/'.$gallery_item-&gt;path :</token>
+  </line>
+  <line no="258">
+    <token name="T_INLINE_HTML">                                                                   'https://www.youtube.com/watch?v='.$gallery_item-&gt;path }}" target="_blank"&gt;</token>
+  </line>
+  <line no="259">
+    <token name="T_INLINE_HTML">                                                                    &lt;u style="text-transform: capitalize;"&gt;{{ $gallery_item-&gt;type }}&lt;/u&gt;</token>
+  </line>
+  <line no="260">
+    <token name="T_INLINE_HTML">                                                                &lt;/a&gt;</token>
+  </line>
+  <line no="261">
+    <token name="T_INLINE_HTML">                                                                &lt;span data-type="{{ $gallery_item-&gt;type }}" style="cursor:pointer;"</token>
+  </line>
+  <line no="262">
+    <token name="T_INLINE_HTML">                                                                      class="delete-gallery-item label label-danger-outline label-lg"</token>
+  </line>
+  <line no="263">
+    <token name="T_INLINE_HTML">                                                                      data-id="{{ $gallery_item-&gt;id }}"&gt;</token>
+  </line>
+  <line no="264">
+    <token name="T_INLINE_HTML">                                                                    delete</token>
+  </line>
+  <line no="265">
+    <token name="T_INLINE_HTML">                                                                &lt;/span&gt;</token>
+  </line>
+  <line no="266">
+    <token name="T_INLINE_HTML">                                                            &lt;/div&gt;</token>
+  </line>
+  <line no="267">
+    <token name="T_INLINE_HTML">                                                        @endif</token>
+  </line>
+  <line no="268">
+    <token name="T_INLINE_HTML">                                                    @endforeach</token>
+  </line>
+  <line no="269">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="270">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="271">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="272">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="273">
+    <token name="T_INLINE_HTML">                                    &lt;div class="form-group row @foreach(range(0, 10) as $index) @if($errors-&gt;has('documents.' . $index))has-danger @break @endif @endforeach"&gt;</token>
+  </line>
+  <line no="274">
+    <token name="T_INLINE_HTML">                                        &lt;label class="col-sm-3 form-control-label"&gt;Upload PDF Documents&lt;/label&gt;</token>
+  </line>
+  <line no="275">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col-sm-9 m-t-5"&gt;</token>
+  </line>
+  <line no="276">
+    <token name="T_INLINE_HTML">                                            &lt;div class="input-group m-b-10"&gt;</token>
+  </line>
+  <line no="277">
+    <token name="T_INLINE_HTML">                                                &lt;label class="input-group-btn"&gt;</token>
+  </line>
+  <line no="278">
+    <token name="T_INLINE_HTML">                                                    &lt;span class="btn btn-primary"&gt;</token>
+  </line>
+  <line no="279">
+    <token name="T_INLINE_HTML">                                                    Upload files</token>
+  </line>
+  <line no="280">
+    <token name="T_INLINE_HTML">                                                        &lt;input type="file" name="documents[]" multiple="multiple" accept="application/pdf" id="document_upload" style="display: none;"&gt;</token>
+  </line>
+  <line no="281">
+    <token name="T_INLINE_HTML">                                                    &lt;/span&gt;</token>
+  </line>
+  <line no="282">
+    <token name="T_INLINE_HTML">                                                &lt;/label&gt;</token>
+  </line>
+  <line no="283">
+    <token name="T_INLINE_HTML">                                                &lt;input type="text" class="form-control @foreach(range(0, 10) as $index) @if($errors-&gt;has('documents.' . $index))form-control-danger @break @endif @endforeach" readonly=""&gt;</token>
+  </line>
+  <line no="284">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="285">
+    <token name="T_INLINE_HTML">                                            @foreach(range(0, 10) as $index)</token>
+  </line>
+  <line no="286">
+    <token name="T_INLINE_HTML">                                                @if($errors-&gt;has('documents.' . $index))</token>
+  </line>
+  <line no="287">
+    <token name="T_INLINE_HTML">                                                    &lt;small class="text-danger"&gt;{{ $errors-&gt;first('documents.' . $index) }}&lt;/small&gt;</token>
+  </line>
+  <line no="288">
+    <token name="T_INLINE_HTML">                                                    @break</token>
+  </line>
+  <line no="289">
+    <token name="T_INLINE_HTML">                                                @endif</token>
+  </line>
+  <line no="290">
+    <token name="T_INLINE_HTML">                                            @endforeach</token>
+  </line>
+  <line no="291">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="292">
+    <token name="T_INLINE_HTML">                                        @if (count($coachDocuments))</token>
+  </line>
+  <line no="293">
+    <token name="T_INLINE_HTML">                                            &lt;input type="hidden" name="deleted_coach_documents" id="deleted_coach_documents" autocomplete="off"&gt;</token>
+  </line>
+  <line no="294">
+    <token name="T_INLINE_HTML">                                            &lt;label class="col-sm-3 form-control-label"&gt;PDF Documents List&lt;/label&gt;</token>
+  </line>
+  <line no="295">
+    <token name="T_INLINE_HTML">                                            &lt;div class="col-sm-9 m-t-5"&gt;</token>
+  </line>
+  <line no="296">
+    <token name="T_INLINE_HTML">                                                &lt;ul&gt;</token>
+  </line>
+  <line no="297">
+    <token name="T_INLINE_HTML">                                                    @foreach($coachDocuments as $document)</token>
+  </line>
+  <line no="298">
+    <token name="T_INLINE_HTML">                                                        &lt;li class="coach-document-container m-b-30"&gt;</token>
+  </line>
+  <line no="299">
+    <token name="T_INLINE_HTML">                                                            &lt;u&gt;&lt;a href="{{ asset(env('UPLOADS_FOLDER') . '/' . env('COACHES_DOCUMENTS_FOLDER') . '/' . $document['document_name']) }}" target="_blank"&gt;</token>
+  </line>
+  <line no="300">
+    <token name="T_INLINE_HTML">                                                                    {{ $document['document_name'] }}</token>
+  </line>
+  <line no="301">
+    <token name="T_INLINE_HTML">                                                                &lt;/a&gt;&lt;/u&gt;</token>
+  </line>
+  <line no="302">
+    <token name="T_INLINE_HTML">                                                            {{ \File::mimeType($userDocunentFolder . '/' . $document['document_name']) }}</token>
+  </line>
+  <line no="303">
+    <token name="T_INLINE_HTML">                                                            &lt;span data-type="{{ \File::mimeType($userDocunentFolder . '/' . $document['document_name']) }}" style="cursor:pointer;"</token>
+  </line>
+  <line no="304">
+    <token name="T_INLINE_HTML">                                                                  class="delete-coach-document label label-danger-outline label-lg m-b-10"</token>
+  </line>
+  <line no="305">
+    <token name="T_INLINE_HTML">                                                                  data-id="{{ $document['id'] }}"&gt;delete&lt;/span&gt;</token>
+  </line>
+  <line no="306"/>
+  <line no="307">
+    <token name="T_INLINE_HTML">                                                            &lt;embed src="{{ asset(env('UPLOADS_FOLDER') . '/' . env('COACHES_DOCUMENTS_FOLDER') . '/' . $document['document_name']) }}"</token>
+  </line>
+  <line no="308">
+    <token name="T_INLINE_HTML">                                                                   style="display:block;" width="500" height="375"</token>
+  </line>
+  <line no="309">
+    <token name="T_INLINE_HTML">                                                                   type="{{ \File::mimeType($userDocunentFolder . '/' . $document['document_name']) }}"&gt;</token>
+  </line>
+  <line no="310">
+    <token name="T_INLINE_HTML">                                                        &lt;/li&gt;</token>
+  </line>
+  <line no="311">
+    <token name="T_INLINE_HTML">                                                    @endforeach</token>
+  </line>
+  <line no="312">
+    <token name="T_INLINE_HTML">                                                &lt;/ul&gt;</token>
+  </line>
+  <line no="313">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="314">
+    <token name="T_INLINE_HTML">                                        @endif</token>
+  </line>
+  <line no="315">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="316">
+    <token name="T_INLINE_HTML">                                    &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="317">
+    <token name="T_INLINE_HTML">                                        &lt;label class="col-sm-3 form-control-label m-t-5"&gt;Upload Performance Video&lt;/label&gt;</token>
+  </line>
+  <line no="318">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col-sm-9 m-t-5"&gt;</token>
+  </line>
+  <line no="319">
+    <token name="T_INLINE_HTML">                                            &lt;input type="text" class="form-control m-b-15" name="video" autocomplete="off"</token>
+  </line>
+  <line no="320">
+    <token name="T_INLINE_HTML">                                                   placeholder="Youtube video url"&gt;</token>
+  </line>
+  <line no="321">
+    <token name="T_INLINE_HTML">                                            &lt;div id="upload_container_video"&gt;</token>
+  </line>
+  <line no="322">
+    <token name="T_INLINE_HTML">                                                &lt;button id="pick_file_video" type="button" class="btn btn-primary m-r-5"&gt;</token>
+  </line>
+  <line no="323">
+    <token name="T_INLINE_HTML">                                                    &lt;i class="btn-icon fa fa-folder-open"&gt;&lt;/i&gt;Select video</token>
+  </line>
+  <line no="324">
+    <token name="T_INLINE_HTML">                                                &lt;/button&gt;</token>
+  </line>
+  <line no="325">
+    <token name="T_INLINE_HTML">                                                &lt;button id="upload_file_video" type="button" class="btn btn-success m-r-5"&gt;</token>
+  </line>
+  <line no="326">
+    <token name="T_INLINE_HTML">                                                    &lt;i class="btn-icon fa fa-upload"&gt;&lt;/i&gt;Upload video</token>
+  </line>
+  <line no="327">
+    <token name="T_INLINE_HTML">                                                &lt;/button&gt;</token>
+  </line>
+  <line no="328">
+    <token name="T_INLINE_HTML">                                                &lt;button style="display: none;" id="stop_uploading_video" type="button" class="btn btn-danger m-r-5"&gt;</token>
+  </line>
+  <line no="329">
+    <token name="T_INLINE_HTML">                                                    &lt;i class="btn-icon fa fa-stop"&gt;&lt;/i&gt;Stop uploading</token>
+  </line>
+  <line no="330">
+    <token name="T_INLINE_HTML">                                                &lt;/button&gt;</token>
+  </line>
+  <line no="331">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="332">
+    <token name="T_INLINE_HTML">                                            &lt;div id="file_list_video" class="m-t-10"&gt;Your browser doesn't have HTML5 support.&lt;/div&gt;</token>
+  </line>
+  <line no="333">
+    <token name="T_INLINE_HTML">                                            &lt;div class="row" id="progress" style="display: none"&gt;</token>
+  </line>
+  <line no="334">
+    <token name="T_INLINE_HTML">                                                &lt;div class="col-xs-12 col-lg-8"&gt;</token>
+  </line>
+  <line no="335">
+    <token name="T_INLINE_HTML">                                                    &lt;progress class="progress-xs progress progress-danger" value="0" max="100"</token>
+  </line>
+  <line no="336">
+    <token name="T_INLINE_HTML">                                                              id="uploading_progress"&gt;&lt;/progress&gt;</token>
+  </line>
+  <line no="337">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="338">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="339">
+    <token name="T_INLINE_HTML">                                            &lt;input type="hidden" name="gallery_video" id="gallery_video" autocomplete="off"&gt;</token>
+  </line>
+  <line no="340">
+    <token name="T_INLINE_HTML">                                            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="341">
+    <token name="T_INLINE_HTML">                                                @foreach($user-&gt;gallery as $gallery_item)</token>
+  </line>
+  <line no="342">
+    <token name="T_INLINE_HTML">                                                    @if ($gallery_item-&gt;type == 'video')</token>
+  </line>
+  <line no="343">
+    <token name="T_INLINE_HTML">                                                        &lt;div class="col-xs-12 col-md-6 m-t-10 gallery-item-container m-l-0 m-r-0"&gt;</token>
+  </line>
+  <line no="344">
+    <token name="T_INLINE_HTML">                                                            &lt;img class="w-100 img-thumbnail" src="{{ $gallery_item-&gt;type</token>
+  </line>
+  <line no="345">
+    <token name="T_INLINE_HTML">                                                                     == 'image' ? '/gallery/'.$gallery_item-&gt;path : 'http://img.youtube.com/vi/'</token>
+  </line>
+  <line no="346">
+    <token name="T_INLINE_HTML">                                                                     . $gallery_item-&gt;path . '/1.jpg' }}"&gt;</token>
+  </line>
+  <line no="347">
+    <token name="T_INLINE_HTML">                                                            &lt;a href="{{ $gallery_item-&gt;type == 'image' ? '/gallery/'.$gallery_item-&gt;path :</token>
+  </line>
+  <line no="348">
+    <token name="T_INLINE_HTML">                                                                   'https://www.youtube.com/watch?v='.$gallery_item-&gt;path }}" target="_blank"&gt;</token>
+  </line>
+  <line no="349">
+    <token name="T_INLINE_HTML">                                                                &lt;u style="text-transform: capitalize;"&gt;{{ $gallery_item-&gt;type }}&lt;/u&gt;</token>
+  </line>
+  <line no="350">
+    <token name="T_INLINE_HTML">                                                            &lt;/a&gt;</token>
+  </line>
+  <line no="351">
+    <token name="T_INLINE_HTML">                                                            &lt;span data-type="{{ $gallery_item-&gt;type }}" style="cursor:pointer;"</token>
+  </line>
+  <line no="352">
+    <token name="T_INLINE_HTML">                                                                  class="delete-gallery-item label label-danger-outline label-lg"</token>
+  </line>
+  <line no="353">
+    <token name="T_INLINE_HTML">                                                                  data-id="{{ $gallery_item-&gt;id }}"&gt;</token>
+  </line>
+  <line no="354">
+    <token name="T_INLINE_HTML">                                                                    delete</token>
+  </line>
+  <line no="355">
+    <token name="T_INLINE_HTML">                                                                &lt;/span&gt;</token>
+  </line>
+  <line no="356">
+    <token name="T_INLINE_HTML">                                                        &lt;/div&gt;</token>
+  </line>
+  <line no="357">
+    <token name="T_INLINE_HTML">                                                    @endif</token>
+  </line>
+  <line no="358">
+    <token name="T_INLINE_HTML">                                                @endforeach</token>
+  </line>
+  <line no="359">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="360">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="361">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="362">
+    <token name="T_INLINE_HTML">                                @endif</token>
+  </line>
+  <line no="363">
+    <token name="T_INLINE_HTML">                                &lt;h4 class="m-b-20"&gt;Contact&lt;/h4&gt;</token>
+  </line>
+  <line no="364">
+    <token name="T_INLINE_HTML">                                &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="365">
+    <token name="T_INLINE_HTML">                                    &lt;label class="col-sm-3 form-control-label"&gt;Email&lt;/label&gt;</token>
+  </line>
+  <line no="366">
+    <token name="T_INLINE_HTML">                                    &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="367">
+    <token name="T_INLINE_HTML">                                        &lt;input type="text" class="form-control" name="contact_email" autocomplete="off"</token>
+  </line>
+  <line no="368">
+    <token name="T_INLINE_HTML">                                               value="{{ $user-&gt;contact_email }}"&gt;</token>
+  </line>
+  <line no="369">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="370">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="371">
+    <token name="T_INLINE_HTML">                                &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="372">
+    <token name="T_INLINE_HTML">                                    &lt;label class="col-sm-3 form-control-label"&gt;Phone&lt;/label&gt;</token>
+  </line>
+  <line no="373">
+    <token name="T_INLINE_HTML">                                    &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="374">
+    <token name="T_INLINE_HTML">                                        &lt;input type="text" class="form-control" name="phone" autocomplete="off"</token>
+  </line>
+  <line no="375">
+    <token name="T_INLINE_HTML">                                               value="{{ $user-&gt;phone }}"&gt;</token>
+  </line>
+  <line no="376">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="377">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="378">
+    <token name="T_INLINE_HTML">                                &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="379">
+    <token name="T_INLINE_HTML">                                    &lt;label class="col-sm-3 form-control-label"&gt;Website&lt;/label&gt;</token>
+  </line>
+  <line no="380">
+    <token name="T_INLINE_HTML">                                    &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="381">
+    <token name="T_INLINE_HTML">                                        &lt;input type="text" class="form-control" name="wevsites" autocomplete="off"</token>
+  </line>
+  <line no="382">
+    <token name="T_INLINE_HTML">                                               value="{{ $user-&gt;wevsites }}"&gt;</token>
+  </line>
+  <line no="383">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="384">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="385"/>
+  <line no="386">
+    <token name="T_INLINE_HTML">                                {{--@if(!$user-&gt;isCoach())--}}</token>
+  </line>
+  <line no="387">
+    <token name="T_INLINE_HTML">                                    &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="388">
+    <token name="T_INLINE_HTML">                                        &lt;label class="col-sm-3 form-control-label" for="social_links"&gt;Social links&lt;/label&gt;</token>
+  </line>
+  <line no="389">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="390">
+    <token name="T_INLINE_HTML">                                            &lt;input type="text" class="form-control" name="social_links" value="{{ $user-&gt;social_links }}"&gt;</token>
+  </line>
+  <line no="391">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="392">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="393">
+    <token name="T_INLINE_HTML">                                {{--@endif--}}</token>
+  </line>
+  <line no="394"/>
+  <line no="395">
+    <token name="T_INLINE_HTML">                                @if($user-&gt;isCoach())</token>
+  </line>
+  <line no="396">
+    <token name="T_INLINE_HTML">                                &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="397">
+    <token name="T_INLINE_HTML">                                        &lt;label class="col-sm-3 form-control-label" for="other_site_spec"&gt;Other Blog sites&lt;/label&gt;</token>
+  </line>
+  <line no="398">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="399">
+    <token name="T_INLINE_HTML">                                            &lt;input autocomplete="off" type="text" class="form-control" name="other_site_spec" value="{{ $user-&gt;other_site_spec }}"&gt;</token>
+  </line>
+  <line no="400">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="401">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="402">
+    <token name="T_INLINE_HTML">                                @endif</token>
+  </line>
+  <line no="403"/>
+  <line no="404">
+    <token name="T_INLINE_HTML">                                @if($user-&gt;isCoach())</token>
+  </line>
+  <line no="405">
+    <token name="T_INLINE_HTML">                                    &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="406">
+    <token name="T_INLINE_HTML">                                        &lt;label class="col-sm-3 form-control-label" for="coachs_site"&gt;Links to Coach's site&lt;/label&gt;</token>
+  </line>
+  <line no="407">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="408">
+    <token name="T_INLINE_HTML">                                            &lt;input autocomplete="off" type="text" class="form-control" name="coachs_site" value="{{ $user-&gt;coachs_site }}"&gt;</token>
+  </line>
+  <line no="409">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="410">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="411">
+    <token name="T_INLINE_HTML">                                @endif</token>
+  </line>
+  <line no="412"/>
+  <line no="413">
+    <token name="T_INLINE_HTML">                                @if($user-&gt;isCoach())</token>
+  </line>
+  <line no="414">
+    <token name="T_INLINE_HTML">                                    &lt;h4 class="m-b-20"&gt;Vacation time&lt;/h4&gt;</token>
+  </line>
+  <line no="415">
+    <token name="T_INLINE_HTML">                                    &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="416">
+    <token name="T_INLINE_HTML">                                        &lt;label class="col-sm-3 form-control-label"&gt;Start date&lt;/label&gt;</token>
+  </line>
+  <line no="417">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="418">
+    <token name="T_INLINE_HTML">                                            &lt;input id="vacation_start" type="text" class="form-control" name="vacation_start" autocomplete="off"</token>
+  </line>
+  <line no="419">
+    <token name="T_INLINE_HTML">                                                   value="{{ ($user-&gt;vacation_start != '0000-00-00') ? $user-&gt;vacation_start : '' }}"&gt;</token>
+  </line>
+  <line no="420">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="421">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="422"/>
+  <line no="423">
+    <token name="T_INLINE_HTML">                                    &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="424">
+    <token name="T_INLINE_HTML">                                        &lt;label class="col-sm-3 form-control-label"&gt;End Date&lt;/label&gt;</token>
+  </line>
+  <line no="425">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="426">
+    <token name="T_INLINE_HTML">                                            &lt;input id="vacation_end" type="text" class="form-control" name="vacation_end" autocomplete="off"</token>
+  </line>
+  <line no="427">
+    <token name="T_INLINE_HTML">                                                   value="{{ ($user-&gt;vacation_end != '0000-00-00') ? $user-&gt;vacation_end : '' }}"&gt;</token>
+  </line>
+  <line no="428">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="429">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="430">
+    <token name="T_INLINE_HTML">                                @endif</token>
+  </line>
+  <line no="431"/>
+  <line no="432">
+    <token name="T_INLINE_HTML">                                @if($user-&gt;isCoach())</token>
+  </line>
+  <line no="433">
+    <token name="T_INLINE_HTML">                                    &lt;h4 class="m-b-20"&gt;Pricing&lt;/h4&gt;</token>
+  </line>
+  <line no="434">
+    <token name="T_INLINE_HTML">                                    &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="435">
+    <token name="T_INLINE_HTML">                                        &lt;label class="col-sm-3 form-control-label"&gt;Summary package&lt;/label&gt;</token>
+  </line>
+  <line no="436">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="437">
+    <token name="T_INLINE_HTML">                                            &lt;input id="vacation_start" type="text" class="form-control" name="price_summary" autocomplete="off"</token>
+  </line>
+  <line no="438">
+    <token name="T_INLINE_HTML">                                                   value="{{ ($user-&gt;price_summary != 0) ? $user-&gt;price_summary : '' }}" required&gt;</token>
+  </line>
+  <line no="439">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="440">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="441"/>
+  <line no="442">
+    <token name="T_INLINE_HTML">                                    &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="443">
+    <token name="T_INLINE_HTML">                                        &lt;label class="col-sm-3 form-control-label"&gt;Detailed package&lt;/label&gt;</token>
+  </line>
+  <line no="444">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="445">
+    <token name="T_INLINE_HTML">                                            &lt;input id="vacation_end" type="text" class="form-control" name="price_detailed" autocomplete="off"</token>
+  </line>
+  <line no="446">
+    <token name="T_INLINE_HTML">                                                   value="{{ ($user-&gt;price_detailed != 0) ? $user-&gt;price_detailed : '' }}" required&gt;</token>
+  </line>
+  <line no="447">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="448">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="449">
+    <token name="T_INLINE_HTML">                                @endif</token>
+  </line>
+  <line no="450"/>
+  <line no="451">
+    <token name="T_INLINE_HTML">                            {{--@if($user-&gt;isCoach())</token>
+  </line>
+  <line no="452">
+    <token name="T_INLINE_HTML">                            &lt;h4 class="m-b-20"&gt;Review Pricing &amp; Terms&lt;/h4&gt;</token>
+  </line>
+  <line no="453">
+    <token name="T_INLINE_HTML">                            @endif--}}</token>
+  </line>
+  <line no="454">
+    <token name="T_INLINE_HTML">                            &lt;!--                            &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="455">
+    <token name="T_INLINE_HTML">                                &lt;label class="col-sm-3 form-control-label" for="proposal"&gt;Companies&lt;/label&gt;</token>
+  </line>
+  <line no="456">
+    <token name="T_INLINE_HTML">                                &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="457">
+    <token name="T_INLINE_HTML">                                    &lt;input type="text" class="form-control" name="companies" value="{{ $user-&gt;companies }}"&gt;</token>
+  </line>
+  <line no="458">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="459">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="460">
+    <token name="T_INLINE_HTML">                            &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="461">
+    <token name="T_INLINE_HTML">                                &lt;label class="col-sm-3 form-control-label" for="proposal"&gt;Position&lt;/label&gt;</token>
+  </line>
+  <line no="462">
+    <token name="T_INLINE_HTML">                                &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="463">
+    <token name="T_INLINE_HTML">                                    &lt;input type="text" class="form-control" name="position" value="{{ $user-&gt;position }}"&gt;</token>
+  </line>
+  <line no="464">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="465">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;--&gt;</token>
+  </line>
+  <line no="466">
+    <token name="T_INLINE_HTML">                            &lt;!--                    &lt;div class="form-group"&gt;</token>
+  </line>
+  <line no="467">
+    <token name="T_INLINE_HTML">                                &lt;label for="proposal"&gt;Role&lt;/label&gt;&lt;br/&gt;</token>
+  </line>
+  <line no="468">
+    <token name="T_INLINE_HTML">                                &lt;label class="radio-inline"&gt;</token>
+  </line>
+  <line no="469">
+    <token name="T_INLINE_HTML">                                    &lt;input type="radio" name="role" id="inlineRadio1" value="1" @if($user-&gt;role == 1) {{"checked"}} @endif &gt; User</token>
+  </line>
+  <line no="470">
+    <token name="T_INLINE_HTML">                                &lt;/label&gt;</token>
+  </line>
+  <line no="471">
+    <token name="T_INLINE_HTML">                                &lt;label class="radio-inline"&gt;</token>
+  </line>
+  <line no="472">
+    <token name="T_INLINE_HTML">                                    &lt;input type="radio" name="role" id="inlineRadio2" value="2"  @if($user-&gt;role == 2) {{"checked"}} @endif &gt; Coach</token>
+  </line>
+  <line no="473">
+    <token name="T_INLINE_HTML">                                &lt;/label&gt;</token>
+  </line>
+  <line no="474">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;--&gt;</token>
+  </line>
+  <line no="475">
+    <token name="T_INLINE_HTML">                            &lt;!-- &lt;div class="form-group"&gt;</token>
+  </line>
+  <line no="476">
+    <token name="T_INLINE_HTML">                                    &lt;label for="exampleInputFile"&gt;Avatar&lt;/label&gt;</token>
+  </line>
+  <line no="477">
+    <token name="T_INLINE_HTML">                                    &lt;input type="file" name="avatar" id="exampleInputFile"&gt;</token>
+  </line>
+  <line no="478">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;--&gt;</token>
+  </line>
+  <line no="479">
+    <token name="T_INLINE_HTML">                                &lt;input type="hidden" name="_token" value="{{ csrf_token() }}"&gt;</token>
+  </line>
+  <line no="480">
+    <token name="T_INLINE_HTML">                                &lt;div class="row"&gt;</token>
+  </line>
+  <line no="481">
+    <token name="T_INLINE_HTML">                                    &lt;div class="col-sm-offset-3 col-sm-9"&gt;</token>
+  </line>
+  <line no="482">
+    <token name="T_INLINE_HTML">                                        &lt;button type="submit" class="btn btn-warning m-r-10 m-b-10"&gt;</token>
+  </line>
+  <line no="483">
+    <token name="T_INLINE_HTML">                                            &lt;i class="btn-icon fa fa-check"&gt;&lt;/i&gt;Save</token>
+  </line>
+  <line no="484">
+    <token name="T_INLINE_HTML">                                        &lt;/button&gt;</token>
+  </line>
+  <line no="485">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="486">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="487"/>
+  <line no="488">
+    <token name="T_INLINE_HTML">                            &lt;/form&gt;</token>
+  </line>
+  <line no="489">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="490">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="491">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="492">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="493">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="494">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="495">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="496"/>
+  <line no="497">
+    <token name="T_INLINE_HTML">@section('js')</token>
+  </line>
+  <line no="498">
+    <token name="T_INLINE_HTML">    &lt;script src="https://cdn.jsdelivr.net/sweetalert2/5.3.4/sweetalert2.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="499">
+    <token name="T_INLINE_HTML">    &lt;script src="/assets/js/select2.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="500">
+    <token name="T_INLINE_HTML">    &lt;script src="/vendor/jildertmiedema/laravel-plupload/js/plupload.full.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="501">
+    <token name="T_INLINE_HTML">    &lt;script src="/assets/marino/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="502">
+    <token name="T_INLINE_HTML">    &lt;script type="text/javascript" src="/assets/js/toastr/toastr.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="503">
+    <token name="T_INLINE_HTML">    &lt;script type="text/javascript"&gt;</token>
+  </line>
+  <line no="504">
+    <token name="T_INLINE_HTML">        successMsg = "{{ session()-&gt;has('success') ? session('success') : '' }}";</token>
+  </line>
+  <line no="505">
+    <token name="T_INLINE_HTML">        var user_genres = {{ $user_act-&gt;pluck('id') }};</token>
+  </line>
+  <line no="506">
+    <token name="T_INLINE_HTML">        var gallery_size = {{ $user-&gt;gallery()-&gt;count() }};</token>
+  </line>
+  <line no="507"/>
+  <line no="508">
+    <token name="T_INLINE_HTML">        if(successMsg){</token>
+  </line>
+  <line no="509">
+    <token name="T_INLINE_HTML">            swal(successMsg);</token>
+  </line>
+  <line no="510">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="511"/>
+  <line no="512">
+    <token name="T_INLINE_HTML">        $(function () {</token>
+  </line>
+  <line no="513">
+    <token name="T_INLINE_HTML">            if($('#document_upload').length) {</token>
+  </line>
+  <line no="514">
+    <token name="T_INLINE_HTML">                // We can attach the `fileselect` event to all file inputs on the page</token>
+  </line>
+  <line no="515">
+    <token name="T_INLINE_HTML">                $(document).on('change', $('#document_upload'), function () {</token>
+  </line>
+  <line no="516">
+    <token name="T_INLINE_HTML">                    var input = $('#document_upload'),</token>
+  </line>
+  <line no="517">
+    <token name="T_INLINE_HTML">                        numFiles = input.get(0).files ? input.get(0).files.length : 1,</token>
+  </line>
+  <line no="518">
+    <token name="T_INLINE_HTML">                        label = input.val().replace(/\\/g, '/').replace(/.*\//, '');</token>
+  </line>
+  <line no="519">
+    <token name="T_INLINE_HTML">                    input.trigger('fileselect', [numFiles, label]);</token>
+  </line>
+  <line no="520">
+    <token name="T_INLINE_HTML">                });</token>
+  </line>
+  <line no="521">
+    <token name="T_INLINE_HTML">                // We can watch for our custom `fileselect` event like this</token>
+  </line>
+  <line no="522">
+    <token name="T_INLINE_HTML">                $(document).ready(function () {</token>
+  </line>
+  <line no="523">
+    <token name="T_INLINE_HTML">                    $('#document_upload').on('fileselect', function (event, numFiles, label) {</token>
+  </line>
+  <line no="524">
+    <token name="T_INLINE_HTML">                        var input = $('#document_upload').parents('.input-group').find(':text'),</token>
+  </line>
+  <line no="525">
+    <token name="T_INLINE_HTML">                            log = numFiles &gt; 1 ? numFiles + ' files selected' : label;</token>
+  </line>
+  <line no="526">
+    <token name="T_INLINE_HTML">                        if (input.length) {</token>
+  </line>
+  <line no="527">
+    <token name="T_INLINE_HTML">                            input.val(log);</token>
+  </line>
+  <line no="528">
+    <token name="T_INLINE_HTML">                        } else {</token>
+  </line>
+  <line no="529">
+    <token name="T_INLINE_HTML">                            if (log) alert(log);</token>
+  </line>
+  <line no="530">
+    <token name="T_INLINE_HTML">                        }</token>
+  </line>
+  <line no="531">
+    <token name="T_INLINE_HTML">                    });</token>
+  </line>
+  <line no="532">
+    <token name="T_INLINE_HTML">                });</token>
+  </line>
+  <line no="533">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="534">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="535"/>
+  <line no="536">
+    <token name="T_INLINE_HTML">        $(".delete-coach-document").on("click", function() {</token>
+  </line>
+  <line no="537">
+    <token name="T_INLINE_HTML">            var that = $(this);</token>
+  </line>
+  <line no="538">
+    <token name="T_INLINE_HTML">            swal({</token>
+  </line>
+  <line no="539">
+    <token name="T_INLINE_HTML">                title: 'Are you sure?',</token>
+  </line>
+  <line no="540">
+    <token name="T_INLINE_HTML">                text: "Do you really want to delete this " + that.attr("data-type") + "?",</token>
+  </line>
+  <line no="541">
+    <token name="T_INLINE_HTML">                type: 'warning',</token>
+  </line>
+  <line no="542">
+    <token name="T_INLINE_HTML">                showCancelButton: true,</token>
+  </line>
+  <line no="543">
+    <token name="T_INLINE_HTML">                confirmButtonText: 'Yes, delete it!'</token>
+  </line>
+  <line no="544">
+    <token name="T_INLINE_HTML">            }).then(function() {</token>
+  </line>
+  <line no="545">
+    <token name="T_INLINE_HTML">                //preventNavigation("You have not saved the form. Any changes will be lost if you leave this page.");</token>
+  </line>
+  <line no="546">
+    <token name="T_INLINE_HTML">                var deleted_val = $("#deleted_coach_documents").val();</token>
+  </line>
+  <line no="547">
+    <token name="T_INLINE_HTML">                deleted_val += (deleted_val.length ? "," : "") + that.attr("data-id");</token>
+  </line>
+  <line no="548">
+    <token name="T_INLINE_HTML">                $("#deleted_coach_documents").val(deleted_val);</token>
+  </line>
+  <line no="549">
+    <token name="T_INLINE_HTML">                that.parent(".coach-document-container").remove();</token>
+  </line>
+  <line no="550">
+    <token name="T_INLINE_HTML">                gallery_size--;</token>
+  </line>
+  <line no="551">
+    <token name="T_INLINE_HTML">            }, function(dismiss) {});</token>
+  </line>
+  <line no="552">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="553"/>
+  <line no="554">
+    <token name="T_INLINE_HTML">        function str_random(length) {</token>
+  </line>
+  <line no="555">
+    <token name="T_INLINE_HTML">            if(!length)</token>
+  </line>
+  <line no="556">
+    <token name="T_INLINE_HTML">                length = 5;</token>
+  </line>
+  <line no="557">
+    <token name="T_INLINE_HTML">            var text = "";</token>
+  </line>
+  <line no="558">
+    <token name="T_INLINE_HTML">            var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";</token>
+  </line>
+  <line no="559">
+    <token name="T_INLINE_HTML">            for(var i=0; i &lt; length; i++)</token>
+  </line>
+  <line no="560">
+    <token name="T_INLINE_HTML">                text += possible.charAt(Math.floor(Math.random() * possible.length));</token>
+  </line>
+  <line no="561">
+    <token name="T_INLINE_HTML">            return text;</token>
+  </line>
+  <line no="562">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="563"/>
+  <line no="564">
+    <token name="T_INLINE_HTML">        function preventNavigation(message) {</token>
+  </line>
+  <line no="565">
+    <token name="T_INLINE_HTML">            var confirmOnPageExit = function (e) {</token>
+  </line>
+  <line no="566">
+    <token name="T_INLINE_HTML">                e = e || window.event;</token>
+  </line>
+  <line no="567">
+    <token name="T_INLINE_HTML">                if(e) {</token>
+  </line>
+  <line no="568">
+    <token name="T_INLINE_HTML">                    e.returnValue = message;</token>
+  </line>
+  <line no="569">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="570">
+    <token name="T_INLINE_HTML">                return message;</token>
+  </line>
+  <line no="571">
+    <token name="T_INLINE_HTML">            };</token>
+  </line>
+  <line no="572">
+    <token name="T_INLINE_HTML">            window.onbeforeunload = confirmOnPageExit;</token>
+  </line>
+  <line no="573">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="574"/>
+  <line no="575">
+    <token name="T_INLINE_HTML">        function genresArrayToTemplate(data) {</token>
+  </line>
+  <line no="576">
+    <token name="T_INLINE_HTML">            if(!data) return '';</token>
+  </line>
+  <line no="577">
+    <token name="T_INLINE_HTML">            var template = '';</token>
+  </line>
+  <line no="578">
+    <token name="T_INLINE_HTML">            for(var i=0; i &lt; data.length; i++) {</token>
+  </line>
+  <line no="579">
+    <token name="T_INLINE_HTML">                var checked = user_genres.indexOf(data[i].id) !== -1 ? 'checked' : '';</token>
+  </line>
+  <line no="580">
+    <token name="T_INLINE_HTML">                template += '&lt;label class="c-input c-checkbox"&gt;\</token>
+  </line>
+  <line no="581">
+    <token name="T_INLINE_HTML">                             &lt;input type="checkbox" name="genres[]" value="' + data[i].id + '"\</token>
+  </line>
+  <line no="582">
+    <token name="T_INLINE_HTML">                             autocomplete="off" ' + checked + '&gt;\</token>
+  </line>
+  <line no="583">
+    <token name="T_INLINE_HTML">                             &lt;span class="c-indicator c-indicator-warning"&gt;&lt;/span&gt;\</token>
+  </line>
+  <line no="584">
+    <token name="T_INLINE_HTML">                             &lt;span class="c-input-text"&gt;' + data[i].name + '&lt;/span&gt;\</token>
+  </line>
+  <line no="585">
+    <token name="T_INLINE_HTML">                             &lt;/label&gt;';</token>
+  </line>
+  <line no="586">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="587">
+    <token name="T_INLINE_HTML">            return template;</token>
+  </line>
+  <line no="588">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="589">
+    <token name="T_INLINE_HTML">        function genresArrayToTemplateList(data) {</token>
+  </line>
+  <line no="590">
+    <token name="T_INLINE_HTML">            if(!data) return '';</token>
+  </line>
+  <line no="591">
+    <token name="T_INLINE_HTML">            var template = '';</token>
+  </line>
+  <line no="592">
+    <token name="T_INLINE_HTML">            for(var i=0; i &lt; data.length; i++) {</token>
+  </line>
+  <line no="593">
+    <token name="T_INLINE_HTML">                var checked = user_genres.indexOf(data[i].id) !== -1 ? 'selected' : '';</token>
+  </line>
+  <line no="594">
+    <token name="T_INLINE_HTML">                template += '&lt;option  value="' + data[i].id + '" ' + checked + ' &gt;' + data[i].name + '&lt;/option&gt;';</token>
+  </line>
+  <line no="595">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="596">
+    <token name="T_INLINE_HTML">            return template;</token>
+  </line>
+  <line no="597">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="598"/>
+  <line no="599">
+    <token name="T_INLINE_HTML">        $(function() {</token>
+  </line>
+  <line no="600">
+    <token name="T_INLINE_HTML">            $('[data-toggle="tooltip"]').tooltip();</token>
+  </line>
+  <line no="601"/>
+  <line no="602">
+    <token name="T_INLINE_HTML">            $("#birthday").datepicker({</token>
+  </line>
+  <line no="603">
+    <token name="T_INLINE_HTML">                endDate: '0d'</token>
+  </line>
+  <line no="604">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="605"/>
+  <line no="606">
+    <token name="T_INLINE_HTML">            $(".form-horizontal :input").on('change',function(e) {</token>
+  </line>
+  <line no="607">
+    <token name="T_INLINE_HTML">                if(e.target.id !='vacation_start' &amp;&amp;  e.target.id !='vacation_end' ){</token>
+  </line>
+  <line no="608">
+    <token name="T_INLINE_HTML">                    preventNavigation("You have not saved the form. Any changes will be lost if you leave this page.");</token>
+  </line>
+  <line no="609">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="610"/>
+  <line no="611">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="612">
+    <token name="T_INLINE_HTML">            $("form").on("submit", function(e) {</token>
+  </line>
+  <line no="613">
+    <token name="T_INLINE_HTML">                window.onbeforeunload = null;</token>
+  </line>
+  <line no="614">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="615"/>
+  <line no="616">
+    <token name="T_INLINE_HTML">            $("#performance_level_select").select2({</token>
+  </line>
+  <line no="617">
+    <token name="T_INLINE_HTML">                placeholder: "Performance level"</token>
+  </line>
+  <line no="618">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="619"/>
+  <line no="620">
+    <token name="T_INLINE_HTML">            $("#activity_type_genres").select2({</token>
+  </line>
+  <line no="621">
+    <token name="T_INLINE_HTML">                placeholder: "Select genre/s"</token>
+  </line>
+  <line no="622">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="623"/>
+  <line no="624">
+    <token name="T_INLINE_HTML">            $("#activity_type").select2({</token>
+  </line>
+  <line no="625">
+    <token name="T_INLINE_HTML">                placeholder: "Select type"</token>
+  </line>
+  <line no="626">
+    <token name="T_INLINE_HTML">            }).on("change", function(e) {</token>
+  </line>
+  <line no="627">
+    <token name="T_INLINE_HTML">                $.ajax({</token>
+  </line>
+  <line no="628">
+    <token name="T_INLINE_HTML">                    type: "POST",</token>
+  </line>
+  <line no="629">
+    <token name="T_INLINE_HTML">                    url: "{{ url('/ajax/get-genres') }}",</token>
+  </line>
+  <line no="630">
+    <token name="T_INLINE_HTML">                    data: {"activity": e.currentTarget.value, "_token": "{{ csrf_token() }}"},</token>
+  </line>
+  <line no="631">
+    <token name="T_INLINE_HTML">                    dataType: "json",</token>
+  </line>
+  <line no="632">
+    <token name="T_INLINE_HTML">                    success: function(result) {</token>
+  </line>
+  <line no="633">
+    <token name="T_INLINE_HTML">                        if(result.length &gt; 0) {</token>
+  </line>
+  <line no="634">
+    <token name="T_INLINE_HTML">                            //$("#genres_container").html(genresArrayToTemplateList(result));</token>
+  </line>
+  <line no="635">
+    <token name="T_INLINE_HTML">                            $("#activity_type_genres").html(genresArrayToTemplateList(result));</token>
+  </line>
+  <line no="636"/>
+  <line no="637">
+    <token name="T_INLINE_HTML">                        } else {</token>
+  </line>
+  <line no="638">
+    <token name="T_INLINE_HTML">                            //$("#genres_container").html("");</token>
+  </line>
+  <line no="639">
+    <token name="T_INLINE_HTML">                            $("#activity_type_genres").html("");</token>
+  </line>
+  <line no="640">
+    <token name="T_INLINE_HTML">                        }</token>
+  </line>
+  <line no="641">
+    <token name="T_INLINE_HTML">                    }</token>
+  </line>
+  <line no="642">
+    <token name="T_INLINE_HTML">                });</token>
+  </line>
+  <line no="643">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="644"/>
+  <line no="645">
+    <token name="T_INLINE_HTML">            //crunch</token>
+  </line>
+  <line no="646">
+    <token name="T_INLINE_HTML">            $.ajax({</token>
+  </line>
+  <line no="647">
+    <token name="T_INLINE_HTML">                type: "POST",</token>
+  </line>
+  <line no="648">
+    <token name="T_INLINE_HTML">                url: "{{ url('/ajax/get-genres') }}",</token>
+  </line>
+  <line no="649">
+    <token name="T_INLINE_HTML">                data: {"activity": 1, "_token": "{{ csrf_token() }}"},</token>
+  </line>
+  <line no="650">
+    <token name="T_INLINE_HTML">                dataType: "json",</token>
+  </line>
+  <line no="651">
+    <token name="T_INLINE_HTML">                success: function(result) {</token>
+  </line>
+  <line no="652">
+    <token name="T_INLINE_HTML">                    if(result.length &gt; 0) {</token>
+  </line>
+  <line no="653">
+    <token name="T_INLINE_HTML">                        //$("#genres_container").html(genresArrayToTemplateList(result));</token>
+  </line>
+  <line no="654">
+    <token name="T_INLINE_HTML">                        $("#activity_type_genres").html(genresArrayToTemplateList(result));</token>
+  </line>
+  <line no="655"/>
+  <line no="656">
+    <token name="T_INLINE_HTML">                    } else {</token>
+  </line>
+  <line no="657">
+    <token name="T_INLINE_HTML">                        //$("#genres_container").html("");</token>
+  </line>
+  <line no="658">
+    <token name="T_INLINE_HTML">                        $("#activity_type_genres").html("");</token>
+  </line>
+  <line no="659">
+    <token name="T_INLINE_HTML">                    }</token>
+  </line>
+  <line no="660">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="661">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="662"/>
+  <line no="663">
+    <token name="T_INLINE_HTML">            delImg = function deleteImage(obj) {</token>
+  </line>
+  <line no="664">
+    <token name="T_INLINE_HTML">                console.log(obj.getAttribute('data-file'));</token>
+  </line>
+  <line no="665">
+    <token name="T_INLINE_HTML">                upload.removeFile(obj.getAttribute('data-file'));</token>
+  </line>
+  <line no="666">
+    <token name="T_INLINE_HTML">                var current_wrapper = document.getElementById(obj.getAttribute('data-file'));</token>
+  </line>
+  <line no="667">
+    <token name="T_INLINE_HTML">                current_wrapper.parentElement.removeChild(current_wrapper);</token>
+  </line>
+  <line no="668">
+    <token name="T_INLINE_HTML">            };</token>
+  </line>
+  <line no="669"/>
+  <line no="670">
+    <token name="T_INLINE_HTML">            function uploader() {</token>
+  </line>
+  <line no="671">
+    <token name="T_INLINE_HTML">                var uploader = new plupload.Uploader({</token>
+  </line>
+  <line no="672">
+    <token name="T_INLINE_HTML">                    runtimes: 'html5,html4',</token>
+  </line>
+  <line no="673">
+    <token name="T_INLINE_HTML">                    browse_button: document.getElementById('pick_files'),</token>
+  </line>
+  <line no="674">
+    <token name="T_INLINE_HTML">                    container: document.getElementById('upload_container'),</token>
+  </line>
+  <line no="675">
+    <token name="T_INLINE_HTML">                    max_retries: 1,</token>
+  </line>
+  <line no="676">
+    <token name="T_INLINE_HTML">                    max_files_count: {{ env('GALLERY_MAX_ITEMS_COUNT', 3) }},</token>
+  </line>
+  <line no="677">
+    <token name="T_INLINE_HTML">                    prevent_duplicates: true,</token>
+  </line>
+  <line no="678">
+    <token name="T_INLINE_HTML">                    unique_names: true,</token>
+  </line>
+  <line no="679">
+    <token name="T_INLINE_HTML">                    headers: {</token>
+  </line>
+  <line no="680">
+    <token name="T_INLINE_HTML">                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')</token>
+  </line>
+  <line no="681">
+    <token name="T_INLINE_HTML">                    },</token>
+  </line>
+  <line no="682">
+    <token name="T_INLINE_HTML">                    multi_selection: true,</token>
+  </line>
+  <line no="683">
+    <token name="T_INLINE_HTML">                    url : "{{ route('profile.gallery.save-file') }}",</token>
+  </line>
+  <line no="684">
+    <token name="T_INLINE_HTML">                    filters : {</token>
+  </line>
+  <line no="685">
+    <token name="T_INLINE_HTML">                        max_file_size : '{{env('PHOTO_MAX_UPLOAD_SIZE', 2)}}mb',</token>
+  </line>
+  <line no="686">
+    <token name="T_INLINE_HTML">                        mime_types: [</token>
+  </line>
+  <line no="687">
+    <token name="T_INLINE_HTML">                            {title : "Image files", extensions : "png,jpg,jpeg"}</token>
+  </line>
+  <line no="688">
+    <token name="T_INLINE_HTML">                        ]</token>
+  </line>
+  <line no="689">
+    <token name="T_INLINE_HTML">                    },</token>
+  </line>
+  <line no="690">
+    <token name="T_INLINE_HTML">                    init: {</token>
+  </line>
+  <line no="691">
+    <token name="T_INLINE_HTML">                        PostInit: function() {</token>
+  </line>
+  <line no="692">
+    <token name="T_INLINE_HTML">                            document.getElementById('file_list').innerHTML = '';</token>
+  </line>
+  <line no="693">
+    <token name="T_INLINE_HTML">                            document.getElementById('upload_files').onclick = function() {</token>
+  </line>
+  <line no="694">
+    <token name="T_INLINE_HTML">                                uploader.start();</token>
+  </line>
+  <line no="695">
+    <token name="T_INLINE_HTML">                                return false;</token>
+  </line>
+  <line no="696">
+    <token name="T_INLINE_HTML">                            };</token>
+  </line>
+  <line no="697">
+    <token name="T_INLINE_HTML">                        },</token>
+  </line>
+  <line no="698">
+    <token name="T_INLINE_HTML">                        FilesAdded: function(up, files) {</token>
+  </line>
+  <line no="699">
+    <token name="T_INLINE_HTML">                            if((up.files.length + gallery_size) &gt; up.settings.max_files_count) {</token>
+  </line>
+  <line no="700">
+    <token name="T_INLINE_HTML">                                $.notify("Upload error: " + "Maximum images count: " + up.settings.max_files_count +</token>
+  </line>
+  <line no="701">
+    <token name="T_INLINE_HTML">                                    ". " + "In gallery " + gallery_size + " file(s) already!", {autoHideDelay: 10000});</token>
+  </line>
+  <line no="702">
+    <token name="T_INLINE_HTML">                                for(var i in files) {</token>
+  </line>
+  <line no="703">
+    <token name="T_INLINE_HTML">                                    up.removeFile(files[i]);</token>
+  </line>
+  <line no="704">
+    <token name="T_INLINE_HTML">                                }</token>
+  </line>
+  <line no="705">
+    <token name="T_INLINE_HTML">                            } else {</token>
+  </line>
+  <line no="706">
+    <token name="T_INLINE_HTML">                                plupload.each(files, function(file) {</token>
+  </line>
+  <line no="707">
+    <token name="T_INLINE_HTML">                                    document.getElementById('file_list').innerHTML += '&lt;div id="' + file.id + '"&gt;'</token>
+  </line>
+  <line no="708">
+    <token name="T_INLINE_HTML">                                            + file.name + ' (' + plupload.formatSize(file.size) + ') &lt;b&gt;' +</token>
+  </line>
+  <line no="709">
+    <token name="T_INLINE_HTML">                                            '&lt;span onclick="delImg(this)" data-file="' + file.id + '" class="m-l-5 label ' +</token>
+  </line>
+  <line no="710">
+    <token name="T_INLINE_HTML">                                            'label-warning-outline label-lg" style="cursor:pointer;"&gt;' +</token>
+  </line>
+  <line no="711">
+    <token name="T_INLINE_HTML">                                            'cancel&lt;/span&gt;&lt;/b&gt; &lt;/div&gt;';</token>
+  </line>
+  <line no="712">
+    <token name="T_INLINE_HTML">                                });</token>
+  </line>
+  <line no="713">
+    <token name="T_INLINE_HTML">                            }</token>
+  </line>
+  <line no="714">
+    <token name="T_INLINE_HTML">                        },</token>
+  </line>
+  <line no="715">
+    <token name="T_INLINE_HTML">                        UploadProgress: function(up, file) {</token>
+  </line>
+  <line no="716">
+    <token name="T_INLINE_HTML">                            document.getElementById(file.id).getElementsByTagName('b')[0].innerHTML = '&lt;span&gt;'</token>
+  </line>
+  <line no="717">
+    <token name="T_INLINE_HTML">                                    + file.percent + "%&lt;/span&gt;";</token>
+  </line>
+  <line no="718">
+    <token name="T_INLINE_HTML">                        },</token>
+  </line>
+  <line no="719">
+    <token name="T_INLINE_HTML">                        BeforeUpload: function (uploader, file) {</token>
+  </line>
+  <line no="720">
+    <token name="T_INLINE_HTML">                            $("#pick_files").attr({disabled: "disabled"});</token>
+  </line>
+  <line no="721">
+    <token name="T_INLINE_HTML">                            $("#upload_container :input[type='file']").attr({disabled: "disabled"});</token>
+  </line>
+  <line no="722">
+    <token name="T_INLINE_HTML">                            //preventNavigation("You have not saved the form. Any changes will be lost if you leave this page.");</token>
+  </line>
+  <line no="723">
+    <token name="T_INLINE_HTML">                        },</token>
+  </line>
+  <line no="724">
+    <token name="T_INLINE_HTML">                        Error: function(up, err) {</token>
+  </line>
+  <line no="725">
+    <token name="T_INLINE_HTML">                            $.notify("Upload error: " + err.message, "error");</token>
+  </line>
+  <line no="726">
+    <token name="T_INLINE_HTML">                        },</token>
+  </line>
+  <line no="727">
+    <token name="T_INLINE_HTML">                        FileUploaded: function (uploader, file, result) {</token>
+  </line>
+  <line no="728">
+    <token name="T_INLINE_HTML">                            var response = $.parseJSON(result.response);</token>
+  </line>
+  <line no="729">
+    <token name="T_INLINE_HTML">                            if (response.error) {</token>
+  </line>
+  <line no="730">
+    <token name="T_INLINE_HTML">                                swal(response.error);</token>
+  </line>
+  <line no="731">
+    <token name="T_INLINE_HTML">                                uploader.removeFile(file);</token>
+  </line>
+  <line no="732">
+    <token name="T_INLINE_HTML">                                $('#file_list').empty();</token>
+  </line>
+  <line no="733">
+    <token name="T_INLINE_HTML">                                $("#upload_container :input").removeAttr("disabled");</token>
+  </line>
+  <line no="734">
+    <token name="T_INLINE_HTML">                            } else {</token>
+  </line>
+  <line no="735">
+    <token name="T_INLINE_HTML">                                var gallery_photos_val = $("#gallery_photos").val();</token>
+  </line>
+  <line no="736">
+    <token name="T_INLINE_HTML">                                var new_val = gallery_photos_val.length ? gallery_photos_val + "::" + response.result.file</token>
+  </line>
+  <line no="737">
+    <token name="T_INLINE_HTML">                                    : response.result.file;</token>
+  </line>
+  <line no="738">
+    <token name="T_INLINE_HTML">                                $("#gallery_photos").val(new_val);</token>
+  </line>
+  <line no="739">
+    <token name="T_INLINE_HTML">                                document.getElementById(file.id).getElementsByTagName('b')[0].innerHTML = '&lt;span ' +</token>
+  </line>
+  <line no="740">
+    <token name="T_INLINE_HTML">                                    'class="m-r-10 label label-pill label-success"&gt;success&lt;/span&gt;';</token>
+  </line>
+  <line no="741">
+    <token name="T_INLINE_HTML">                                if ((uploader.total.uploaded + 1) == uploader.files.length) {</token>
+  </line>
+  <line no="742">
+    <token name="T_INLINE_HTML">                                    $("#pick_files").removeAttr("disabled");</token>
+  </line>
+  <line no="743">
+    <token name="T_INLINE_HTML">                                    $("#upload_container :input[type='file']").removeAttr("disabled");</token>
+  </line>
+  <line no="744">
+    <token name="T_INLINE_HTML">                                }</token>
+  </line>
+  <line no="745">
+    <token name="T_INLINE_HTML">                            }</token>
+  </line>
+  <line no="746">
+    <token name="T_INLINE_HTML">                        }</token>
+  </line>
+  <line no="747">
+    <token name="T_INLINE_HTML">                    }</token>
+  </line>
+  <line no="748">
+    <token name="T_INLINE_HTML">                });</token>
+  </line>
+  <line no="749">
+    <token name="T_INLINE_HTML">                return uploader;</token>
+  </line>
+  <line no="750">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="751">
+    <token name="T_INLINE_HTML">            var upload = uploader();</token>
+  </line>
+  <line no="752">
+    <token name="T_INLINE_HTML">            upload.init();</token>
+  </line>
+  <line no="753"/>
+  <line no="754">
+    <token name="T_INLINE_HTML">            function uploader_video() {</token>
+  </line>
+  <line no="755">
+    <token name="T_INLINE_HTML">                var uploader_video = new plupload.Uploader({</token>
+  </line>
+  <line no="756">
+    <token name="T_INLINE_HTML">                    runtimes: 'html5,html4',</token>
+  </line>
+  <line no="757">
+    <token name="T_INLINE_HTML">                    browse_button: document.getElementById('pick_file_video'),</token>
+  </line>
+  <line no="758">
+    <token name="T_INLINE_HTML">                    container: document.getElementById('upload_container_video'),</token>
+  </line>
+  <line no="759">
+    <token name="T_INLINE_HTML">                    max_retries: 5,</token>
+  </line>
+  <line no="760">
+    <token name="T_INLINE_HTML">                    headers: {</token>
+  </line>
+  <line no="761">
+    <token name="T_INLINE_HTML">                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')</token>
+  </line>
+  <line no="762">
+    <token name="T_INLINE_HTML">                    },</token>
+  </line>
+  <line no="763">
+    <token name="T_INLINE_HTML">                    multi_selection: false,</token>
+  </line>
+  <line no="764">
+    <token name="T_INLINE_HTML">                    url : "/video/save-file",</token>
+  </line>
+  <line no="765">
+    <token name="T_INLINE_HTML">                    chunk_size: '{{env('VIDEO_UPLOAD_CHUNK_SIZE', 512)}}kb',</token>
+  </line>
+  <line no="766">
+    <token name="T_INLINE_HTML">                    filters : {</token>
+  </line>
+  <line no="767">
+    <token name="T_INLINE_HTML">                        max_file_size : '{{env('VIDEO_MAX_UPLOAD_SIZE', 300)}}mb',</token>
+  </line>
+  <line no="768">
+    <token name="T_INLINE_HTML">                        mime_types: [</token>
+  </line>
+  <line no="769">
+    <token name="T_INLINE_HTML">                            {title : "Video files", extensions : "avi,mpeg4,wmv,mp4,mov"}</token>
+  </line>
+  <line no="770">
+    <token name="T_INLINE_HTML">                        ]</token>
+  </line>
+  <line no="771">
+    <token name="T_INLINE_HTML">                    },</token>
+  </line>
+  <line no="772">
+    <token name="T_INLINE_HTML">                    init: {</token>
+  </line>
+  <line no="773">
+    <token name="T_INLINE_HTML">                        PostInit: function() {</token>
+  </line>
+  <line no="774">
+    <token name="T_INLINE_HTML">                            document.getElementById('file_list_video').innerHTML = '';</token>
+  </line>
+  <line no="775">
+    <token name="T_INLINE_HTML">                            document.getElementById('upload_file_video').onclick = function() {</token>
+  </line>
+  <line no="776">
+    <token name="T_INLINE_HTML">                                uploader_video.start();</token>
+  </line>
+  <line no="777">
+    <token name="T_INLINE_HTML">                                return false;</token>
+  </line>
+  <line no="778">
+    <token name="T_INLINE_HTML">                            };</token>
+  </line>
+  <line no="779">
+    <token name="T_INLINE_HTML">                        },</token>
+  </line>
+  <line no="780">
+    <token name="T_INLINE_HTML">                        FilesAdded: function(up, files) {</token>
+  </line>
+  <line no="781">
+    <token name="T_INLINE_HTML">                            while (up.files.length &gt; 1) {</token>
+  </line>
+  <line no="782">
+    <token name="T_INLINE_HTML">                                up.removeFile(up.files[0]);</token>
+  </line>
+  <line no="783">
+    <token name="T_INLINE_HTML">                            }</token>
+  </line>
+  <line no="784">
+    <token name="T_INLINE_HTML">                            var file = files[0];</token>
+  </line>
+  <line no="785">
+    <token name="T_INLINE_HTML">                            var new_name = str_random() + "-" + file.name;</token>
+  </line>
+  <line no="786">
+    <token name="T_INLINE_HTML">                            up.settings.multipart_params = {name: new_name, Filename: new_name};</token>
+  </line>
+  <line no="787">
+    <token name="T_INLINE_HTML">                            document.getElementById('file_list_video').innerHTML = '&lt;div id="' + files[0].id + '" style="display:\</token>
+  </line>
+  <line no="788">
+    <token name="T_INLINE_HTML">                                    inline;"&gt;' + files[0].name + ' (' + plupload.formatSize(files[0].size) + ')&lt;/div&gt;';</token>
+  </line>
+  <line no="789">
+    <token name="T_INLINE_HTML">                        },</token>
+  </line>
+  <line no="790">
+    <token name="T_INLINE_HTML">                        UploadProgress: function(up, file) {</token>
+  </line>
+  <line no="791">
+    <token name="T_INLINE_HTML">                            $("#uploading_progress").val(file.percent);</token>
+  </line>
+  <line no="792">
+    <token name="T_INLINE_HTML">                        },</token>
+  </line>
+  <line no="793">
+    <token name="T_INLINE_HTML">                        BeforeUpload: function (uploader_video, file) {</token>
+  </line>
+  <line no="794">
+    <token name="T_INLINE_HTML">                            //preventNavigation("You have not saved the form. Any changes will be lost if you leave this page.");</token>
+  </line>
+  <line no="795">
+    <token name="T_INLINE_HTML">                            $("#progress").show();</token>
+  </line>
+  <line no="796">
+    <token name="T_INLINE_HTML">                            $("#stop_uploading_video").show();</token>
+  </line>
+  <line no="797">
+    <token name="T_INLINE_HTML">                            $("#pick_file_video").attr({disabled: "disabled"});</token>
+  </line>
+  <line no="798">
+    <token name="T_INLINE_HTML">                            $("#upload_container_video :input[type='file']").attr({disabled: "disabled"});</token>
+  </line>
+  <line no="799">
+    <token name="T_INLINE_HTML">                        },</token>
+  </line>
+  <line no="800">
+    <token name="T_INLINE_HTML">                        Error: function(up, err) {</token>
+  </line>
+  <line no="801">
+    <token name="T_INLINE_HTML">                            $.notify("Upload error: " + err.message, "error");</token>
+  </line>
+  <line no="802">
+    <token name="T_INLINE_HTML">                        },</token>
+  </line>
+  <line no="803">
+    <token name="T_INLINE_HTML">                        FileUploaded: function (uploader_video, file, result) {</token>
+  </line>
+  <line no="804">
+    <token name="T_INLINE_HTML">                            var response = $.parseJSON(result.response);</token>
+  </line>
+  <line no="805">
+    <token name="T_INLINE_HTML">                            $("#gallery_video").val(response.result.file);</token>
+  </line>
+  <line no="806">
+    <token name="T_INLINE_HTML">                            $("#file_list_video").append('&lt;span class="m-r-10 label label-pill label-success"&gt;success&lt;/span&gt;');</token>
+  </line>
+  <line no="807">
+    <token name="T_INLINE_HTML">                            $("#progress").hide();</token>
+  </line>
+  <line no="808">
+    <token name="T_INLINE_HTML">                            $("#stop_uploading_video").hide();</token>
+  </line>
+  <line no="809">
+    <token name="T_INLINE_HTML">                        }</token>
+  </line>
+  <line no="810">
+    <token name="T_INLINE_HTML">                    }</token>
+  </line>
+  <line no="811">
+    <token name="T_INLINE_HTML">                });</token>
+  </line>
+  <line no="812">
+    <token name="T_INLINE_HTML">                return uploader_video;</token>
+  </line>
+  <line no="813">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="814"/>
+  <line no="815"/>
+  <line no="816">
+    <token name="T_INLINE_HTML">            var upload_video = uploader_video();</token>
+  </line>
+  <line no="817">
+    <token name="T_INLINE_HTML">            //upload.init();</token>
+  </line>
+  <line no="818">
+    <token name="T_INLINE_HTML">            $("#stop_uploading_video").on("click", function () {</token>
+  </line>
+  <line no="819">
+    <token name="T_INLINE_HTML">                $(this).hide();</token>
+  </line>
+  <line no="820">
+    <token name="T_INLINE_HTML">                upload_video.removeFile(upload_video.files[0]);</token>
+  </line>
+  <line no="821">
+    <token name="T_INLINE_HTML">                $('#file_list_video').html('');</token>
+  </line>
+  <line no="822">
+    <token name="T_INLINE_HTML">                $("#uploading_progress").val(0);</token>
+  </line>
+  <line no="823">
+    <token name="T_INLINE_HTML">                $("#progress").hide();</token>
+  </line>
+  <line no="824">
+    <token name="T_INLINE_HTML">                $(".moxie-shim").remove();</token>
+  </line>
+  <line no="825">
+    <token name="T_INLINE_HTML">                $("#pick_files").removeAttr("disabled");</token>
+  </line>
+  <line no="826">
+    <token name="T_INLINE_HTML">                upload_video.destroy();</token>
+  </line>
+  <line no="827">
+    <token name="T_INLINE_HTML">                upload_video = uploader();</token>
+  </line>
+  <line no="828">
+    <token name="T_INLINE_HTML">                upload_video.init();</token>
+  </line>
+  <line no="829">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="830"/>
+  <line no="831"/>
+  <line no="832">
+    <token name="T_INLINE_HTML">            var upload_video = uploader_video();</token>
+  </line>
+  <line no="833">
+    <token name="T_INLINE_HTML">            upload_video.init();</token>
+  </line>
+  <line no="834"/>
+  <line no="835">
+    <token name="T_INLINE_HTML">            $(".delete-gallery-item").on("click", function() {</token>
+  </line>
+  <line no="836">
+    <token name="T_INLINE_HTML">                var that = $(this);</token>
+  </line>
+  <line no="837">
+    <token name="T_INLINE_HTML">                swal({</token>
+  </line>
+  <line no="838">
+    <token name="T_INLINE_HTML">                    title: 'Are you sure?',</token>
+  </line>
+  <line no="839">
+    <token name="T_INLINE_HTML">                    text: "Do you really want to delete this " + that.attr("data-type") + "?",</token>
+  </line>
+  <line no="840">
+    <token name="T_INLINE_HTML">                    type: 'warning',</token>
+  </line>
+  <line no="841">
+    <token name="T_INLINE_HTML">                    showCancelButton: true,</token>
+  </line>
+  <line no="842">
+    <token name="T_INLINE_HTML">                    confirmButtonText: 'Yes, delete it!'</token>
+  </line>
+  <line no="843">
+    <token name="T_INLINE_HTML">                }).then(function() {</token>
+  </line>
+  <line no="844">
+    <token name="T_INLINE_HTML">                    //preventNavigation("You have not saved the form. Any changes will be lost if you leave this page.");</token>
+  </line>
+  <line no="845">
+    <token name="T_INLINE_HTML">                    var deleted_val = $("#deleted_gallery_items").val();</token>
+  </line>
+  <line no="846">
+    <token name="T_INLINE_HTML">                    deleted_val += (deleted_val.length ? "," : "") + that.attr("data-id");</token>
+  </line>
+  <line no="847">
+    <token name="T_INLINE_HTML">                    $("#deleted_gallery_items").val(deleted_val);</token>
+  </line>
+  <line no="848">
+    <token name="T_INLINE_HTML">                    that.parent(".gallery-item-container").remove();</token>
+  </line>
+  <line no="849">
+    <token name="T_INLINE_HTML">                    gallery_size--;</token>
+  </line>
+  <line no="850">
+    <token name="T_INLINE_HTML">                }, function(dismiss) {});</token>
+  </line>
+  <line no="851">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="852"/>
+  <line no="853">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="854"/>
+  <line no="855">
+    <token name="T_INLINE_HTML">        $(document).ready(function () {</token>
+  </line>
+  <line no="856">
+    <token name="T_INLINE_HTML">            $('#vacation_start').datepicker({</token>
+  </line>
+  <line no="857">
+    <token name="T_INLINE_HTML">                format: 'yyyy-mm-dd',</token>
+  </line>
+  <line no="858">
+    <token name="T_INLINE_HTML">            }).on('changeDate', function (e) {</token>
+  </line>
+  <line no="859">
+    <token name="T_INLINE_HTML">                $('#vacation_end').datepicker('setStartDate', e.date);</token>
+  </line>
+  <line no="860">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="861"/>
+  <line no="862">
+    <token name="T_INLINE_HTML">            $('#vacation_end').datepicker({</token>
+  </line>
+  <line no="863">
+    <token name="T_INLINE_HTML">                format: 'yyyy-mm-dd',</token>
+  </line>
+  <line no="864">
+    <token name="T_INLINE_HTML">            }).on('changeDate', function (e) {</token>
+  </line>
+  <line no="865">
+    <token name="T_INLINE_HTML">                $('#vacation_start').datepicker('setEndDate', e.date);</token>
+  </line>
+  <line no="866">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="867">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="868"/>
+  <line no="869"/>
+  <line no="870">
+    <token name="T_INLINE_HTML">        @if ( count( $errors ) &gt; 0)</token>
+  </line>
+  <line no="871">
+    <token name="T_INLINE_HTML">                toastr.options = {</token>
+  </line>
+  <line no="872">
+    <token name="T_INLINE_HTML">            "closeButton": true,</token>
+  </line>
+  <line no="873">
+    <token name="T_INLINE_HTML">            "positionClass": "toast-bottom-left",</token>
+  </line>
+  <line no="874">
+    <token name="T_INLINE_HTML">            "onclick": null,</token>
+  </line>
+  <line no="875">
+    <token name="T_INLINE_HTML">            "showDuration": "1000",</token>
+  </line>
+  <line no="876">
+    <token name="T_INLINE_HTML">            "hideDuration": "1000",</token>
+  </line>
+  <line no="877">
+    <token name="T_INLINE_HTML">            "timeOut": "5000",</token>
+  </line>
+  <line no="878">
+    <token name="T_INLINE_HTML">            "extendedTimeOut": "1000",</token>
+  </line>
+  <line no="879">
+    <token name="T_INLINE_HTML">            "showEasing": "swing",</token>
+  </line>
+  <line no="880">
+    <token name="T_INLINE_HTML">            "hideEasing": "linear",</token>
+  </line>
+  <line no="881">
+    <token name="T_INLINE_HTML">            "showMethod": "fadeIn",</token>
+  </line>
+  <line no="882">
+    <token name="T_INLINE_HTML">            "hideMethod": "fadeOut"</token>
+  </line>
+  <line no="883">
+    <token name="T_INLINE_HTML">        };</token>
+  </line>
+  <line no="884">
+    <token name="T_INLINE_HTML">        toastr.error( 'The Avatar must be an image.' , "Error");</token>
+  </line>
+  <line no="885">
+    <token name="T_INLINE_HTML">        @endif</token>
+  </line>
+  <line no="886"/>
+  <line no="887">
+    <token name="T_INLINE_HTML">    &lt;/script&gt;</token>
+  </line>
+  <line no="888">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+</source>

@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-11-05/video" file="uploadvideo.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-11-05/video/uploadvideo.blade.php" size="3129" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="9599c96c81945531c5e16a11477f4f94e767733f" relative="resources/views-11-05/video/uploadvideo.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layouts.uploadvideo')</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">	 &lt;section class="video-download-wrap"&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">        &lt;div class="process-steps"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">            &lt;a href="{{ url('video') }}" class="back-arrow"&gt;&lt;img src="/assets/img/back-arrow.png" alt="" class="img-fluid"&gt;&lt;/a&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">            &lt;a href="{{ url('video') }}" class="close-icon"&gt;&lt;img src="/assets/img/close.png" alt="" class="img-fluid"&gt;&lt;/a&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">            &lt;ul class="process-menu"&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">                &lt;li class=""&gt;&lt;a href="#"&gt;UPLOAD VIDEO&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">                &lt;li class=""&gt;&lt;a href="#"&gt;SELECT COACH&lt;/a&gt; &lt;/li&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">                &lt;li&gt;&lt;a href="#"&gt;PAY&lt;/a&gt; &lt;/li&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">            &lt;/ul&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="13"/>
+  <line no="14">
+    <token name="T_INLINE_HTML">        &lt;div class="video-content welcome-content"&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">            &lt;div class="container"&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">                &lt;h2&gt;Welcome!&lt;/h2&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">                &lt;h3&gt;Let&#x2019;s start by uploading your first video performance. &lt;/h3&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">                @if ($errors-&gt;any())</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">				    &lt;div class="alert alert-danger"&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">				        &lt;ul&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">				            @foreach ($errors-&gt;all() as $error)</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">				                &lt;li&gt;{{ $error }}&lt;/li&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">				            @endforeach</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">				        &lt;/ul&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">				    &lt;/div&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">				@endif</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">            &lt;div class="row justify-content-center"&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">                 &lt;div class="col-lg-9"&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">                &lt;div class="youtube-link"&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">                    &lt;div class="row align-items-center"&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">                      &lt;div class="col-xl-3 col-lg-4 col-md-4 p-0"&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">                            &lt;div class="left-box"&gt;&lt;i class="fab fa-youtube"&gt;&lt;/i&gt;YouTube Link:&lt;/div&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">                        &lt;div class="col-xl-9 col-lg-8 col-md-8"&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">                            &lt;div class="right-box"&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">                                &lt;input type="search" name="" class="form-control" placeholder="Copy here the url &#x2026;"&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">                &lt;div class="drag-file"&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">                    &lt;div class="dropzone-content"&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">                    &lt;form id="file-upload-form" action="{{ url('upload') }}" method="post" enctype= multipart/form-data&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">                    	{!! csrf_field() !!}</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">                        &lt;input id="file-upload" type="file" name="video" /&gt;</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">                        &lt;label for="file-upload" id="file-drag"&gt;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">                            &lt;img src="/assets/img/video-icon.jpg" alt="" class="img-fluid"&gt;</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">                            &lt;h3&gt;Drag and Drop your Video here&lt;/h3&gt;</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">                            &lt;span class="or"&gt;OR&lt;/span&gt;</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">                            &lt;span id="file-upload-btn" class="browse-btn"&gt;Browse&lt;/span&gt;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">                            &lt;output for="file-upload" id="messages"&gt;&lt;/output&gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">                        &lt;/label&gt;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">                    &lt;p&gt;The maximum video size is 300 mb. Valid formats avi, mpeg4, wmv, mp4, mov.&lt;/p&gt;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">                    &lt;button type="submit" class="btn btn-danger"&gt;Upload&lt;/button&gt;</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">                    &lt;/form&gt;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">                    &lt;div class="skip-box"&gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">                      &lt;a href="{{url('video')}}" class="skip"&gt;SKIP FOR NOW&lt;/a&gt;</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">    &lt;/section&gt;</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+</source>

@@ -1,0 +1,435 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/public/assets/marino/bower_components/nouislider/documentation" file="slider-read-write.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/public/assets/marino/bower_components/nouislider/documentation/slider-read-write.php" size="3342" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="7ca2e7d5bab367a8aa91cf7a89361c880ca46c42" relative="public/assets/marino/bower_components/nouislider/documentation/slider-read-write.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_VARIABLE">$title</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"noUiSlider - Getting and setting slider values"</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="3">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_VARIABLE">$description</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"Reading and setting values from a slider is as easy as reading from any other form element."</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="4"/>
+  <line no="5">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_VARIABLE">$title</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"noUiSlider - Formatting numbers"</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="6">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_VARIABLE">$description</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"noUiSlider can read and display values formatting using a bunch of options. Read more here."</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="7">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="8"/>
+  <line no="9">
+    <token name="T_INLINE_HTML">&lt;h1&gt;Getting and setting slider values&lt;/h1&gt;</token>
+  </line>
+  <line no="10"/>
+  <line no="11"/>
+  <line no="12">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'reading'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">&lt;h2&gt;Reading slider values&lt;/h2&gt;</token>
+  </line>
+  <line no="14"/>
+  <line no="15">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="16"/>
+  <line no="17">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="18"/>
+  <line no="19">
+    <token name="T_INLINE_HTML">		&lt;p&gt;noUiSlider has an API with two simple methods: &lt;code&gt;.get()&lt;/code&gt; and &lt;code&gt;.set()&lt;/code&gt;. To get the current slider value:&lt;/p&gt;</token>
+  </line>
+  <line no="20"/>
+  <line no="21">
+    <token name="T_INLINE_HTML">		</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'read'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="22"/>
+  <line no="23">
+    <token name="T_INLINE_HTML">		&lt;p&gt;For one-handle sliders, calling &lt;code&gt;.get()&lt;/code&gt; will return the value. For two-handle sliders, an &lt;code&gt;array[value, value]&lt;/code&gt; will be returned.&lt;/p&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="26"/>
+  <line no="27"/>
+  <line no="28">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'setting'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">&lt;h2&gt;Setting slider values&lt;/h2&gt;</token>
+  </line>
+  <line no="30"/>
+  <line no="31">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="32"/>
+  <line no="33">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="34"/>
+  <line no="35">
+    <token name="T_INLINE_HTML">		&lt;p&gt;noUiSlider will keep your values within the slider range, which saves you a bunch of validation.&lt;/p&gt;</token>
+  </line>
+  <line no="36"/>
+  <line no="37">
+    <token name="T_INLINE_HTML">		&lt;p&gt;If you have configured the slider to use one handle, you can change the current value by passing a number to the &lt;code&gt;.set()&lt;/code&gt; method. If you have two handles, pass an array. One-handled sliders will also accept arrays.&lt;/p&gt;</token>
+  </line>
+  <line no="38"/>
+  <line no="39">
+    <token name="T_INLINE_HTML">		&lt;p&gt;Within an array, you can set one position to &lt;code&gt;null&lt;/code&gt; if you want to leave a handle unchanged.&lt;/p&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="41"/>
+  <line no="42">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">		</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'write'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="46"/>
+  <line no="47"/>
+  <line no="48">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'example'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">&lt;h2&gt;Example&lt;/h2&gt;</token>
+  </line>
+  <line no="50"/>
+  <line no="51">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="52"/>
+  <line no="53">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="54"/>
+  <line no="55">
+    <token name="T_INLINE_HTML">		&lt;p&gt;Clicking the button below sets the slider, which uses a &lt;code&gt;range&lt;/code&gt; from &lt;code&gt;0&lt;/code&gt; to &lt;code&gt;100&lt;/code&gt;, to &lt;code&gt;20&lt;/code&gt;.&lt;/p&gt;</token>
+  </line>
+  <line no="56"/>
+  <line no="57">
+    <token name="T_INLINE_HTML">		&lt;div class="example"&gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">			&lt;div id="slider"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">			&lt;div class="logger"&gt;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">				&lt;button id="write-button"&gt;Set to 20&lt;/button&gt;</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">				&lt;button id="read-button"&gt;Read slider value&lt;/button&gt;</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">			&lt;/div&gt;</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'set'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">false</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'buttons'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">false</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="67"/>
+  <line no="68">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">		</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'set'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="70"/>
+  <line no="71">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Handling button presses&lt;/div&gt;</token>
+  </line>
+  <line no="72"/>
+  <line no="73">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'buttons'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="77"/>
+  <line no="78">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="79"/>
+  <line no="80"/>
+  <line no="81">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'formatting'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">&lt;h2&gt;Number formatting&lt;/h2&gt;</token>
+  </line>
+  <line no="83"/>
+  <line no="84">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="85"/>
+  <line no="86">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="87"/>
+  <line no="88">
+    <token name="T_INLINE_HTML">		&lt;p&gt;To format the slider output, noUiSlider offers a &lt;code&gt;format&lt;/code&gt; option. Simply specify &lt;code&gt;to&lt;/code&gt; and &lt;code&gt;from&lt;/code&gt; functions to encode and decode the values. See &lt;em&gt;manual formatting&lt;/em&gt; to the right for usage information.&lt;/p&gt;</token>
+  </line>
+  <line no="89"/>
+  <line no="90">
+    <token name="T_INLINE_HTML">		&lt;p&gt;By default, noUiSlider will format output with &lt;strong&gt;2 decimals&lt;/strong&gt;.&lt;/p&gt;</token>
+  </line>
+  <line no="91"/>
+  <line no="92">
+    <token name="T_INLINE_HTML">		&lt;p&gt;Manual formatting can be very tedious, so noUiSlider has support for &lt;a href="/wnumb"&gt;the wNumb formatting library&lt;/a&gt;. wNumb offers a wide range of options and provides number validation.&lt;/p&gt;</token>
+  </line>
+  <line no="93"/>
+  <line no="94">
+    <token name="T_INLINE_HTML">		&lt;div class="example"&gt;</token>
+  </line>
+  <line no="95">
+    <token name="T_INLINE_HTML">			&lt;div id="slider-format"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="96">
+    <token name="T_INLINE_HTML">			&lt;input id="input-format"&gt;</token>
+  </line>
+  <line no="97">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'wnumb'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'format-link'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="100"/>
+  <line no="101">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="102"/>
+  <line no="103">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="104"/>
+  <line no="105">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Formatting with wNumb&lt;/div&gt;</token>
+  </line>
+  <line no="106"/>
+  <line no="107">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="108">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'wnumb'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="109">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="110"/>
+  <line no="111">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Manual formatting&lt;/div&gt;</token>
+  </line>
+  <line no="112"/>
+  <line no="113">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="114">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'format'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="115">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="116"/>
+  <line no="117">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Linking the input field&lt;/div&gt;</token>
+  </line>
+  <line no="118"/>
+  <line no="119">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="120">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'format-link'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="121">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="122">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="123"/>
+  <line no="124">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="125"/>
+</source>

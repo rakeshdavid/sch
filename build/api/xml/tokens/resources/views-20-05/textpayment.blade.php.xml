@@ -1,0 +1,502 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-20-05" file="textpayment.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-20-05/textpayment.blade.php" size="6848" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="f345f89c89bdc95d94f8a724b45f5f9dbededf60" relative="resources/views-20-05/textpayment.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;!DOCTYPE html&gt;</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">&lt;html&gt;</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">&lt;head&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">	&lt;title&gt;Laravel 5 - Stripe Payment Gateway Integration Example - ItSolutionStuff.com&lt;/title&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">	&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" /&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">    &lt;style type="text/css"&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">        .panel-title {</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">        display: inline;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">        font-weight: bold;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">        .display-table {</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">            display: table;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">        .display-tr {</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">            display: table-row;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">        .display-td {</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">            display: table-cell;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">            vertical-align: middle;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">            width: 61%;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">    &lt;/style&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">&lt;/head&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">&lt;body&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">  </token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">&lt;div class="container"&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">  </token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">    &lt;h1&gt;Laravel 5 - Stripe Payment Gateway Integration Example &lt;br/&gt; ItSolutionStuff.com&lt;/h1&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">  </token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">    &lt;div class="row"&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">        &lt;div class="col-md-6 col-md-offset-3"&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">            &lt;div class="panel panel-default credit-card-box"&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">                &lt;div class="panel-heading display-table" &gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">                    &lt;div class="row display-tr" &gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">                        &lt;h3 class="panel-title display-td" &gt;Payment Details&lt;/h3&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">                        &lt;div class="display-td" &gt;                            </token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">                            &lt;img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png"&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;                    </token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">                &lt;div class="panel-body"&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">  </token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">                    @if (Session::has('success'))</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">                        &lt;div class="alert alert-success text-center"&gt;</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">                            &lt;a href="#" class="close" data-dismiss="alert" aria-label="close"&gt;&#xD7;&lt;/a&gt;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">                            &lt;p&gt;{{ Session::get('success') }}&lt;/p&gt;</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">                    @endif</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">  </token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">                    &lt;form role="form" action="{{ route('stripe.post') }}" method="post" class="require-validation"data-cc-on-file="false" data-stripe-publishable-key="{{ env('STRIPE_PUBLISHABLE_KEY') }}" id="payment-form"&gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">                        {!! csrf_field() !!}</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">  </token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">                        &lt;div class='form-row row'&gt;</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">                            &lt;div class='col-xs-12 form-group required'&gt;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">                                &lt;label class='control-label'&gt;Name on Card&lt;/label&gt; </token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">                                &lt;input class='form-control' size='4' type='text'&gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">  </token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">                        &lt;div class='form-row row'&gt;</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">                            &lt;div class='col-xs-12 form-group card required'&gt;</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">                                &lt;label class='control-label'&gt;Card Number&lt;/label&gt; &lt;input</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">                                    autocomplete='off' class='form-control card-number' size='20'</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">                                    type='text'&gt;</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">  </token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">                        &lt;div class='form-row row'&gt;</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">                            &lt;div class='col-xs-12 col-md-4 form-group cvc required'&gt;</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">                                &lt;label class='control-label'&gt;CVC&lt;/label&gt; &lt;input autocomplete='off'</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">                                    class='form-control card-cvc' placeholder='ex. 311' size='4'</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">                                    type='text'&gt;</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">                            &lt;div class='col-xs-12 col-md-4 form-group expiration required'&gt;</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">                                &lt;label class='control-label'&gt;Expiration Month&lt;/label&gt; &lt;input</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">                                    class='form-control card-expiry-month' placeholder='MM' size='2'</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">                                    type='text'&gt;</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">                            &lt;div class='col-xs-12 col-md-4 form-group expiration required'&gt;</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">                                &lt;label class='control-label'&gt;Expiration Year&lt;/label&gt; &lt;input</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">                                    class='form-control card-expiry-year' placeholder='YYYY' size='4'</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">                                    type='text'&gt;</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="85">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="86">
+    <token name="T_INLINE_HTML">  </token>
+  </line>
+  <line no="87">
+    <token name="T_INLINE_HTML">                        &lt;div class='form-row row'&gt;</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">                            &lt;div class='col-md-12 error form-group hide'&gt;</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">                                &lt;div class='alert-danger alert'&gt;Please correct the errors and try</token>
+  </line>
+  <line no="90">
+    <token name="T_INLINE_HTML">                                    again.&lt;/div&gt;</token>
+  </line>
+  <line no="91">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="92">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="93">
+    <token name="T_INLINE_HTML">  </token>
+  </line>
+  <line no="94">
+    <token name="T_INLINE_HTML">                        &lt;div class="row"&gt;</token>
+  </line>
+  <line no="95">
+    <token name="T_INLINE_HTML">                            &lt;div class="col-xs-12"&gt;</token>
+  </line>
+  <line no="96">
+    <token name="T_INLINE_HTML">                                &lt;button class="btn btn-primary btn-lg btn-block" type="submit"&gt;Pay Now ($100)&lt;/button&gt;</token>
+  </line>
+  <line no="97">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">                          </token>
+  </line>
+  <line no="100">
+    <token name="T_INLINE_HTML">                    &lt;/form&gt;</token>
+  </line>
+  <line no="101">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="102">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;        </token>
+  </line>
+  <line no="103">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="104">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="105">
+    <token name="T_INLINE_HTML">      </token>
+  </line>
+  <line no="106">
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+  <line no="107">
+    <token name="T_INLINE_HTML">  </token>
+  </line>
+  <line no="108">
+    <token name="T_INLINE_HTML">&lt;/body&gt;</token>
+  </line>
+  <line no="109">
+    <token name="T_INLINE_HTML">  </token>
+  </line>
+  <line no="110">
+    <token name="T_INLINE_HTML">&lt;script type="text/javascript" src="https://js.stripe.com/v2/"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="111">
+    <token name="T_INLINE_HTML">  </token>
+  </line>
+  <line no="112">
+    <token name="T_INLINE_HTML">&lt;script type="text/javascript"&gt;</token>
+  </line>
+  <line no="113">
+    <token name="T_INLINE_HTML">$(function() {</token>
+  </line>
+  <line no="114">
+    <token name="T_INLINE_HTML">    var $form         = $(".require-validation");</token>
+  </line>
+  <line no="115">
+    <token name="T_INLINE_HTML">  $('form.require-validation').bind('submit', function(e) {</token>
+  </line>
+  <line no="116">
+    <token name="T_INLINE_HTML">    var $form         = $(".require-validation"),</token>
+  </line>
+  <line no="117">
+    <token name="T_INLINE_HTML">        inputSelector = ['input[type=email]', 'input[type=password]',</token>
+  </line>
+  <line no="118">
+    <token name="T_INLINE_HTML">                         'input[type=text]', 'input[type=file]',</token>
+  </line>
+  <line no="119">
+    <token name="T_INLINE_HTML">                         'textarea'].join(', '),</token>
+  </line>
+  <line no="120">
+    <token name="T_INLINE_HTML">        $inputs       = $form.find('.required').find(inputSelector),</token>
+  </line>
+  <line no="121">
+    <token name="T_INLINE_HTML">        $errorMessage = $form.find('div.error'),</token>
+  </line>
+  <line no="122">
+    <token name="T_INLINE_HTML">        valid         = true;</token>
+  </line>
+  <line no="123">
+    <token name="T_INLINE_HTML">        $errorMessage.addClass('hide');</token>
+  </line>
+  <line no="124">
+    <token name="T_INLINE_HTML"> </token>
+  </line>
+  <line no="125">
+    <token name="T_INLINE_HTML">        $('.has-error').removeClass('has-error');</token>
+  </line>
+  <line no="126">
+    <token name="T_INLINE_HTML">    $inputs.each(function(i, el) {</token>
+  </line>
+  <line no="127">
+    <token name="T_INLINE_HTML">      var $input = $(el);</token>
+  </line>
+  <line no="128">
+    <token name="T_INLINE_HTML">      if ($input.val() === '') {</token>
+  </line>
+  <line no="129">
+    <token name="T_INLINE_HTML">        $input.parent().addClass('has-error');</token>
+  </line>
+  <line no="130">
+    <token name="T_INLINE_HTML">        $errorMessage.removeClass('hide');</token>
+  </line>
+  <line no="131">
+    <token name="T_INLINE_HTML">        e.preventDefault();</token>
+  </line>
+  <line no="132">
+    <token name="T_INLINE_HTML">      }</token>
+  </line>
+  <line no="133">
+    <token name="T_INLINE_HTML">    });</token>
+  </line>
+  <line no="134">
+    <token name="T_INLINE_HTML">  </token>
+  </line>
+  <line no="135">
+    <token name="T_INLINE_HTML">    if (!$form.data('cc-on-file')) {</token>
+  </line>
+  <line no="136">
+    <token name="T_INLINE_HTML">      e.preventDefault();</token>
+  </line>
+  <line no="137">
+    <token name="T_INLINE_HTML">      Stripe.setPublishableKey($form.data('stripe-publishable-key'));</token>
+  </line>
+  <line no="138">
+    <token name="T_INLINE_HTML">      Stripe.createToken({</token>
+  </line>
+  <line no="139">
+    <token name="T_INLINE_HTML">        number: $('.card-number').val(),</token>
+  </line>
+  <line no="140">
+    <token name="T_INLINE_HTML">        cvc: $('.card-cvc').val(),</token>
+  </line>
+  <line no="141">
+    <token name="T_INLINE_HTML">        exp_month: $('.card-expiry-month').val(),</token>
+  </line>
+  <line no="142">
+    <token name="T_INLINE_HTML">        exp_year: $('.card-expiry-year').val()</token>
+  </line>
+  <line no="143">
+    <token name="T_INLINE_HTML">      }, stripeResponseHandler);</token>
+  </line>
+  <line no="144">
+    <token name="T_INLINE_HTML">    }</token>
+  </line>
+  <line no="145">
+    <token name="T_INLINE_HTML">  </token>
+  </line>
+  <line no="146">
+    <token name="T_INLINE_HTML">  });</token>
+  </line>
+  <line no="147">
+    <token name="T_INLINE_HTML">  </token>
+  </line>
+  <line no="148">
+    <token name="T_INLINE_HTML">  function stripeResponseHandler(status, response) {</token>
+  </line>
+  <line no="149">
+    <token name="T_INLINE_HTML">        if (response.error) {</token>
+  </line>
+  <line no="150">
+    <token name="T_INLINE_HTML">            $('.error')</token>
+  </line>
+  <line no="151">
+    <token name="T_INLINE_HTML">                .removeClass('hide')</token>
+  </line>
+  <line no="152">
+    <token name="T_INLINE_HTML">                .find('.alert')</token>
+  </line>
+  <line no="153">
+    <token name="T_INLINE_HTML">                .text(response.error.message);</token>
+  </line>
+  <line no="154">
+    <token name="T_INLINE_HTML">        } else {</token>
+  </line>
+  <line no="155">
+    <token name="T_INLINE_HTML">            // token contains id, last4, and card type</token>
+  </line>
+  <line no="156">
+    <token name="T_INLINE_HTML">            var token = response['id'];</token>
+  </line>
+  <line no="157">
+    <token name="T_INLINE_HTML">            // insert the token into the form so it gets submitted to the server</token>
+  </line>
+  <line no="158">
+    <token name="T_INLINE_HTML">            $form.find('input[type=text]').empty();</token>
+  </line>
+  <line no="159">
+    <token name="T_INLINE_HTML">            $form.append("&lt;input type='hidden' name='stripeToken' value='" + token + "'/&gt;");</token>
+  </line>
+  <line no="160">
+    <token name="T_INLINE_HTML">            $form.get(0).submit();</token>
+  </line>
+  <line no="161">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="162">
+    <token name="T_INLINE_HTML">    }</token>
+  </line>
+  <line no="163">
+    <token name="T_INLINE_HTML">  </token>
+  </line>
+  <line no="164">
+    <token name="T_INLINE_HTML">});</token>
+  </line>
+  <line no="165">
+    <token name="T_INLINE_HTML">&lt;/script&gt;</token>
+  </line>
+  <line no="166">
+    <token name="T_INLINE_HTML">&lt;/html&gt;</token>
+  </line>
+</source>

@@ -1,0 +1,312 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-25-05/video" file="upload-successful.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-25-05/video/upload-successful.blade.php" size="4630" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="ecfe8ed553612ab2aa644237cb3ec3563cd39667" relative="resources/views-25-05/video/upload-successful.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layouts.uploadvideo')</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">@section('css')</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">&lt;meta name="csrf-token" content="{{ csrf_token() }}" /&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">	&lt;section class="video-download-wrap upload-content"&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">         &lt;div class="process-steps"&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">            &lt;a href="{{url('video')}}" class="back-arrow"&gt;&lt;img src="/assets/img/back-arrow.png" alt="" class="img-fluid"&gt;&lt;/a&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">            &lt;a href="{{url('video')}}" class="close-icon"&gt;&lt;img src="/assets/img/close.png" alt="" class="img-fluid"&gt;&lt;/a&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">            &lt;ul class="process-menu"&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">                &lt;li class="active"&gt;&lt;a href="#"&gt;UPLOAD VIDEO&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">                &lt;li&gt;&lt;a href="#"&gt;SELECT COACH&lt;/a&gt; &lt;/li&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">                &lt;li&gt;&lt;a href="#"&gt;PAY&lt;/a&gt; &lt;/li&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">            &lt;/ul&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="16"/>
+  <line no="17">
+    <token name="T_INLINE_HTML">        &lt;div class="video-content "&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">            &lt;div class="container"&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">                &lt;h2&gt;Upload Successful!&lt;/h2&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">               </token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">                &lt;div class="youtube-link"&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">                    &lt;div class="row"&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">                        &lt;div class="col-lg-6"&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">                            &lt;div class="video"&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">                                @if($result-&gt;url &amp;&amp; $videotype =='file')</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">                                &lt;video id="myVideo" width="100%" height="auto" controls &gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">                                    &lt;source src="{{url('/') . config('video.user_video_path') . $result-&gt;url}}"&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">                                        Your browser does not support HTML5 video.</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">                                &lt;/video&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">                                @else</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">                                    &lt;iframe width="100%" height="436" src="{{$result-&gt;url}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">                                @endif</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">                          &lt;/div&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">                        &lt;div class="col-lg-6"&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">                            &lt;div class="right-box"&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">                              &lt;h4&gt;TITLE&lt;/h4&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">                                &lt;textarea id="video-title" class="form-control" rows="4" placeholder="Type here the name of your video performance &#x2026;"&gt;&lt;/textarea&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">                                &lt;input type="hidden" id="video-id" value="{{$video_id}}" /&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">                                &lt;div class="video-lenth"&gt;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">                                    @if($result-&gt;url &amp;&amp; $videotype =='file')</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">                                        &lt;h4&gt;LENGTH&lt;/h4&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">                                        &lt;div id="meta" class="duration"&gt;3:25&lt;/div&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">                                    @endif  </token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">                    &lt;div class="coach-select text-center"&gt;</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">                      &lt;a href="javascript:void(0)" id="select-coach" class="btn btn-outline-dark"&gt;Select a Coach&lt;/a&gt;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">                      &lt;a href="{{url('upload-new-video')}}" class="go-back"&gt;Go back and upload again&lt;/a&gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">                </token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">    &lt;/section&gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">@section('js')</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">    &lt;script&gt;</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">        $(document).ready(function () {</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">        	$.ajaxSetup({</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">				headers: {</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">					'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">				}</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">			});</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">            $( "#select-coach" ).click(function() {</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">			   console.log('click');</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">			   var video_title = $("#video-title").val();</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">			   if(video_title !=""){</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">			   		$("#video-title").css('border-color','inherit');</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">			   		var video_id = $("#video-id").val();</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">			   		$.ajax({</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">		               	type:'POST',</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">		               	url:'/update-title',</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">		               	data:{video_title:video_title, video_id:video_id},</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">						success:function(data){</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">							console.log(data);</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">                            //var response = JSON.parse(data);</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">                            window.location.href = data.redirect;</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">						}</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">		            });</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">			   }else{</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">					$("#video-title").css('border-color','red');</token>
+  </line>
+  <line no="85">
+    <token name="T_INLINE_HTML">			   }</token>
+  </line>
+  <line no="86">
+    <token name="T_INLINE_HTML">			});</token>
+  </line>
+  <line no="87">
+    <token name="T_INLINE_HTML">            if(document.getElementById('myVideo')){</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">                var myVideoPlayer = document.getElementById('myVideo'),</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">                meta = document.getElementById('meta');</token>
+  </line>
+  <line no="90"/>
+  <line no="91">
+    <token name="T_INLINE_HTML">                myVideoPlayer.addEventListener('loadedmetadata', function () {</token>
+  </line>
+  <line no="92">
+    <token name="T_INLINE_HTML">                    var duration = myVideoPlayer.duration;</token>
+  </line>
+  <line no="93">
+    <token name="T_INLINE_HTML">                    var seconds = duration.toFixed(2);</token>
+  </line>
+  <line no="94">
+    <token name="T_INLINE_HTML">                    var m = Math.floor(seconds % 3600 / 60);</token>
+  </line>
+  <line no="95">
+    <token name="T_INLINE_HTML">                    var s = Math.floor(seconds % 60);</token>
+  </line>
+  <line no="96">
+    <token name="T_INLINE_HTML">                    if(s &lt; 10){</token>
+  </line>
+  <line no="97">
+    <token name="T_INLINE_HTML">                        s = "0"+s;</token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">                    }</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">                    meta.innerHTML = m +":"+s;</token>
+  </line>
+  <line no="100">
+    <token name="T_INLINE_HTML">                });</token>
+  </line>
+  <line no="101">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="102">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="103">
+    <token name="T_INLINE_HTML">    &lt;/script&gt;</token>
+  </line>
+  <line no="104">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+</source>

@@ -1,0 +1,374 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views/profile" file="adminprofile.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views/profile/adminprofile.blade.php" size="6834" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="b1f148655f43cdd481c3fbbc547f0f820c8bc5a3" relative="resources/views/profile/adminprofile.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layouts.app')</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="4"/>
+  <line no="5">
+    <token name="T_INLINE_HTML">    @include('profile.header')</token>
+  </line>
+  <line no="6"/>
+  <line no="7">
+    <token name="T_INLINE_HTML">    &lt;div class="row m-b-20"&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">        &lt;div class="col-xs-12 col-lg-8"&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">            &lt;div class="bs-nav-tabs nav-tabs-warning"&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">                &lt;ul class="nav nav-tabs nav-animated-border-from-left"&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">                    &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">                        &lt;a class="nav-link active"&gt;View Profile&lt;/a&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">                    &lt;/li&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">                    @if(Auth::user()-&gt;id == $user-&gt;id)</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">                        &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">                            &lt;a class="nav-link" href="/profile/{{Auth::user()-&gt;id}}/edit"&gt;Edit Profile&lt;/a&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">                        &lt;/li&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">                        &lt;li class="nav-item"&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">                            &lt;a class="nav-link" href="/profile/account_settings"&gt;Account settings&lt;/a&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">                        &lt;/li&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">                    @endif</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">                &lt;/ul&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">                &lt;div class="tab-content"&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">                    &lt;div role="tabpanel" class="tab-pane in active" id="nav-tabs-0-1"&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">                        &lt;div class="row zoom m-b-20"&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">                            &lt;div class="col-xs-12"&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">                                &lt;div class="m-b-40" style="width: 728px"&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">                                    &lt;ul class="list-group"&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">                                        &lt;li class="list-group-item"&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">                                            First name: {{$user-&gt;first_name}}</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">                                        &lt;/li&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">                                        &lt;li class="list-group-item"&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">                                            Last name: {{$user-&gt;last_name}}</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">                                        &lt;/li&gt;</token>
+  </line>
+  <line no="35"/>
+  <line no="36">
+    <token name="T_INLINE_HTML">                                        &lt;li class="list-group-item"&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">                                            Activities:  {{(count($user-&gt;activity_types)) ? implode(", ", $user-&gt;activity_types-&gt;lists("name")-&gt;all()) : ''}}</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">                                        &lt;/li&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">                                        &lt;li class="list-group-item"&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">                                            @php</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">                                                $activity_genres = "";</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">                                                if($user-&gt;activity_genres-&gt;count() &gt; 0) {</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">                                                    $activity_genres = implode(", ", $user-&gt;activity_genres-&gt;lists("name")-&gt;all());</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">                                                }</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">                                            @endphp</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">                                            Genres: {{ $activity_genres }}</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">                                        &lt;/li&gt;</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">                                        &lt;li class="list-group-item"&gt;</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">                                            @php</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">                                                $performance_levels = "";</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">                                                if($user-&gt;performance_levels-&gt;count() &gt; 0) {</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">                                                    $performance_levels = implode(", ", $user-&gt;performance_levels-&gt;lists("name")-&gt;all());</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">                                                }</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">                                            @endphp</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">                                            Level/s: {{ $performance_levels }}</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">                                        &lt;/li&gt;</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">                                        &lt;li class="list-group-item"&gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">                                            Gender: @if($user-&gt;gender == "famale") Female @elseif($user-&gt;gender == "male") Male  @endif</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">                                        &lt;/li&gt;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">                                        &lt;li class="list-group-item"&gt;</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">                                            Birth date: {{$user-&gt;birthday}}</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">                                        &lt;/li&gt;</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">                                        {{--&lt;li class="list-group-item"&gt;</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">                                            Languages: {{$user-&gt;languages}}</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">                                        &lt;/li&gt;--}}</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">                                        &lt;li class="list-group-item"&gt;</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">                                            Lives in: {{$user-&gt;location}}, {{$user-&gt;location_state}}</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">                                        &lt;/li&gt;</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">                                        &lt;li class="list-group-item"&gt;</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">                                            About me:  {{ strip_tags($user-&gt;about) }}</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">                                        &lt;/li&gt;</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">                                        &lt;li class="list-group-item"&gt;</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">                                            Role: @if($user-&gt;role == 1) {{'User'}} @elseif ($user-&gt;role == 2) {{'Coach'}} @elseif ($user-&gt;role == 3) {{ 'Administrator' }}@endif</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">                                        &lt;/li&gt;</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">                                        &lt;li class="list-group-item"&gt;</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">                                            Email: {{$user-&gt;email}}</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">                                        &lt;/li&gt;</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">                                        &lt;li class="list-group-item"&gt;</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">                                            Phone:  {{$user-&gt;phone}}</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">                                        &lt;/li&gt;</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">                                        &lt;li class="list-group-item"&gt;</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">                                            Website:  {{$user-&gt;wevsites}}</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">                                        &lt;/li&gt;</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">                                        &lt;li class="list-group-item"&gt;</token>
+  </line>
+  <line no="85">
+    <token name="T_INLINE_HTML">                                            Social links:  {{$user-&gt;social_links}}</token>
+  </line>
+  <line no="86">
+    <token name="T_INLINE_HTML">                                        &lt;/li&gt;</token>
+  </line>
+  <line no="87">
+    <token name="T_INLINE_HTML">                                    &lt;/ul&gt;</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="90">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="91">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="92">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="93">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="94">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="95">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="96"/>
+  <line no="97">
+    <token name="T_INLINE_HTML">    &lt;!-- Modal --&gt;</token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">    &lt;div class="modal fade" id="myModal" role="dialog"&gt;</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">        &lt;div class="modal-dialog"&gt;</token>
+  </line>
+  <line no="100"/>
+  <line no="101">
+    <token name="T_INLINE_HTML">            &lt;!-- Modal content--&gt;</token>
+  </line>
+  <line no="102">
+    <token name="T_INLINE_HTML">            &lt;div class="modal-content"&gt;</token>
+  </line>
+  <line no="103">
+    <token name="T_INLINE_HTML">                &lt;div class="modal-header"&gt;</token>
+  </line>
+  <line no="104">
+    <token name="T_INLINE_HTML">                    &lt;button type="button" class="close" data-dismiss="modal"&gt;&amp;times;&lt;/button&gt;</token>
+  </line>
+  <line no="105">
+    <token name="T_INLINE_HTML">                    &lt;h4 class="modal-title" style="font-family: 'Montserrat', sans-serif;font-weight: bold"&gt;WELCOME TO SHOWCASEHUB&lt;/h4&gt;</token>
+  </line>
+  <line no="106">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="107">
+    <token name="T_INLINE_HTML">                &lt;div class="modal-body"&gt;</token>
+  </line>
+  <line no="108">
+    <token name="T_INLINE_HTML">                    &lt;p&gt;&lt;b&gt;YOUR PASSWORD:&lt;/b&gt; &lt;b style="color: #be1900"&gt; {{ session()-&gt;get('site_password') }}&lt;/b&gt;&lt;/p&gt;</token>
+  </line>
+  <line no="109">
+    <token name="T_INLINE_HTML">                    &lt;p&gt;&lt;b&gt;USE IT TO LOGIN TO THE SITE THROUGH THE LOGIN BUTTON.&lt;/b&gt;&lt;/p&gt;</token>
+  </line>
+  <line no="110">
+    <token name="T_INLINE_HTML">                    &lt;p&gt;&lt;b&gt;YOU CAN CHANGE THE PASSWORD IN PROFILE SETTINGS.&lt;/b&gt;&lt;/p&gt;</token>
+  </line>
+  <line no="111">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="112">
+    <token name="T_INLINE_HTML">                &lt;div class="modal-footer"&gt;</token>
+  </line>
+  <line no="113">
+    <token name="T_INLINE_HTML">                    &lt;button type="button" class="btn btn-warning" data-dismiss="modal"&gt;CLOSE&lt;/button&gt;</token>
+  </line>
+  <line no="114">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="115">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="116"/>
+  <line no="117">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="118">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="119">
+    <token name="T_INLINE_HTML">@section('js')</token>
+  </line>
+  <line no="120">
+    <token name="T_INLINE_HTML">    &lt;script type="text/javascript"&gt;</token>
+  </line>
+  <line no="121">
+    <token name="T_INLINE_HTML">        $(window).on('load',function(){</token>
+  </line>
+  <line no="122">
+    <token name="T_INLINE_HTML">            @if(session()-&gt;has('site_password'))</token>
+  </line>
+  <line no="123">
+    <token name="T_INLINE_HTML">               $('#myModal').modal('show');</token>
+  </line>
+  <line no="124">
+    <token name="T_INLINE_HTML">            @endif</token>
+  </line>
+  <line no="125">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="126">
+    <token name="T_INLINE_HTML">    &lt;/script&gt;</token>
+  </line>
+  <line no="127">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="128">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+</source>

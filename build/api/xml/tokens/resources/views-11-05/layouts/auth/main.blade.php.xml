@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-11-05/layouts/auth" file="main.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-11-05/layouts/auth/main.blade.php" size="2113" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="2b107cc4c3d7bf6d698365f2b33f24ac3f0b8e7c" relative="resources/views-11-05/layouts/auth/main.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;!doctype html&gt;</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">&lt;html lang="en"&gt;</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">&lt;head&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">    &lt;meta charset="utf-8"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">    &lt;title&gt;@yield('title')&lt;/title&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">    @yield('meta')</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">    &lt;link rel="shortcut icon" href="favicon.ico"&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">    &lt;!--[if IE]&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">    &lt;script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">    &lt;script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">    &lt;![endif]--&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">    &lt;!-- global stylesheets --&gt; </token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">    &lt;!-- Bootstrap CSS --&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="/assets/css/font-awesome.css"&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="/assets/css/bootstrap.min.css"&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="/assets/css/custom.css"&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">    &lt;link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,700&amp;display=swap" rel="stylesheet"&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">    @yield('css')</token>
+  </line>
+  <line no="20"/>
+  <line no="21">
+    <token name="T_INLINE_HTML">    @if(request()-&gt;getHost() == env('COACH_PLATFORM_DOMAIN'))</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">        &lt;!-- Begin Inspectlet Embed Code --&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">        &lt;script type="text/javascript" id="inspectletjs"&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">            (function() {</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">                window.__insp = window.__insp || [];</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">                __insp.push(['wid', 901653424]);</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">                var ldinsp = function(){ if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=901653424&amp;r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">                setTimeout(ldinsp, 0);</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">            })();</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">        &lt;/script&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">        &lt;!-- End Inspectlet Embed Code --&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">    @endif</token>
+  </line>
+  <line no="33"/>
+  <line no="34">
+    <token name="T_INLINE_HTML">&lt;/head&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">&lt;body&gt;</token>
+  </line>
+  <line no="36"/>
+  <line no="37">
+    <token name="T_INLINE_HTML">@yield('content')</token>
+  </line>
+  <line no="38"/>
+  <line no="39">
+    <token name="T_INLINE_HTML">&lt;!-- Optional JavaScript --&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">&lt;script src="/assets/js/jquery.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">&lt;script src="/assets/js/popper.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">&lt;script src="/assets/js/bootstrap.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">&lt;script src="/assets/js/fontawesome-all.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">&lt;script src="/assets/js/custom.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">@yield('js')</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">&lt;/body&gt;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">&lt;/html&gt;</token>
+  </line>
+  <line no="48"/>
+</source>

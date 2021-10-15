@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/public/assets/marino/bower_components/nouislider/documentation/_run" file="404.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/public/assets/marino/bower_components/nouislider/documentation/_run/404.php" size="99" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="7bc60c476152e844d0e3874dee6ea5a194fb1b69" relative="public/assets/marino/bower_components/nouislider/documentation/_run/404.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_VARIABLE">$title</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"noUiSlider - Page not found"</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="3">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_VARIABLE">$description</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">""</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="4">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="5"/>
+  <line no="6">
+    <token name="T_INLINE_HTML">Oops, this page is missing.</token>
+  </line>
+  <line no="7"/>
+</source>

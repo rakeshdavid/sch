@@ -1,0 +1,540 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-11-05/auditions" file="participation.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-11-05/auditions/participation.blade.php" size="6926" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="b7854a9d696d0148489fa42275592c63f129d955" relative="resources/views-11-05/auditions/participation.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layouts.uploadvideo')</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">@section('css')</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">&lt;meta name="csrf-token" content="{{ csrf_token() }}" /&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">&lt;div class="process-steps"&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">    &lt;a href="{{url('auditions')}}" class="back-arrow"&gt;&lt;img src="/assets/img/back-arrow.png" alt="" class="img-fluid"&gt;&lt;/a&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">    &lt;a href="{{url('auditions')}}" class="close-icon"&gt;&lt;img src="/assets/img/close.png" alt="" class="img-fluid"&gt;&lt;/a&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">    &lt;ul class="process-menu"&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">        &lt;li&gt;&lt;a href="#"&gt;UPLOAD PARTICIPATION&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">        &lt;li&gt;&lt;a href="#"&gt;PAY&lt;/a&gt; &lt;/li&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">    &lt;/ul&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">&lt;section class="video-download-wrap"&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">    &lt;div class="video-content participation-content"&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">        &lt;div class="container"&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">            &lt;h2&gt;Upload your Participation&lt;/h2&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">            &lt;div class="row justify-content-center"&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">            	@if ($errors-&gt;any())</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">				    &lt;div class="alert alert-danger"&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">				        &lt;ul&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">				            @foreach ($errors-&gt;all() as $error)</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">				                &lt;li&gt;{{ $error }}&lt;/li&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">				            @endforeach</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">				        &lt;/ul&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">				    &lt;/div&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">				@endif</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">                &lt;div class="col-md-9"&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">                    &lt;div class="youtube-link"&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">                        &lt;div class="row align-items-center"&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">                            &lt;div class="col-xl-3 col-lg-4 col-md-4 p-0"&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">                                &lt;div class="left-box"&gt;&lt;i class="fab fa-youtube"&gt;&lt;/i&gt;YouTube Link:&lt;/div&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">                            &lt;div class="col-xl-9 col-lg-8 col-md-8"&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">                                &lt;div class="right-box"&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">                                     &lt;input type="url" name="" class="form-control" id="youtube-link" placeholder="Copy here the url &#x2026;"&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">                            &lt;div class="col-md-12" id="response"&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">                    &lt;div class="drag-file"&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">                        &lt;div class="dropzone-content"&gt;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">                            &lt;form action="{{url('auditions/participation')}}/{{$auditionid}}" method="post" class="dropzone" id="my-awesome-dropzone"&gt;</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">                            	&lt;input type="hidden" name="youtube-link" id="copy-link"&gt;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">                                &lt;label for="file-upload" id="file-drag"&gt;</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">                                    &lt;img src="/assets/img/video-icon.jpg" alt="" class="img-fluid"&gt;</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">                                    &lt;h3&gt;Drag and Drop your Video and Resume here&lt;/h3&gt;</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">                                    &lt;span class="or"&gt;OR&lt;/span&gt;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">                                    &lt;span class="browse-btn"&gt;Browse&lt;/span&gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">                                &lt;/label&gt;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">                            &lt;/form&gt;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">                        &lt;p&gt;The maximum video size is 300 mb. Valid formats avi, mpeg4, wmv, mp4, mov.&lt;/p&gt;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">                        &lt;div class="skip-box"&gt;</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">                        	&lt;input id="uploadvideo" type="submit" class="btn btn-outline-dark" value="Participate" name="participate" /&gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">                            &lt;!-- &lt;a href="#" class="btn btn-outline-dark"&gt;Participate&lt;/a&gt; --&gt;</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">                            &lt;a href="{{url('auditions')}}" class="skip"&gt;SKIP FOR NOW&lt;/a&gt;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="62"/>
+  <line no="63">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">@section('js')</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">	&lt;script&gt;</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">		// file upload</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">		var CSRF_TOKEN = document.querySelector('meta[name="csrf-token"]').getAttribute("content");</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">		$(document).ready(function() {</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">			$('#youtube-link').on('change', function() {</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">			   $('#copy-link').val($(this).val());</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">			}); </token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">		});</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">		$(function(){</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">		  // Dropzone.options.myAwesomeDropzone = {</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">		  //   maxFilesize: 209715200,</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">		  //   addRemoveLinks: true,</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">		  //   autoProcessQueue: false,</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">		  //   dictResponseError: 'Server not Configured',</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">		  //   acceptedFiles: "video/*,.pdf",</token>
+  </line>
+  <line no="85">
+    <token name="T_INLINE_HTML">		  //   init:function(){</token>
+  </line>
+  <line no="86">
+    <token name="T_INLINE_HTML">		  //     var self = this;</token>
+  </line>
+  <line no="87">
+    <token name="T_INLINE_HTML">		  //     // config</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">		  //     self.options.addRemoveLinks = true;</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">		  //     self.options.dictRemoveFile = "Delete";</token>
+  </line>
+  <line no="90">
+    <token name="T_INLINE_HTML">		  //     //New file added</token>
+  </line>
+  <line no="91">
+    <token name="T_INLINE_HTML">		  //     self.on("addedfile", function (file) {</token>
+  </line>
+  <line no="92">
+    <token name="T_INLINE_HTML">		  //       console.log('new file added ', file);</token>
+  </line>
+  <line no="93">
+    <token name="T_INLINE_HTML">		  //       console.log("===============");</token>
+  </line>
+  <line no="94">
+    <token name="T_INLINE_HTML">		  //       console.log(file.status);</token>
+  </line>
+  <line no="95">
+    <token name="T_INLINE_HTML">		  //       console.log(file.name);</token>
+  </line>
+  <line no="96">
+    <token name="T_INLINE_HTML">		        </token>
+  </line>
+  <line no="97">
+    <token name="T_INLINE_HTML">		  //     });</token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">		  //     // Send file starts</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">		  //     self.on("sending", function (file, xhr, formData) {</token>
+  </line>
+  <line no="100">
+    <token name="T_INLINE_HTML">		  //     	formData.append("_token", CSRF_TOKEN);</token>
+  </line>
+  <line no="101">
+    <token name="T_INLINE_HTML">		  //       console.log('upload started', file);</token>
+  </line>
+  <line no="102">
+    <token name="T_INLINE_HTML">		  //       $('.meter').show();</token>
+  </line>
+  <line no="103">
+    <token name="T_INLINE_HTML">		  //     });</token>
+  </line>
+  <line no="104">
+    <token name="T_INLINE_HTML">		      </token>
+  </line>
+  <line no="105">
+    <token name="T_INLINE_HTML">		  //     // File upload Progress</token>
+  </line>
+  <line no="106">
+    <token name="T_INLINE_HTML">		  //     self.on("totaluploadprogress", function (progress) {</token>
+  </line>
+  <line no="107">
+    <token name="T_INLINE_HTML">		  //       console.log("progress ", progress);</token>
+  </line>
+  <line no="108">
+    <token name="T_INLINE_HTML">		  //       $('.roller').width(progress + '%');</token>
+  </line>
+  <line no="109">
+    <token name="T_INLINE_HTML">		  //     });</token>
+  </line>
+  <line no="110"/>
+  <line no="111">
+    <token name="T_INLINE_HTML">		  //     self.on("queuecomplete", function (progress) {</token>
+  </line>
+  <line no="112">
+    <token name="T_INLINE_HTML">		  //       $('.meter').delay(999).slideUp(999);</token>
+  </line>
+  <line no="113">
+    <token name="T_INLINE_HTML">		  //     });</token>
+  </line>
+  <line no="114">
+    <token name="T_INLINE_HTML">		      </token>
+  </line>
+  <line no="115">
+    <token name="T_INLINE_HTML">		  //     // On removing file</token>
+  </line>
+  <line no="116">
+    <token name="T_INLINE_HTML">		  //     self.on("removedfile", function (file) {</token>
+  </line>
+  <line no="117">
+    <token name="T_INLINE_HTML">		  //       console.log(file);</token>
+  </line>
+  <line no="118">
+    <token name="T_INLINE_HTML">		  //     });</token>
+  </line>
+  <line no="119">
+    <token name="T_INLINE_HTML">		  //   }</token>
+  </line>
+  <line no="120">
+    <token name="T_INLINE_HTML">		  // };</token>
+  </line>
+  <line no="121">
+    <token name="T_INLINE_HTML">		  Dropzone.autoDiscover = false;</token>
+  </line>
+  <line no="122"/>
+  <line no="123">
+    <token name="T_INLINE_HTML">var myDropzone = new Dropzone("#my-awesome-dropzone", { </token>
+  </line>
+  <line no="124">
+    <token name="T_INLINE_HTML">    		maxFilesize: 209715200,</token>
+  </line>
+  <line no="125">
+    <token name="T_INLINE_HTML">		    addRemoveLinks: true,</token>
+  </line>
+  <line no="126">
+    <token name="T_INLINE_HTML">		    autoProcessQueue: false,</token>
+  </line>
+  <line no="127">
+    <token name="T_INLINE_HTML">		    dictResponseError: 'Server not Configured',</token>
+  </line>
+  <line no="128">
+    <token name="T_INLINE_HTML">		    acceptedFiles: "video/*,.pdf",</token>
+  </line>
+  <line no="129">
+    <token name="T_INLINE_HTML">		    init:function(){</token>
+  </line>
+  <line no="130">
+    <token name="T_INLINE_HTML">				var self = this;</token>
+  </line>
+  <line no="131">
+    <token name="T_INLINE_HTML">				// config</token>
+  </line>
+  <line no="132">
+    <token name="T_INLINE_HTML">				self.options.addRemoveLinks = true;</token>
+  </line>
+  <line no="133">
+    <token name="T_INLINE_HTML">				self.options.dictRemoveFile = "Delete";</token>
+  </line>
+  <line no="134">
+    <token name="T_INLINE_HTML">				//New file added</token>
+  </line>
+  <line no="135">
+    <token name="T_INLINE_HTML">				self.on("addedfile", function (file) {</token>
+  </line>
+  <line no="136">
+    <token name="T_INLINE_HTML">				console.log('new file added ', file);</token>
+  </line>
+  <line no="137">
+    <token name="T_INLINE_HTML">				console.log("===============");</token>
+  </line>
+  <line no="138">
+    <token name="T_INLINE_HTML">				console.log(file.status);</token>
+  </line>
+  <line no="139">
+    <token name="T_INLINE_HTML">				console.log(file.name);</token>
+  </line>
+  <line no="140"/>
+  <line no="141">
+    <token name="T_INLINE_HTML">				});</token>
+  </line>
+  <line no="142">
+    <token name="T_INLINE_HTML">		      	// Send file starts</token>
+  </line>
+  <line no="143">
+    <token name="T_INLINE_HTML">					self.on("sending", function (file, xhr, formData) {</token>
+  </line>
+  <line no="144">
+    <token name="T_INLINE_HTML">						formData.append("_token", CSRF_TOKEN);</token>
+  </line>
+  <line no="145">
+    <token name="T_INLINE_HTML">						var link = $("#copy-link").val();</token>
+  </line>
+  <line no="146">
+    <token name="T_INLINE_HTML">						formData.append("youtube-link",link);</token>
+  </line>
+  <line no="147">
+    <token name="T_INLINE_HTML">					console.log('upload started', file);</token>
+  </line>
+  <line no="148">
+    <token name="T_INLINE_HTML">					$('.meter').show();</token>
+  </line>
+  <line no="149">
+    <token name="T_INLINE_HTML">					});</token>
+  </line>
+  <line no="150"/>
+  <line no="151">
+    <token name="T_INLINE_HTML">					// File upload Progress</token>
+  </line>
+  <line no="152">
+    <token name="T_INLINE_HTML">					self.on("totaluploadprogress", function (progress) {</token>
+  </line>
+  <line no="153">
+    <token name="T_INLINE_HTML">					console.log("progress ", progress);</token>
+  </line>
+  <line no="154">
+    <token name="T_INLINE_HTML">					$('.roller').width(progress + '%');</token>
+  </line>
+  <line no="155">
+    <token name="T_INLINE_HTML">					});</token>
+  </line>
+  <line no="156"/>
+  <line no="157">
+    <token name="T_INLINE_HTML">					self.on("queuecomplete", function (progress) {</token>
+  </line>
+  <line no="158">
+    <token name="T_INLINE_HTML">					$('.meter').delay(999).slideUp(999);</token>
+  </line>
+  <line no="159">
+    <token name="T_INLINE_HTML">					console.log(progress);</token>
+  </line>
+  <line no="160">
+    <token name="T_INLINE_HTML">					});</token>
+  </line>
+  <line no="161"/>
+  <line no="162">
+    <token name="T_INLINE_HTML">					// On removing file</token>
+  </line>
+  <line no="163">
+    <token name="T_INLINE_HTML">					self.on("removedfile", function (file) {</token>
+  </line>
+  <line no="164">
+    <token name="T_INLINE_HTML">					console.log(file);</token>
+  </line>
+  <line no="165">
+    <token name="T_INLINE_HTML">		      		});</token>
+  </line>
+  <line no="166">
+    <token name="T_INLINE_HTML">					self.on("success", function(file, responseText) {</token>
+  </line>
+  <line no="167">
+    <token name="T_INLINE_HTML">						var response = JSON.parse(file.xhr.responseText);</token>
+  </line>
+  <line no="168">
+    <token name="T_INLINE_HTML">						console.log(response.message);</token>
+  </line>
+  <line no="169">
+    <token name="T_INLINE_HTML">      //       			console.log(responseText);</token>
+  </line>
+  <line no="170">
+    <token name="T_INLINE_HTML">      					$("#response").html("&lt;h2&gt;"+response.message+"&lt;/h2&gt;");</token>
+  </line>
+  <line no="171">
+    <token name="T_INLINE_HTML">      					if(response.status==200){</token>
+  </line>
+  <line no="172">
+    <token name="T_INLINE_HTML">      						window.location.href = response.redirect;</token>
+  </line>
+  <line no="173">
+    <token name="T_INLINE_HTML">      					}</token>
+  </line>
+  <line no="174">
+    <token name="T_INLINE_HTML">        			});</token>
+  </line>
+  <line no="175">
+    <token name="T_INLINE_HTML">		  		}</token>
+  </line>
+  <line no="176">
+    <token name="T_INLINE_HTML">			});</token>
+  </line>
+  <line no="177"/>
+  <line no="178">
+    <token name="T_INLINE_HTML">		  	$('#uploadvideo').click(function(){</token>
+  </line>
+  <line no="179">
+    <token name="T_INLINE_HTML">		  		console.log("click");</token>
+  </line>
+  <line no="180">
+    <token name="T_INLINE_HTML">			   myDropzone.processQueue();</token>
+  </line>
+  <line no="181">
+    <token name="T_INLINE_HTML">			});</token>
+  </line>
+  <line no="182">
+    <token name="T_INLINE_HTML">		});</token>
+  </line>
+  <line no="183">
+    <token name="T_INLINE_HTML">	&lt;/script&gt;</token>
+  </line>
+  <line no="184">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+</source>

@@ -1,0 +1,642 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/public/assets/marino/bower_components/nouislider/documentation" file="slider-values.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/public/assets/marino/bower_components/nouislider/documentation/slider-values.php" size="4200" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="f2274cb8116def116773703f28002c2f1eceb88c" relative="public/assets/marino/bower_components/nouislider/documentation/slider-values.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_VARIABLE">$title</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"noUiSlider - Handles and Slider Values"</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="3">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_VARIABLE">$description</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">""</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="4">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="5"/>
+  <line no="6">
+    <token name="T_INLINE_HTML">&lt;h1&gt;Slider values&lt;/h1&gt;</token>
+  </line>
+  <line no="7"/>
+  <line no="8"/>
+  <line no="9">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'handles'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">&lt;h2&gt;Handles&lt;/h2&gt;</token>
+  </line>
+  <line no="11"/>
+  <line no="12">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="13"/>
+  <line no="14">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="15"/>
+  <line no="16">
+    <token name="T_INLINE_HTML">		&lt;p&gt;The number of handles can be set using the &lt;code&gt;start&lt;/code&gt; option. This option accepts an array of initial handle positions. Set one value for one handle, two values for two handles.&lt;/p&gt;</token>
+  </line>
+  <line no="17"/>
+  <line no="18">
+    <token name="T_INLINE_HTML">		&lt;div class="example"&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">			&lt;div id="slider-handles"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'handles'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="23"/>
+  <line no="24">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">		</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'handles'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="28"/>
+  <line no="29"/>
+  <line no="30">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'range'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">&lt;h2&gt;Range&lt;/h2&gt;</token>
+  </line>
+  <line no="32"/>
+  <line no="33">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="34"/>
+  <line no="35">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">		&lt;p&gt;All values on the slider are part of a range. The range has a minimum and maximum value.&lt;/p&gt;</token>
+  </line>
+  <line no="37"/>
+  <line no="38">
+    <token name="T_INLINE_HTML">		&lt;div class="example"&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">			&lt;div id="slider-range"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">			&lt;span class="example-val" id="slider-range-value"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'range'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'range-link'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="45"/>
+  <line no="46">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">		</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'range'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="48"/>
+  <line no="49">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Display the slider value&lt;/div&gt;</token>
+  </line>
+  <line no="50"/>
+  <line no="51">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'range-link'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="56"/>
+  <line no="57"/>
+  <line no="58">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'step'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">&lt;h3&gt;Stepping and snapping to values&lt;/h3&gt;</token>
+  </line>
+  <line no="60"/>
+  <line no="61">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="62"/>
+  <line no="63">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">		&lt;p&gt;The amount the slider changes on movement can be set using the &lt;code&gt;step&lt;/code&gt; option.&lt;/p&gt;</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">		&lt;div class="example"&gt;</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">			&lt;div id="slider-step"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">			&lt;span class="example-val" id="slider-step-value"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'step'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'step-link'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="72"/>
+  <line no="73">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">		</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'step'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="75"/>
+  <line no="76">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Display the slider value&lt;/div&gt;</token>
+  </line>
+  <line no="77"/>
+  <line no="78">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'step-link'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="83"/>
+  <line no="84"/>
+  <line no="85">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'non-linear'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="86">
+    <token name="T_INLINE_HTML">&lt;h2&gt;Non-linear sliders&lt;/h2&gt;</token>
+  </line>
+  <line no="87"/>
+  <line no="88">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="89"/>
+  <line no="90">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="91"/>
+  <line no="92">
+    <token name="T_INLINE_HTML">		&lt;p&gt;noUiSlider offers some powerful mechanisms that allow a slider to behave in a non-linear fashion. You can create sliders with ever-increasing increments by specifying the value for the slider at certain intervals. Note how the handle in the example below starts at 30% of the slider width, even though &lt;code&gt;4000&lt;/code&gt; is not 30% of the span between &lt;code&gt;2000&lt;/code&gt; and &lt;code&gt;10000&lt;/code&gt;.&lt;/p&gt;</token>
+  </line>
+  <line no="93"/>
+  <line no="94">
+    <token name="T_INLINE_HTML">		&lt;div class="example"&gt;</token>
+  </line>
+  <line no="95">
+    <token name="T_INLINE_HTML">			&lt;div id="slider-non-linear"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="96">
+    <token name="T_INLINE_HTML">			&lt;span class="example-val" id="slider-non-linear-value"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="97">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'non-linear'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'non-linear-link'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="100">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="101"/>
+  <line no="102">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="103">
+    <token name="T_INLINE_HTML">		</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'non-linear'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="104"/>
+  <line no="105">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Display the slider value&lt;/div&gt;</token>
+  </line>
+  <line no="106"/>
+  <line no="107">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="108">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'non-linear-link'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="109">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="110">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="111">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="112"/>
+  <line no="113"/>
+  <line no="114">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'non-linear-step'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="115">
+    <token name="T_INLINE_HTML">&lt;h3&gt;Stepping in non-linear sliders&lt;/h3&gt;</token>
+  </line>
+  <line no="116"/>
+  <line no="117">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="118"/>
+  <line no="119">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="120">
+    <token name="T_INLINE_HTML">		&lt;p&gt;For every subrange in a non-linear slider, stepping can be set. Note how in the example below the slider doesn't step until it reaches &lt;code&gt;500&lt;/code&gt;. From there on, it changes in increments of &lt;code&gt;500&lt;/code&gt;, until it reaches &lt;code&gt;4000&lt;/code&gt;, where increments now span &lt;code&gt;1000&lt;/code&gt;.&lt;/p&gt;</token>
+  </line>
+  <line no="121"/>
+  <line no="122">
+    <token name="T_INLINE_HTML">		&lt;div class="example"&gt;</token>
+  </line>
+  <line no="123">
+    <token name="T_INLINE_HTML">			&lt;div id="slider-non-linear-step"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="124">
+    <token name="T_INLINE_HTML">			&lt;span class="example-val" id="slider-non-linear-step-value"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="125">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'non-linear-step'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="126">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'non-linear-step-link'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="127">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="128">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="129"/>
+  <line no="130">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="131">
+    <token name="T_INLINE_HTML">		</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'non-linear-step'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="132"/>
+  <line no="133">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Display the slider value&lt;/div&gt;</token>
+  </line>
+  <line no="134"/>
+  <line no="135">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="136">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'non-linear-step-link'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="137">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="138">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="139">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="140"/>
+  <line no="141"/>
+  <line no="142">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'snap'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="143">
+    <token name="T_INLINE_HTML">&lt;h3&gt;Snapping between steps&lt;/h3&gt;</token>
+  </line>
+  <line no="144"/>
+  <line no="145">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="146"/>
+  <line no="147">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="148">
+    <token name="T_INLINE_HTML">		&lt;p&gt;When a non-linear slider has been configured, the &lt;code&gt;snap&lt;/code&gt; option can be set to &lt;code&gt;true&lt;/code&gt; to force the slider to jump between the specified values.&lt;/p&gt;</token>
+  </line>
+  <line no="149"/>
+  <line no="150">
+    <token name="T_INLINE_HTML">		&lt;div class="example"&gt;</token>
+  </line>
+  <line no="151">
+    <token name="T_INLINE_HTML">			&lt;div id="slider-snap"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="152">
+    <token name="T_INLINE_HTML">			&lt;span class="example-val" id="slider-snap-value-lower"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="153">
+    <token name="T_INLINE_HTML">			&lt;span class="example-val" id="slider-snap-value-upper"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="154">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'snap'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="155">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'snap-link'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="156">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="157">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="158"/>
+  <line no="159">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="160">
+    <token name="T_INLINE_HTML">		</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'snap'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="161">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Display the slider value&lt;/div&gt;</token>
+  </line>
+  <line no="162"/>
+  <line no="163">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="164">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'snap-link'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="165">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="166">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="167">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="168"/>
+</source>

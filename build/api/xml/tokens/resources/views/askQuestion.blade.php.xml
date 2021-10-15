@@ -1,0 +1,282 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views" file="askQuestion.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views/askQuestion.blade.php" size="4535" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="39a95cf1418c461454ada5e9851b594136dad5f1" relative="resources/views/askQuestion.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layouts.uploadvideo')</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">@section('css')</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">&lt;meta name="csrf-token" content="{{ csrf_token() }}" /&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">	&lt;div class="process-steps"&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">        &lt;a href="/select-coache/{{$video_id}}" class="back-arrow"&gt;&lt;img src="/platform/img/back-arrow.png" alt="" class="img-fluid"&gt;&lt;/a&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">        &lt;a href="{{url('video')}}" class="close-icon"&gt;&lt;img src="/platform/img/close.png" alt="" class="img-fluid"&gt;&lt;/a&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">        &lt;ul class="process-menu"&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">            &lt;li class="active"&gt;&lt;a href="#"&gt;UPLOAD VIDEO&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">            &lt;li class="active"&gt;&lt;a href="#"&gt;SELECT COACH&lt;/a&gt; &lt;/li&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">            &lt;li&gt;&lt;a href="#"&gt;PAY&lt;/a&gt; &lt;/li&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">        &lt;/ul&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="15"/>
+  <line no="16">
+    <token name="T_INLINE_HTML">    &lt;section class="select-coach-wrap select-question"&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">        &lt;div class="container-fluid"&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">            &lt;h2 class="question-title"&gt;What would you like to ask the coach?&lt;/h2&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">            &lt;h3&gt;You get 3 questions &lt;/h3&gt;</token>
+  </line>
+  <line no="20"/>
+  <line no="21">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">        &lt;div class="container mt-70"&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">            &lt;form method="post" id="ask-question"&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">                &lt;input type="hidden" name="video-id" value="{{$video_id}}"&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">                 {!! csrf_field() !!}</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">                &lt;div class="row"&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">                    &lt;div class="col-md-4"&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">                        &lt;h3 class="text-lg-right pt-3"&gt;Question 1:&lt;/h3&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">                    &lt;div class="col-md-6"&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">                        &lt;textarea name="question-1" class="form-control border" rows="3" placeholder="What's your first question?"&gt;&lt;/textarea&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">                &lt;div class="row mt-5"&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">                    &lt;div class="col-md-4"&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">                        &lt;h3 class="text-lg-right pt-3"&gt;Question 2:&lt;/h3&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">                    &lt;div class="col-md-6"&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">                        &lt;textarea name="question-2" class="form-control border" rows="3" placeholder="What's your second question?"&gt;&lt;/textarea&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">                &lt;div class="row mt-5"&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">                    &lt;div class="col-md-4"&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">                        &lt;h3 class="text-lg-right pt-3"&gt;Question 3:&lt;/h3&gt;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">                    &lt;div class="col-md-6"&gt;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">                        &lt;textarea name="question-3" class="form-control border" rows="3" placeholder="What's your third question?"&gt;&lt;/textarea&gt;</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">                &lt;div class="row text-center mt-5"&gt;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">                    &lt;div class="col-12 text-center"&gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">                        &lt;div class="response"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">                        &lt;div class="skip-now "&gt;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">                            &lt;button id="submit-question" class="btn-danger"&gt;Ask Question&lt;/button&gt;</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">                            &lt;a class="cancel" href="{{url('/')}}/payment/{{$video_id}}"&gt;Skip for Now&lt;/a&gt;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">            &lt;/form&gt;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">    &lt;/section&gt;</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">@section('js')</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">    &lt;script type="text/javascript"&gt;</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">        $(document).ready(function(){</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">            $('#submit-question').click(function(e){</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">                e.preventDefault();</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">                var formid = "#ask-question";</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">                if( $(formid + ' textarea[name="question-1"]').val() !="" || $(formid + ' textarea[name="question-2"]').val() !="" || $(formid + ' textarea[name="question-3"]').val() !=""){</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">                    var formdata = $(formid).serialize(); // here $(this) refere to the form its submitting</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">                    $.ajax({</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">                        type: 'POST',</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">                        url: "{{ url('/') }}/ask-question-coach",</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">                        data: formdata, // here $(this) refers to the ajax object not form</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">                        success: function (data) {</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">                           console.log(data);</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">                           $('.response').html('');</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">                           $(formid + ' .response').html('&lt;h4&gt;Question has been posted.&lt;/h4&gt;');</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">                           $(formid + ' textarea[name="question-1"]').val('');</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">                           $(formid + ' textarea[name="question-2"]').val('');</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">                           $(formid + ' textarea[name="question-3"]').val('');</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">                           if(data.status == 200){</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">                                window.location.replace(data.redirect);</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">                            }</token>
+  </line>
+  <line no="85">
+    <token name="T_INLINE_HTML">                        },</token>
+  </line>
+  <line no="86">
+    <token name="T_INLINE_HTML">                    });</token>
+  </line>
+  <line no="87">
+    <token name="T_INLINE_HTML">                }else{</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">                    $('.response').html('');</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">                    $('.response').html('&lt;p&gt;Please submit questions!&lt;/p&gt;');</token>
+  </line>
+  <line no="90">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="91">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="92">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="93">
+    <token name="T_INLINE_HTML">    &lt;/script&gt;</token>
+  </line>
+  <line no="94">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+</source>

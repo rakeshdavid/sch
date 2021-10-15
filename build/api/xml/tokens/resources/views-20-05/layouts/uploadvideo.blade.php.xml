@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-20-05/layouts" file="uploadvideo.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-20-05/layouts/uploadvideo.blade.php" size="1097" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="a4c945b33d3eb85547a8e7fadb69c9424f40f7b2" relative="resources/views-20-05/layouts/uploadvideo.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;!doctype html&gt;</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">&lt;html lang="en"&gt;</token>
+  </line>
+  <line no="3"/>
+  <line no="4">
+    <token name="T_INLINE_HTML">&lt;head&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">    &lt;!-- Required meta tags --&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">    &lt;meta charset="utf-8"&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">    &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">    &lt;title&gt;Showcase Hub&lt;/title&gt;</token>
+  </line>
+  <line no="9"/>
+  <line no="10">
+    <token name="T_INLINE_HTML">    &lt;!-- Bootstrap CSS --&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="/assets/css/font-awesome.css"&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="/assets/css/bootstrap.min.css"&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="/assets/css/custom.css"&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="/assets/css/dropzone.css"&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">    &lt;link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,700&amp;display=swap" rel="stylesheet"&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">    @yield('css')</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">&lt;/head&gt;</token>
+  </line>
+  <line no="18"/>
+  <line no="19">
+    <token name="T_INLINE_HTML">&lt;body&gt;</token>
+  </line>
+  <line no="20"/>
+  <line no="21">
+    <token name="T_INLINE_HTML">    @yield('content')</token>
+  </line>
+  <line no="22"/>
+  <line no="23"/>
+  <line no="24">
+    <token name="T_INLINE_HTML"> </token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">    &lt;!-- Optional JavaScript --&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">    &lt;script src="/assets/js/jquery.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">    &lt;script src="/assets/js/popper.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">    &lt;script src="/assets/js/bootstrap.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">    &lt;script src="/assets/js/fontawesome-all.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">    &lt;script src="/assets/js/dropzone.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">    &lt;script src="/assets/js/custom.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">    @yield('js')</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">&lt;/body&gt;</token>
+  </line>
+  <line no="34"/>
+  <line no="35">
+    <token name="T_INLINE_HTML">&lt;/html&gt;</token>
+  </line>
+</source>

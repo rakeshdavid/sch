@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views/review" file="video.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views/review/video.blade.php" size="194" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="ccee9ea8b8093c88bb9b6c6c3adadc0a4fcd388c" relative="resources/views/review/video.blade.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_COMMENT">/* </token>
+  </line>
+  <line no="4">
+    <token name="T_COMMENT"> * To change this license header, choose License Headers in Project Properties.</token>
+  </line>
+  <line no="5">
+    <token name="T_COMMENT"> * To change this template file, choose Tools | Templates</token>
+  </line>
+  <line no="6">
+    <token name="T_COMMENT"> * and open the template in the editor.</token>
+  </line>
+  <line no="7">
+    <token name="T_COMMENT"> */</token>
+  </line>
+  <line no="8"/>
+  <line no="9"/>
+</source>

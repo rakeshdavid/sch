@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/public/assets/marino/bower_components/nouislider/documentation" file="contact.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/public/assets/marino/bower_components/nouislider/documentation/contact.php" size="1669" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="1dc0caaea278ca3250deb1ca113059b25e796c55" relative="public/assets/marino/bower_components/nouislider/documentation/contact.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_VARIABLE">$title</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"noUiSlider - Help and Contact"</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="3">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_VARIABLE">$description</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">""</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="4">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="5"/>
+  <line no="6">
+    <token name="T_INLINE_HTML">&lt;h1&gt;Contact&lt;/h1&gt;</token>
+  </line>
+  <line no="7"/>
+  <line no="8">
+    <token name="T_INLINE_HTML">&lt;h2&gt;Let's talk!&lt;/h2&gt;</token>
+  </line>
+  <line no="9"/>
+  <line no="10">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="11"/>
+  <line no="12">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="13"/>
+  <line no="14">
+    <token name="T_INLINE_HTML">		&lt;p&gt;I'd love to discuss features, additions and implementation details for noUiSlider. If you have something to share, let me know.&lt;/p&gt;</token>
+  </line>
+  <line no="15"/>
+  <line no="16">
+    <token name="T_INLINE_HTML">		&lt;p&gt;The &lt;a data-category="outlink" data-action="repository" href="https://github.com/leongersen/noUiSlider/"&gt;&lt;strong&gt;noUiSlider GitHub repository&lt;/strong&gt;&lt;/a&gt; and the &lt;a data-category="outlink" data-action="issues" href="https://github.com/leongersen/noUiSlider/issues"&gt;&lt;strong&gt;issue tracker&lt;/strong&gt;&lt;/a&gt; are used to discuss feature requests and issues.&lt;/p&gt;</token>
+  </line>
+  <line no="17"/>
+  <line no="18">
+    <token name="T_INLINE_HTML">		&lt;p&gt;If you need more general help, you'll usually get you answer by posting a question on &lt;a data-category="outlink" data-action="stackoverflow-questions" href="http://stackoverflow.com/questions/tagged/nouislider"&gt;StackOverflow.&lt;/a&gt; I'll keep an eye on the questions there, as well.&lt;/p&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="21"/>
+  <line no="22"/>
+  <line no="23">
+    <token name="T_INLINE_HTML">&lt;h2&gt;Contact information&lt;/h2&gt;</token>
+  </line>
+  <line no="24"/>
+  <line no="25">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="26"/>
+  <line no="27">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="28"/>
+  <line no="29">
+    <token name="T_INLINE_HTML">		&lt;p&gt;You'll find me on Twitter: &lt;a href="https://twitter.com/LeonGersen"&gt;@LeonGersen&lt;/a&gt;. Consider providing a &lt;a href="http://jsfiddle.net/"&gt;jsFiddle&lt;/a&gt; or &lt;a href="http://codepen.io/"&gt;CodePen&lt;/a&gt; if you'd like to discuss code.&lt;/p&gt;</token>
+  </line>
+  <line no="30"/>
+  <line no="31">
+    <token name="T_INLINE_HTML">		&lt;a href="https://twitter.com/intent/tweet?screen_name=LeonGersen" class="twitter-mention-button" data-related="LeonGersen"&gt;Tweet to @LeonGersen&lt;/a&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="34"/>
+  <line no="35"/>
+  <line no="36">
+    <token name="T_INLINE_HTML">&lt;h2&gt;More from me&lt;/h2&gt;</token>
+  </line>
+  <line no="37"/>
+  <line no="38">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="39"/>
+  <line no="40">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">		&lt;p&gt;Besides noUiSlider, I've written more on tech-related subjects, ranging from PHP to Embedded subjects. Give &lt;a href="/blog/"&gt;my blog&lt;/a&gt; a try if you are interested!&lt;/a&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="44"/>
+</source>

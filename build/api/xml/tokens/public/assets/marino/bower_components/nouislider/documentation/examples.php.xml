@@ -1,0 +1,1871 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/public/assets/marino/bower_components/nouislider/documentation" file="examples.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/public/assets/marino/bower_components/nouislider/documentation/examples.php" size="16046" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="8ebdf86f6883e74fbd6c843bf6eb6b8bbfebc751" relative="public/assets/marino/bower_components/nouislider/documentation/examples.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_VARIABLE">$title</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"noUiSlider - Examples and hints"</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="3">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_VARIABLE">$description</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"noUiSlider has a selection of examples you can use to implement a slider easily. Take a look!"</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="4">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="5"/>
+  <line no="6">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">	&lt;ul&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">		&lt;li&gt;&lt;a href="#section-colorpicker"&gt;Colorpicker&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">		&lt;li&gt;&lt;a href="#section-custom-connect"&gt;Using a custom connecting bar&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">		&lt;li&gt;&lt;a href="#section-html5"&gt;Working with HTML5 input types&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">		&lt;li&gt;&lt;a href="#section-non-linear"&gt;Using non linear ranges&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">		&lt;li&gt;&lt;a href="#section-lock"&gt;Locking two sliders together&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">		&lt;li&gt;&lt;a href="#section-keypress"&gt;Changing the slider value by keypress&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">		&lt;li&gt;&lt;a href="#section-skipping"&gt;Skipping values on a slider&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">		&lt;li&gt;&lt;a href="#section-huge-numbers"&gt;Working with huge numbers&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">		&lt;li&gt;&lt;a href="#section-keyboard"&gt;Adding keyboard support&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">		&lt;li&gt;&lt;a href="#section-dates"&gt;Using dates&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">		&lt;li&gt;&lt;a href="#section-toggle"&gt;Create a toggle&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">		&lt;li&gt;&lt;a href="#section-soft-limits"&gt;Block the edges of a slider&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">	&lt;/ul&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="22"/>
+  <line no="23"/>
+  <line no="24">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'colorpicker'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">&lt;h1&gt;Colorpicker&lt;/h1&gt;</token>
+  </line>
+  <line no="26"/>
+  <line no="27">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="28"/>
+  <line no="29">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="30"/>
+  <line no="31">
+    <token name="T_INLINE_HTML">		&lt;p&gt;We'll initialize all sliders with the same options, and use the &lt;code&gt;slide&lt;/code&gt; callback to keep to color in sync with the slider values. This callback fires when the slider is moved by sliding, or when it is clicked or tapped.&lt;/p&gt;</token>
+  </line>
+  <line no="32"/>
+  <line no="33">
+    <token name="T_INLINE_HTML">		&lt;div id="colorpicker"&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">			&lt;div class="sliders" id="red"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">			&lt;div class="sliders" id="green"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">			&lt;div class="sliders" id="blue"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="37"/>
+  <line no="38">
+    <token name="T_INLINE_HTML">			&lt;div id="result"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'colorpicker-setcolor'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'colorpicker-slider'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="43"/>
+  <line no="44">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="45"/>
+  <line no="46">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;The HTML&lt;/div&gt;</token>
+  </line>
+  <line no="47"/>
+  <line no="48">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="49"/>
+  <line no="50">
+    <token name="T_INLINE_HTML">&lt;pre class="language-markup"&gt;&lt;code&gt;&amp;lt;div id="colorpicker"&amp;gt;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">	&amp;lt;div class="sliders" id="red"&amp;gt;&amp;lt;/div&amp;gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">	&amp;lt;div class="sliders" id="green"&amp;gt;&amp;lt;/div&amp;gt;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">	&amp;lt;div class="sliders" id="blue"&amp;gt;&amp;lt;/div&amp;gt;</token>
+  </line>
+  <line no="54"/>
+  <line no="55">
+    <token name="T_INLINE_HTML">	&amp;lt;div class="result"&amp;gt;&amp;lt;/div&amp;gt;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/pre&gt;</token>
+  </line>
+  <line no="57"/>
+  <line no="58">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="59"/>
+  <line no="60">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;The &lt;code&gt;setColor&lt;/code&gt; function&lt;/div&gt;</token>
+  </line>
+  <line no="61"/>
+  <line no="62">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'colorpicker-setcolor'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="65"/>
+  <line no="66">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Initializing the slider&lt;/div&gt;</token>
+  </line>
+  <line no="67"/>
+  <line no="68">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'colorpicker-slider'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="71"/>
+  <line no="72">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;CSS&lt;/div&gt;</token>
+  </line>
+  <line no="73"/>
+  <line no="74">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">loadShowCSS</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'colorpicker'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="77"/>
+  <line no="78">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="80"/>
+  <line no="81"/>
+  <line no="82">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'custom-connect'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">&lt;h1&gt;Custom connect&lt;/h1&gt;</token>
+  </line>
+  <line no="84"/>
+  <line no="85">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="86"/>
+  <line no="87">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="88"/>
+  <line no="89">
+    <token name="T_INLINE_HTML">		&lt;p&gt;When using the &lt;code&gt;connect&lt;/code&gt; option, noUiSlider paints the connecting bar in the negative space between handles. This uses one less element and has some nice performance benefits. When you need more control over the connecting option, you can create a custom connecting bar using the &lt;code&gt;update&lt;/code&gt; event.&lt;/p&gt;</token>
+  </line>
+  <line no="90"/>
+  <line no="91">
+    <token name="T_INLINE_HTML">		&lt;p&gt;This custom element can be styled, or special features (like requested in &lt;a href="https://github.com/leongersen/noUiSlider/issues/371"&gt;this issue&lt;/a&gt;) can be implemented.&lt;/p&gt;</token>
+  </line>
+  <line no="92"/>
+  <line no="93">
+    <token name="T_INLINE_HTML">		&lt;div class="example"&gt;</token>
+  </line>
+  <line no="94">
+    <token name="T_INLINE_HTML">			&lt;div id="connect"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="95">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'custom-connect-slider'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="96">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'custom-connect'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="97">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="99"/>
+  <line no="100">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="101"/>
+  <line no="102">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Create the slider&lt;/div&gt;</token>
+  </line>
+  <line no="103"/>
+  <line no="104">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="105">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'custom-connect-slider'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="106">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="107"/>
+  <line no="108"/>
+  <line no="109">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Create a connecting bar and bind it&lt;/div&gt;</token>
+  </line>
+  <line no="110"/>
+  <line no="111">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="112">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'custom-connect'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="113">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="114"/>
+  <line no="115"/>
+  <line no="116">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;CSS for the connecting bar&lt;/div&gt;</token>
+  </line>
+  <line no="117"/>
+  <line no="118">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="119">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">loadShowCSS</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'custom-connect'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="120">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="121">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="122">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="123"/>
+  <line no="124"/>
+  <line no="125">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'html5'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="126">
+    <token name="T_INLINE_HTML">&lt;h1&gt;Using HTML5 input elements&lt;/h1&gt;</token>
+  </line>
+  <line no="127"/>
+  <line no="128">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="129"/>
+  <line no="130">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="131">
+    <token name="T_INLINE_HTML">		&lt;p&gt;noUiSlider is perfectly fine serializing values to any element with a &lt;code&gt;.val()&lt;/code&gt; method, so lets try using &lt;code&gt;type="number"&lt;/code&gt; and &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt;.&lt;/p&gt;</token>
+  </line>
+  <line no="132">
+    <token name="T_INLINE_HTML">		&lt;p&gt;Note that if your browser doesn't support an input type, it will just assume &lt;code&gt;"text"&lt;/code&gt;. If you'd like to know more, consider reading &lt;a href="http://html5doctor.com/html5-forms-input-types/"&gt;this article&lt;/a&gt;.&lt;/p&gt;</token>
+  </line>
+  <line no="133"/>
+  <line no="134">
+    <token name="T_INLINE_HTML">		&lt;p&gt;We'll append &lt;code&gt;&amp;lt;option&amp;gt;&lt;/code&gt; elements to the &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt; dynamically.&lt;/p&gt;</token>
+  </line>
+  <line no="135"/>
+  <line no="136">
+    <token name="T_INLINE_HTML">		&lt;div class="example"&gt;</token>
+  </line>
+  <line no="137">
+    <token name="T_INLINE_HTML">			&lt;div id="html5"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="138">
+    <token name="T_INLINE_HTML">			&lt;select id="input-select"&gt;&lt;/select&gt;</token>
+  </line>
+  <line no="139">
+    <token name="T_INLINE_HTML">			&lt;input type="number" min="-20" max="40" step="1" id="input-number"&gt;</token>
+  </line>
+  <line no="140">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'html5-append'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="141">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'html5-slider'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="142">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'html5-link'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="143">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="144">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="145"/>
+  <line no="146">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="147"/>
+  <line no="148">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Appending &lt;code&gt;&amp;lt;option&amp;gt;&lt;/code&gt; elements&lt;/div&gt;</token>
+  </line>
+  <line no="149"/>
+  <line no="150">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="151">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'html5-append'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">true</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="152">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="153"/>
+  <line no="154">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Initializing the slider&lt;/div&gt;</token>
+  </line>
+  <line no="155"/>
+  <line no="156">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="157">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'html5-slider'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="158">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="159"/>
+  <line no="160">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Linking the &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="161"/>
+  <line no="162">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="163">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'html5-link'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="164">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="165"/>
+  <line no="166">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Example CSS&lt;/div&gt;</token>
+  </line>
+  <line no="167"/>
+  <line no="168">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="169">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">loadShowCSS</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'html5'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="170">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="171">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="172">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="173"/>
+  <line no="174"/>
+  <line no="175">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'non-linear'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="176">
+    <token name="T_INLINE_HTML">&lt;h1&gt;Non linear slider&lt;/h1&gt;</token>
+  </line>
+  <line no="177"/>
+  <line no="178">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="179"/>
+  <line no="180">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="181"/>
+  <line no="182">
+    <token name="T_INLINE_HTML">		&lt;p&gt;One of noUiSlider's core features is the ability to divide the range in a non-linear fashion. Stepping can be applied, too! The example on the right shows where the handles are on the slider range in values and percentages.&lt;/p&gt;</token>
+  </line>
+  <line no="183"/>
+  <line no="184">
+    <token name="T_INLINE_HTML">		&lt;div class="example"&gt;</token>
+  </line>
+  <line no="185">
+    <token name="T_INLINE_HTML">			&lt;div id="nonlinear"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="186">
+    <token name="T_INLINE_HTML">			&lt;span class="example-val" id="lower-value"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="187">
+    <token name="T_INLINE_HTML">			&lt;span id="lower-offset"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="188">
+    <token name="T_INLINE_HTML">			&lt;span class="example-val" id="upper-value"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="189">
+    <token name="T_INLINE_HTML">			&lt;span id="upper-offset"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="190">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'nonlinear-slider'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="191">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'nonlinear-link'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="192">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="193">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="194"/>
+  <line no="195">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="196"/>
+  <line no="197">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Setting up the slider&lt;/div&gt;</token>
+  </line>
+  <line no="198"/>
+  <line no="199">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="200">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'nonlinear-slider'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="201">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="202"/>
+  <line no="203">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Read the slider value and the left offset&lt;/div&gt;</token>
+  </line>
+  <line no="204"/>
+  <line no="205">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="206">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'nonlinear-link'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="207">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="208">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="209">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="210"/>
+  <line no="211"/>
+  <line no="212">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'lock'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="213">
+    <token name="T_INLINE_HTML">&lt;h1&gt;Locking sliders together&lt;/h1&gt;</token>
+  </line>
+  <line no="214"/>
+  <line no="215">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="216"/>
+  <line no="217">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="218"/>
+  <line no="219">
+    <token name="T_INLINE_HTML">		&lt;p&gt;Two cross-updating sliders can be created using a combination of the &lt;code&gt;change&lt;/code&gt; and &lt;code&gt;slide&lt;/code&gt; events.&lt;/p&gt;</token>
+  </line>
+  <line no="220"/>
+  <line no="221">
+    <token name="T_INLINE_HTML">		&lt;div class="example"&gt;</token>
+  </line>
+  <line no="222">
+    <token name="T_INLINE_HTML">			&lt;div class="slider" id="slider1"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="223">
+    <token name="T_INLINE_HTML">			&lt;span class="example-val" id="slider1-span"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="224"/>
+  <line no="225">
+    <token name="T_INLINE_HTML">			&lt;div class="slider" id="slider2"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="226">
+    <token name="T_INLINE_HTML">			&lt;span class="example-val" id="slider2-span"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="227"/>
+  <line no="228">
+    <token name="T_INLINE_HTML">			&lt;button id="lockbutton" style="float: right; margin: 20px 0 0;"&gt;Lock&lt;/button&gt;</token>
+  </line>
+  <line no="229"/>
+  <line no="230">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'locked-setup'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="231">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'locked-sliders'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="232">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'locked-link'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="233">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'locked-crossupdate'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="234">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="235">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="236"/>
+  <line no="237">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="238"/>
+  <line no="239">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Setup and button clicks&lt;/div&gt;</token>
+  </line>
+  <line no="240"/>
+  <line no="241">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="242">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'locked-setup'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="243">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="244"/>
+  <line no="245">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;The &lt;code&gt;Crossupdate&lt;/code&gt; function&lt;/div&gt;</token>
+  </line>
+  <line no="246"/>
+  <line no="247">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="248">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'locked-crossupdate'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="249">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="250"/>
+  <line no="251">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Initializing the sliders&lt;/div&gt;</token>
+  </line>
+  <line no="252"/>
+  <line no="253">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="254">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'locked-sliders'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="255">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="256"/>
+  <line no="257">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Linking the sliders together&lt;/div&gt;</token>
+  </line>
+  <line no="258"/>
+  <line no="259">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="260">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'locked-link'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="261">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="262">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="263">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="264"/>
+  <line no="265"/>
+  <line no="266">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'keypress'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="267">
+    <token name="T_INLINE_HTML">&lt;h1&gt;Changing the slider by keypress&lt;/h1&gt;</token>
+  </line>
+  <line no="268"/>
+  <line no="269">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="270"/>
+  <line no="271">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="272"/>
+  <line no="273">
+    <token name="T_INLINE_HTML">		&lt;p&gt;To keep the library small, features like keyboard interaction haven't been included. However, adding features to input fields linked to a slider is easy. noUiSlider provides API's to help you. In this example, pressing the keyboard arrow keys will increase/decrease the slider by one step.&lt;/p&gt;</token>
+  </line>
+  <line no="274"/>
+  <line no="275">
+    <token name="T_INLINE_HTML">		&lt;p&gt;This example uses the &lt;code&gt;'step'&lt;/code&gt; API to determine by how much the slider should be changed. You don't need this function if your slider is linear. In that case, increase/decrease the value with the ammount of your &lt;code&gt;step&lt;/code&gt;.&lt;/p&gt;</token>
+  </line>
+  <line no="276"/>
+  <line no="277">
+    <token name="T_INLINE_HTML">		&lt;p&gt;We'll listen to keydown on the &lt;code&gt;'#input-with-keypress'&lt;/code&gt; element, and pass the event to a function so we can read the code that identifies the key.&lt;/p&gt;</token>
+  </line>
+  <line no="278"/>
+  <line no="279">
+    <token name="T_INLINE_HTML">		&lt;p&gt;Note that the slider value will be a &lt;code&gt;string&lt;/code&gt;, so we'll need to parse it to an integer.&lt;/p&gt;</token>
+  </line>
+  <line no="280"/>
+  <line no="281">
+    <token name="T_INLINE_HTML">		&lt;div class="example"&gt;</token>
+  </line>
+  <line no="282">
+    <token name="T_INLINE_HTML">			&lt;div id="keypress"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="283">
+    <token name="T_INLINE_HTML">			&lt;input type="text" id="input-with-keypress"&gt;</token>
+  </line>
+  <line no="284">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'keypress-slider'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="285">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'keypress-event'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="286">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="287">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="288"/>
+  <line no="289">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="290"/>
+  <line no="291">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Initializing the slider and linking the input&lt;/div&gt;</token>
+  </line>
+  <line no="292"/>
+  <line no="293">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="294">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'keypress-slider'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="295">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="296"/>
+  <line no="297">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Listen to &lt;code&gt;keypress&lt;/code&gt; on the input&lt;/div&gt;</token>
+  </line>
+  <line no="298"/>
+  <line no="299">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="300">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'keypress-event'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="301">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="302"/>
+  <line no="303">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="304">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="305"/>
+  <line no="306"/>
+  <line no="307">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'skipping'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="308">
+    <token name="T_INLINE_HTML">&lt;h1&gt;Skipping steps&lt;/h1&gt;</token>
+  </line>
+  <line no="309"/>
+  <line no="310">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="311"/>
+  <line no="312">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="313">
+    <token name="T_INLINE_HTML">		&lt;p&gt;When using a stepped slider, your configuration may require that certain steps aren't available. Using the &lt;code&gt;snap&lt;/code&gt; feature, this effect can be created.&lt;/p&gt;</token>
+  </line>
+  <line no="314">
+    <token name="T_INLINE_HTML">		&lt;p&gt;Notice how &lt;code&gt;40&lt;/code&gt; and &lt;code&gt;80&lt;/code&gt; can't be selected on the slider.&lt;/p&gt;</token>
+  </line>
+  <line no="315"/>
+  <line no="316">
+    <token name="T_INLINE_HTML">		&lt;div class="example"&gt;</token>
+  </line>
+  <line no="317">
+    <token name="T_INLINE_HTML">			&lt;div id="skipstep"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="318">
+    <token name="T_INLINE_HTML">			&lt;span class="example-val" id="skip-value-lower"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="319">
+    <token name="T_INLINE_HTML">			&lt;span class="example-val" id="skip-value-upper"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="320">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'skipstep-slider'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="321">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'skipstep-link'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="322">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="323">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="324"/>
+  <line no="325">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="326"/>
+  <line no="327">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Initialize a snapping slider&lt;/div&gt;</token>
+  </line>
+  <line no="328"/>
+  <line no="329">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="330">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'skipstep-slider'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="331">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="332"/>
+  <line no="333">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Read the slider values&lt;/div&gt;</token>
+  </line>
+  <line no="334"/>
+  <line no="335">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="336">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'skipstep-link'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="337">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="338">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="339">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="340"/>
+  <line no="341"/>
+  <line no="342">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'huge-numbers'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="343">
+    <token name="T_INLINE_HTML">&lt;h1&gt;Using the slider with huge numbers&lt;/h1&gt;</token>
+  </line>
+  <line no="344"/>
+  <line no="345">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="346"/>
+  <line no="347">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="348"/>
+  <line no="349">
+    <token name="T_INLINE_HTML">		&lt;p&gt;If you are working with arbitrarily large numbers, you should &lt;strong&gt;not use these directly in noUiSlider&lt;/strong&gt;, as you'll run into some JavaScript limitations. Instead, you should &lt;strong&gt;map&lt;/strong&gt; your values to an &lt;code&gt;array&lt;/code&gt;.&lt;/p&gt;</token>
+  </line>
+  <line no="350"/>
+  <line no="351">
+    <token name="T_INLINE_HTML">		&lt;p&gt;Numbers is JavaScript are &lt;a href=""&gt;Double Precision Floats&lt;/a&gt;, which can store numbers up to 2^53 &lt;em&gt;(9007199254740992)&lt;/em&gt; precisely. For reference, see &lt;a href="http://stackoverflow.com/questions/15529337/prevent-javascript-number-function-from-rounding-big-numbers"&gt;this StackOverflow question&lt;/a&gt;, or &lt;a href="https://github.com/leongersen/noUiSlider/issues/427"&gt;issue #427 filed on GitHub&lt;/a&gt;.&lt;/p&gt;</token>
+  </line>
+  <line no="352"/>
+  <line no="353">
+    <token name="T_INLINE_HTML">		&lt;p&gt;As an example, see the &lt;code&gt;'range'&lt;/code&gt; option for a RAM selector offering 14 steps from 512MB to 8GB. The &lt;code&gt;'step'&lt;/code&gt; are ommited for clarity. The values are provided as bytes. A better solution would be to abstract the byte values away from the slider, looking up the byte values in an array. This keeps the slider configuration simple and prevents issues with floating point precision.&lt;/p&gt;</token>
+  </line>
+  <line no="354"/>
+  <line no="355">
+    <token name="T_INLINE_HTML">		&lt;p&gt;&lt;em&gt;(These values fit within the limit just fine, but demonstrate the point really well!)&lt;/em&gt;&lt;/p&gt;</token>
+  </line>
+  <line no="356"/>
+  <line no="357">
+    <token name="T_INLINE_HTML">		&lt;div class="example"&gt;</token>
+  </line>
+  <line no="358">
+    <token name="T_INLINE_HTML">			&lt;div id="slider-huge"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="359">
+    <token name="T_INLINE_HTML">			&lt;span class="example-val" id="huge-value"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="360">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'huge-numbers-setup'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="361">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'huge-numbers'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="362">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="363">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="364"/>
+  <line no="365">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="366"/>
+  <line no="367">
+    <token name="T_INLINE_HTML">		</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'huge-numbers-direct'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="368"/>
+  <line no="369">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Setup&lt;/div&gt;</token>
+  </line>
+  <line no="370"/>
+  <line no="371">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="372">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'huge-numbers-setup'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="373">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="374"/>
+  <line no="375">
+    <token name="T_INLINE_HTML">		</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'huge-numbers'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="376"/>
+  <line no="377">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="378">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="379"/>
+  <line no="380"/>
+  <line no="381">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'keyboard'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="382">
+    <token name="T_INLINE_HTML">&lt;h1&gt;Adding keyboard support&lt;/h1&gt;</token>
+  </line>
+  <line no="383"/>
+  <line no="384">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="385"/>
+  <line no="386">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="387"/>
+  <line no="388">
+    <token name="T_INLINE_HTML">		&lt;p&gt;Much like the keypress example, handles can be made keyboard-focusable.&lt;/p&gt;</token>
+  </line>
+  <line no="389"/>
+  <line no="390">
+    <token name="T_INLINE_HTML">		&lt;div class="example"&gt;</token>
+  </line>
+  <line no="391">
+    <token name="T_INLINE_HTML">			&lt;input placeholder="Hit tab to focus on the handle." style="width: 100%"&gt;</token>
+  </line>
+  <line no="392">
+    <token name="T_INLINE_HTML">			&lt;div id="keyboard"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="393">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'keyboard-slider'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="394">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'keyboard'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="395">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="396">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="397"/>
+  <line no="398">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="399"/>
+  <line no="400">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Initializing the slider&lt;/div&gt;</token>
+  </line>
+  <line no="401"/>
+  <line no="402">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="403">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'keyboard-slider'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="404">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="405"/>
+  <line no="406">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Listen to &lt;code&gt;keypress&lt;/code&gt; on the handle&lt;/div&gt;</token>
+  </line>
+  <line no="407"/>
+  <line no="408">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="409">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'keyboard'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="410">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="411"/>
+  <line no="412">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;CSS&lt;/div&gt;</token>
+  </line>
+  <line no="413"/>
+  <line no="414">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="415">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">loadShowCSS</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'keyboard'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="416">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="417"/>
+  <line no="418">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="419">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="420"/>
+  <line no="421"/>
+  <line no="422">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'dates'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="423">
+    <token name="T_INLINE_HTML">&lt;h1&gt;Working with dates&lt;/h1&gt;</token>
+  </line>
+  <line no="424"/>
+  <line no="425">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="426"/>
+  <line no="427">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="428"/>
+  <line no="429">
+    <token name="T_INLINE_HTML">		&lt;p&gt;As all dates in JavaScript can be represented as time, noUiSlider can handle them, too. This example will show you how to convert dates to numerical ranges, and then use the &lt;code&gt;update&lt;/code&gt; event to display them in a pretty format.&lt;/p&gt;</token>
+  </line>
+  <line no="430"/>
+  <line no="431">
+    <token name="T_INLINE_HTML">		&lt;p&gt;We'll be creating timestamps from strings. In order to do this easily, we'll define a new helper function. This function accepts a string, creates a &lt;code&gt;new Date&lt;/code&gt; and then returns it as a timestamp.&lt;/p&gt;</token>
+  </line>
+  <line no="432"/>
+  <line no="433">
+    <token name="T_INLINE_HTML">		&lt;p&gt;In in overview below you'll find the code used to run this example. For readability, all &lt;strong&gt;helper&lt;/strong&gt; functions have been moved into their own tab.&lt;/p&gt;</token>
+  </line>
+  <line no="434"/>
+  <line no="435">
+    <token name="T_INLINE_HTML">		&lt;div class="example"&gt;</token>
+  </line>
+  <line no="436">
+    <token name="T_INLINE_HTML">			&lt;div id="slider-date"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="437">
+    <token name="T_INLINE_HTML">			&lt;span class="example-val" id="event-start"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="438">
+    <token name="T_INLINE_HTML">			&lt;span class="example-val" id="event-end"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="439">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'date-timestamp'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="440">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'date-helpers'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="441">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'date-setup'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="442">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'date-link'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="443">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="444">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="445"/>
+  <line no="446">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="447"/>
+  <line no="448">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Timestamps&lt;/div&gt;</token>
+  </line>
+  <line no="449"/>
+  <line no="450">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="451">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'date-timestamp'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="452">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="453"/>
+  <line no="454">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Setup&lt;/div&gt;</token>
+  </line>
+  <line no="455"/>
+  <line no="456">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="457">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'date-setup'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="458">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="459"/>
+  <line no="460">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Slider control&lt;/div&gt;</token>
+  </line>
+  <line no="461"/>
+  <line no="462">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="463">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'date-link'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="464">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="465"/>
+  <line no="466">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Helper functions and formatting&lt;/div&gt;</token>
+  </line>
+  <line no="467"/>
+  <line no="468">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="469">
+    <token name="T_INLINE_HTML">			&lt;p&gt;The &lt;code&gt;nth&lt;/code&gt; function was borrowed from &lt;a onclick="return trackLink(this, 'outlink','stackoverflow nth')" href="http://stackoverflow.com/questions/15397372/javascript-new-date-ordinal-st-nd-rd-th"&gt;this StackOverflow question&lt;/a&gt;.&lt;/p&gt;</token>
+  </line>
+  <line no="470">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'date-helpers'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="471">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="472">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="473">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="474"/>
+  <line no="475"/>
+  <line no="476">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'toggle'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="477">
+    <token name="T_INLINE_HTML">&lt;h1&gt;Creating a toggle&lt;/h1&gt;</token>
+  </line>
+  <line no="478"/>
+  <line no="479">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="480"/>
+  <line no="481">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="482"/>
+  <line no="483">
+    <token name="T_INLINE_HTML">		&lt;p&gt;Many application interfaces have options that can be turned on or off using switches. noUiSlider is well suited for this, especially because of the wide touch support.&lt;/p&gt;</token>
+  </line>
+  <line no="484"/>
+  <line no="485">
+    <token name="T_INLINE_HTML">		&lt;p&gt;The &lt;code&gt;update&lt;/code&gt; event can be used to keep track of changes to the handle. We'll set the range to &lt;code&gt;[0, 1]&lt;/code&gt;, which leaves one step of &lt;code&gt;1&lt;/code&gt;.&lt;/p&gt;</token>
+  </line>
+  <line no="486"/>
+  <line no="487">
+    <token name="T_INLINE_HTML">		&lt;div class="example vertical"&gt;</token>
+  </line>
+  <line no="488">
+    <token name="T_INLINE_HTML">			&lt;div id="slider-toggle"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="489">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'toggle'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="490">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="491">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="492"/>
+  <line no="493">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="494"/>
+  <line no="495">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Toggle&lt;/div&gt;</token>
+  </line>
+  <line no="496"/>
+  <line no="497">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="498">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'toggle'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="499">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="500"/>
+  <line no="501">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;CSS&lt;/div&gt;</token>
+  </line>
+  <line no="502"/>
+  <line no="503">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="504">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">loadShowCSS</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'toggle'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="505">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="506"/>
+  <line no="507">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="508">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="509"/>
+  <line no="510"/>
+  <line no="511">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'soft-limits'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="512">
+    <token name="T_INLINE_HTML">&lt;h1&gt;Soft limits&lt;/h1&gt;</token>
+  </line>
+  <line no="513"/>
+  <line no="514">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="515"/>
+  <line no="516">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="517"/>
+  <line no="518">
+    <token name="T_INLINE_HTML">		&lt;p&gt;If you want to disable the edges of a slider, the set event can be used to reset the value if a limit is passed. Note how the handle 'bounces back' when it is released below &lt;code&gt;20&lt;/code&gt; or above &lt;code&gt;80&lt;/code&gt;. noUiSlider doesn't support disabling edges altogether, but this effect might be created visually by &lt;a href="/nouislider/more#section-styling"&gt;setting padding&lt;/a&gt; on the slider.&lt;/p&gt;</token>
+  </line>
+  <line no="519"/>
+  <line no="520">
+    <token name="T_INLINE_HTML">		&lt;div class="example"&gt;</token>
+  </line>
+  <line no="521">
+    <token name="T_INLINE_HTML">			&lt;div id="soft"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="522">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'slider-soft-setup'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="523">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'slider-soft'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="524">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="525">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="526"/>
+  <line no="527">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="528"/>
+  <line no="529">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Setting up the slider&lt;/div&gt;</token>
+  </line>
+  <line no="530"/>
+  <line no="531">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="532">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'slider-soft-setup'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="533">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="534"/>
+  <line no="535">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Resetting using the &lt;code&gt;set&lt;/code&gt; event&lt;/div&gt;</token>
+  </line>
+  <line no="536"/>
+  <line no="537">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="538">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'slider-soft'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="539">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="540">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="541">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="542"/>
+</source>

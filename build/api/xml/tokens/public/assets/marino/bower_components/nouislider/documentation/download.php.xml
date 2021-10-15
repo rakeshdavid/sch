@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/public/assets/marino/bower_components/nouislider/documentation" file="download.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/public/assets/marino/bower_components/nouislider/documentation/download.php" size="2333" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="58f6bb5e003efb44fa0e12d9ab5be1c7ce154daa" relative="public/assets/marino/bower_components/nouislider/documentation/download.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_VARIABLE">$title</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"noUiSlider - Download noUiSlider for free!"</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="3">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_VARIABLE">$description</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"Download the latest version of noUiSlider safely from gitHub. For free!"</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="4">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="5"/>
+  <line no="6">
+    <token name="T_INLINE_HTML">&lt;h1&gt;Download noUiSlider&lt;/h1&gt;</token>
+  </line>
+  <line no="7"/>
+  <line no="8">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="9"/>
+  <line no="10">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="11"/>
+  <line no="12">
+    <token name="T_INLINE_HTML">		&lt;p&gt;noUiSlider is open source, and you can use it &lt;strong&gt;for free&lt;/strong&gt; in any personal or commercial product. No attribution required. Both the uncompressed and compressed version of noUiSlider are available in a &lt;code&gt;.zip&lt;/code&gt; release, which is hosted by Github and available over &lt;code&gt;https&lt;/code&gt;.&lt;/p&gt;</token>
+  </line>
+  <line no="13"/>
+  <line no="14">
+    <token name="T_INLINE_HTML">		&lt;a class="button" href="https://github.com/leongersen/noUiSlider/releases/download/8.3.0/noUiSlider.8.3.0.zip" data-category="convert" data-action="download"&gt;Download noUiSlider from Github&lt;/a&gt;</token>
+  </line>
+  <line no="15"/>
+  <line no="16">
+    <token name="T_INLINE_HTML">		&lt;div class="share"&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">			&lt;iframe src="https://ghbtns.com/github-btn.html?user=leongersen&amp;repo=noUiSlider&amp;type=star&amp;count=true&amp;size=large" frameborder="0" scrolling="0" width="160px" height="30px"&gt;&lt;/iframe&gt;</token>
+  </line>
+  <line no="18"/>
+  <line no="19">
+    <token name="T_INLINE_HTML">			&lt;a href="https://twitter.com/share" class="twitter-share-button" data-url="http://refreshless.com/nouislider/" data-text="Check out this responsive JavaScript range slider with touch support: #noUiSlider" data-size="large"&gt;Tweet&lt;/a&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="21"/>
+  <line no="22">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="24"/>
+  <line no="25"/>
+  <line no="26">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">	&lt;a href="/nouislider/contact/"&gt;Help and contact&lt;/a&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">	&lt;br&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">	&lt;a href="/nouislider/new-version/"&gt;Release information about the latest Version&lt;/a&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">	&lt;br&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">	Run the unit tests: &lt;a href="/nouislider/tests/range.html"&gt;range&lt;/a&gt; and &lt;a href="/nouislider/tests/slider.html"&gt;slider&lt;/a&gt;.</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="33"/>
+  <line no="34"/>
+  <line no="35">
+    <token name="T_INLINE_HTML">&lt;h2&gt;License&lt;/h2&gt;</token>
+  </line>
+  <line no="36"/>
+  <line no="37">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="38"/>
+  <line no="39">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="40"/>
+  <line no="41">
+    <token name="T_INLINE_HTML">		&lt;p&gt;You can use noUiSlider for free, under the terms of the &lt;a data-category="outlink" data-action="license" href="http://www.wtfpl.net/about/"&gt;WTFPL&lt;/a&gt;, which allows everything and has no additional restrictions.&lt;/p&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="44"/>
+  <line no="45"/>
+  <line no="46">
+    <token name="T_INLINE_HTML">&lt;h2&gt;Repository&lt;/h2&gt;</token>
+  </line>
+  <line no="47"/>
+  <line no="48">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="49"/>
+  <line no="50">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="51"/>
+  <line no="52">
+    <token name="T_INLINE_HTML">		&lt;p&gt;You can also visit the repository: &lt;a data-category="convert" data-action="gitHub" href="https://github.com/leongersen/noUiSlider/"&gt;noUiSlider on gitHub&lt;/a&gt;. If you need help implementing noUiSlider in your website, or if you'd like to see a new feature, feel free to ask me on twitter: &lt;a data-category="convert" data-action="twitter" href="https://twitter.com/LeonGersen"&gt;@LeonGersen&lt;/a&gt;.&lt;/p&gt;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="55"/>
+  <line no="56">
+    <token name="T_INLINE_HTML">&lt;script src="https://platform.twitter.com/widgets.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="57"/>
+</source>

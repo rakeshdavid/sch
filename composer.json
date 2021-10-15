@@ -16,7 +16,7 @@
     "stripe/stripe-php": "^6.10",
     "jildertmiedema/laravel-plupload": "^0.3.1",
     "intervention/image": "^2.3",
-    "dingo/api": "2.0.0-alpha1",
+    "dingo/api": "2.0.0-alpha2",
     "tymon/jwt-auth": "^0.5.12",
     "rairlie/laravel-locking-session": "1.1.1",
     "lakshmaji/thumbnail": "^1.4",

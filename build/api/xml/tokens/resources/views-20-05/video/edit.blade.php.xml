@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-20-05/video" file="edit.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-20-05/video/edit.blade.php" size="1057" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="5a51b7c054f49c21c72e74c644e19265d96cde90" relative="resources/views-20-05/video/edit.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layouts.app')</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">    &lt;div class="container"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">        &lt;div class="row"&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">            &lt;div class="col-md-12"&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">                &lt;form&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">                    &lt;div class="form-group"&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">                        &lt;label for="exampleInputEmail1"&gt;Name&lt;/label&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">                        &lt;input type="text" class="form-control" name="name" placeholder="Name"&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">                    &lt;div class="form-group"&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">                        &lt;label for="exampleInputEmail1"&gt;Url&lt;/label&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">                        &lt;input type="text" class="form-control" name="url" placeholder="Url"&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">                    &lt;div class="form-group"&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">                        &lt;label for="exampleInputEmail1"&gt;Description&lt;/label&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">                        &lt;textarea class="form-control" rows="3" name="description" placeholder="Description"&gt;&lt;/textarea&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">                    &lt;button type="submit" class="btn btn-default"&gt;Add&lt;/button&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">                &lt;/form&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+</source>

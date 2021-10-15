@@ -1,0 +1,673 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/public/assets/marino/bower_components/nouislider/documentation" file="pips.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/public/assets/marino/bower_components/nouislider/documentation/pips.php" size="4944" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="1018f640636d1d21d0be0be8ee584f70602d0e59" relative="public/assets/marino/bower_components/nouislider/documentation/pips.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_VARIABLE">$title</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"noUiSlider - Handles and Slider Values"</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="3">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_VARIABLE">$description</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">""</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="4">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="5"/>
+  <line no="6">
+    <token name="T_INLINE_HTML">&lt;h1&gt;Adding a scale/pips to a slider&lt;/h1&gt;</token>
+  </line>
+  <line no="7"/>
+  <line no="8">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="9"/>
+  <line no="10">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="11"/>
+  <line no="12">
+    <token name="T_INLINE_HTML">		&lt;p&gt;This feature allows you to generate points along the slider.&lt;/p&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">		&lt;p&gt;Five options can be set: &lt;code&gt;mode&lt;/code&gt; to determine where to place pips, &lt;code&gt;values&lt;/code&gt; as additional options for &lt;code&gt;mode&lt;/code&gt;, &lt;code&gt;stepped&lt;/code&gt; to round pip values to the slider stepping, &lt;code&gt;density&lt;/code&gt; to pre-scale the number of pips, and &lt;code&gt;filter&lt;/code&gt; to manually modify pip size.&lt;/p&gt;</token>
+  </line>
+  <line no="14"/>
+  <line no="15">
+    <token name="T_INLINE_HTML">		&lt;p&gt;All sliders on the page use the same range, as displayed to the right.&lt;/p&gt;</token>
+  </line>
+  <line no="16"/>
+  <line no="17">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="18"/>
+  <line no="19">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="20"/>
+  <line no="21">
+    <token name="T_INLINE_HTML">		</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'a-slider-range-used'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">		</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'a-slider-range-used'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="25"/>
+  <line no="26"/>
+  <line no="27">
+    <token name="T_INLINE_HTML">&lt;h2&gt;API exposure&lt;/h2&gt;</token>
+  </line>
+  <line no="28"/>
+  <line no="29">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="30"/>
+  <line no="31">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="32"/>
+  <line no="33">
+    <token name="T_INLINE_HTML">		&lt;p&gt;The pips feature is also exposed in the public API. This could be useful to update or remove pips after slider creation.&lt;/p&gt;</token>
+  </line>
+  <line no="34"/>
+  <line no="35">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="36"/>
+  <line no="37">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="38"/>
+  <line no="39">
+    <token name="T_INLINE_HTML">		</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'pips-usage'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="42"/>
+  <line no="43"/>
+  <line no="44">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'range'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">&lt;h2&gt;Range&lt;/h2&gt;</token>
+  </line>
+  <line no="46"/>
+  <line no="47">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="48"/>
+  <line no="49">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="50"/>
+  <line no="51">
+    <token name="T_INLINE_HTML">		&lt;p&gt;The &lt;code&gt;range&lt;/code&gt; mode uses the slider range to determine where the pips should be. A pip is generated for every percentage specified.&lt;/p&gt;</token>
+  </line>
+  <line no="52"/>
+  <line no="53">
+    <token name="T_INLINE_HTML">		&lt;h4 class="before-example"&gt;Left-to-Right (default):&lt;/h4&gt;</token>
+  </line>
+  <line no="54"/>
+  <line no="55">
+    <token name="T_INLINE_HTML">		&lt;div class="example"&gt;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">			&lt;div class="pips-range" id="pips-range"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="58"/>
+  <line no="59">
+    <token name="T_INLINE_HTML">		&lt;h4 class="before-example"&gt;Right-to-Left:&lt;/h4&gt;</token>
+  </line>
+  <line no="60"/>
+  <line no="61">
+    <token name="T_INLINE_HTML">		&lt;div class="example"&gt;</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">			&lt;div class="pips-range" id="pips-range-rtl"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="64"/>
+  <line no="65">
+    <token name="T_INLINE_HTML">		&lt;h4 class="before-example"&gt;Vertical and vertical, bottom-to-top:&lt;/h4&gt;</token>
+  </line>
+  <line no="66"/>
+  <line no="67">
+    <token name="T_INLINE_HTML">		&lt;div class="example vertical" style="float: left"&gt;</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">			&lt;div class="pips-range" id="pips-range-vertical"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="70"/>
+  <line no="71">
+    <token name="T_INLINE_HTML">		&lt;div class="example vertical"&gt;</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">			&lt;div class="pips-range" id="pips-range-vertical-rtl"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="74"/>
+  <line no="75">
+    <token name="T_INLINE_HTML">		</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'range'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="76"/>
+  <line no="77">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="78"/>
+  <line no="79">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">		</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'range'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="82"/>
+  <line no="83">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="84"/>
+  <line no="85"/>
+  <line no="86">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'steps'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="87">
+    <token name="T_INLINE_HTML">&lt;h2&gt;Steps&lt;/h2&gt;</token>
+  </line>
+  <line no="88"/>
+  <line no="89">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="90"/>
+  <line no="91">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="92"/>
+  <line no="93">
+    <token name="T_INLINE_HTML">		&lt;p&gt;Like &lt;code&gt;range&lt;/code&gt;, the &lt;code&gt;steps&lt;/code&gt; mode uses the slider range. In &lt;code&gt;steps&lt;/code&gt; mode, a pip is generated for every step. The &lt;code&gt;filter&lt;/code&gt; option can be used to filter the generated pips.&lt;/p&gt;</token>
+  </line>
+  <line no="94"/>
+  <line no="95">
+    <token name="T_INLINE_HTML">		&lt;p&gt;The &lt;code&gt;filter&lt;/code&gt; function must return &lt;code&gt;0&lt;/code&gt; (no value), &lt;code&gt;1&lt;/code&gt; (large value) or &lt;code&gt;2&lt;/code&gt; (small value).&lt;/p&gt;</token>
+  </line>
+  <line no="96">
+    <token name="T_INLINE_HTML">		&lt;p&gt;Here, we'll use large values for every step matching a thousand (&lt;code&gt;1000&lt;/code&gt;, &lt;code&gt;2000&lt;/code&gt;, &lt;code&gt;3000&lt;/code&gt;), and small values for every step matching 500 (&lt;code&gt;2500&lt;/code&gt;, &lt;code&gt;3500&lt;/code&gt;, &lt;code&gt;4500&lt;/code&gt;).&lt;/p&gt;</token>
+  </line>
+  <line no="97"/>
+  <line no="98">
+    <token name="T_INLINE_HTML">		&lt;p&gt;The Pips add-on supports &lt;code&gt;format&lt;/code&gt; in the same way the slider itself does.&lt;/p&gt;</token>
+  </line>
+  <line no="99"/>
+  <line no="100">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="101"/>
+  <line no="102">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="103">
+    <token name="T_INLINE_HTML">		</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'steps'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="104">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="105"/>
+  <line no="106">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="107"/>
+  <line no="108">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="109"/>
+  <line no="110">
+    <token name="T_INLINE_HTML">	&lt;h4 class="before-example"&gt;Slider with filtered steps:&lt;/h4&gt;</token>
+  </line>
+  <line no="111"/>
+  <line no="112">
+    <token name="T_INLINE_HTML">	&lt;div class="example"&gt;</token>
+  </line>
+  <line no="113">
+    <token name="T_INLINE_HTML">		&lt;div id="pips-steps"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="114">
+    <token name="T_INLINE_HTML">		</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'steps'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="115">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="116"/>
+  <line no="117">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="118"/>
+  <line no="119"/>
+  <line no="120">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'positions'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="121">
+    <token name="T_INLINE_HTML">&lt;h2&gt;Positions&lt;/h2&gt;</token>
+  </line>
+  <line no="122"/>
+  <line no="123">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="124"/>
+  <line no="125">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="126"/>
+  <line no="127">
+    <token name="T_INLINE_HTML">		&lt;p&gt;In &lt;code&gt;positions&lt;/code&gt; mode, pips are generated at percentage-based positions on the slider. Optionally, the &lt;code&gt;stepped&lt;/code&gt; option can be set to &lt;code&gt;true&lt;/code&gt; to match the pips to the slider steps.&lt;/p&gt;</token>
+  </line>
+  <line no="128"/>
+  <line no="129">
+    <token name="T_INLINE_HTML">		&lt;div class="example"&gt;</token>
+  </line>
+  <line no="130">
+    <token name="T_INLINE_HTML">			&lt;div id="pips-positions"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="131">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'positions'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="132">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="133"/>
+  <line no="134">
+    <token name="T_INLINE_HTML">		&lt;h4 class="before-example"&gt;Stepped positions:&lt;/h4&gt;</token>
+  </line>
+  <line no="135"/>
+  <line no="136">
+    <token name="T_INLINE_HTML">		&lt;div class="example"&gt;</token>
+  </line>
+  <line no="137">
+    <token name="T_INLINE_HTML">			&lt;div id="pips-positions-stepped"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="138">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'positions-stepped'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="139">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="140">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="141"/>
+  <line no="142">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="143">
+    <token name="T_INLINE_HTML">		</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'positions'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="144">
+    <token name="T_INLINE_HTML">		</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'positions-stepped'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="145">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="146">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="147"/>
+  <line no="148"/>
+  <line no="149">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'count'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="150">
+    <token name="T_INLINE_HTML">&lt;h2&gt;Count&lt;/h2&gt;</token>
+  </line>
+  <line no="151"/>
+  <line no="152">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="153"/>
+  <line no="154">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="155"/>
+  <line no="156">
+    <token name="T_INLINE_HTML">		&lt;p&gt;The &lt;code&gt;count&lt;/code&gt; mode can be used to generate a fixed number of pips. As with &lt;code&gt;positions&lt;/code&gt; mode, the &lt;code&gt;stepped&lt;/code&gt; option can be used.&lt;/p&gt;</token>
+  </line>
+  <line no="157"/>
+  <line no="158">
+    <token name="T_INLINE_HTML">		&lt;div class="example"&gt;</token>
+  </line>
+  <line no="159">
+    <token name="T_INLINE_HTML">			&lt;div id="pips-count"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="160">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'count'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="161">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="162"/>
+  <line no="163">
+    <token name="T_INLINE_HTML">		&lt;h4 class="before-example"&gt;Stepped count:&lt;/h4&gt;</token>
+  </line>
+  <line no="164"/>
+  <line no="165">
+    <token name="T_INLINE_HTML">		&lt;div class="example"&gt;</token>
+  </line>
+  <line no="166">
+    <token name="T_INLINE_HTML">			&lt;div id="pips-count-stepped"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="167">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'count-stepped'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="168">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="169">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="170"/>
+  <line no="171">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="172">
+    <token name="T_INLINE_HTML">		</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'count'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="173">
+    <token name="T_INLINE_HTML">		</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'count-stepped'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="174">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="175">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="176"/>
+  <line no="177"/>
+  <line no="178">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'values'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="179">
+    <token name="T_INLINE_HTML">&lt;h2&gt;Values&lt;/h2&gt;</token>
+  </line>
+  <line no="180"/>
+  <line no="181">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="182"/>
+  <line no="183">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="184"/>
+  <line no="185">
+    <token name="T_INLINE_HTML">		&lt;p&gt;The &lt;code&gt;values&lt;/code&gt; mode is similar to &lt;code&gt;positions&lt;/code&gt;, but it accepts values instead of percentages. The &lt;code&gt;stepped&lt;/code&gt; option can be used for this mode.&lt;/p&gt;</token>
+  </line>
+  <line no="186"/>
+  <line no="187">
+    <token name="T_INLINE_HTML">		&lt;div class="example"&gt;</token>
+  </line>
+  <line no="188">
+    <token name="T_INLINE_HTML">			&lt;div id="pips-values"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="189">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'values'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="190">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="191"/>
+  <line no="192">
+    <token name="T_INLINE_HTML">		&lt;h4 class="before-example"&gt;Stepped values:&lt;/h4&gt;</token>
+  </line>
+  <line no="193">
+    <token name="T_INLINE_HTML">		&lt;p&gt;Note how overlapping pips are merged with the &lt;code&gt;stepped&lt;/code&gt; option set.&lt;/p&gt;</token>
+  </line>
+  <line no="194"/>
+  <line no="195">
+    <token name="T_INLINE_HTML">		&lt;div class="example"&gt;</token>
+  </line>
+  <line no="196">
+    <token name="T_INLINE_HTML">			&lt;div id="pips-values-stepped"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="197">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'values-stepped'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="198">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="199">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="200"/>
+  <line no="201">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="202">
+    <token name="T_INLINE_HTML">		</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'values'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="203">
+    <token name="T_INLINE_HTML">		</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'values-stepped'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="204">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="205">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="206"/>
+</source>

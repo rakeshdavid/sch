@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/public/assets/marino/bower_components/nouislider/documentation/_run" file="menu.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/public/assets/marino/bower_components/nouislider/documentation/_run/menu.php" size="772" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="429d215852b07e15444dffb39c02eedd0e2ca8b9" relative="public/assets/marino/bower_components/nouislider/documentation/_run/menu.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;div class="bar-group"&gt;</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">	&lt;a class="bar-link project" href="/nouislider/"&gt;noUiSlider&lt;/a&gt;</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">	&lt;a class="bar-link" href="/nouislider/slider-values/"&gt;Slider range and handles&lt;/a&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">	&lt;a class="bar-link" href="/nouislider/slider-read-write/"&gt;Reading &amp;amp; Setting values&lt;/a&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">	&lt;a class="bar-link" href="/nouislider/slider-options/"&gt;Options&lt;/a&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">	&lt;a class="bar-link" href="/nouislider/behaviour-option/"&gt;Tapping, dragging &amp;amp; fixed ranges&lt;/a&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">	&lt;a class="bar-link" href="/nouislider/examples/"&gt;Examples&lt;/a&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">	&lt;a class="bar-link" href="/nouislider/events-callbacks/"&gt;Events&lt;/a&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">	&lt;a class="bar-link" href="/nouislider/pips/"&gt;Scale/Pips&lt;/a&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">	&lt;a class="bar-link" href="/nouislider/more/"&gt;More...&lt;/a&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">	&lt;a class="bar-link download" href="/nouislider/download/"&gt;Download noUiSlider&lt;/a&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+  <line no="13"/>
+</source>

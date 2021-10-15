@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views/proposal" file="index.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views/proposal/index.blade.php" size="1471" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="6bf4898f30c70457b59e51f3323f75048aa9d78c" relative="resources/views/proposal/index.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layouts.app')</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">    &lt;div class="container"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">        &lt;div class="row"&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">            &lt;div class="col-md-12"&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">                @foreach($proposals as $proposal)</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">                    &lt;p&gt;Video name: {{$proposal-&gt;video_name}}&lt;/p&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">                    &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/{{$proposal-&gt;video_url}}" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">                    &lt;p&gt;Video description: {{$proposal-&gt;video_description}}&lt;/p&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">                    &lt;p&gt;Posted date: {{$proposal-&gt;video_created_at}}&lt;/p&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">                    &lt;p&gt;Video added by : &lt;a href="/profile/{{$proposal-&gt;user_id}}"&gt;{{$proposal-&gt;user_first_name}} {{$proposal-&gt;user_last_name}}&lt;/a&gt;&lt;/p&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">                    &lt;p&gt;Review: {{$proposal-&gt;description}}&lt;/p&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">                    &lt;p&gt;Review date: {{$proposal-&gt;created_at}}&lt;/p&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">                    @if($proposal-&gt;status == 0)</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">                        </token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">                    @else</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">                        &lt;p class="text-muted"&gt;Status: @if($proposal-&gt;status == 1) Accept @elseif($proposal-&gt;status == 2) Deny @endif&lt;/p&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">                    @endif</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">                    @if($proposal-&gt;status == 1)</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">                        &lt;a href="/review/create/{{$proposal-&gt;video_id}}" class="btn btn-default"&gt;Add review&lt;/a&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">                    @endif</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">                    &lt;hr&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">                @endforeach</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">                @include('pagination.default', ['paginator' =&gt; $proposals])</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+</source>

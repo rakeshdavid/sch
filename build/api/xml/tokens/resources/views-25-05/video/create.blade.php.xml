@@ -1,0 +1,1566 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-25-05/video" file="create.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-25-05/video/create.blade.php" size="31656" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="7471faca1c179d7d223d7c39c406c81c3a2b7821" relative="resources/views-25-05/video/create.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layouts.app')</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_INLINE_HTML">@section('css')</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="/assets/marino/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css"/&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">    &lt;style&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">        #overlay {</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">            background: #262932;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">            width: 100%;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">            height: 100%;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">            position: absolute;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">            top: 0;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">            left: 0;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">            opacity: .2;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">            display: none;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">    &lt;/style&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="18"/>
+  <line no="19">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="20"/>
+  <line no="21">
+    <token name="T_INLINE_HTML">    &lt;div class="container"&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">        &lt;div class="row"&gt;</token>
+  </line>
+  <line no="23"/>
+  <line no="24">
+    <token name="T_INLINE_HTML">            &lt;h1 class="m-b-40"&gt;Make your request to the coach&lt;/h1&gt;</token>
+  </line>
+  <line no="25"/>
+  <line no="26">
+    <token name="T_INLINE_HTML">            &lt;div class="col-md-12"&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">                &lt;h3 class="f-s-22 text-danger f-w-400 m-b-15"&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">                    &lt;span class="text-uppercase f-s-24"&gt;STEP 1:&lt;/span&gt; Add Performance Video</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">                &lt;/h3&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">                {{--@if(count($errors) &gt; 0)</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">                    &lt;div class="alert alert-danger alert-dismissible"&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">                        &lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;&lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">                        &lt;ul&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">                            @foreach($errors-&gt;all() as $error)</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">                                &lt;li&gt;{{ $error }}&lt;/li&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">                            @endforeach</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">                        &lt;/ul&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">                @endif--}}</token>
+  </line>
+  <line no="40"/>
+  <line no="41">
+    <token name="T_INLINE_HTML">                @if(session('status'))</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">                    &lt;div class="alert alert-success alert-dismissible"&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">                        &lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;&lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">                        {{session('status')}}</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">                @endif</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">                &lt;form action="{{ url('video') }}" method="POST" id="submit-request" enctype="multipart/form-data" class="form-horizontal"&gt;</token>
+  </line>
+  <line no="48"/>
+  <line no="49">
+    <token name="T_INLINE_HTML">                    &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">                        &lt;label class="col-sm-2 form-control-label" for="name"&gt;Name&lt;span class="req-star"&gt; *&lt;/span&gt;&lt;/label&gt;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">                        &lt;div class="col-sm-10"&gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">                            &lt;input {!!(count($errors-&gt;get('name'))&gt;0)?'style="border-color:#db534f;"':''!!} type="text" class="form-control"</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">                               name="name" placeholder="Name" maxlength="254"</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">                               value="{{old('name', '')}}" required&gt;</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">                                @if(count($errors-&gt;get('name'))&gt;0)</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">                                    @foreach($errors-&gt;get('name') as $err)</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">                                        &lt;small class="text-danger"&gt;{{$err}}&lt;/small&gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">                                    @endforeach</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">                                @endif</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="61"/>
+  <line no="62">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">                    &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">                        &lt;label class="col-sm-2 form-control-label" for="description"&gt;Description&lt;span class="req-star"&gt; *&lt;/span&gt;&lt;/label&gt;</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">                        &lt;div class="col-sm-10"&gt;</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">                            &lt;textarea {!!(count($errors-&gt;get('description'))&gt;0)?'style="border-color:#db534f;"':''!!}  class="form-control" rows="3" name="description" placeholder="Description" required minlength="6"&gt;{{old('description', '')}}&lt;/textarea&gt;</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">                            @if(count($errors-&gt;get('description'))&gt;0)</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">                                @foreach($errors-&gt;get('description') as $err)</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">                                    &lt;small class="text-danger"&gt;{{$err}}&lt;/small&gt;</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">                                @endforeach</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">                            @endif</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">                    {{--&lt;div class="form-group row"&gt;--}}</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">                        {{--&lt;label class="col-sm-2 form-control-label" for="url"&gt;Youtube URL&lt;span class="req-star"&gt; *&lt;/span&gt;&lt;/label&gt;--}}</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">                        {{--&lt;div class="col-sm-10"&gt;--}}</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">                            {{--&lt;input {!!(count($errors-&gt;get('url'))&gt;0)?'style="border-color:#db534f;"':''!!}--}}</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">                               {{--type="text" class="form-control" name="url" placeholder="Youtube URL" maxlength="254"--}}</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">                               {{--value="{{old('url', '')}}" data-toggle="tooltip" data-placement="top" title=""--}}</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">                               {{--data-original-title="Paste video Url from Youtube or upload video"&gt;--}}</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">                                {{--@if(count($errors-&gt;get('url'))&gt;0)--}}</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">                                    {{--@foreach($errors-&gt;get('url') as $err)--}}</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">                                        {{--&lt;small class="text-danger"&gt;{{$err}}&lt;/small&gt;--}}</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">                                    {{--@endforeach--}}</token>
+  </line>
+  <line no="85">
+    <token name="T_INLINE_HTML">                                {{--@endif--}}</token>
+  </line>
+  <line no="86">
+    <token name="T_INLINE_HTML">                        {{--&lt;/div&gt;--}}</token>
+  </line>
+  <line no="87">
+    <token name="T_INLINE_HTML">                    {{--&lt;/div&gt;--}}</token>
+  </line>
+  <line no="88"/>
+  <line no="89">
+    <token name="T_INLINE_HTML">                    {{--&lt;div class="form-group row"&gt;--}}</token>
+  </line>
+  <line no="90">
+    <token name="T_INLINE_HTML">                        {{--&lt;label class="col-sm-2 form-control-label" for="description"&gt;or&lt;span class="req-star"&gt;&lt;/span&gt;&lt;/label&gt;--}}</token>
+  </line>
+  <line no="91">
+    <token name="T_INLINE_HTML">                        {{--&lt;div class="col-sm-10"&gt;--}}</token>
+  </line>
+  <line no="92"/>
+  <line no="93">
+    <token name="T_INLINE_HTML">                        {{--&lt;/div&gt;--}}</token>
+  </line>
+  <line no="94">
+    <token name="T_INLINE_HTML">                    {{--&lt;/div&gt;--}}</token>
+  </line>
+  <line no="95"/>
+  <line no="96">
+    <token name="T_INLINE_HTML">                    &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="97">
+    <token name="T_INLINE_HTML">                        &lt;label class="col-sm-2 form-control-label" for="exampleInputFile"&gt;Upload file&lt;/label&gt;</token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">                        &lt;div class="col-sm-10"&gt;</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">                            &lt;div id="upload_container"&gt;</token>
+  </line>
+  <line no="100">
+    <token name="T_INLINE_HTML">                                &lt;button id="pick_file" type="button" class="btn btn-primary m-r-5"&gt;</token>
+  </line>
+  <line no="101">
+    <token name="T_INLINE_HTML">                                    &lt;i class="btn-icon fa fa-folder-open"&gt;&lt;/i&gt;Select file</token>
+  </line>
+  <line no="102">
+    <token name="T_INLINE_HTML">                                &lt;/button&gt;</token>
+  </line>
+  <line no="103">
+    <token name="T_INLINE_HTML">                                {{--&lt;button id="upload_file" type="button" class="btn btn-success m-r-5"&gt;--}}</token>
+  </line>
+  <line no="104">
+    <token name="T_INLINE_HTML">                                    {{--&lt;i class="btn-icon fa fa-upload"&gt;&lt;/i&gt;Upload file--}}</token>
+  </line>
+  <line no="105">
+    <token name="T_INLINE_HTML">                                {{--&lt;/button&gt;--}}</token>
+  </line>
+  <line no="106">
+    <token name="T_INLINE_HTML">                                &lt;button style="display: none;" id="stop_uploading" type="button" class="btn btn-danger m-r-5"&gt;</token>
+  </line>
+  <line no="107">
+    <token name="T_INLINE_HTML">                                    &lt;i class="btn-icon fa fa-stop"&gt;&lt;/i&gt;Stop uploading</token>
+  </line>
+  <line no="108">
+    <token name="T_INLINE_HTML">                                &lt;/button&gt;</token>
+  </line>
+  <line no="109">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="110">
+    <token name="T_INLINE_HTML">                            &lt;div id="file_list" class="m-t-10"&gt;Your browser doesn't have HTML5 support.&lt;/div&gt;</token>
+  </line>
+  <line no="111">
+    <token name="T_INLINE_HTML">                            &lt;div class="row" id="progress" style="display: none"&gt;</token>
+  </line>
+  <line no="112">
+    <token name="T_INLINE_HTML">                                &lt;div class="col-xs-12 col-lg-6"&gt;</token>
+  </line>
+  <line no="113">
+    <token name="T_INLINE_HTML">                                    &lt;progress class="progress-xs progress progress-danger" value="0" max="100"</token>
+  </line>
+  <line no="114">
+    <token name="T_INLINE_HTML">                                              id="uploading_progress"&gt;&lt;/progress&gt;</token>
+  </line>
+  <line no="115">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="116">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="117">
+    <token name="T_INLINE_HTML">                            @if(count($errors-&gt;get('file_name'))&gt;0)</token>
+  </line>
+  <line no="118">
+    <token name="T_INLINE_HTML">                                @foreach($errors-&gt;get('file_name') as $err)</token>
+  </line>
+  <line no="119">
+    <token name="T_INLINE_HTML">                                    &lt;small class="text-danger"&gt;{{$err}}&lt;/small&gt;</token>
+  </line>
+  <line no="120">
+    <token name="T_INLINE_HTML">                                @endforeach</token>
+  </line>
+  <line no="121">
+    <token name="T_INLINE_HTML">                            @endif</token>
+  </line>
+  <line no="122">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="123">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="124"/>
+  <line no="125">
+    <token name="T_INLINE_HTML">                    &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="126">
+    <token name="T_INLINE_HTML">                        &lt;div class="col-sm-10"&gt;</token>
+  </line>
+  <line no="127">
+    <token name="T_INLINE_HTML">                            &lt;p&gt;</token>
+  </line>
+  <line no="128">
+    <token name="T_INLINE_HTML">                                The maximum video size is 300 mb. Valid formats avi, mpeg4, wmv, mp4, mov.</token>
+  </line>
+  <line no="129">
+    <token name="T_INLINE_HTML">                            &lt;/p&gt;</token>
+  </line>
+  <line no="130">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="131">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="132"/>
+  <line no="133">
+    <token name="T_INLINE_HTML">                    @if($detailed_package)</token>
+  </line>
+  <line no="134">
+    <token name="T_INLINE_HTML">                        &lt;div class="row"&gt;</token>
+  </line>
+  <line no="135">
+    <token name="T_INLINE_HTML">                            &lt;div class="col-md-12"&gt;&lt;hr&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="136">
+    <token name="T_INLINE_HTML">                            &lt;div class="col-xs-12"&gt;</token>
+  </line>
+  <line no="137">
+    <token name="T_INLINE_HTML">                                &lt;h3 class="f-s-22 text-danger f-w-400 m-b-15"&gt;</token>
+  </line>
+  <line no="138">
+    <token name="T_INLINE_HTML">                                    &lt;span class="text-uppercase f-s-24"&gt;STEP 2:&lt;/span&gt; Ask {{ $coach-&gt;first_name }} 3 Specific Questions</token>
+  </line>
+  <line no="139">
+    <token name="T_INLINE_HTML">                                &lt;/h3&gt;</token>
+  </line>
+  <line no="140">
+    <token name="T_INLINE_HTML">                                @foreach($questions_labels as $number =&gt; $question_label)</token>
+  </line>
+  <line no="141">
+    <token name="T_INLINE_HTML">                                    &lt;div class="form-group col-xs-12 col-md-4"&gt;</token>
+  </line>
+  <line no="142">
+    <token name="T_INLINE_HTML">                                        &lt;fieldset&gt;</token>
+  </line>
+  <line no="143">
+    <token name="T_INLINE_HTML">                                            &lt;label for="{{ $question_label }}-q"&gt;{{ $question_label }} Question&lt;/label&gt;</token>
+  </line>
+  <line no="144">
+    <token name="T_INLINE_HTML">                                            &lt;input type="text" class="form-control" name="question[{{ $number }}]" maxlength="254"</token>
+  </line>
+  <line no="145">
+    <token name="T_INLINE_HTML">                                                   placeholder="{{ $question_label }} Question" autocomplete="off"</token>
+  </line>
+  <line no="146">
+    <token name="T_INLINE_HTML">                                                   id="{{ $question_label }}-q"&gt;</token>
+  </line>
+  <line no="147">
+    <token name="T_INLINE_HTML">                                        &lt;/fieldset&gt;</token>
+  </line>
+  <line no="148">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="149">
+    <token name="T_INLINE_HTML">                                @endforeach</token>
+  </line>
+  <line no="150">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="151">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="152">
+    <token name="T_INLINE_HTML">                    @endif</token>
+  </line>
+  <line no="153"/>
+  <line no="154">
+    <token name="T_INLINE_HTML">                    &lt;hr&gt;</token>
+  </line>
+  <line no="155">
+    <token name="T_INLINE_HTML">                    &lt;h3 class="f-s-22 text-danger f-w-400 m-b-15"&gt;</token>
+  </line>
+  <line no="156">
+    <token name="T_INLINE_HTML">                        &lt;span class="text-uppercase f-s-24"&gt;STEP {{ $detailed_package ? '3' : '2' }}:&lt;/span&gt; Complete Profile Questions</token>
+  </line>
+  <line no="157">
+    <token name="T_INLINE_HTML">                    &lt;/h3&gt;</token>
+  </line>
+  <line no="158">
+    <token name="T_INLINE_HTML">                    &lt;div class="row"&gt;</token>
+  </line>
+  <line no="159">
+    <token name="T_INLINE_HTML">                        &lt;div class="col-xs-12 col-md-6"&gt;</token>
+  </line>
+  <line no="160">
+    <token name="T_INLINE_HTML">                            &lt;fieldset class="form-group"&gt;</token>
+  </line>
+  <line no="161">
+    <token name="T_INLINE_HTML">                                &lt;label&gt;Name&lt;/label&gt;</token>
+  </line>
+  <line no="162">
+    <token name="T_INLINE_HTML">                                &lt;div class="row"&gt;</token>
+  </line>
+  <line no="163">
+    <token name="T_INLINE_HTML">                                    &lt;div class="col-xs-12 col-md-6"&gt;</token>
+  </line>
+  <line no="164">
+    <token name="T_INLINE_HTML">                                        &lt;input type="text" data-name="first_name" class="form-control editable" maxlength="254"</token>
+  </line>
+  <line no="165">
+    <token name="T_INLINE_HTML">                                               placeholder="First Name" value="{{ old('first_name') ? old('first_name') :</token>
+  </line>
+  <line no="166">
+    <token name="T_INLINE_HTML">                                                $user-&gt;first_name }}" autocomplete="off"&gt;</token>
+  </line>
+  <line no="167">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="168">
+    <token name="T_INLINE_HTML">                                    &lt;div class="col-xs-12 col-md-6"&gt;</token>
+  </line>
+  <line no="169">
+    <token name="T_INLINE_HTML">                                        &lt;input type="text" data-name="last_name" class="form-control editable" maxlength="254"</token>
+  </line>
+  <line no="170">
+    <token name="T_INLINE_HTML">                                               placeholder="Last Name" value="{{ old('last_name') ? old('last_name') :</token>
+  </line>
+  <line no="171">
+    <token name="T_INLINE_HTML">                                                $user-&gt;last_name }}" autocomplete="off"&gt;</token>
+  </line>
+  <line no="172">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="173">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="174">
+    <token name="T_INLINE_HTML">                            &lt;/fieldset&gt;</token>
+  </line>
+  <line no="175">
+    <token name="T_INLINE_HTML">                            &lt;fieldset class="form-group"&gt;</token>
+  </line>
+  <line no="176">
+    <token name="T_INLINE_HTML">                                &lt;label&gt;Contact Email&lt;/label&gt;</token>
+  </line>
+  <line no="177">
+    <token name="T_INLINE_HTML">                                    &lt;input type="text" data-name="contact_email" class="form-control editable" maxlength="254"</token>
+  </line>
+  <line no="178">
+    <token name="T_INLINE_HTML">                                           placeholder="Contact Email" value="{{ old('contact_email') ? old('contact_email') :</token>
+  </line>
+  <line no="179">
+    <token name="T_INLINE_HTML">                                                $user-&gt;contact_email }}" autocomplete="off"&gt;</token>
+  </line>
+  <line no="180">
+    <token name="T_INLINE_HTML">                            &lt;/fieldset&gt;</token>
+  </line>
+  <line no="181">
+    <token name="T_INLINE_HTML">                            &lt;fieldset class="form-group"&gt;</token>
+  </line>
+  <line no="182">
+    <token name="T_INLINE_HTML">                                &lt;label&gt;Location&lt;/label&gt;</token>
+  </line>
+  <line no="183">
+    <token name="T_INLINE_HTML">                                    &lt;input type="text" data-name="location" class="form-control editable" maxlength="254"</token>
+  </line>
+  <line no="184">
+    <token name="T_INLINE_HTML">                                           placeholder="Location" value="{{ old('location') ? old('location') :</token>
+  </line>
+  <line no="185">
+    <token name="T_INLINE_HTML">                                                $user-&gt;location }}" autocomplete="off"&gt;</token>
+  </line>
+  <line no="186">
+    <token name="T_INLINE_HTML">                            &lt;/fieldset&gt;</token>
+  </line>
+  <line no="187">
+    <token name="T_INLINE_HTML">                           {{-- &lt;fieldset class="form-group"&gt;</token>
+  </line>
+  <line no="188">
+    <token name="T_INLINE_HTML">                                &lt;label&gt;Birthday&lt;/label&gt;</token>
+  </line>
+  <line no="189">
+    <token name="T_INLINE_HTML">                                    &lt;input type="text" data-name="birthday" class="form-control editable" maxlength="254"</token>
+  </line>
+  <line no="190">
+    <token name="T_INLINE_HTML">                                           placeholder="Birthday" value="{{ old('birthday') ? old('birthday') :</token>
+  </line>
+  <line no="191">
+    <token name="T_INLINE_HTML">                                                $user-&gt;birthday }}" autocomplete="off" id="birthday"&gt;</token>
+  </line>
+  <line no="192">
+    <token name="T_INLINE_HTML">                            &lt;/fieldset&gt;--}}</token>
+  </line>
+  <line no="193"/>
+  <line no="194"/>
+  <line no="195">
+    <token name="T_INLINE_HTML">                            {{--&lt;fieldset class="form-group c-inputs-stacked"&gt;</token>
+  </line>
+  <line no="196">
+    <token name="T_INLINE_HTML">                                &lt;label&gt;Genre/s&lt;span class="req-star"&gt; *&lt;/span&gt;&lt;/label&gt;&lt;br&gt;</token>
+  </line>
+  <line no="197">
+    <token name="T_INLINE_HTML">                                --}}{{--@php--}}{{--</token>
+  </line>
+  <line no="198">
+    <token name="T_INLINE_HTML">                                --}}{{--$current_type_id = 0;--}}{{--</token>
+  </line>
+  <line no="199">
+    <token name="T_INLINE_HTML">                                --}}{{--@endphp--}}{{--</token>
+  </line>
+  <line no="200">
+    <token name="T_INLINE_HTML">                                @foreach($coach-&gt;activity_genres as $genre)</token>
+  </line>
+  <line no="201">
+    <token name="T_INLINE_HTML">                                    --}}{{--@if($genre-&gt;activity_type_id != $current_type_id)--}}{{--</token>
+  </line>
+  <line no="202">
+    <token name="T_INLINE_HTML">                                    --}}{{--&lt;label&gt;{{($current_type_id != 0 ? '; ' : '') .--}}{{--</token>
+  </line>
+  <line no="203">
+    <token name="T_INLINE_HTML">                                    --}}{{--$coach-&gt;activity_types-&gt;where('id', $genre-&gt;activity_type_id)-&gt;first()-&gt;name}}: &lt;/label&gt;--}}{{--</token>
+  </line>
+  <line no="204">
+    <token name="T_INLINE_HTML">                                    --}}{{--@php--}}{{--</token>
+  </line>
+  <line no="205">
+    <token name="T_INLINE_HTML">                                    --}}{{--$current_type_id = $genre-&gt;activity_type_id;--}}{{--</token>
+  </line>
+  <line no="206">
+    <token name="T_INLINE_HTML">                                    --}}{{--@endphp--}}{{--</token>
+  </line>
+  <line no="207">
+    <token name="T_INLINE_HTML">                                    --}}{{--@endif--}}{{--</token>
+  </line>
+  <line no="208">
+    <token name="T_INLINE_HTML">                                    &lt;label class="c-input c-checkbox"&gt;</token>
+  </line>
+  <line no="209">
+    <token name="T_INLINE_HTML">                                        &lt;input type="checkbox" name="genres[]" value="{{ $genre-&gt;id }}" autocomplete="off"&gt;</token>
+  </line>
+  <line no="210">
+    <token name="T_INLINE_HTML">                                        &lt;span class="c-indicator c-indicator-warning"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="211">
+    <token name="T_INLINE_HTML">                                        {{ $genre-&gt;name }}</token>
+  </line>
+  <line no="212">
+    <token name="T_INLINE_HTML">                                    &lt;/label&gt;</token>
+  </line>
+  <line no="213">
+    <token name="T_INLINE_HTML">                                @endforeach--}}</token>
+  </line>
+  <line no="214"/>
+  <line no="215">
+    <token name="T_INLINE_HTML">                                &lt;div class="help-block with-errors" &gt;</token>
+  </line>
+  <line no="216">
+    <token name="T_INLINE_HTML">                                    @if(count($errors-&gt;get('genres'))&gt;0)</token>
+  </line>
+  <line no="217">
+    <token name="T_INLINE_HTML">                                        @foreach($errors-&gt;get('genres') as $err)</token>
+  </line>
+  <line no="218">
+    <token name="T_INLINE_HTML">                                            &lt;small class="text-danger"&gt;{{$err}}&lt;/small&gt;</token>
+  </line>
+  <line no="219">
+    <token name="T_INLINE_HTML">                                        @endforeach</token>
+  </line>
+  <line no="220">
+    <token name="T_INLINE_HTML">                                    @endif</token>
+  </line>
+  <line no="221">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="222"/>
+  <line no="223">
+    <token name="T_INLINE_HTML">                            &lt;/fieldset&gt;</token>
+  </line>
+  <line no="224"/>
+  <line no="225"/>
+  <line no="226">
+    <token name="T_INLINE_HTML">                            &lt;fieldset class="form-group c-inputs-stacked"&gt;</token>
+  </line>
+  <line no="227">
+    <token name="T_INLINE_HTML">                                &lt;label&gt;Performance Level&lt;span class="req-star"&gt; *&lt;/span&gt;&lt;/label&gt;&lt;br&gt;</token>
+  </line>
+  <line no="228">
+    <token name="T_INLINE_HTML">                                @foreach($performance_levels as $performance_level)</token>
+  </line>
+  <line no="229">
+    <token name="T_INLINE_HTML">                                    &lt;label class="c-input c-radio"&gt;</token>
+  </line>
+  <line no="230">
+    <token name="T_INLINE_HTML">                                        &lt;input type="radio" name="level" {{ old('level', 0) == $performance_level-&gt;id ? 'checked' : '' }}</token>
+  </line>
+  <line no="231">
+    <token name="T_INLINE_HTML">                                        value="{{ $performance_level-&gt;id }}" autocomplete="off" required&gt;</token>
+  </line>
+  <line no="232">
+    <token name="T_INLINE_HTML">                                        &lt;span class="c-indicator c-indicator-warning"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="233">
+    <token name="T_INLINE_HTML">                                        {{ $performance_level-&gt;name }}</token>
+  </line>
+  <line no="234">
+    <token name="T_INLINE_HTML">                                    &lt;/label&gt;</token>
+  </line>
+  <line no="235">
+    <token name="T_INLINE_HTML">                                @endforeach</token>
+  </line>
+  <line no="236">
+    <token name="T_INLINE_HTML">                                &lt;div class="help-block with-errors" &gt;</token>
+  </line>
+  <line no="237">
+    <token name="T_INLINE_HTML">                                    @if(count($errors-&gt;get('level'))&gt;0)</token>
+  </line>
+  <line no="238">
+    <token name="T_INLINE_HTML">                                        @foreach($errors-&gt;get('level') as $err)</token>
+  </line>
+  <line no="239">
+    <token name="T_INLINE_HTML">                                            &lt;small class="text-danger"&gt;{{$err}}&lt;/small&gt;</token>
+  </line>
+  <line no="240">
+    <token name="T_INLINE_HTML">                                        @endforeach</token>
+  </line>
+  <line no="241">
+    <token name="T_INLINE_HTML">                                    @endif</token>
+  </line>
+  <line no="242">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="243">
+    <token name="T_INLINE_HTML">                            &lt;/fieldset&gt;</token>
+  </line>
+  <line no="244">
+    <token name="T_INLINE_HTML">                            &lt;fieldset class="form-group"&gt;</token>
+  </line>
+  <line no="245">
+    <token name="T_INLINE_HTML">                                &lt;label&gt;{{ ( isset($coach-&gt;activity_types-&gt;first()-&gt;name))? $coach-&gt;activity_types-&gt;first()-&gt;name:"" }} Experience&lt;span class="req-star"&gt; *&lt;/span&gt;&lt;/label&gt;</token>
+  </line>
+  <line no="246">
+    <token name="T_INLINE_HTML">                                &lt;div class="row"&gt;</token>
+  </line>
+  <line no="247">
+    <token name="T_INLINE_HTML">                                    &lt;div class="col-xs-12 col-md-6"&gt;</token>
+  </line>
+  <line no="248">
+    <token name="T_INLINE_HTML">                                        &lt;input {!!(count($errors-&gt;get('activity_experience'))&gt;0)?'style="border-color:#db534f;"':''!!}</token>
+  </line>
+  <line no="249">
+    <token name="T_INLINE_HTML">                                               type="text" name="activity_experience" class="form-control" maxlength="3"</token>
+  </line>
+  <line no="250">
+    <token name="T_INLINE_HTML">                                               placeholder="Years" value="{{ old('activity_experience') }}" autocomplete="off" required&gt;</token>
+  </line>
+  <line no="251">
+    <token name="T_INLINE_HTML">                                        @if(count($errors-&gt;get('activity_experience'))&gt;0)</token>
+  </line>
+  <line no="252">
+    <token name="T_INLINE_HTML">                                            @foreach($errors-&gt;get('activity_experience') as $err)</token>
+  </line>
+  <line no="253">
+    <token name="T_INLINE_HTML">                                                &lt;small class="text-danger"&gt;{{$err}}&lt;/small&gt;</token>
+  </line>
+  <line no="254">
+    <token name="T_INLINE_HTML">                                            @endforeach</token>
+  </line>
+  <line no="255">
+    <token name="T_INLINE_HTML">                                        @endif</token>
+  </line>
+  <line no="256">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="257">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="258">
+    <token name="T_INLINE_HTML">                            &lt;/fieldset&gt;</token>
+  </line>
+  <line no="259">
+    <token name="T_INLINE_HTML">                            &lt;fieldset class="form-group"&gt;</token>
+  </line>
+  <line no="260">
+    <token name="T_INLINE_HTML">                                &lt;label&gt;Tell Us About Yourself...&lt;/label&gt;</token>
+  </line>
+  <line no="261">
+    <token name="T_INLINE_HTML">                                &lt;textarea data-name="about" rows="5" class="form-control editable"</token>
+  </line>
+  <line no="262">
+    <token name="T_INLINE_HTML">                                          autocomplete="off"&gt;{{ old('about') ? old('about') : strip_tags($user-&gt;about) }}&lt;/textarea&gt;</token>
+  </line>
+  <line no="263">
+    <token name="T_INLINE_HTML">                            &lt;/fieldset&gt;</token>
+  </line>
+  <line no="264">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="265">
+    <token name="T_INLINE_HTML">                        &lt;div class="col-xs-12 col-md-6"&gt;</token>
+  </line>
+  <line no="266">
+    <token name="T_INLINE_HTML">                            &lt;fieldset class="form-group m-b-15"&gt;</token>
+  </line>
+  <line no="267">
+    <token name="T_INLINE_HTML">                                &lt;label {!!(count($errors-&gt;get('seeking_auditions'))&gt;0)?'style="border-bottom: 1px solid #db534f;color:#db534f;"':''!!} &gt;Are You Seeking Auditions?&lt;/label&gt;</token>
+  </line>
+  <line no="268">
+    <token name="T_INLINE_HTML">                                &lt;div class="c-inputs-stacked"&gt;</token>
+  </line>
+  <line no="269">
+    <token name="T_INLINE_HTML">                                    &lt;label class="c-input c-radio"&gt;</token>
+  </line>
+  <line no="270">
+    <token name="T_INLINE_HTML">                                        &lt;input name="seeking_auditions" value="yes" autocomplete="off" type="radio"</token>
+  </line>
+  <line no="271">
+    <token name="T_INLINE_HTML">                                                {{ old('seeking_auditions') == 'yes' ? 'checked' : '' }}&gt;</token>
+  </line>
+  <line no="272">
+    <token name="T_INLINE_HTML">                                        &lt;span class="c-indicator c-indicator-warning"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="273">
+    <token name="T_INLINE_HTML">                                        Yes</token>
+  </line>
+  <line no="274">
+    <token name="T_INLINE_HTML">                                    &lt;/label&gt;</token>
+  </line>
+  <line no="275">
+    <token name="T_INLINE_HTML">                                    &lt;label class="c-input c-radio"&gt;</token>
+  </line>
+  <line no="276">
+    <token name="T_INLINE_HTML">                                        &lt;input name="seeking_auditions" value="maybe" autocomplete="off" type="radio"</token>
+  </line>
+  <line no="277">
+    <token name="T_INLINE_HTML">                                                {{ old('seeking_auditions') == 'maybe' ? 'checked' : '' }}&gt;</token>
+  </line>
+  <line no="278">
+    <token name="T_INLINE_HTML">                                        &lt;span class="c-indicator c-indicator-warning"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="279">
+    <token name="T_INLINE_HTML">                                        Maybe</token>
+  </line>
+  <line no="280">
+    <token name="T_INLINE_HTML">                                    &lt;/label&gt;</token>
+  </line>
+  <line no="281">
+    <token name="T_INLINE_HTML">                                    {{--&lt;label class="c-input c-radio"&gt;</token>
+  </line>
+  <line no="282">
+    <token name="T_INLINE_HTML">                                        &lt;input name="seeking_auditions" value="not_yet" autocomplete="off" type="radio"</token>
+  </line>
+  <line no="283">
+    <token name="T_INLINE_HTML">                                                {{ old('seeking_auditions') == 'not_yet' ? 'checked' : '' }}&gt;</token>
+  </line>
+  <line no="284">
+    <token name="T_INLINE_HTML">                                        &lt;span class="c-indicator c-indicator-warning"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="285">
+    <token name="T_INLINE_HTML">                                        Not Yet</token>
+  </line>
+  <line no="286">
+    <token name="T_INLINE_HTML">                                    &lt;/label&gt;--}}</token>
+  </line>
+  <line no="287">
+    <token name="T_INLINE_HTML">                                    &lt;label class="c-input c-radio"&gt;</token>
+  </line>
+  <line no="288">
+    <token name="T_INLINE_HTML">                                        &lt;input name="seeking_auditions" type="radio" autocomplete="off" value="no"</token>
+  </line>
+  <line no="289">
+    <token name="T_INLINE_HTML">                                                {{ !$errors-&gt;all() ? 'checked' : (old('seeking_auditions') == 'no' ? 'checked' : '') }}&gt;</token>
+  </line>
+  <line no="290">
+    <token name="T_INLINE_HTML">                                        &lt;span class="c-indicator c-indicator-warning"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="291">
+    <token name="T_INLINE_HTML">                                        No</token>
+  </line>
+  <line no="292">
+    <token name="T_INLINE_HTML">                                    &lt;/label&gt;</token>
+  </line>
+  <line no="293">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="294">
+    <token name="T_INLINE_HTML">                                &lt;div class="help-block with-errors" &gt;</token>
+  </line>
+  <line no="295">
+    <token name="T_INLINE_HTML">                                    @if(count($errors-&gt;get('seeking_auditions'))&gt;0)</token>
+  </line>
+  <line no="296">
+    <token name="T_INLINE_HTML">                                        @foreach($errors-&gt;get('seeking_auditions') as $err)</token>
+  </line>
+  <line no="297">
+    <token name="T_INLINE_HTML">                                            &lt;small class="text-danger"&gt;{{$err}}&lt;/small&gt;</token>
+  </line>
+  <line no="298">
+    <token name="T_INLINE_HTML">                                        @endforeach</token>
+  </line>
+  <line no="299">
+    <token name="T_INLINE_HTML">                                    @endif</token>
+  </line>
+  <line no="300">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="301">
+    <token name="T_INLINE_HTML">                            &lt;/fieldset&gt;</token>
+  </line>
+  <line no="302">
+    <token name="T_INLINE_HTML">                            &lt;fieldset class="form-group"&gt;</token>
+  </line>
+  <line no="303">
+    <token name="T_INLINE_HTML">                                &lt;label&gt;How Did You Hear About This Site?&lt;/label&gt;</token>
+  </line>
+  <line no="304">
+    <token name="T_INLINE_HTML">                                &lt;div class="c-inputs-stacked m-b-15"&gt;</token>
+  </line>
+  <line no="305">
+    <token name="T_INLINE_HTML">                                    &lt;label class="c-input c-radio"&gt;</token>
+  </line>
+  <line no="306">
+    <token name="T_INLINE_HTML">                                        &lt;input name="site_target" value="internet_search" autocomplete="off" type="radio"</token>
+  </line>
+  <line no="307">
+    <token name="T_INLINE_HTML">                                                {{old('site_target') == 'internet_search' ? 'checked' : $user-&gt;site_target</token>
+  </line>
+  <line no="308">
+    <token name="T_INLINE_HTML">                                                == 'internet_search' ? 'checked' : !$errors-&gt;all() ? 'checked' : ''}}</token>
+  </line>
+  <line no="309">
+    <token name="T_INLINE_HTML">                                                class="site_radio"&gt;</token>
+  </line>
+  <line no="310">
+    <token name="T_INLINE_HTML">                                        &lt;span class="c-indicator c-indicator-warning"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="311">
+    <token name="T_INLINE_HTML">                                        Internet Search</token>
+  </line>
+  <line no="312">
+    <token name="T_INLINE_HTML">                                    &lt;/label&gt;</token>
+  </line>
+  <line no="313">
+    <token name="T_INLINE_HTML">                                    &lt;label class="c-input c-radio"&gt;</token>
+  </line>
+  <line no="314">
+    <token name="T_INLINE_HTML">                                        &lt;input name="site_target" value="advertisement" autocomplete="off" type="radio"</token>
+  </line>
+  <line no="315">
+    <token name="T_INLINE_HTML">                                                {{ old('site_target') == 'advertisement' ? 'checked' :</token>
+  </line>
+  <line no="316">
+    <token name="T_INLINE_HTML">                                                $user-&gt;site_target == 'advertisement' ? 'checked' : '' }} class="site_radio"&gt;</token>
+  </line>
+  <line no="317">
+    <token name="T_INLINE_HTML">                                        &lt;span class="c-indicator c-indicator-warning"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="318">
+    <token name="T_INLINE_HTML">                                        Advertisement</token>
+  </line>
+  <line no="319">
+    <token name="T_INLINE_HTML">                                    &lt;/label&gt;</token>
+  </line>
+  <line no="320">
+    <token name="T_INLINE_HTML">                                    &lt;label class="c-input c-radio"&gt;</token>
+  </line>
+  <line no="321">
+    <token name="T_INLINE_HTML">                                        &lt;input name="site_target" value="friend" autocomplete="off" type="radio"</token>
+  </line>
+  <line no="322">
+    <token name="T_INLINE_HTML">                                                {{ old('site_target') == 'friend' ? 'checked' :</token>
+  </line>
+  <line no="323">
+    <token name="T_INLINE_HTML">                                                 $user-&gt;site_target == 'friend' ? 'checked' : ''}} class="site_radio"&gt;</token>
+  </line>
+  <line no="324">
+    <token name="T_INLINE_HTML">                                        &lt;span class="c-indicator c-indicator-warning"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="325">
+    <token name="T_INLINE_HTML">                                        Friend</token>
+  </line>
+  <line no="326">
+    <token name="T_INLINE_HTML">                                    &lt;/label&gt;</token>
+  </line>
+  <line no="327">
+    <token name="T_INLINE_HTML">                                    &lt;label class="c-input c-radio"&gt;</token>
+  </line>
+  <line no="328">
+    <token name="T_INLINE_HTML">                                        &lt;input id="other_sell" name="site_target" type="radio" autocomplete="off" value="other"</token>
+  </line>
+  <line no="329">
+    <token name="T_INLINE_HTML">                                                {{ old('site_target') == 'other' ? 'checked' :</token>
+  </line>
+  <line no="330">
+    <token name="T_INLINE_HTML">                                                 $user-&gt;site_target == 'other' ? 'checked' : ''}} class="site_radio"&gt;</token>
+  </line>
+  <line no="331">
+    <token name="T_INLINE_HTML">                                        &lt;span class="c-indicator c-indicator-warning"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="332">
+    <token name="T_INLINE_HTML">                                        Other</token>
+  </line>
+  <line no="333">
+    <token name="T_INLINE_HTML">                                    &lt;/label&gt;</token>
+  </line>
+  <line no="334">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="335"/>
+  <line no="336">
+    <token name="T_INLINE_HTML">                               &lt;div class="row" id="other_site_spec" style="{{ empty($user-&gt;other_site_spec) ?</token>
+  </line>
+  <line no="337">
+    <token name="T_INLINE_HTML">                                    (old('site_target') == 'other' ? '' : 'display: none;') : '' }}"&gt;</token>
+  </line>
+  <line no="338">
+    <token name="T_INLINE_HTML">                                    &lt;div class="col-xs-12 col-md-8"&gt;</token>
+  </line>
+  <line no="339">
+    <token name="T_INLINE_HTML">                                        &lt;label&gt;If Other Please Specify&lt;/label&gt;</token>
+  </line>
+  <line no="340">
+    <token name="T_INLINE_HTML">                                        &lt;input {!!(count($errors-&gt;get('other_site_spec'))&gt;0)?'style="border-color:#db534f;"':''!!}</token>
+  </line>
+  <line no="341">
+    <token name="T_INLINE_HTML">                                              name="other_site_spec" type="text" data-name="other_site_spec" autocomplete="off"</token>
+  </line>
+  <line no="342">
+    <token name="T_INLINE_HTML">                                               value="{{ old('other_site_spec') ? old('other_site_spec') : $user-&gt;other_site_spec }}"</token>
+  </line>
+  <line no="343">
+    <token name="T_INLINE_HTML">                                               maxlength="254" class="form-control editable"&gt;</token>
+  </line>
+  <line no="344">
+    <token name="T_INLINE_HTML">                                        @if(count($errors-&gt;get('other_site_spec'))&gt;0)</token>
+  </line>
+  <line no="345">
+    <token name="T_INLINE_HTML">                                            @foreach($errors-&gt;get('other_site_spec') as $err)</token>
+  </line>
+  <line no="346">
+    <token name="T_INLINE_HTML">                                                &lt;small class="text-danger"&gt;{{$err}}&lt;/small&gt;</token>
+  </line>
+  <line no="347">
+    <token name="T_INLINE_HTML">                                            @endforeach</token>
+  </line>
+  <line no="348">
+    <token name="T_INLINE_HTML">                                        @endif</token>
+  </line>
+  <line no="349">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="350">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="351"/>
+  <line no="352">
+    <token name="T_INLINE_HTML">                            &lt;/fieldset&gt;</token>
+  </line>
+  <line no="353">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="354">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="355"/>
+  <line no="356">
+    <token name="T_INLINE_HTML">                    &lt;input type="hidden" name="_token" value="{{ csrf_token() }}"&gt;</token>
+  </line>
+  <line no="357">
+    <token name="T_INLINE_HTML">                    &lt;input type="hidden" name="file_name" value="" id="file_name_ipt" autocomplete="off"&gt;</token>
+  </line>
+  <line no="358">
+    <token name="T_INLINE_HTML">                    &lt;input type="hidden" name="coach" value="{{ $coach-&gt;id }}" autocomplete="off"&gt;</token>
+  </line>
+  <line no="359">
+    <token name="T_INLINE_HTML">                    &lt;input type="hidden" name="package_type" value="{{ $detailed_package ? 'detailed' : 'summary' }}"</token>
+  </line>
+  <line no="360">
+    <token name="T_INLINE_HTML">                           autocomplete="off"&gt;</token>
+  </line>
+  <line no="361">
+    <token name="T_INLINE_HTML">                    &lt;div class="row"&gt;</token>
+  </line>
+  <line no="362">
+    <token name="T_INLINE_HTML">                        &lt;div class="col-xs-12"&gt;</token>
+  </line>
+  <line no="363">
+    <token name="T_INLINE_HTML">                            &lt;button type="submit" class="btn btn-warning m-r-10 m-b-10"&gt;</token>
+  </line>
+  <line no="364">
+    <token name="T_INLINE_HTML">                                &lt;i class="btn-icon fa fa-floppy-o"&gt;&lt;/i&gt;Save</token>
+  </line>
+  <line no="365">
+    <token name="T_INLINE_HTML">                            &lt;/button&gt;</token>
+  </line>
+  <line no="366">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="367">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="368">
+    <token name="T_INLINE_HTML">                &lt;/form&gt;</token>
+  </line>
+  <line no="369">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="370">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="371">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="372"/>
+  <line no="373">
+    <token name="T_INLINE_HTML">    &lt;div id="overlay"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="374">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="375"/>
+  <line no="376">
+    <token name="T_INLINE_HTML">@section("js")</token>
+  </line>
+  <line no="377"/>
+  <line no="378">
+    <token name="T_INLINE_HTML">    &lt;script src="/assets/marino/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="379">
+    <token name="T_INLINE_HTML">    &lt;script src="/vendor/jildertmiedema/laravel-plupload/js/plupload.full.min.js"</token>
+  </line>
+  <line no="380">
+    <token name="T_INLINE_HTML">        type="text/javascript"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="381">
+    <token name="T_INLINE_HTML">    &lt;script type="text/javascript"&gt;</token>
+  </line>
+  <line no="382"/>
+  <line no="383">
+    <token name="T_INLINE_HTML">        function str_random(length) {</token>
+  </line>
+  <line no="384">
+    <token name="T_INLINE_HTML">            if(!length)</token>
+  </line>
+  <line no="385">
+    <token name="T_INLINE_HTML">                length = 5;</token>
+  </line>
+  <line no="386">
+    <token name="T_INLINE_HTML">            var text = "";</token>
+  </line>
+  <line no="387">
+    <token name="T_INLINE_HTML">            var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";</token>
+  </line>
+  <line no="388">
+    <token name="T_INLINE_HTML">            for(var i=0; i &lt; length; i++)</token>
+  </line>
+  <line no="389">
+    <token name="T_INLINE_HTML">                text += possible.charAt(Math.floor(Math.random() * possible.length));</token>
+  </line>
+  <line no="390">
+    <token name="T_INLINE_HTML">            return text;</token>
+  </line>
+  <line no="391">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="392"/>
+  <line no="393">
+    <token name="T_INLINE_HTML">        $( document ).ready(function() {</token>
+  </line>
+  <line no="394">
+    <token name="T_INLINE_HTML">            var video_submitted = false;</token>
+  </line>
+  <line no="395">
+    <token name="T_INLINE_HTML">            var videofile = null;</token>
+  </line>
+  <line no="396">
+    <token name="T_INLINE_HTML">            $('#submit-request').on('submit', function (e) {</token>
+  </line>
+  <line no="397">
+    <token name="T_INLINE_HTML">                video_submitted = true;</token>
+  </line>
+  <line no="398">
+    <token name="T_INLINE_HTML">                $('#overlay').fadeIn();</token>
+  </line>
+  <line no="399">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="400">
+    <token name="T_INLINE_HTML">            window.onbeforeunload = function() {</token>
+  </line>
+  <line no="401">
+    <token name="T_INLINE_HTML">                if(!video_submitted){</token>
+  </line>
+  <line no="402">
+    <token name="T_INLINE_HTML">                    $.ajax({</token>
+  </line>
+  <line no="403">
+    <token name="T_INLINE_HTML">                        url: "{{ route('review.fallback-videofile') }}",</token>
+  </line>
+  <line no="404">
+    <token name="T_INLINE_HTML">                        type: 'POST',</token>
+  </line>
+  <line no="405">
+    <token name="T_INLINE_HTML">                        data: {"videofile":videofile}</token>
+  </line>
+  <line no="406">
+    <token name="T_INLINE_HTML">                    });</token>
+  </line>
+  <line no="407">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="408">
+    <token name="T_INLINE_HTML">            };</token>
+  </line>
+  <line no="409"/>
+  <line no="410">
+    <token name="T_INLINE_HTML">            /*$('#submit-request').submit(function (e) {</token>
+  </line>
+  <line no="411">
+    <token name="T_INLINE_HTML">                e.preventDefault();</token>
+  </line>
+  <line no="412">
+    <token name="T_INLINE_HTML">                $.ajax({</token>
+  </line>
+  <line no="413">
+    <token name="T_INLINE_HTML">                    url: "{{ url('video') }}",</token>
+  </line>
+  <line no="414">
+    <token name="T_INLINE_HTML">                    type: 'POST',</token>
+  </line>
+  <line no="415">
+    <token name="T_INLINE_HTML">                    data: $(this).serialize(),</token>
+  </line>
+  <line no="416">
+    <token name="T_INLINE_HTML">                    beforeSend: function () {</token>
+  </line>
+  <line no="417">
+    <token name="T_INLINE_HTML">                        </token>
+  </line>
+  <line no="418">
+    <token name="T_INLINE_HTML">                    },</token>
+  </line>
+  <line no="419">
+    <token name="T_INLINE_HTML">                    success: function () {</token>
+  </line>
+  <line no="420">
+    <token name="T_INLINE_HTML">                        </token>
+  </line>
+  <line no="421">
+    <token name="T_INLINE_HTML">                    }</token>
+  </line>
+  <line no="422">
+    <token name="T_INLINE_HTML">                });</token>
+  </line>
+  <line no="423">
+    <token name="T_INLINE_HTML">            });*/</token>
+  </line>
+  <line no="424"/>
+  <line no="425">
+    <token name="T_INLINE_HTML">            var other_sell = $('#other_sell');</token>
+  </line>
+  <line no="426">
+    <token name="T_INLINE_HTML">            if( other_sell.is(':checked') ){</token>
+  </line>
+  <line no="427">
+    <token name="T_INLINE_HTML">                $("#other_site_spec").fadeIn();</token>
+  </line>
+  <line no="428">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="429"/>
+  <line no="430"/>
+  <line no="431">
+    <token name="T_INLINE_HTML">            $("#birthday").datepicker({</token>
+  </line>
+  <line no="432">
+    <token name="T_INLINE_HTML">                endDate: '0d'</token>
+  </line>
+  <line no="433">
+    <token name="T_INLINE_HTML">            }).on("change", function () {</token>
+  </line>
+  <line no="434">
+    <token name="T_INLINE_HTML">                var that = $(this);</token>
+  </line>
+  <line no="435">
+    <token name="T_INLINE_HTML">                if(that.attr("data-name")) {</token>
+  </line>
+  <line no="436">
+    <token name="T_INLINE_HTML">                    that.attr({name: that.attr("data-name")});</token>
+  </line>
+  <line no="437">
+    <token name="T_INLINE_HTML">                    that.removeAttr("data-name");</token>
+  </line>
+  <line no="438">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="439">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="440"/>
+  <line no="441">
+    <token name="T_INLINE_HTML">            $(".site_radio").on("change", function() {</token>
+  </line>
+  <line no="442">
+    <token name="T_INLINE_HTML">                if($(this).val() == "other") {</token>
+  </line>
+  <line no="443">
+    <token name="T_INLINE_HTML">                    $("#other_site_spec").fadeIn();</token>
+  </line>
+  <line no="444">
+    <token name="T_INLINE_HTML">                } else {</token>
+  </line>
+  <line no="445">
+    <token name="T_INLINE_HTML">                    $("#other_site_spec").fadeOut();</token>
+  </line>
+  <line no="446">
+    <token name="T_INLINE_HTML">                    //$("#other_site_spec&gt;div&gt;input").val("").attr({"data-name": $(this).attr("name")}).removeAttr("name");</token>
+  </line>
+  <line no="447">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="448">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="449"/>
+  <line no="450">
+    <token name="T_INLINE_HTML">            $(".editable").on("input", function() {</token>
+  </line>
+  <line no="451">
+    <token name="T_INLINE_HTML">                var that = $(this);</token>
+  </line>
+  <line no="452">
+    <token name="T_INLINE_HTML">                if(that.attr("data-name")) {</token>
+  </line>
+  <line no="453">
+    <token name="T_INLINE_HTML">                    that.attr({name: that.attr("data-name")});</token>
+  </line>
+  <line no="454">
+    <token name="T_INLINE_HTML">                    that.removeAttr("data-name");</token>
+  </line>
+  <line no="455">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="456">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="457"/>
+  <line no="458">
+    <token name="T_INLINE_HTML">            function uploader() {</token>
+  </line>
+  <line no="459">
+    <token name="T_INLINE_HTML">                var uploader = new plupload.Uploader({</token>
+  </line>
+  <line no="460">
+    <token name="T_INLINE_HTML">                    runtimes: 'html5,html4',</token>
+  </line>
+  <line no="461">
+    <token name="T_INLINE_HTML">                    browse_button: document.getElementById('pick_file'),</token>
+  </line>
+  <line no="462">
+    <token name="T_INLINE_HTML">                    container: document.getElementById('upload_container'),</token>
+  </line>
+  <line no="463">
+    <token name="T_INLINE_HTML">                    max_retries: 5,</token>
+  </line>
+  <line no="464">
+    <token name="T_INLINE_HTML">                    headers: {</token>
+  </line>
+  <line no="465">
+    <token name="T_INLINE_HTML">                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')</token>
+  </line>
+  <line no="466">
+    <token name="T_INLINE_HTML">                    },</token>
+  </line>
+  <line no="467">
+    <token name="T_INLINE_HTML">                    multi_selection: false,</token>
+  </line>
+  <line no="468">
+    <token name="T_INLINE_HTML">                    url : "/video/save-file",</token>
+  </line>
+  <line no="469">
+    <token name="T_INLINE_HTML">                    chunk_size: '{{env('VIDEO_UPLOAD_CHUNK_SIZE', 512)}}kb',</token>
+  </line>
+  <line no="470">
+    <token name="T_INLINE_HTML">                    filters : {</token>
+  </line>
+  <line no="471">
+    <token name="T_INLINE_HTML">                        max_file_size : '{{env('VIDEO_MAX_UPLOAD_SIZE', 300)}}mb',</token>
+  </line>
+  <line no="472">
+    <token name="T_INLINE_HTML">                        mime_types: [</token>
+  </line>
+  <line no="473">
+    <token name="T_INLINE_HTML">                            {title : "Video files", extensions : "avi,mpeg4,wmv,mp4,mov"}</token>
+  </line>
+  <line no="474">
+    <token name="T_INLINE_HTML">                        ]</token>
+  </line>
+  <line no="475">
+    <token name="T_INLINE_HTML">                    },</token>
+  </line>
+  <line no="476">
+    <token name="T_INLINE_HTML">                    init: {</token>
+  </line>
+  <line no="477">
+    <token name="T_INLINE_HTML">                        PostInit: function() {</token>
+  </line>
+  <line no="478">
+    <token name="T_INLINE_HTML">                            document.getElementById('file_list').innerHTML = '';</token>
+  </line>
+  <line no="479">
+    <token name="T_INLINE_HTML">                        },</token>
+  </line>
+  <line no="480">
+    <token name="T_INLINE_HTML">                        FilesAdded: function(up, files) {</token>
+  </line>
+  <line no="481">
+    <token name="T_INLINE_HTML">                            while (up.files.length &gt; 1) {</token>
+  </line>
+  <line no="482">
+    <token name="T_INLINE_HTML">                                up.removeFile(up.files[0]);</token>
+  </line>
+  <line no="483">
+    <token name="T_INLINE_HTML">                            }</token>
+  </line>
+  <line no="484">
+    <token name="T_INLINE_HTML">                            var file = files[0];</token>
+  </line>
+  <line no="485">
+    <token name="T_INLINE_HTML">                            var new_name = str_random() + "-" + file.name;</token>
+  </line>
+  <line no="486">
+    <token name="T_INLINE_HTML">                            up.settings.multipart_params = {name: new_name, Filename: new_name};</token>
+  </line>
+  <line no="487">
+    <token name="T_INLINE_HTML">                            document.getElementById('file_list').innerHTML = '&lt;div id="' + files[0].id + '" style="display:\</token>
+  </line>
+  <line no="488">
+    <token name="T_INLINE_HTML">                                    inline;"&gt;' + files[0].name + ' (' + plupload.formatSize(files[0].size) + ')&lt;/div&gt;';</token>
+  </line>
+  <line no="489">
+    <token name="T_INLINE_HTML">                            uploader.start();</token>
+  </line>
+  <line no="490">
+    <token name="T_INLINE_HTML">                        },</token>
+  </line>
+  <line no="491">
+    <token name="T_INLINE_HTML">                        UploadProgress: function(up, file) {</token>
+  </line>
+  <line no="492">
+    <token name="T_INLINE_HTML">                            $("#uploading_progress").val(file.percent);</token>
+  </line>
+  <line no="493">
+    <token name="T_INLINE_HTML">                        },</token>
+  </line>
+  <line no="494">
+    <token name="T_INLINE_HTML">                        BeforeUpload: function (uploader, file) {</token>
+  </line>
+  <line no="495">
+    <token name="T_INLINE_HTML">                            $("#progress").show();</token>
+  </line>
+  <line no="496">
+    <token name="T_INLINE_HTML">                            $("#stop_uploading").show();</token>
+  </line>
+  <line no="497">
+    <token name="T_INLINE_HTML">                            $("#pick_file").attr({disabled: "disabled"}).css('cursor', 'not-allowed');</token>
+  </line>
+  <line no="498">
+    <token name="T_INLINE_HTML">                            $("#upload_container :input[type='file']").attr({disabled: "disabled"});</token>
+  </line>
+  <line no="499">
+    <token name="T_INLINE_HTML">                        },</token>
+  </line>
+  <line no="500">
+    <token name="T_INLINE_HTML">                        Error: function(up, err) {</token>
+  </line>
+  <line no="501">
+    <token name="T_INLINE_HTML">                            $.notify("Upload error: " + err.message, "error");</token>
+  </line>
+  <line no="502">
+    <token name="T_INLINE_HTML">                            console.log(err);</token>
+  </line>
+  <line no="503">
+    <token name="T_INLINE_HTML">                        },</token>
+  </line>
+  <line no="504">
+    <token name="T_INLINE_HTML">                        FileUploaded: function (uploader, file, result) {</token>
+  </line>
+  <line no="505">
+    <token name="T_INLINE_HTML">                            var response = $.parseJSON(result.response);</token>
+  </line>
+  <line no="506">
+    <token name="T_INLINE_HTML">                            $("#file_name_ipt").attr("value", response.result.file);</token>
+  </line>
+  <line no="507">
+    <token name="T_INLINE_HTML">                            videofile = response.result.file;</token>
+  </line>
+  <line no="508">
+    <token name="T_INLINE_HTML">                            $("#file_list").append('&lt;span class="m-r-10 label label-pill label-success"&gt;success&lt;/span&gt;');</token>
+  </line>
+  <line no="509">
+    <token name="T_INLINE_HTML">                            $("#progress").hide();</token>
+  </line>
+  <line no="510">
+    <token name="T_INLINE_HTML">                            $("#stop_uploading").hide();</token>
+  </line>
+  <line no="511">
+    <token name="T_INLINE_HTML">                        }</token>
+  </line>
+  <line no="512">
+    <token name="T_INLINE_HTML">                    }</token>
+  </line>
+  <line no="513">
+    <token name="T_INLINE_HTML">                });</token>
+  </line>
+  <line no="514">
+    <token name="T_INLINE_HTML">                return uploader;</token>
+  </line>
+  <line no="515">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="516"/>
+  <line no="517">
+    <token name="T_INLINE_HTML">            var upload = uploader();</token>
+  </line>
+  <line no="518">
+    <token name="T_INLINE_HTML">            upload.init();</token>
+  </line>
+  <line no="519">
+    <token name="T_INLINE_HTML">            $("#stop_uploading").on("click", function() {</token>
+  </line>
+  <line no="520">
+    <token name="T_INLINE_HTML">                /*upload.stop();</token>
+  </line>
+  <line no="521">
+    <token name="T_INLINE_HTML">                upload.refresh();*/</token>
+  </line>
+  <line no="522">
+    <token name="T_INLINE_HTML">                $(this).hide();</token>
+  </line>
+  <line no="523">
+    <token name="T_INLINE_HTML">                upload.removeFile(upload.files[0]);</token>
+  </line>
+  <line no="524">
+    <token name="T_INLINE_HTML">                $('#file_list').html('');</token>
+  </line>
+  <line no="525">
+    <token name="T_INLINE_HTML">                $("#uploading_progress").val(0);</token>
+  </line>
+  <line no="526">
+    <token name="T_INLINE_HTML">                $("#progress").hide();</token>
+  </line>
+  <line no="527">
+    <token name="T_INLINE_HTML">                $(".moxie-shim").remove();</token>
+  </line>
+  <line no="528">
+    <token name="T_INLINE_HTML">                $("#pick_file").removeAttr("disabled").css('cursor', 'pointer');</token>
+  </line>
+  <line no="529">
+    <token name="T_INLINE_HTML">                upload.destroy();</token>
+  </line>
+  <line no="530">
+    <token name="T_INLINE_HTML">                upload = uploader();</token>
+  </line>
+  <line no="531">
+    <token name="T_INLINE_HTML">                upload.init();</token>
+  </line>
+  <line no="532">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="533">
+    <token name="T_INLINE_HTML">            relocate();</token>
+  </line>
+  <line no="534"/>
+  <line no="535">
+    <token name="T_INLINE_HTML">            function relocate(){</token>
+  </line>
+  <line no="536">
+    <token name="T_INLINE_HTML">                var video_id = {{session('created_video_id', 0)}};</token>
+  </line>
+  <line no="537">
+    <token name="T_INLINE_HTML">                if(video_id){</token>
+  </line>
+  <line no="538">
+    <token name="T_INLINE_HTML">                    setTimeout(function(){</token>
+  </line>
+  <line no="539">
+    <token name="T_INLINE_HTML">                        location.href = '/video';</token>
+  </line>
+  <line no="540">
+    <token name="T_INLINE_HTML">                    }, 2000);</token>
+  </line>
+  <line no="541">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="542"/>
+  <line no="543">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="544">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="545">
+    <token name="T_INLINE_HTML">    &lt;/script&gt;</token>
+  </line>
+  <line no="546">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+</source>

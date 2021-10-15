@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views/layouts" file="app1.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views/layouts/app1.blade.php" size="3076" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="96489caf712419f2462e43bc9100d0127833b312" relative="resources/views/layouts/app1.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;!DOCTYPE html&gt;</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">&lt;html lang="en"&gt;</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">    &lt;head&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">        &lt;meta charset="utf-8"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">        &lt;title&gt;Showcase&lt;/title&gt;</token>
+  </line>
+  <line no="8"/>
+  <line no="9">
+    <token name="T_INLINE_HTML">        &lt;!-- Bootstrap --&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">        &lt;link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}"&gt;</token>
+  </line>
+  <line no="11"/>
+  <line no="12">
+    <token name="T_INLINE_HTML">        &lt;!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">        &lt;!-- WARNING: Respond.js doesn't work if you view the page via file:// --&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">        &lt;!--[if lt IE 9]&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">            &lt;script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">            &lt;script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">        &lt;![endif]--&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">    &lt;/head&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">    &lt;body&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">        &lt;nav class="navbar navbar-default"&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">            &lt;div class="container-fluid"&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">            &lt;div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">                    @if(Auth::user())</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">                        &lt;ul class="nav navbar-nav"&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">                          &lt;li class="dropdown"&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">                            &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"&gt;Dropdown &lt;span class="caret"&gt;&lt;/span&gt;&lt;/a&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">                            &lt;ul class="dropdown-menu"&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">                              &lt;li&gt;&lt;a href="/video/create"&gt;Add video&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">                              &lt;li&gt;&lt;a href="/search"&gt;Search video&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">                              &lt;li role="separator" class="divider"&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">                              &lt;li&gt;&lt;a href="/profile"&gt;My profile&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">                              &lt;li&gt;&lt;a href="/profile/{{Auth::user()-&gt;id}}/edit"&gt;Edit profile&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">                              &lt;li&gt;&lt;a href="/video"&gt;My videos&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">                              &lt;li&gt;&lt;a href="/proposal"&gt;My reviews&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">                              &lt;li role="separator" class="divider"&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">                              &lt;li&gt;&lt;a href="#"&gt;One more separated link&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">                            &lt;/ul&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">                          &lt;/li&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">                        &lt;/ul&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">                    @endif</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">                    &lt;ul class="nav navbar-nav navbar-right"&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">                        @if(!Auth::user())</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">                            &lt;li&gt;&lt;a class="btn btn-info" href="/auth/facebook" role="button"&gt;Facebook login&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">                        @else</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">                            &lt;p class="navbar-text"&gt;{{Auth::user()-&gt;first_name}} {{Auth::user()-&gt;last_name}}&lt;/p&gt;</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">                            &lt;p class="navbar-text"&gt;{{Auth::user()-&gt;email}}&lt;/p&gt;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">                            &lt;li&gt;&lt;a class="btn btn-info" href="/auth/logout" role="button"&gt;Logout&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">                        @endif</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">                    &lt;/ul&gt;</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;&lt;!-- /.navbar-collapse --&gt;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;&lt;!-- /.container-fluid --&gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">        &lt;/nav&gt;</token>
+  </line>
+  <line no="53"/>
+  <line no="54">
+    <token name="T_INLINE_HTML">        @yield('content')</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">    &lt;/body&gt;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">    &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">    &lt;script src="{{ asset('/assets/js/bootstrap.min.js') }}"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">&lt;/html&gt;</token>
+  </line>
+</source>

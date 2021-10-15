@@ -1,0 +1,242 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-22-05/admin/analytics" file="index.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-22-05/admin/analytics/index.blade.php" size="3125" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="b0e303470fc1cfedbe3dff09c496daf0c48f2445" relative="resources/views-22-05/admin/analytics/index.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layouts.app')</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">@section('css')</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/5.3.4/sweetalert2.min.css"&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">    &lt;link type="text/css" rel="stylesheet" href="/assets/js/datatables/datatables.min.css"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">    &lt;div class="row m-b-20"&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">        &lt;div class="col-xs-12"&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">            &lt;h3&gt;Admin dashboard&lt;/h3&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="12"/>
+  <line no="13">
+    <token name="T_INLINE_HTML">    &lt;div class="row m-b-40"&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">        &lt;div class="col-xs-12 col-lg-3 text-center" data-palette="palette-7"&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">            &lt;div class="text-widget-1"&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">                &lt;a href="{{ route('admin.users.index') }}"&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">                    &lt;h5&gt;Total SCH Users&lt;/h5&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">                    &lt;div&gt;{{ $totalUsers }}&lt;/div&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">                &lt;/a&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">        &lt;div class="col-xs-12 col-lg-3 text-center" data-palette="palette-8"&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">            &lt;div class="text-widget-1"&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">                &lt;a href="{{ route('admin.coaches.index') }}"&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">                    &lt;h5&gt;Total SCH Coaches&lt;/h5&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">                    &lt;div&gt;{{ $totalCoaches }}&lt;/div&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">                &lt;/a&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">        &lt;div class="col-xs-12 col-lg-3 text-center" data-palette="palette-9"&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">            &lt;div class="text-widget-1"&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">                &lt;a href="{{ route('admin.analytics.active-users') }}"&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">                    &lt;h5&gt;Active Users&lt;/h5&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">                    &lt;div&gt;{{ $activeUsers }}&lt;/div&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">                &lt;/a&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">        &lt;div class="col-xs-12 col-lg-3 text-center" data-palette="palette-10"&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">            &lt;div class="text-widget-1"&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">                &lt;a href="{{ route('admin.analytics.active-coaches') }}"&gt;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">                    &lt;h5&gt;Active Coaches&lt;/h5&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">                    &lt;div&gt;{{ $activeCoaches }}&lt;/div&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">                &lt;/a&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="47"/>
+  <line no="48">
+    <token name="T_INLINE_HTML">    &lt;div class="row m-b-40"&gt;</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">        &lt;div class="col-xs-12 text-center"&gt;</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">            &lt;h4&gt;Code red status&lt;/h4&gt;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="52"/>
+  <line no="53">
+    <token name="T_INLINE_HTML">        &lt;div class="col-xs-12 col-lg-4 text-center" data-palette="palette-16"&gt;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">            &lt;div class="text-widget-7 bg-warning-600 color-white"&gt;</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">                &lt;div&gt;In 3 days&lt;/div&gt;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">                &lt;div&gt;(On Track)&lt;/div&gt;</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">                &lt;div&gt;{{ $in3Days - $timeIsUp }}&lt;/div&gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">        &lt;div class="col-xs-12 col-lg-4 text-center" data-palette="palette-19"&gt;</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">            &lt;div class="text-widget-7 bg-warning-900 color-white"&gt;</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">                &lt;div&gt;In 1 day&lt;/div&gt;</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">                &lt;div&gt;(Risk of Code Red)&lt;/div&gt;</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">                &lt;div&gt;{{ $in1Day - $timeIsUp }}&lt;/div&gt;</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">        &lt;div class="col-xs-12 col-lg-4 text-center" data-palette="palette-18"&gt;</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">            &lt;div class="text-widget-7 bg-danger color-white"&gt;</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">                &lt;a href="{{ route('admin.analytics.code-red') }}"&gt;</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">                    &lt;div&gt;Code Red&lt;/div&gt;</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">                    &lt;div&gt;(Remedy or Refund)&lt;/div&gt;</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">                    &lt;div&gt;{{ $timeIsUp }}&lt;/div&gt;</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">                &lt;/a&gt;</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="78"/>
+  <line no="79">
+    <token name="T_INLINE_HTML">@section('js')</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">    &lt;script src="/assets/js/datatables/datatables.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">    &lt;script src="https://cdn.jsdelivr.net/sweetalert2/5.3.4/sweetalert2.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+</source>

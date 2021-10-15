@@ -1,0 +1,1120 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views/coachchallenge" file="add-review-old.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views/coachchallenge/add-review-old.blade.php" size="23186" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="5217e5f1f5269de728008481960c19ba94731a30" relative="resources/views/coachchallenge/add-review-old.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layouts.app')</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">@section('css')</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">&lt;link rel="stylesheet" href="/assets/js/rateit/rateit.css"&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">&lt;link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">&lt;div class="main-content auditions-wrap"&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">    &lt;div class="container-fluid"&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">        &lt;div class="row"&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">	        &lt;div class="col-md-12"&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">	            &lt;div class="coach-list mb-4"&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">	                &lt;h3&gt;Review Participant Video&lt;/h3&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">	            &lt;/div&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">	            @if(session()-&gt;has('message'))</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">				    &lt;div class="alert alert-success"&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">				        {{ session()-&gt;get('message') }}</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">				    &lt;/div&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">				@endif</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">				@if ($errors-&gt;any())</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">				    &lt;div class="alert alert-danger"&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">				        &lt;ul&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">				            @foreach ($errors-&gt;all() as $error)</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">				                &lt;li&gt;{{ $error }}&lt;/li&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">				            @endforeach</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">				        &lt;/ul&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">				    &lt;/div&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">				@endif</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">				@if(session()-&gt;has('error'))</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">				    &lt;div class="alert alert-danger"&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">				        {{ session()-&gt;get('error') }}</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">				    &lt;/div&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">				@endif</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">	        &lt;/div&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">	        &lt;form action="{{url('challenge-review')}}/{{$participant_id}}" method="post" enctype="multipart/form-data"&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">	        	{!! csrf_field() !!}</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">	        	&lt;input type="hidden" name="participant_id" value="{{$participant_id}}" /&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">		        &lt;div class="col-md-12"&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">		        	&lt;div class="row"&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">			        	&lt;div class="col-lg-8 col-lg-offset-2"&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">		                    &lt;div class="card row"&gt;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">		                        </token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">		                            &lt;div class="videos-box"&gt;</token>
+  </line>
+  <line no="43"/>
+  <line no="44">
+    <token name="T_INLINE_HTML">		                                @if(strpos($participant_detail-&gt;video_link, 'youtube') !== false)</token>
+  </line>
+  <line no="45"/>
+  <line no="46">
+    <token name="T_INLINE_HTML">		                                    @php</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">		                                    $query ="";</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">		                                        $parts = parse_video_link($participant_detail-&gt;video_link);</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">		                                        if(array_key_exists('query',$parts)){</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">		                                            parse_str($parts['query'], $query);</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">		                                            $participant_detailID = $query['v'];</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">		                                            $youtubevideo_link = "https://www.youtube.com/embed/".$participant_detailID; </token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">		                                        }else{</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">		                                            $youtubevideo_link = $participant_detail-&gt;video_link; </token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">		                                        }</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">		                                        </token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">		                                        </token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">		                                    @endphp</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">		                                   </token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">		                                @else</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">		                               &lt;video id="video-{{$participant_detail-&gt;id}}" width="100%" height="300" controls &gt;</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">		                                    &lt;source src="{{asset('uploads/auditions/').'/'. $participant_detail-&gt;video_link}}"&gt;</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">		                                    Your browser does not support HTML5 video.</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">		                                &lt;/video&gt;</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">		                                    </token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">		                                @endif</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">		                            &lt;/div&gt;</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">		                        </token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">		                    &lt;/div&gt;</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">		                    &lt;h3 class="p-20 text-center"&gt;{{$participant_detail-&gt;user-&gt;first_name}}&lt;/h3&gt;</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">		                &lt;/div&gt;</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">		                </token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">		        &lt;/div&gt;</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">		        &lt;div class="row"&gt;</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">	                &lt;div class="col-md-12"&gt;</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">	                    &lt;p class="text-center text-danger f-w-500"&gt;TECHNIQUE SCORE&lt;/p&gt;</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">	                    &lt;div class="col-xs-12 col-md-4 m-b-15"&gt;</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">	                        &lt;div class="row"&gt;</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">	                            &lt;div class="col-xs-12 col-md-8"&gt;</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">	                                &lt;span&gt;Timing&lt;/span&gt;</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">	                                &lt;span class="rateit-value"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">	                                &lt;div class="rateit pull-right" data-rateit-span-id="1" data-rateit-name="timing-rating" data-rateit-min="0"</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">	                                     data-rateit-max="5" data-rateit-step="1" data-rateit-resetable="0"</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">	                                     data-rateit-value="{{old('timing-rating')}}"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="85">
+    <token name="T_INLINE_HTML">	                                &lt;input type="hidden" name="timing-rating" value="{{old('timing-rating')}}" /&gt;  </token>
+  </line>
+  <line no="86">
+    <token name="T_INLINE_HTML">	                                &lt;fieldset&gt;</token>
+  </line>
+  <line no="87">
+    <token name="T_INLINE_HTML">	                                    &lt;small class="m-b-0"&gt;Comment&lt;/small&gt;</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">	                                    &lt;input class="form-control comment" type="text" name="timing-comment" autocomplete="off" value="{{old('timing-comment')}}" /&gt;</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">	                                &lt;/fieldset&gt;</token>
+  </line>
+  <line no="90">
+    <token name="T_INLINE_HTML">	                            &lt;/div&gt;</token>
+  </line>
+  <line no="91">
+    <token name="T_INLINE_HTML">	                            &lt;div class="col-xs-12 col-md-4"&gt;</token>
+  </line>
+  <line no="92">
+    <token name="T_INLINE_HTML">	                            &lt;/div&gt;</token>
+  </line>
+  <line no="93">
+    <token name="T_INLINE_HTML">	                        &lt;/div&gt;</token>
+  </line>
+  <line no="94">
+    <token name="T_INLINE_HTML">	                    &lt;/div&gt;</token>
+  </line>
+  <line no="95">
+    <token name="T_INLINE_HTML">	                    &lt;div class="col-xs-12 col-md-4 m-b-15"&gt;</token>
+  </line>
+  <line no="96">
+    <token name="T_INLINE_HTML">	                        &lt;div class="row"&gt;</token>
+  </line>
+  <line no="97">
+    <token name="T_INLINE_HTML">	                            &lt;div class="col-xs-12 col-md-8 col-md-offset-2"&gt;</token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">	                                &lt;span&gt;Footwork&lt;/span&gt;</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">	                                &lt;span class="rateit-value"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="100">
+    <token name="T_INLINE_HTML">	                                &lt;div class="rateit pull-right" data-rateit-span-id="2" data-rateit-name="footwork-rating" data-rateit-min="0"</token>
+  </line>
+  <line no="101">
+    <token name="T_INLINE_HTML">	                                     data-rateit-max="5" data-rateit-step="1" data-rateit-resetable="0"</token>
+  </line>
+  <line no="102">
+    <token name="T_INLINE_HTML">	                                     data-rateit-value="{{old('footwork-rating')}}"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="103">
+    <token name="T_INLINE_HTML">	                                &lt;input type="hidden" class="form-control" placeholder="" name="footwork-rating" min="1" max="5" step="0.5" autocomplete="off" value="{{old('footwork-rating')}}"&gt;</token>
+  </line>
+  <line no="104">
+    <token name="T_INLINE_HTML">	                                &lt;fieldset&gt;</token>
+  </line>
+  <line no="105">
+    <token name="T_INLINE_HTML">	                                    &lt;small class="m-b-0"&gt;Comment&lt;/small&gt;</token>
+  </line>
+  <line no="106">
+    <token name="T_INLINE_HTML">	                                    &lt;input class="form-control comment" type="text" name="footwork-comment" autocomplete="off" value="{{old('footwork-comment')}}" /&gt;</token>
+  </line>
+  <line no="107">
+    <token name="T_INLINE_HTML">	                                &lt;/fieldset&gt;</token>
+  </line>
+  <line no="108">
+    <token name="T_INLINE_HTML">	                            &lt;/div&gt;</token>
+  </line>
+  <line no="109">
+    <token name="T_INLINE_HTML">	                        &lt;/div&gt;</token>
+  </line>
+  <line no="110">
+    <token name="T_INLINE_HTML">	                    &lt;/div&gt;</token>
+  </line>
+  <line no="111">
+    <token name="T_INLINE_HTML">	                    &lt;div class="col-xs-12 col-md-4 m-b-15"&gt;</token>
+  </line>
+  <line no="112">
+    <token name="T_INLINE_HTML">	                        &lt;div class="row"&gt;</token>
+  </line>
+  <line no="113">
+    <token name="T_INLINE_HTML">	                            &lt;div class="col-xs-12 col-md-4"&gt;</token>
+  </line>
+  <line no="114">
+    <token name="T_INLINE_HTML">	                            &lt;/div&gt;</token>
+  </line>
+  <line no="115">
+    <token name="T_INLINE_HTML">	                            &lt;div class="col-xs-12 col-md-8"&gt;</token>
+  </line>
+  <line no="116">
+    <token name="T_INLINE_HTML">	                                &lt;span&gt;Alignment&lt;/span&gt;</token>
+  </line>
+  <line no="117">
+    <token name="T_INLINE_HTML">	                                &lt;span class="rateit-value"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="118">
+    <token name="T_INLINE_HTML">	                                &lt;div class="rateit pull-right" data-rateit-span-id="3" data-rateit-name="alignment-rating" data-rateit-min="0"</token>
+  </line>
+  <line no="119">
+    <token name="T_INLINE_HTML">	                                     data-rateit-max="5" data-rateit-step="1" data-rateit-resetable="0"</token>
+  </line>
+  <line no="120">
+    <token name="T_INLINE_HTML">	                                     data-rateit-value="{{old('alignment-rating')}}"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="121">
+    <token name="T_INLINE_HTML">	                                &lt;input type="hidden" class="form-control" placeholder="" name="alignment-rating" min="1" max="5" step="0.5" autocomplete="off" value="{{old('alignment-rating')}}"&gt;</token>
+  </line>
+  <line no="122">
+    <token name="T_INLINE_HTML">	                                &lt;fieldset&gt;</token>
+  </line>
+  <line no="123">
+    <token name="T_INLINE_HTML">	                                    &lt;small class="m-b-0"&gt;Comment&lt;/small&gt;</token>
+  </line>
+  <line no="124">
+    <token name="T_INLINE_HTML">	                                    &lt;input class="form-control comment" type="text" name="alingment-comment" autocomplete="off" value="{{old('alingment-comment')}}" /&gt;</token>
+  </line>
+  <line no="125">
+    <token name="T_INLINE_HTML">	                                &lt;/fieldset&gt;</token>
+  </line>
+  <line no="126">
+    <token name="T_INLINE_HTML">	                            &lt;/div&gt;</token>
+  </line>
+  <line no="127">
+    <token name="T_INLINE_HTML">	                        &lt;/div&gt;</token>
+  </line>
+  <line no="128">
+    <token name="T_INLINE_HTML">	                    &lt;/div&gt;</token>
+  </line>
+  <line no="129">
+    <token name="T_INLINE_HTML">	                    &lt;div class="col-xs-12 col-md-4 m-b-15"&gt;</token>
+  </line>
+  <line no="130">
+    <token name="T_INLINE_HTML">	                        &lt;div class="row"&gt;</token>
+  </line>
+  <line no="131">
+    <token name="T_INLINE_HTML">	                            &lt;div class="col-xs-12 col-md-8"&gt;</token>
+  </line>
+  <line no="132">
+    <token name="T_INLINE_HTML">	                                &lt;span&gt;Balance&lt;/span&gt;</token>
+  </line>
+  <line no="133">
+    <token name="T_INLINE_HTML">	                                &lt;span class="rateit-value"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="134">
+    <token name="T_INLINE_HTML">	                                &lt;div class="rateit pull-right" data-rateit-span-id="4" data-rateit-name="balance-rating" data-rateit-min="0"</token>
+  </line>
+  <line no="135">
+    <token name="T_INLINE_HTML">	                                     data-rateit-max="5" data-rateit-step="1" data-rateit-resetable="0"</token>
+  </line>
+  <line no="136">
+    <token name="T_INLINE_HTML">	                                     data-rateit-value="{{old('balance-rating')}}"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="137">
+    <token name="T_INLINE_HTML">	                                &lt;input type="hidden" class="form-control" placeholder="" name="balance-rating" min="1" max="5" step="0.5" autocomplete="off" value="{{old('balance-rating')}}"&gt;</token>
+  </line>
+  <line no="138">
+    <token name="T_INLINE_HTML">	                                &lt;fieldset&gt;</token>
+  </line>
+  <line no="139">
+    <token name="T_INLINE_HTML">	                                    &lt;small class="m-b-0"&gt;Comment&lt;/small&gt;</token>
+  </line>
+  <line no="140">
+    <token name="T_INLINE_HTML">	                                    &lt;input class="form-control comment" type="text" name="balance-comment" autocomplete="off" value="{{old('balance-comment')}}" /&gt;</token>
+  </line>
+  <line no="141">
+    <token name="T_INLINE_HTML">	                                &lt;/fieldset&gt;</token>
+  </line>
+  <line no="142">
+    <token name="T_INLINE_HTML">	                            &lt;/div&gt;</token>
+  </line>
+  <line no="143">
+    <token name="T_INLINE_HTML">	                            &lt;div class="col-xs-12 col-md-4"&gt;</token>
+  </line>
+  <line no="144">
+    <token name="T_INLINE_HTML">	                            &lt;/div&gt;</token>
+  </line>
+  <line no="145">
+    <token name="T_INLINE_HTML">	                        &lt;/div&gt;</token>
+  </line>
+  <line no="146">
+    <token name="T_INLINE_HTML">	                    &lt;/div&gt;</token>
+  </line>
+  <line no="147">
+    <token name="T_INLINE_HTML">	                    &lt;div class="col-xs-12 col-md-4 m-b-15"&gt;</token>
+  </line>
+  <line no="148">
+    <token name="T_INLINE_HTML">	                        &lt;div class="row"&gt;</token>
+  </line>
+  <line no="149">
+    <token name="T_INLINE_HTML">	                            &lt;div class="col-xs-12 col-md-8 col-md-offset-2"&gt;</token>
+  </line>
+  <line no="150">
+    <token name="T_INLINE_HTML">	                                &lt;span&gt;Focus&lt;/span&gt;</token>
+  </line>
+  <line no="151">
+    <token name="T_INLINE_HTML">	                                &lt;span class="rateit-value"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="152">
+    <token name="T_INLINE_HTML">	                                &lt;div class="rateit pull-right" data-rateit-span-id="5" data-rateit-name="focus-rating" data-rateit-min="0"</token>
+  </line>
+  <line no="153">
+    <token name="T_INLINE_HTML">	                                     data-rateit-max="5" data-rateit-step="1" data-rateit-resetable="0"</token>
+  </line>
+  <line no="154">
+    <token name="T_INLINE_HTML">	                                     data-rateit-value="{{old('focus-rating')}}"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="155">
+    <token name="T_INLINE_HTML">	                                &lt;input type="hidden" class="form-control" placeholder="" name="focus-rating" min="1" max="5" step="0.5" autocomplete="off" value="{{old('focus-rating')}}"&gt;</token>
+  </line>
+  <line no="156">
+    <token name="T_INLINE_HTML">	                                &lt;fieldset&gt;</token>
+  </line>
+  <line no="157">
+    <token name="T_INLINE_HTML">	                                    &lt;small class="m-b-0"&gt;Comment&lt;/small&gt;</token>
+  </line>
+  <line no="158">
+    <token name="T_INLINE_HTML">	                                    &lt;input class="form-control comment" type="text" name="focus-comment" autocomplete="off" value="{{old('focus-comment')}}" /&gt;</token>
+  </line>
+  <line no="159">
+    <token name="T_INLINE_HTML">	                                &lt;/fieldset&gt;</token>
+  </line>
+  <line no="160">
+    <token name="T_INLINE_HTML">	                            &lt;/div&gt;</token>
+  </line>
+  <line no="161">
+    <token name="T_INLINE_HTML">	                        &lt;/div&gt;</token>
+  </line>
+  <line no="162">
+    <token name="T_INLINE_HTML">	                    &lt;/div&gt;</token>
+  </line>
+  <line no="163"/>
+  <line no="164"/>
+  <line no="165">
+    <token name="T_INLINE_HTML">	                    &lt;div class="col-xs-12 col-md-4 m-b-15"&gt;</token>
+  </line>
+  <line no="166">
+    <token name="T_INLINE_HTML">	                        &lt;div class="row"&gt;</token>
+  </line>
+  <line no="167">
+    <token name="T_INLINE_HTML">	                            &lt;div class="col-xs-12 col-md-4"&gt;</token>
+  </line>
+  <line no="168">
+    <token name="T_INLINE_HTML">	                            &lt;/div&gt;</token>
+  </line>
+  <line no="169">
+    <token name="T_INLINE_HTML">	                            &lt;div class="col-xs-12 col-md-8"&gt;</token>
+  </line>
+  <line no="170">
+    <token name="T_INLINE_HTML">	                                &lt;span&gt;Precision&lt;/span&gt;</token>
+  </line>
+  <line no="171">
+    <token name="T_INLINE_HTML">	                                &lt;span class="rateit-value"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="172">
+    <token name="T_INLINE_HTML">	                                &lt;div class="rateit pull-right"  data-rateit-span-id="6" data-rateit-name="precision-rating" data-rateit-min="0" data-rateit-max="5" data-rateit-step="1" data-rateit-resetable="0" data-rateit-value="{{old('precision-rating')}}"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="173">
+    <token name="T_INLINE_HTML">	                                &lt;input type="hidden" class="form-control" placeholder="" name="precision-rating" min="1" max="5" step="0.5" autocomplete="off" value="{{old('precision-rating')}}"&gt;</token>
+  </line>
+  <line no="174">
+    <token name="T_INLINE_HTML">	                                &lt;fieldset&gt;</token>
+  </line>
+  <line no="175">
+    <token name="T_INLINE_HTML">	                                    &lt;small class="m-b-0"&gt;Comment&lt;/small&gt;</token>
+  </line>
+  <line no="176">
+    <token name="T_INLINE_HTML">	                                    &lt;input class="form-control comment" type="text" name="precision-comment" autocomplete="off" value="{{old('precision-comment')}}" /&gt;</token>
+  </line>
+  <line no="177">
+    <token name="T_INLINE_HTML">	                                &lt;/fieldset&gt;</token>
+  </line>
+  <line no="178">
+    <token name="T_INLINE_HTML">	                            &lt;/div&gt;</token>
+  </line>
+  <line no="179">
+    <token name="T_INLINE_HTML">	                        &lt;/div&gt;</token>
+  </line>
+  <line no="180">
+    <token name="T_INLINE_HTML">	                    &lt;/div&gt;</token>
+  </line>
+  <line no="181">
+    <token name="T_INLINE_HTML">	                    &lt;div class="col-xs-12"&gt;&lt;hr&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="182">
+    <token name="T_INLINE_HTML">	                &lt;/div&gt;</token>
+  </line>
+  <line no="183"/>
+  <line no="184">
+    <token name="T_INLINE_HTML">	                &lt;div class="col-md-12"&gt;</token>
+  </line>
+  <line no="185">
+    <token name="T_INLINE_HTML">	                    &lt;p class="text-center text-danger f-w-500"&gt;EXPRESSION&lt;/p&gt;</token>
+  </line>
+  <line no="186">
+    <token name="T_INLINE_HTML">	                    &lt;div class="col-xs-12 col-md-3 m-b-15"&gt;</token>
+  </line>
+  <line no="187">
+    <token name="T_INLINE_HTML">	                        &lt;div class="row"&gt;</token>
+  </line>
+  <line no="188">
+    <token name="T_INLINE_HTML">	                            &lt;div class="col-xs-12 col-md-11"&gt;</token>
+  </line>
+  <line no="189">
+    <token name="T_INLINE_HTML">	                                &lt;span&gt;Energy&lt;/span&gt;</token>
+  </line>
+  <line no="190">
+    <token name="T_INLINE_HTML">	                                &lt;span class="rateit-value"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="191">
+    <token name="T_INLINE_HTML">	                                &lt;div class="rateit pull-right" data-rateit-span-id="7" data-rateit-name="energy-rating" data-rateit-min="0"</token>
+  </line>
+  <line no="192">
+    <token name="T_INLINE_HTML">	                                     data-rateit-max="5" data-rateit-step="1" data-rateit-resetable="0"</token>
+  </line>
+  <line no="193">
+    <token name="T_INLINE_HTML">	                                     data-rateit-value="{{old('energy-rating')}}"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="194">
+    <token name="T_INLINE_HTML">	                                &lt;input type="hidden" class="form-control" placeholder="" name="energy-rating" min="1" max="5" step="0.5" autocomplete="off" value="{{old('energy-rating')}}"&gt;</token>
+  </line>
+  <line no="195">
+    <token name="T_INLINE_HTML">	                                &lt;fieldset&gt;</token>
+  </line>
+  <line no="196">
+    <token name="T_INLINE_HTML">	                                    &lt;small class="m-b-0"&gt;Comment&lt;/small&gt;</token>
+  </line>
+  <line no="197">
+    <token name="T_INLINE_HTML">	                                    &lt;input class="form-control comment" type="text" name="energy-comment" autocomplete="off" value="{{old('energy-comment')}}" /&gt;</token>
+  </line>
+  <line no="198">
+    <token name="T_INLINE_HTML">	                                &lt;/fieldset&gt;</token>
+  </line>
+  <line no="199">
+    <token name="T_INLINE_HTML">	                            &lt;/div&gt;</token>
+  </line>
+  <line no="200">
+    <token name="T_INLINE_HTML">	                            &lt;div class="col-xs-0 col-md-1"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="201">
+    <token name="T_INLINE_HTML">	                        &lt;/div&gt;</token>
+  </line>
+  <line no="202"/>
+  <line no="203">
+    <token name="T_INLINE_HTML">	                    &lt;/div&gt;</token>
+  </line>
+  <line no="204">
+    <token name="T_INLINE_HTML">	                    &lt;div class="col-xs-12 col-md-6"&gt;</token>
+  </line>
+  <line no="205">
+    <token name="T_INLINE_HTML">	                        &lt;div class="row"&gt;</token>
+  </line>
+  <line no="206">
+    <token name="T_INLINE_HTML">	                            &lt;div class="col-xs-12 col-md-6 m-b-15"&gt;</token>
+  </line>
+  <line no="207">
+    <token name="T_INLINE_HTML">	                                &lt;div class="row"&gt;</token>
+  </line>
+  <line no="208">
+    <token name="T_INLINE_HTML">	                                    &lt;div class="col-xs-12 col-md-11" style="margin-left: 3%;"&gt;</token>
+  </line>
+  <line no="209">
+    <token name="T_INLINE_HTML">	                                        &lt;span&gt;Style&lt;/span&gt;</token>
+  </line>
+  <line no="210">
+    <token name="T_INLINE_HTML">	                                        &lt;span class="rateit-value"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="211">
+    <token name="T_INLINE_HTML">	                                        &lt;div class="rateit pull-right" data-rateit-span-id="8" data-rateit-name="style-rating" data-rateit-min="0"</token>
+  </line>
+  <line no="212">
+    <token name="T_INLINE_HTML">	                                             data-rateit-max="5" data-rateit-step="1" data-rateit-resetable="0"</token>
+  </line>
+  <line no="213">
+    <token name="T_INLINE_HTML">	                                             data-rateit-value="{{old('style-rating')}}"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="214">
+    <token name="T_INLINE_HTML">	                                        &lt;input type="hidden" class="form-control" placeholder="" name="style-rating" min="1" max="5" step="0.5" autocomplete="off" value="{{old('style-rating')}}" &gt;</token>
+  </line>
+  <line no="215">
+    <token name="T_INLINE_HTML">	                                        &lt;fieldset&gt;</token>
+  </line>
+  <line no="216">
+    <token name="T_INLINE_HTML">	                                            &lt;small class="m-b-0"&gt;Comment&lt;/small&gt;</token>
+  </line>
+  <line no="217">
+    <token name="T_INLINE_HTML">	                                            &lt;input class="form-control comment" type="text" name="style-comment" autocomplete="off" value="{{old('style-comment')}}" /&gt;</token>
+  </line>
+  <line no="218">
+    <token name="T_INLINE_HTML">	                                        &lt;/fieldset&gt;</token>
+  </line>
+  <line no="219">
+    <token name="T_INLINE_HTML">	                                    &lt;/div&gt;</token>
+  </line>
+  <line no="220">
+    <token name="T_INLINE_HTML">	                                    &lt;div class="col-xs-0 col-md-1"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="221">
+    <token name="T_INLINE_HTML">	                                &lt;/div&gt;</token>
+  </line>
+  <line no="222">
+    <token name="T_INLINE_HTML">	                            &lt;/div&gt;</token>
+  </line>
+  <line no="223">
+    <token name="T_INLINE_HTML">	                            &lt;div class="col-xs-12 col-md-6 m-b-15"&gt;</token>
+  </line>
+  <line no="224">
+    <token name="T_INLINE_HTML">	                                &lt;div class="row"&gt;</token>
+  </line>
+  <line no="225">
+    <token name="T_INLINE_HTML">	                                    &lt;div class="col-xs-12 col-md-11 col-md-offset-1" style="margin-right: 3%;"&gt;</token>
+  </line>
+  <line no="226">
+    <token name="T_INLINE_HTML">	                                        &lt;span&gt;Creativity&lt;/span&gt;</token>
+  </line>
+  <line no="227">
+    <token name="T_INLINE_HTML">	                                        &lt;span class="rateit-value"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="228">
+    <token name="T_INLINE_HTML">	                                        &lt;div class="rateit pull-right" data-rateit-span-id="9" data-rateit-name="creativity-rating" data-rateit-min="0"</token>
+  </line>
+  <line no="229">
+    <token name="T_INLINE_HTML">	                                             data-rateit-max="5" data-rateit-step="1" data-rateit-resetable="0"</token>
+  </line>
+  <line no="230">
+    <token name="T_INLINE_HTML">	                                             data-rateit-value="{{old('creativity-rating')}}"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="231">
+    <token name="T_INLINE_HTML">	                                        &lt;input type="hidden" class="form-control" placeholder="" name="creativity-rating" min="1" max="5" step="0.5" autocomplete="off" value="{{old('creativity-rating')}}"&gt;</token>
+  </line>
+  <line no="232">
+    <token name="T_INLINE_HTML">	                                        &lt;fieldset&gt;</token>
+  </line>
+  <line no="233">
+    <token name="T_INLINE_HTML">	                                            &lt;small class="m-b-0"&gt;Comment&lt;/small&gt;</token>
+  </line>
+  <line no="234">
+    <token name="T_INLINE_HTML">	                                            &lt;input class="form-control comment" type="text" name="creativity-comment" autocomplete="off" value="{{old('creativity-comment')}}"/&gt;</token>
+  </line>
+  <line no="235">
+    <token name="T_INLINE_HTML">	                                        &lt;/fieldset&gt;</token>
+  </line>
+  <line no="236">
+    <token name="T_INLINE_HTML">	                                    &lt;/div&gt;</token>
+  </line>
+  <line no="237">
+    <token name="T_INLINE_HTML">	                                &lt;/div&gt;</token>
+  </line>
+  <line no="238">
+    <token name="T_INLINE_HTML">	                            &lt;/div&gt;</token>
+  </line>
+  <line no="239">
+    <token name="T_INLINE_HTML">	                        &lt;/div&gt;</token>
+  </line>
+  <line no="240">
+    <token name="T_INLINE_HTML">	                    &lt;/div&gt;</token>
+  </line>
+  <line no="241"/>
+  <line no="242">
+    <token name="T_INLINE_HTML">	                    &lt;div class="col-xs-12 col-md-3 m-b-15"&gt;</token>
+  </line>
+  <line no="243">
+    <token name="T_INLINE_HTML">	                        &lt;div class="row"&gt;</token>
+  </line>
+  <line no="244"/>
+  <line no="245">
+    <token name="T_INLINE_HTML">	                            &lt;div class="col-xs-12 col-md-11 col-md-offset-1"&gt;</token>
+  </line>
+  <line no="246">
+    <token name="T_INLINE_HTML">	                                &lt;span&gt;Interpretation&lt;/span&gt;</token>
+  </line>
+  <line no="247">
+    <token name="T_INLINE_HTML">	                                &lt;span class="rateit-value"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="248">
+    <token name="T_INLINE_HTML">	                                &lt;div class="rateit pull-right" data-rateit-span-id="10" data-rateit-name="interpretation-rating" data-rateit-min="0"</token>
+  </line>
+  <line no="249">
+    <token name="T_INLINE_HTML">	                                     data-rateit-max="5" data-rateit-step="1" data-rateit-resetable="0"</token>
+  </line>
+  <line no="250">
+    <token name="T_INLINE_HTML">	                                     data-rateit-value="{{old('interpretation-rating')}}"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="251">
+    <token name="T_INLINE_HTML">	                                &lt;input type="hidden" class="form-control" placeholder="" name="interpretation-rating" value="{{old('interpretation-rating')}}"&gt;</token>
+  </line>
+  <line no="252">
+    <token name="T_INLINE_HTML">	                                &lt;fieldset&gt;</token>
+  </line>
+  <line no="253">
+    <token name="T_INLINE_HTML">	                                    &lt;small class="m-b-0"&gt;Comment&lt;/small&gt;</token>
+  </line>
+  <line no="254">
+    <token name="T_INLINE_HTML">	                                    &lt;input class="form-control comment" type="text" name="interpretation-comment" autocomplete="off" value="{{old('interpretation-comment')}}" /&gt;</token>
+  </line>
+  <line no="255">
+    <token name="T_INLINE_HTML">	                                &lt;/fieldset&gt;</token>
+  </line>
+  <line no="256">
+    <token name="T_INLINE_HTML">	                            &lt;/div&gt;</token>
+  </line>
+  <line no="257">
+    <token name="T_INLINE_HTML">	                        &lt;/div&gt;</token>
+  </line>
+  <line no="258">
+    <token name="T_INLINE_HTML">	                    &lt;/div&gt;</token>
+  </line>
+  <line no="259">
+    <token name="T_INLINE_HTML">	                    &lt;div class="col-xs-12"&gt;&lt;hr&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="260">
+    <token name="T_INLINE_HTML">	                &lt;/div&gt;</token>
+  </line>
+  <line no="261"/>
+  <line no="262">
+    <token name="T_INLINE_HTML">	                &lt;div class="col-md-12"&gt;</token>
+  </line>
+  <line no="263">
+    <token name="T_INLINE_HTML">	                    &lt;p class="text-center text-danger f-w-500"&gt;CHOREOGRAPHY&lt;/p&gt;</token>
+  </line>
+  <line no="264">
+    <token name="T_INLINE_HTML">	                    &lt;div class="col-xs-12 col-md-6 m-b-15"&gt;</token>
+  </line>
+  <line no="265">
+    <token name="T_INLINE_HTML">	                        &lt;div class="row"&gt;</token>
+  </line>
+  <line no="266">
+    <token name="T_INLINE_HTML">	                            &lt;div class="col-xs-12 col-md-6 col-md-offset-4"&gt;</token>
+  </line>
+  <line no="267">
+    <token name="T_INLINE_HTML">	                                &lt;div class="row"&gt;</token>
+  </line>
+  <line no="268">
+    <token name="T_INLINE_HTML">	                                    &lt;div class="col-xs-12 col-md-11 col-md-offset-1"&gt;</token>
+  </line>
+  <line no="269">
+    <token name="T_INLINE_HTML">	                                        &lt;span&gt;Formation&lt;/span&gt;</token>
+  </line>
+  <line no="270">
+    <token name="T_INLINE_HTML">	                                        &lt;span class="rateit-value"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="271">
+    <token name="T_INLINE_HTML">	                                        &lt;div class="rateit pull-right" data-rateit-span-id="11" data-rateit-name="formation-rating" data-rateit-min="0"</token>
+  </line>
+  <line no="272">
+    <token name="T_INLINE_HTML">	                                             data-rateit-max="5" data-rateit-step="1" data-rateit-resetable="0"</token>
+  </line>
+  <line no="273">
+    <token name="T_INLINE_HTML">	                                             data-rateit-value="{{old('formation-rating')}}"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="274">
+    <token name="T_INLINE_HTML">	                                        &lt;input type="hidden" class="form-control" placeholder="" name="formation-rating" min="1" max="5" step="0.5" autocomplete="off" value="{{old('formation-rating')}}"&gt;</token>
+  </line>
+  <line no="275">
+    <token name="T_INLINE_HTML">	                                        &lt;fieldset&gt;</token>
+  </line>
+  <line no="276">
+    <token name="T_INLINE_HTML">	                                            &lt;small class="m-b-0"&gt;Comment&lt;/small&gt;</token>
+  </line>
+  <line no="277">
+    <token name="T_INLINE_HTML">	                                            &lt;input class="form-control comment" type="text" name="formation-comment" autocomplete="off" value="{{old('formation-comment')}}" /&gt;</token>
+  </line>
+  <line no="278">
+    <token name="T_INLINE_HTML">	                                        &lt;/fieldset&gt;</token>
+  </line>
+  <line no="279">
+    <token name="T_INLINE_HTML">	                                    &lt;/div&gt;</token>
+  </line>
+  <line no="280">
+    <token name="T_INLINE_HTML">	                                &lt;/div&gt;</token>
+  </line>
+  <line no="281">
+    <token name="T_INLINE_HTML">	                            &lt;/div&gt;</token>
+  </line>
+  <line no="282">
+    <token name="T_INLINE_HTML">	                        &lt;/div&gt;</token>
+  </line>
+  <line no="283">
+    <token name="T_INLINE_HTML">	                    &lt;/div&gt;</token>
+  </line>
+  <line no="284">
+    <token name="T_INLINE_HTML">	                    &lt;div class="col-xs-12 col-md-6 m-b-15"&gt;</token>
+  </line>
+  <line no="285">
+    <token name="T_INLINE_HTML">	                        &lt;div class="row"&gt;</token>
+  </line>
+  <line no="286">
+    <token name="T_INLINE_HTML">	                            &lt;div class="col-xs-0 col-md-2"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="287">
+    <token name="T_INLINE_HTML">	                            &lt;div class="col-xs-12 col-md-6"&gt;</token>
+  </line>
+  <line no="288">
+    <token name="T_INLINE_HTML">	                                &lt;div class="row"&gt;</token>
+  </line>
+  <line no="289">
+    <token name="T_INLINE_HTML">	                                    &lt;div class="col-xs-12 col-md-11"&gt;</token>
+  </line>
+  <line no="290">
+    <token name="T_INLINE_HTML">	                                        &lt;span&gt;Artistry&lt;/span&gt;</token>
+  </line>
+  <line no="291">
+    <token name="T_INLINE_HTML">	                                        &lt;span class="rateit-value"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="292">
+    <token name="T_INLINE_HTML">	                                        &lt;div class="rateit pull-right" data-rateit-span-id="12" data-rateit-name="artisty-rating" data-rateit-min="0"</token>
+  </line>
+  <line no="293">
+    <token name="T_INLINE_HTML">	                                             data-rateit-max="5" data-rateit-step="1" data-rateit-resetable="0"</token>
+  </line>
+  <line no="294">
+    <token name="T_INLINE_HTML">	                                             data-rateit-value="{{old('artisty-rating')}}"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="295">
+    <token name="T_INLINE_HTML">	                                        &lt;input type="hidden" class="form-control" placeholder="" name="artisty-rating" min="1" max="5" step="0.5" autocomplete="off" value="{{old('artisty-rating')}}"&gt;</token>
+  </line>
+  <line no="296">
+    <token name="T_INLINE_HTML">	                                        &lt;fieldset&gt;</token>
+  </line>
+  <line no="297">
+    <token name="T_INLINE_HTML">	                                            &lt;small class="m-b-0"&gt;Comment&lt;/small&gt;</token>
+  </line>
+  <line no="298">
+    <token name="T_INLINE_HTML">	                                            &lt;input class="form-control comment" type="text" name="artisty-comment" autocomplete="off" value="{{old('artisty-comment')}}"/&gt;</token>
+  </line>
+  <line no="299">
+    <token name="T_INLINE_HTML">	                                        &lt;/fieldset&gt;</token>
+  </line>
+  <line no="300">
+    <token name="T_INLINE_HTML">	                                    &lt;/div&gt;</token>
+  </line>
+  <line no="301">
+    <token name="T_INLINE_HTML">	                                    &lt;div class="col-xs-12 col-md-1"&gt;</token>
+  </line>
+  <line no="302">
+    <token name="T_INLINE_HTML">	                                    &lt;/div&gt;</token>
+  </line>
+  <line no="303">
+    <token name="T_INLINE_HTML">	                                &lt;/div&gt;</token>
+  </line>
+  <line no="304">
+    <token name="T_INLINE_HTML">	                            &lt;/div&gt;</token>
+  </line>
+  <line no="305">
+    <token name="T_INLINE_HTML">	                            &lt;div class="col-xs-0 col-md-4"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="306">
+    <token name="T_INLINE_HTML">	                        &lt;/div&gt;</token>
+  </line>
+  <line no="307">
+    <token name="T_INLINE_HTML">	                    &lt;/div&gt;</token>
+  </line>
+  <line no="308"/>
+  <line no="309">
+    <token name="T_INLINE_HTML">	                &lt;/div&gt;</token>
+  </line>
+  <line no="310">
+    <token name="T_INLINE_HTML">	                &lt;div class="col-md-12"&gt;</token>
+  </line>
+  <line no="311">
+    <token name="T_INLINE_HTML">                        &lt;div class="right-box "&gt;</token>
+  </line>
+  <line no="312">
+    <token name="T_INLINE_HTML">                        	&lt;br /&gt;</token>
+  </line>
+  <line no="313">
+    <token name="T_INLINE_HTML">                            &lt;label class="font-weight-bold"&gt;Summary of Performance Video&lt;/label&gt;&lt;br/&gt;</token>
+  </line>
+  <line no="314">
+    <token name="T_INLINE_HTML">                            &lt;textarea name="feedback_summary" class="summernote"&gt;{{old('feedback_summary')}}&lt;/textarea&gt;</token>
+  </line>
+  <line no="315">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;       </token>
+  </line>
+  <line no="316">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="317">
+    <token name="T_INLINE_HTML">                    &lt;div class="col-md-12"&gt;</token>
+  </line>
+  <line no="318">
+    <token name="T_INLINE_HTML">                        &lt;div class="right-box "&gt;&lt;br /&gt;</token>
+  </line>
+  <line no="319">
+    <token name="T_INLINE_HTML">                            &lt;label class="font-weight-bold"&gt;Additional Tips&lt;/label&gt;&lt;br/&gt;</token>
+  </line>
+  <line no="320">
+    <token name="T_INLINE_HTML">                            &lt;textarea name="additional_tips" class="summernote"&gt;{{old('additional_tips')}}&lt;/textarea&gt;</token>
+  </line>
+  <line no="321">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;       </token>
+  </line>
+  <line no="322">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt; </token>
+  </line>
+  <line no="323">
+    <token name="T_INLINE_HTML">	            &lt;/div&gt;</token>
+  </line>
+  <line no="324">
+    <token name="T_INLINE_HTML">		        &lt;div class="form-row mt-5"&gt;</token>
+  </line>
+  <line no="325">
+    <token name="T_INLINE_HTML">                	&lt;div class="form-group"&gt;</token>
+  </line>
+  <line no="326">
+    <token name="T_INLINE_HTML">                		&lt;div class="col-md-12"&gt;</token>
+  </line>
+  <line no="327">
+    <token name="T_INLINE_HTML">                			&lt;input type="submit" name="audtion" value="Add Review" class="btn btn-danger" /&gt;</token>
+  </line>
+  <line no="328">
+    <token name="T_INLINE_HTML">                		&lt;/div&gt;</token>
+  </line>
+  <line no="329">
+    <token name="T_INLINE_HTML">                	&lt;/div&gt;</token>
+  </line>
+  <line no="330">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="331">
+    <token name="T_INLINE_HTML">		    &lt;/form&gt;</token>
+  </line>
+  <line no="332">
+    <token name="T_INLINE_HTML">	    &lt;/div&gt;</token>
+  </line>
+  <line no="333">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="334">
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+  <line no="335">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="336"/>
+  <line no="337">
+    <token name="T_INLINE_HTML">@section('js')</token>
+  </line>
+  <line no="338">
+    <token name="T_INLINE_HTML">&lt;script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="339">
+    <token name="T_INLINE_HTML">&lt;script type="text/javascript"&gt;</token>
+  </line>
+  <line no="340">
+    <token name="T_INLINE_HTML">	$(document).ready(function() {</token>
+  </line>
+  <line no="341">
+    <token name="T_INLINE_HTML">  		$('.summernote').summernote({</token>
+  </line>
+  <line no="342">
+    <token name="T_INLINE_HTML">        placeholder: '',</token>
+  </line>
+  <line no="343">
+    <token name="T_INLINE_HTML">        tabsize: 2,</token>
+  </line>
+  <line no="344">
+    <token name="T_INLINE_HTML">        height: 120,</token>
+  </line>
+  <line no="345">
+    <token name="T_INLINE_HTML">        toolbar: [</token>
+  </line>
+  <line no="346">
+    <token name="T_INLINE_HTML">          ['style', ['style']],</token>
+  </line>
+  <line no="347">
+    <token name="T_INLINE_HTML">          ['font', ['bold', 'underline', 'clear']],</token>
+  </line>
+  <line no="348">
+    <token name="T_INLINE_HTML">          ['color', ['color']],</token>
+  </line>
+  <line no="349">
+    <token name="T_INLINE_HTML">          ['para', ['ul', 'ol', 'paragraph']],</token>
+  </line>
+  <line no="350">
+    <token name="T_INLINE_HTML">          ['table', ['table']],</token>
+  </line>
+  <line no="351">
+    <token name="T_INLINE_HTML">          ['insert', ['link']],</token>
+  </line>
+  <line no="352">
+    <token name="T_INLINE_HTML">          ['view', ['fullscreen', 'codeview', 'help']]</token>
+  </line>
+  <line no="353">
+    <token name="T_INLINE_HTML">        ]</token>
+  </line>
+  <line no="354">
+    <token name="T_INLINE_HTML">      });</token>
+  </line>
+  <line no="355">
+    <token name="T_INLINE_HTML">  		var dateformat = 'yyyy-mm-dd';</token>
+  </line>
+  <line no="356"/>
+  <line no="357">
+    <token name="T_INLINE_HTML">        $('.hasDatepicker').datepicker({</token>
+  </line>
+  <line no="358">
+    <token name="T_INLINE_HTML">          format: dateformat,</token>
+  </line>
+  <line no="359">
+    <token name="T_INLINE_HTML">          autoclose: true</token>
+  </line>
+  <line no="360">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="361">
+    <token name="T_INLINE_HTML">   	$(".rateit").bind('rated', function (event, value) {</token>
+  </line>
+  <line no="362">
+    <token name="T_INLINE_HTML">            var rate = $(this);</token>
+  </line>
+  <line no="363">
+    <token name="T_INLINE_HTML">            /*insert star rating value*/</token>
+  </line>
+  <line no="364">
+    <token name="T_INLINE_HTML">            rate.closest('.row').find('.rateit-value').html(value.toFixed(1));</token>
+  </line>
+  <line no="365">
+    <token name="T_INLINE_HTML">            if(value === null){</token>
+  </line>
+  <line no="366">
+    <token name="T_INLINE_HTML">                value = 0;</token>
+  </line>
+  <line no="367">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="368">
+    <token name="T_INLINE_HTML">            rate.attr("data-rateit-value", value);</token>
+  </line>
+  <line no="369">
+    <token name="T_INLINE_HTML">            var name = rate.attr("data-rateit-name");</token>
+  </line>
+  <line no="370">
+    <token name="T_INLINE_HTML">            //ratings[name] = value;</token>
+  </line>
+  <line no="371">
+    <token name="T_INLINE_HTML">            console.log(value);</token>
+  </line>
+  <line no="372">
+    <token name="T_INLINE_HTML">            console.log(name);</token>
+  </line>
+  <line no="373">
+    <token name="T_INLINE_HTML">            $('input[name="'+name+'"]').val(value);</token>
+  </line>
+  <line no="374">
+    <token name="T_INLINE_HTML">//            $('#rate_' + rate.attr("data-rateit-span-id")).text(value);</token>
+  </line>
+  <line no="375">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="376">
+    <token name="T_INLINE_HTML">   </token>
+  </line>
+  <line no="377">
+    <token name="T_INLINE_HTML">	});</token>
+  </line>
+  <line no="378">
+    <token name="T_INLINE_HTML">&lt;/script&gt;</token>
+  </line>
+  <line no="379">
+    <token name="T_INLINE_HTML"> &lt;script src="/assets/js/rateit/jquery.rateit.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="380">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+</source>

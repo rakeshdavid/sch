@@ -1,0 +1,451 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views/layouts" file="user.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views/layouts/user.blade.php" size="8535" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="f47b3abdae96bc8627c2d2d94a4a1ceb785dff8a" relative="resources/views/layouts/user.blade.php"/>
+  <line no="1"/>
+  <line no="2">
+    <token name="T_INLINE_HTML">&lt;!doctype html&gt;</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">&lt;html lang="en"&gt;</token>
+  </line>
+  <line no="4"/>
+  <line no="5">
+    <token name="T_INLINE_HTML">&lt;head&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">   &lt;!-- Google Tag Manager --&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">   &lt;script&gt;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">   j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">   })(window,document,'script','dataLayer','GTM-W3L9899');&lt;/script&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">   &lt;!-- End Google Tag Manager --&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">    &lt;!-- Required meta tags --&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">    &lt;meta charset="utf-8"&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">    &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">    &lt;title&gt;Showcase Hub&lt;/title&gt;</token>
+  </line>
+  <line no="17"/>
+  <line no="18">
+    <token name="T_INLINE_HTML">    &lt;!-- Bootstrap CSS --&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="/platform/css/font-awesome.css"&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="/platform/css/bootstrap.min.css"&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="/platform/css/custom.css?v=@php echo date('Y-m-d-h-i-s');@endphp"&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="/platform/css/bootstrap-tagsinput.css"&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="/platform/css/bootstrap-select.min.css"&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">    </token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="/platform/css/addons.css"&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="/platform/css/newcss.css?v=@php echo date('Y-m-d-h-i-s');@endphp"&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">    &lt;link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,700&amp;display=swap" rel="stylesheet"&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">    &lt;style type="text/css"&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">        .alert.alert-success {</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">            background-color: #e7133e;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">            border-color: #e7133e;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">            color: #fff;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">        .alert.alert-success p{</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">            margin-bottom: 0;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">    &lt;/style&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">    @yield('css')</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">&lt;/head&gt;</token>
+  </line>
+  <line no="40"/>
+  <line no="41">
+    <token name="T_INLINE_HTML">&lt;body&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">&lt;!-- Google Tag Manager (noscript) --&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">&lt;noscript&gt;&lt;iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3L9899"</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">   height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;&lt;/noscript&gt;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">   &lt;!-- End Google Tag Manager (noscript) --&gt;</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">   </token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">    &lt;section class="hub_content-wrapper {{ strpos(url()-&gt;current(), '/my-reviews') !== false ? 'fix-header-review' : '' }} {{ strpos(url()-&gt;current(), '/video') !== false ? 'fix-header-video' : '' }}"&gt;</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">        &lt;header class="header"&gt;</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">            &lt;div class="container-fluid"&gt;</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">                &lt;div class="header-content"&gt;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">                    &lt;div class="logo header-logo"&gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">                        &lt;a href="#"&gt;&lt;img src="/platform/img/logo.png" alt="" class="img-fluid"&gt;&lt;/a&gt;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">                   </token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">                            &lt;div id="nav-icon3"&gt;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">                              &lt;span&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">                              &lt;span&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">                              &lt;span&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">                              &lt;span&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">                       </token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">                    &lt;div class="hub-admin"&gt;</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">                        &lt;ul class="user-dropdown"&gt;</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">                            &lt;li class="user-avatar"&gt;</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">                                &lt;a href="/profile"&gt;&lt;span&gt;{{Auth::user()-&gt;first_name}}&lt;/span&gt;</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">                                @if(Auth::user()-&gt;avatar !='')</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">                                        @if(Str::startsWith(Auth::user()-&gt;avatar,'http'))</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">                                           &lt;div class="coach-image rounded ml-3" style="background-image:url('{{ Auth::user()-&gt;avatar }}');width:42px;height:42px;background-position: center center;background-repeat: no-repeat;background-size: cover;"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">                                        @else</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">                                            &lt;div class="coach-image rounded ml-3" style="background-image:url('@if( ! Str::startsWith(Auth::user()-&gt;avatar,'/'))/@endif{{ Auth::user()-&gt;avatar }}');width:42px;height:42px;background-position: center center;background-repeat: no-repeat;background-size: cover;"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">                                        @endif</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">                                    @else</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">                                        &lt;div class="coach-image rounded ml-3" style="background-image:url('/images/default_avatar_new.png');width:42px;height:42px;background-position: center center;background-repeat: no-repeat;background-size: cover;"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">                                        </token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">                                    @endif</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">                                </token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">                                &lt;/a&gt;</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">                            &lt;li&gt;</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">                                &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;&lt;span class="setting"&gt;&lt;i class="fa fa-cog"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/a&gt;</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">                                &lt;div class="dropdown-menu"&gt;</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">                                    &lt;a class="dropdown-item" href="{{ url('change-password') }}"&gt;Change Password&lt;/a&gt;</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">                                    &lt;div class="faq"&gt;</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">                                        &lt;a href="#" class="dropdown-item"&gt; Help&lt;/a&gt;</token>
+  </line>
+  <line no="85">
+    <token name="T_INLINE_HTML">                                        &lt;a href="https://www.showcasehub.com/faqs.html" class="dropdown-item" target="_blank"&gt;&lt;span&gt; FAQs&lt;/span&gt;&lt;/a&gt;</token>
+  </line>
+  <line no="86">
+    <token name="T_INLINE_HTML">                                        &lt;a href="https://www.showcasehub.com/terms.html" class="dropdown-item" target="_blank"&gt;&lt;span&gt; Terms &amp; Conditions&lt;/span&gt;&lt;/a&gt;</token>
+  </line>
+  <line no="87">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">                                    &lt;a class="dropdown-item" href="/auth/logout"&gt;Log Out&lt;/a&gt;</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="90">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="91">
+    <token name="T_INLINE_HTML">                        &lt;/ul&gt;</token>
+  </line>
+  <line no="92">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="93">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="94">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="95">
+    <token name="T_INLINE_HTML">        &lt;/header&gt;</token>
+  </line>
+  <line no="96">
+    <token name="T_INLINE_HTML">        &lt;div class="hub-sidebar"&gt;</token>
+  </line>
+  <line no="97">
+    <token name="T_INLINE_HTML">            &lt;div class="hub_nav_menu"&gt;</token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">                &lt;div class="logo"&gt;</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">                    &lt;a href="#"&gt;&lt;img src="/platform/img/logo.png" alt="" class="img-fluid"&gt;&lt;/a&gt;</token>
+  </line>
+  <line no="100">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="101">
+    <token name="T_INLINE_HTML">                &lt;a href="{{ url('upload-new-video') }}" class="btn btn-danger upload-video"&gt;UPLOAD A NEW VIDEO&lt;/a&gt;</token>
+  </line>
+  <line no="102">
+    <token name="T_INLINE_HTML">                &lt;ul class="navbar-nav"&gt;</token>
+  </line>
+  <line no="103">
+    <token name="T_INLINE_HTML">                    &lt;li class="nav-item {{ Request::segment(1) =='video' ? 'active' : '' }}"&gt;</token>
+  </line>
+  <line no="104">
+    <token name="T_INLINE_HTML">                        &lt;a class="nav-link" href="{{ url('video') }}"&gt;My Videos&lt;/a&gt;</token>
+  </line>
+  <line no="105">
+    <token name="T_INLINE_HTML">                    &lt;/li&gt;</token>
+  </line>
+  <line no="106">
+    <token name="T_INLINE_HTML">                    &lt;li class="nav-item {{ Request::segment(1) =='my-reviews' ? 'active' : '' }}"&gt;</token>
+  </line>
+  <line no="107">
+    <token name="T_INLINE_HTML">                        &lt;a class="nav-link" href="{{ url('my-reviews') }}"&gt;My Reviews&lt;/a&gt;</token>
+  </line>
+  <line no="108">
+    <token name="T_INLINE_HTML">                    &lt;/li&gt;</token>
+  </line>
+  <line no="109">
+    <token name="T_INLINE_HTML">                    &lt;li class="nav-item {{ Request::segment(1) =='coaches' ? 'active' : '' }}"&gt;</token>
+  </line>
+  <line no="110">
+    <token name="T_INLINE_HTML">                        &lt;a class="nav-link" href="{{ url('coaches') }}"&gt;Coaches&lt;/a&gt;</token>
+  </line>
+  <line no="111">
+    <token name="T_INLINE_HTML">                    &lt;/li&gt;</token>
+  </line>
+  <line no="112">
+    <token name="T_INLINE_HTML">                    &lt;li class="nav-item {{ Request::segment(1) =='auditions' ? 'active' : '' }} {{ Request::segment(1) =='filter-auditions' ? 'active' : '' }}"&gt;</token>
+  </line>
+  <line no="113">
+    <token name="T_INLINE_HTML">                        &lt;a class="nav-link" href="{{ url('auditions') }}"&gt;Auditions&lt;/a&gt;</token>
+  </line>
+  <line no="114">
+    <token name="T_INLINE_HTML">                    &lt;/li&gt;</token>
+  </line>
+  <line no="115">
+    <token name="T_INLINE_HTML">                    &lt;li class="nav-item {{ Request::segment(1) =='challenges' ? 'active' : '' }}"&gt;</token>
+  </line>
+  <line no="116">
+    <token name="T_INLINE_HTML">                        &lt;a class="nav-link" href="{{ url('challenges') }}"&gt;Challenges&lt;/a&gt;</token>
+  </line>
+  <line no="117">
+    <token name="T_INLINE_HTML">                    &lt;/li&gt;</token>
+  </line>
+  <line no="118">
+    <token name="T_INLINE_HTML">                &lt;/ul&gt;</token>
+  </line>
+  <line no="119">
+    <token name="T_INLINE_HTML">                &lt;div class="bottom-menu-wrap"&gt;</token>
+  </line>
+  <line no="120">
+    <token name="T_INLINE_HTML">                    &lt;a href="https://itunes.apple.com/us/app/showcasehub-dance/id1418444744?ls=1&amp;mt=8" class="app-icon" target="_blank"&gt;&lt;img src="/platform/img/app-download.png" class="img-fluid"&gt;&lt;/a&gt;</token>
+  </line>
+  <line no="121">
+    <token name="T_INLINE_HTML">                    &lt;ul class="bottom-menus"&gt;</token>
+  </line>
+  <line no="122">
+    <token name="T_INLINE_HTML">                        &lt;li&gt;&lt;a href="https://www.showcasehub.com/about-us.html" target="_blank"&gt;About Us&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="123">
+    <token name="T_INLINE_HTML">                        &lt;li&gt;&lt;a href="https://www.showcasehub.com/support.html" target="_blank"&gt;Support&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="124">
+    <token name="T_INLINE_HTML">                        &lt;li&gt;&lt;a href="https://www.showcasehub.com/legal.html" target="_blank"&gt;Legal&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="125">
+    <token name="T_INLINE_HTML">                    &lt;/ul&gt;</token>
+  </line>
+  <line no="126">
+    <token name="T_INLINE_HTML">                    &lt;span class="version"&gt;Version 1.1&lt;/span&gt;</token>
+  </line>
+  <line no="127">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="128">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="129">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="130">
+    <token name="T_INLINE_HTML">          @yield('content')</token>
+  </line>
+  <line no="131">
+    <token name="T_INLINE_HTML">        &lt;!-- &lt;div class="main-content"&gt;</token>
+  </line>
+  <line no="132">
+    <token name="T_INLINE_HTML">            &lt;div class="container-fluid"&gt;</token>
+  </line>
+  <line no="133">
+    <token name="T_INLINE_HTML">              </token>
+  </line>
+  <line no="134">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="135">
+    <token name="T_INLINE_HTML">        &lt;/div&gt; --&gt;</token>
+  </line>
+  <line no="136">
+    <token name="T_INLINE_HTML">    &lt;/section&gt;</token>
+  </line>
+  <line no="137">
+    <token name="T_INLINE_HTML">    @yield('modal-right')</token>
+  </line>
+  <line no="138"/>
+  <line no="139">
+    <token name="T_INLINE_HTML"> </token>
+  </line>
+  <line no="140">
+    <token name="T_INLINE_HTML">    &lt;!-- Optional JavaScript --&gt;</token>
+  </line>
+  <line no="141">
+    <token name="T_INLINE_HTML">    &lt;script src="/platform/js/jquery.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="142">
+    <token name="T_INLINE_HTML">    &lt;script src="/platform/js/popper.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="143">
+    <token name="T_INLINE_HTML">    &lt;script src="/platform/js/bootstrap.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="144">
+    <token name="T_INLINE_HTML">    &lt;script src="/platform/js/bootstrap-tagsinput.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="145">
+    <token name="T_INLINE_HTML">    &lt;script src="/platform/js/bootstrap-select.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="146">
+    <token name="T_INLINE_HTML">    &lt;script src="/platform/js/bootstrap-datepicker.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="147">
+    <token name="T_INLINE_HTML">    &lt;script src="/platform/js/fontawesome-all.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="148">
+    <token name="T_INLINE_HTML">    </token>
+  </line>
+  <line no="149">
+    <token name="T_INLINE_HTML">    &lt;script src="/platform/js/custom.js?v={{ date('Y-m-d-h-i-s') }}"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="150">
+    <token name="T_INLINE_HTML">    @yield('js')</token>
+  </line>
+  <line no="151">
+    <token name="T_INLINE_HTML">&lt;/body&gt;</token>
+  </line>
+  <line no="152"/>
+  <line no="153">
+    <token name="T_INLINE_HTML">&lt;/html&gt;</token>
+  </line>
+</source>

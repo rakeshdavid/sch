@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-20-05/customer" file="searched-coach-list.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-20-05/customer/searched-coach-list.blade.php" size="1373" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="010837be4024d98d9533796096125c4add766db3" relative="resources/views-20-05/customer/searched-coach-list.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layouts.app')</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">	&lt;div class="row"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">		@foreach($coaches as $coach)</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">			&lt;div class="col-xs-12 col-lg-4"&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">				&lt;div class="user-widget-10"&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">					&lt;div class="row"&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">						&lt;div class="col-xs-12"&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">							&lt;a class="media-left media-middle"&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">								&lt;img src="{{ $coach-&gt;avatar }}" class="media-object img-circle h-100 w-100"&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">							&lt;/a&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">							&lt;div class="media-body"&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">								&lt;div class="p-10 m-t-5"&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">									&lt;h5 class="text-bold color-white"&gt;{{ $coach-&gt;first_name }} {{ $coach-&gt;last_name }}&lt;/h5&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">									&lt;p class="m-b-0"&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">										&lt;span class="color-white"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">									&lt;/p&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">								&lt;/div&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">								&lt;div class="p-10 p-t-15"&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">									&lt;p&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">										&lt;span&gt;Genre: &lt;/span&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">										&lt;span class="color-dark"&gt;{{ $coach-&gt;genre }}&lt;/span&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">									&lt;/p&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">									&lt;p&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">										&lt;span&gt;Level: &lt;/span&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">										&lt;span class="color-dark"&gt;{{ $coach-&gt;level }}&lt;/span&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">									&lt;/p&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">								&lt;/div&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">							&lt;/div&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">						&lt;/div&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">					&lt;/div&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">				&lt;/div&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">				&lt;div class="row m-0 p-0 p-b-20 bg-white"&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">					&lt;div class="col-xs-12"&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">						&lt;div class="centered"&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">							&lt;a href="/video/create" class="m-r-5 m-l-5 btn btn-success btn-rounded"&gt;Select this coach&lt;/a&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">							&lt;a href="/profile/{{ $coach-&gt;id }}" class="m-r-5 m-l-5 btn btn-danger btn-rounded"&gt;Profile&lt;/a&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">						&lt;/div&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">					&lt;/div&gt;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">				&lt;/div&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">			&lt;/div&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">		@endforeach</token>
+  </line>
+  <line no="44"/>
+  <line no="45">
+    <token name="T_INLINE_HTML">		{!! $coaches-&gt;links() !!}</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+</source>

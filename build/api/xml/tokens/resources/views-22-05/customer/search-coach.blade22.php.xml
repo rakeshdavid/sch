@@ -1,0 +1,686 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-22-05/customer" file="search-coach.blade22.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-22-05/customer/search-coach.blade22.php" size="10381" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="fa8e30a57b1374e34d0b8c756d5685e2e68c2362" relative="resources/views-22-05/customer/search-coach.blade22.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layouts.app')</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">@section('css')</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="/assets/css/select2.min.css"&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">    &lt;style type="text/css"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">        .unblured {</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">            -webkit-filter: blur(0);</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">            filter: blur(0);</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">            transition: .3s ease-in-out;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">        .blured {</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">            -webkit-filter: blur(3px) brightness(0.4);</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">            filter: blur(1px) brightness(0.4);</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">            transition: .3s ease-in-out;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">        .coach-avatar .select-coach {</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">            -webkit-filter: blur(0);</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">            filter: blur(0);</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">            transform:  translate(-50%, 30%);</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">            position:absolute;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">            top: 30%;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">            left: 50%;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">            display:none;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="24"/>
+  <line no="25">
+    <token name="T_INLINE_HTML">        .coach-avatar:hover .select-coach {</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">            -webkit-filter: blur(0);</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">            filter: blur(0);</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">            display: block;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="30"/>
+  <line no="31">
+    <token name="T_INLINE_HTML">    &lt;/style&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">    &lt;div class="container"&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">        &lt;div class="row"&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">            &lt;h1 class="m-b-40"&gt; Browse coaches &lt;/h1&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">            &lt;form class="form-horizontal" action="{{ route('customerActions-searchCoach') }}" method="post"&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">                {!! csrf_field() !!}</token>
+  </line>
+  <line no="39"/>
+  <line no="40">
+    <token name="T_INLINE_HTML">                &lt;fieldset class="form-group m-b-30"&gt;</token>
+  </line>
+  <line no="41"/>
+  <line no="42">
+    <token name="T_INLINE_HTML">                    {{--crunch--}}</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">                    {{--&lt;div class="col-xs-5"&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">                        &lt;h4 class="m-b-15"&gt;Select Type&lt;/h4&gt;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">                        &lt;select name="type" id="activity_type" class="form-control" autocomplete="off"&gt;</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">                            &lt;option&gt;&lt;/option&gt;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">                            @foreach($activity_types as $activity_type)</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">                                &lt;option value="{{$activity_type-&gt;id}}" {{$type_id == $activity_type-&gt;id ? 'selected' : ''}}&gt;</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">                                    {{$activity_type-&gt;name}}</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">                                &lt;/option&gt;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">                            @endforeach</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">                        &lt;/select&gt;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">                    &lt;div class="col-xs-1"&gt;&lt;/div&gt;--}}</token>
+  </line>
+  <line no="55"/>
+  <line no="56">
+    <token name="T_INLINE_HTML">                    &lt;div class="col-xs-6 col-md-6 col-lg-6 col-sm-12"&gt;</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">                        &lt;h4 class="m-b-15"&gt;Select Level:&lt;/h4&gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">                        &lt;div id="levels_block" class="c-inputs-stacked"&gt;</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">                            @foreach($performance_levels as $performance_level)</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">                                &lt;label class="c-input c-checkbox"&gt;</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">                                    &lt;input type="checkbox" value="{{$performance_level-&gt;id}}" autocomplete="off"</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">                                        {{ $levels_id ? (in_array($performance_level-&gt;id, $levels_id) ? 'checked' : '') : ''}}</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">                                        name="levels[]"&gt;</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">                                    &lt;span class="c-indicator c-indicator-warning"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">                                    &lt;span class="c-input-text"&gt;{{$performance_level-&gt;name}}&lt;/span&gt;</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">                                &lt;/label&gt;</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">                            @endforeach</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="70"/>
+  <line no="71">
+    <token name="T_INLINE_HTML">                    &lt;div class="col-xs-6" style="{!! count($genres) == 0 ? 'display: none' : '' !!}" id="genres_wrapper"&gt;</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">                        &lt;h4&gt;Select Genre/s:&lt;/h4&gt;</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">                        &lt;div class="c-inputs-stacked" id="genres_block"&gt;</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">                            @foreach($genres as $genre)</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">                                &lt;label class="c-input c-checkbox"&gt;</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">                                    &lt;input type="checkbox" name="genres[]" value="{{$genre-&gt;id}}" autocomplete="off"</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">                                        {{ in_array($genre-&gt;id, $genres_id ? $genres_id : []) ? 'checked' : ''}}&gt;</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">                                    &lt;span class="c-indicator c-indicator-warning"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">                                    &lt;span class="c-input-text"&gt; {{$genre-&gt;name}} &lt;/span&gt;</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">                                &lt;/label&gt;</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">                            @endforeach</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="83"/>
+  <line no="84">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="85">
+    <token name="T_INLINE_HTML">                &lt;/fieldset&gt;</token>
+  </line>
+  <line no="86"/>
+  <line no="87">
+    <token name="T_INLINE_HTML">                &lt;div class="col-xs-12"&gt;</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">                    &lt;button class="btn btn-warning" type="submit"&gt;</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">                        &lt;i class="btn-icon fa fa-search"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="90">
+    <token name="T_INLINE_HTML">                        Filter</token>
+  </line>
+  <line no="91">
+    <token name="T_INLINE_HTML">                    &lt;/button&gt;</token>
+  </line>
+  <line no="92">
+    <token name="T_INLINE_HTML">                    @if($filters)</token>
+  </line>
+  <line no="93">
+    <token name="T_INLINE_HTML">                        &lt;a href="{{url()-&gt;current()}}" class="btn btn-danger m-l-5"&gt;</token>
+  </line>
+  <line no="94">
+    <token name="T_INLINE_HTML">                            &lt;i class="btn-icon fa fa-remove"&gt;&lt;/i&gt;</token>
+  </line>
+  <line no="95">
+    <token name="T_INLINE_HTML">                            Clear filters</token>
+  </line>
+  <line no="96">
+    <token name="T_INLINE_HTML">                        &lt;/a&gt;</token>
+  </line>
+  <line no="97">
+    <token name="T_INLINE_HTML">                    @endif</token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">            &lt;/form&gt;</token>
+  </line>
+  <line no="100"/>
+  <line no="101">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="102">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="103">
+    <token name="T_INLINE_HTML">    &lt;hr&gt;</token>
+  </line>
+  <line no="104">
+    <token name="T_INLINE_HTML">    &lt;div class="row"&gt;</token>
+  </line>
+  <line no="105">
+    <token name="T_INLINE_HTML">        &lt;div class="container"&gt;</token>
+  </line>
+  <line no="106">
+    <token name="T_INLINE_HTML">            @if(count($coaches) == 0)</token>
+  </line>
+  <line no="107">
+    <token name="T_INLINE_HTML">                &lt;div class="col-xs-12 col-md-6 col-md-offset-3 m-t-10"&gt;</token>
+  </line>
+  <line no="108">
+    <token name="T_INLINE_HTML">                    &lt;h3 class="text-center"&gt;Sorry, no results found&lt;/h3&gt;</token>
+  </line>
+  <line no="109">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="110">
+    <token name="T_INLINE_HTML">            @endif</token>
+  </line>
+  <line no="111">
+    <token name="T_INLINE_HTML">            @foreach($coaches as $coach)</token>
+  </line>
+  <line no="112">
+    <token name="T_INLINE_HTML">                &lt;div class="col-xs-12 col-md-4"&gt;</token>
+  </line>
+  <line no="113">
+    <token name="T_INLINE_HTML">                    &lt;div class="row"&gt;</token>
+  </line>
+  <line no="114">
+    <token name="T_INLINE_HTML">                        &lt;div class="col-md-offset-1 col-md-10"&gt;</token>
+  </line>
+  <line no="115">
+    <token name="T_INLINE_HTML">                            &lt;div class="coach-avatar"&gt;</token>
+  </line>
+  <line no="116">
+    <token name="T_INLINE_HTML">                                &lt;div class="coach-photo-wrapper"&gt;</token>
+  </line>
+  <line no="117">
+    <token name="T_INLINE_HTML">                                    &lt;img src="{{ str_replace('picture?type=normal', 'picture?type=large', $coach-&gt;avatar) }}"</token>
+  </line>
+  <line no="118">
+    <token name="T_INLINE_HTML">                                         class="m-b-5 center-block" style="width: 250px;height: 320px"&gt;</token>
+  </line>
+  <line no="119">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="120">
+    <token name="T_INLINE_HTML">                                &lt;a class="btn btn-warning btn-outline btn-rounded select-coach"</token>
+  </line>
+  <line no="121">
+    <token name="T_INLINE_HTML">                                   href="{{ url('/profile/'.$coach-&gt;id) }}"&gt;</token>
+  </line>
+  <line no="122">
+    <token name="T_INLINE_HTML">                                    Coach profile</token>
+  </line>
+  <line no="123">
+    <token name="T_INLINE_HTML">                                &lt;/a&gt;</token>
+  </line>
+  <line no="124">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="125"/>
+  <line no="126"/>
+  <line no="127">
+    <token name="T_INLINE_HTML">                            &lt;div style="margin-right: 13px; margin-left: 13px"&gt;</token>
+  </line>
+  <line no="128">
+    <token name="T_INLINE_HTML">                            &lt;a class="f-s-18 text-danger" href="{{ url('/profile/'.$coach-&gt;id) }}" target="_blank"</token>
+  </line>
+  <line no="129">
+    <token name="T_INLINE_HTML">                               style="color: #D9534F !important;"&gt;</token>
+  </line>
+  <line no="130">
+    <token name="T_INLINE_HTML">                                {{ $coach-&gt;first_name }} {{$coach-&gt;last_name}}</token>
+  </line>
+  <line no="131">
+    <token name="T_INLINE_HTML">                            &lt;/a&gt;</token>
+  </line>
+  <line no="132">
+    <token name="T_INLINE_HTML">                            &lt;p class="f-s-18"&gt;${{$coach-&gt;price_summary ? $coach-&gt;price_summary : env('DEFAULT_SUMMARY_PRICE')}}</token>
+  </line>
+  <line no="133">
+    <token name="T_INLINE_HTML">                                &lt;span style="float: right"&gt;${{$coach-&gt;price_detailed ? $coach-&gt;price_detailed : env('DEFAULT_SUMMARY_DETAILED')}}&lt;/span&gt;&lt;/p&gt;</token>
+  </line>
+  <line no="134">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="135"/>
+  <line no="136"/>
+  <line no="137">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="138">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="139"/>
+  <line no="140">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="141">
+    <token name="T_INLINE_HTML">            @endforeach</token>
+  </line>
+  <line no="142">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="143">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="144">
+    <token name="T_INLINE_HTML">    @php</token>
+  </line>
+  <line no="145">
+    <token name="T_INLINE_HTML">        $genres_id_str = !is_null($genres_id) ? implode(',', $genres_id) : null;</token>
+  </line>
+  <line no="146">
+    <token name="T_INLINE_HTML">        $levels_id_str = !is_null($levels_id) ? implode(',', $levels_id) : null;</token>
+  </line>
+  <line no="147">
+    <token name="T_INLINE_HTML">    @endphp</token>
+  </line>
+  <line no="148">
+    <token name="T_INLINE_HTML">    &lt;nav class="container"&gt;</token>
+  </line>
+  <line no="149">
+    <token name="T_INLINE_HTML">        @include('pagination.default', ['paginator' =&gt; $coaches-&gt;appends(['type' =&gt; $type_id, 'genres' =&gt; $genres_id_str,</token>
+  </line>
+  <line no="150">
+    <token name="T_INLINE_HTML">            'levels' =&gt; $levels_id_str])])</token>
+  </line>
+  <line no="151">
+    <token name="T_INLINE_HTML">    &lt;/nav&gt;</token>
+  </line>
+  <line no="152">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="153"/>
+  <line no="154">
+    <token name="T_INLINE_HTML">@section('js')</token>
+  </line>
+  <line no="155">
+    <token name="T_INLINE_HTML">    &lt;script src="/assets/js/select2.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="156">
+    <token name="T_INLINE_HTML">    &lt;script type="text/javascript"&gt;</token>
+  </line>
+  <line no="157">
+    <token name="T_INLINE_HTML">        function genresArrayToTemplate(data) {</token>
+  </line>
+  <line no="158">
+    <token name="T_INLINE_HTML">            console.log(data);</token>
+  </line>
+  <line no="159">
+    <token name="T_INLINE_HTML">            if(!data) return '';</token>
+  </line>
+  <line no="160">
+    <token name="T_INLINE_HTML">            var template = '';</token>
+  </line>
+  <line no="161">
+    <token name="T_INLINE_HTML">            for(var i=0; i &lt; data.length; i++) {</token>
+  </line>
+  <line no="162">
+    <token name="T_INLINE_HTML">                template += '&lt;label class="c-input c-checkbox"&gt;\</token>
+  </line>
+  <line no="163">
+    <token name="T_INLINE_HTML">                             &lt;input type="checkbox" name="genres[]" value="' + data[i].id + '"\</token>
+  </line>
+  <line no="164">
+    <token name="T_INLINE_HTML">                             autocomplete="off"&gt;\</token>
+  </line>
+  <line no="165">
+    <token name="T_INLINE_HTML">                             &lt;span class="c-indicator c-indicator-warning"&gt;&lt;/span&gt;\</token>
+  </line>
+  <line no="166">
+    <token name="T_INLINE_HTML">                             &lt;span class="c-input-text"&gt;' + data[i].name + '&lt;/span&gt;\</token>
+  </line>
+  <line no="167">
+    <token name="T_INLINE_HTML">                             &lt;/label&gt;';</token>
+  </line>
+  <line no="168">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="169">
+    <token name="T_INLINE_HTML">            return template;</token>
+  </line>
+  <line no="170">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="171"/>
+  <line no="172">
+    <token name="T_INLINE_HTML">        $(function(){</token>
+  </line>
+  <line no="173"/>
+  <line no="174">
+    <token name="T_INLINE_HTML">            $(".coach-photo-wrapper").on("mouseenter", function () {</token>
+  </line>
+  <line no="175">
+    <token name="T_INLINE_HTML">                $(this).removeClass("unblured").addClass("blured");</token>
+  </line>
+  <line no="176">
+    <token name="T_INLINE_HTML">            }).on("mouseleave", function () {</token>
+  </line>
+  <line no="177">
+    <token name="T_INLINE_HTML">                var that = $(this);</token>
+  </line>
+  <line no="178">
+    <token name="T_INLINE_HTML">                setTimeout(function() {</token>
+  </line>
+  <line no="179">
+    <token name="T_INLINE_HTML">                    var buttons = that.nextAll("a");</token>
+  </line>
+  <line no="180">
+    <token name="T_INLINE_HTML">                    if(!that.next(".select-coach").hasClass('hovered') &amp;&amp;</token>
+  </line>
+  <line no="181">
+    <token name="T_INLINE_HTML">                            !that.next(".select-coach").next(".coach-profile").hasClass('hovered')) {</token>
+  </line>
+  <line no="182">
+    <token name="T_INLINE_HTML">                        that.removeClass("blured").addClass("unblured");</token>
+  </line>
+  <line no="183">
+    <token name="T_INLINE_HTML">                    }</token>
+  </line>
+  <line no="184">
+    <token name="T_INLINE_HTML">                }, 300);</token>
+  </line>
+  <line no="185">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="186"/>
+  <line no="187">
+    <token name="T_INLINE_HTML">            $(".select-coach").on("mouseenter", function() {</token>
+  </line>
+  <line no="188">
+    <token name="T_INLINE_HTML">                $(this).addClass("hovered");</token>
+  </line>
+  <line no="189">
+    <token name="T_INLINE_HTML">            }).on("mouseleave", function() {</token>
+  </line>
+  <line no="190">
+    <token name="T_INLINE_HTML">                $(this).removeClass("hovered");</token>
+  </line>
+  <line no="191">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="192">
+    <token name="T_INLINE_HTML">            $(".coach-profile").on("mouseenter", function() {</token>
+  </line>
+  <line no="193">
+    <token name="T_INLINE_HTML">                $(this).addClass("hovered");</token>
+  </line>
+  <line no="194">
+    <token name="T_INLINE_HTML">            }).on("mouseleave", function() {</token>
+  </line>
+  <line no="195">
+    <token name="T_INLINE_HTML">                $(this).removeClass("hovered");</token>
+  </line>
+  <line no="196">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="197"/>
+  <line no="198"/>
+  <line no="199">
+    <token name="T_INLINE_HTML">            /*$("#activity_type").select2({</token>
+  </line>
+  <line no="200">
+    <token name="T_INLINE_HTML">                placeholder: "List of types..."</token>
+  </line>
+  <line no="201">
+    <token name="T_INLINE_HTML">            }).on("change", function(e) {</token>
+  </line>
+  <line no="202">
+    <token name="T_INLINE_HTML">                $.ajax({</token>
+  </line>
+  <line no="203">
+    <token name="T_INLINE_HTML">                    type: "POST",</token>
+  </line>
+  <line no="204">
+    <token name="T_INLINE_HTML">                    url: "{{url('/ajax/get-genres')}}",</token>
+  </line>
+  <line no="205">
+    <token name="T_INLINE_HTML">                    data: {"activity": e.currentTarget.value, "_token": "{{csrf_token()}}"},</token>
+  </line>
+  <line no="206">
+    <token name="T_INLINE_HTML">                    dataType: "json",</token>
+  </line>
+  <line no="207">
+    <token name="T_INLINE_HTML">                    success: function(result) {</token>
+  </line>
+  <line no="208">
+    <token name="T_INLINE_HTML">                        if(result.length &gt; 0) {</token>
+  </line>
+  <line no="209">
+    <token name="T_INLINE_HTML">                            $("#genres_wrapper").show();</token>
+  </line>
+  <line no="210">
+    <token name="T_INLINE_HTML">                            $("#genres_block").html(genresArrayToTemplate(result));</token>
+  </line>
+  <line no="211">
+    <token name="T_INLINE_HTML">                        } else {</token>
+  </line>
+  <line no="212">
+    <token name="T_INLINE_HTML">                            $("#genres_wrapper").hide();</token>
+  </line>
+  <line no="213">
+    <token name="T_INLINE_HTML">                            $("#genres_block").html("");</token>
+  </line>
+  <line no="214">
+    <token name="T_INLINE_HTML">                        }</token>
+  </line>
+  <line no="215">
+    <token name="T_INLINE_HTML">                    }</token>
+  </line>
+  <line no="216">
+    <token name="T_INLINE_HTML">                });</token>
+  </line>
+  <line no="217">
+    <token name="T_INLINE_HTML">            });*/</token>
+  </line>
+  <line no="218"/>
+  <line no="219"/>
+  <line no="220">
+    <token name="T_INLINE_HTML">            @if(!$filters)</token>
+  </line>
+  <line no="221">
+    <token name="T_INLINE_HTML">            $(document).ready(function () {</token>
+  </line>
+  <line no="222">
+    <token name="T_INLINE_HTML">                $.ajax({</token>
+  </line>
+  <line no="223">
+    <token name="T_INLINE_HTML">                    type: "POST",</token>
+  </line>
+  <line no="224">
+    <token name="T_INLINE_HTML">                    url: "{{url('/ajax/get-genres')}}",</token>
+  </line>
+  <line no="225">
+    <token name="T_INLINE_HTML">                    data: {"activity": 1, "_token": "{{csrf_token()}}"},</token>
+  </line>
+  <line no="226">
+    <token name="T_INLINE_HTML">                    dataType: "json",</token>
+  </line>
+  <line no="227">
+    <token name="T_INLINE_HTML">                    success: function(result) {</token>
+  </line>
+  <line no="228">
+    <token name="T_INLINE_HTML">                        if(result.length &gt; 0) {</token>
+  </line>
+  <line no="229">
+    <token name="T_INLINE_HTML">                            $("#genres_wrapper").show();</token>
+  </line>
+  <line no="230">
+    <token name="T_INLINE_HTML">                            $("#genres_block").html(genresArrayToTemplate(result));</token>
+  </line>
+  <line no="231">
+    <token name="T_INLINE_HTML">                        } else {</token>
+  </line>
+  <line no="232">
+    <token name="T_INLINE_HTML">                            $("#genres_wrapper").hide();</token>
+  </line>
+  <line no="233">
+    <token name="T_INLINE_HTML">                            $("#genres_block").html("");</token>
+  </line>
+  <line no="234">
+    <token name="T_INLINE_HTML">                        }</token>
+  </line>
+  <line no="235">
+    <token name="T_INLINE_HTML">                    }</token>
+  </line>
+  <line no="236">
+    <token name="T_INLINE_HTML">                });</token>
+  </line>
+  <line no="237">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="238">
+    <token name="T_INLINE_HTML">            @endif</token>
+  </line>
+  <line no="239"/>
+  <line no="240"/>
+  <line no="241">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="242">
+    <token name="T_INLINE_HTML">    &lt;/script&gt;</token>
+  </line>
+  <line no="243">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="244"/>
+</source>

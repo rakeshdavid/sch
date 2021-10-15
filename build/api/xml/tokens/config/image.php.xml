@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/config" file="image.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/config/image.php" size="513" time="2021-10-13T18:44:11+00:00" unixtime="1634150651" sha1="e05cd94dacf2545fe2fb14b4a0ad032feac10d24" relative="config/image.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_ARRAY">array</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+  </line>
+  <line no="4"/>
+  <line no="5">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="6">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="7">
+    <token name="T_COMMENT">    | Image Driver</token>
+  </line>
+  <line no="8">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="9">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="10">
+    <token name="T_COMMENT">    | Intervention Image supports "GD Library" and "Imagick" to process images</token>
+  </line>
+  <line no="11">
+    <token name="T_COMMENT">    | internally. You may choose one of them according to your PHP</token>
+  </line>
+  <line no="12">
+    <token name="T_COMMENT">    | configuration. By default PHP's "GD Library" implementation is used.</token>
+  </line>
+  <line no="13">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="14">
+    <token name="T_COMMENT">    | Supported: "gd", "imagick"</token>
+  </line>
+  <line no="15">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="16">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="17"/>
+  <line no="18">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'driver'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'gd'</token>
+  </line>
+  <line no="19"/>
+  <line no="20">
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="21"/>
+</source>

@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-22-05/pagination" file="default.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-22-05/pagination/default.blade.php" size="1567" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="0959d0e69f5e956a2b62b5fd0c8d96ed70826cdb" relative="resources/views-22-05/pagination/default.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@if ($paginator-&gt;lastPage() &gt; 1)</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">    &lt;ul class="pagination"&gt;</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">        &lt;li class="page-item {{ ($paginator-&gt;currentPage() == 1) ? ' disabled' : '' }}"&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">            &lt;a class="page-link" href="{{ $paginator-&gt;url(1) }}" aria-label="Previous"</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">               @if($paginator-&gt;currentPage() == 1)</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">                       onclick="return false; "</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">               @endif</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">            &gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">                &lt;span aria-hidden="true"&gt;&#xAB;&lt;/span&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">                &lt;span class="sr-only"&gt;Previous&lt;/span&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">            &lt;/a&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">        &lt;/li&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">        @for ($i = 1; $i &lt;= $paginator-&gt;lastPage(); $i++)</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">            &lt;li class="page-item {{ ($paginator-&gt;currentPage() == $i) ? ' active' : '' }}"&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">                    @if($paginator-&gt;currentPage() == $i)</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">                        &lt;a class="page-link btn btn-default" href="{{ $paginator-&gt;url($i) }}"&gt;&lt;b&gt;{{$i}}&lt;/b&gt;&lt;/a&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">                        @else</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">                        &lt;a class="page-link" href="{{ $paginator-&gt;url($i) }}"&gt;{{$i}}&lt;/a&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">                        @endif</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">            &lt;/li&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">        @endfor</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">        &lt;li class="page-item {{ ($paginator-&gt;currentPage() == $paginator-&gt;lastPage()) ? ' disabled' : '' }}"&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">                &lt;a class="page-link" href="{{ $paginator-&gt;url($paginator-&gt;currentPage()+1) }}" aria-label="Next"</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">                   @if($paginator-&gt;currentPage() == $paginator-&gt;lastPage())</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">                   onclick="return false; "</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">                        @endif</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">                &gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">                    &lt;span aria-hidden="true"&gt;&#xBB;&lt;/span&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">                    &lt;span class="sr-only"&gt;Next&lt;/span&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">                &lt;/a&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">            &lt;/li&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">    &lt;/ul&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">@endif</token>
+  </line>
+</source>

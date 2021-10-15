@@ -1,0 +1,624 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-16-05/admin/analytics" file="code-red.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-16-05/admin/analytics/code-red.blade.php" size="9826" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="7746a688697b0a8e58b707f713fc25d6774b7251" relative="resources/views-16-05/admin/analytics/code-red.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layouts.app')</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">@section('css')</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/5.3.4/sweetalert2.min.css"&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">    &lt;link type="text/css" rel="stylesheet" href="/assets/js/datatables/datatables.min.css"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">    &lt;div class="row m-b-20"&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">        &lt;div class="col-xs-12"&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">            &lt;h3&gt;Code Red&lt;/h3&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="12"/>
+  <line no="13">
+    <token name="T_INLINE_HTML">    &lt;div class="row m-b-20"&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">        &lt;div class="col-xs-12"&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">            &lt;h4 class="m-b-20"&gt;You can Reassign a different coach or refund the users&lt;/h4&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">            &lt;table id="users-table" class="table table-hover table-striped table-bordered" cellspacing="0" width="100%"&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">                &lt;thead&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">                &lt;tr&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">                    &lt;th&gt;User&lt;/th&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">                    &lt;th&gt;Coach&lt;/th&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">                    &lt;th&gt;Remedy action&lt;/th&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">                    &lt;th&gt;Refund&lt;/th&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">                &lt;/tr&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">                &lt;/thead&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">            &lt;/table&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="28"/>
+  <line no="29">
+    <token name="T_INLINE_HTML">    &lt;!-- Modal HTML --&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">    &lt;div id="coachesModal" class="modal fade"&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">        &lt;div class="modal-dialog"&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">            &lt;div class="modal-content"&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">                &lt;div class="modal-header"&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">                    &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;&amp;times;&lt;/button&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">                    &lt;h5 class="modal-title"&gt;Not active coaches list&lt;/h5&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">                &lt;div class="modal-body"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">                &lt;div class="modal-footer"&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">                    &lt;button type="button" class="btn btn-default" data-dismiss="modal"&gt;Close&lt;/button&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">                    {{--&lt;button type="button" class="btn btn-primary"&gt;Save changes&lt;/button&gt;--}}</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="46"/>
+  <line no="47">
+    <token name="T_INLINE_HTML">@section('js')</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">    &lt;script src="/assets/js/datatables/datatables.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">    &lt;script src="https://cdn.jsdelivr.net/sweetalert2/5.3.4/sweetalert2.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">    &lt;script&gt;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">        var table,</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">            successMsg = "{{ session()-&gt;has('success') ? session('success') : '' }}";</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">        $(document).ready(function () {</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">            if(successMsg){</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">                swal(successMsg);</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="57"/>
+  <line no="58">
+    <token name="T_INLINE_HTML">            table = $('#users-table').DataTable({</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">                "serverSide": true,</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">                "showInfo": true,</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">                "orderable": false,</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">                "bSort" : false,</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">                ajax: {</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">                    "url": "{!! route('admin.analytics.code-red-stats') !!}" + "?_token=" + '{{ csrf_token() }}'</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">                },</token>
+  </line>
+  <line no="66"/>
+  <line no="67">
+    <token name="T_INLINE_HTML">                "columns": [</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">                    // User data</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">                    {</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">                        "render": function (data) {</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">                            if(data.length &gt; 0) {</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">                                var userData = data[0]['email'] + ' &lt;a href="{{ url('users/edit')}}/' + data[0]['id'] + '"&gt;&lt;i class="fa fa-edit"&gt;&lt;/i&gt;&lt;/a&gt;';</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">                            }</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">                            return userData;</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">                        },</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">                        "targets": 0,</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">                        "className": "text-left",</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">                        "width": "10%"</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">                    },</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">                    // Coach data</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">                    {</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">                        "render": function (data) {</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">                            var coachData = 'The coach whom has been assigned to this video does not exist. You can reassign another coach from the list.';</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">                            if(Object.keys(data).length &gt; 0) {</token>
+  </line>
+  <line no="85">
+    <token name="T_INLINE_HTML">                                coachData = data[0]['first_name'] + ' ' + data[0]['last_name'] + ' &lt;a href="{{ url('coaches/edit')}}/' + data[0]['id'] + '"&gt;&lt;i class="fa fa-edit"&gt;&lt;/i&gt;&lt;/a&gt;';</token>
+  </line>
+  <line no="86">
+    <token name="T_INLINE_HTML">                            }</token>
+  </line>
+  <line no="87">
+    <token name="T_INLINE_HTML">                            return coachData;</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">                        },</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">                        "targets": 1,</token>
+  </line>
+  <line no="90">
+    <token name="T_INLINE_HTML">                        "className": "text-left",</token>
+  </line>
+  <line no="91">
+    <token name="T_INLINE_HTML">                        "width": "10%"</token>
+  </line>
+  <line no="92">
+    <token name="T_INLINE_HTML">                    },</token>
+  </line>
+  <line no="93">
+    <token name="T_INLINE_HTML">                    // Remedy</token>
+  </line>
+  <line no="94">
+    <token name="T_INLINE_HTML">                    {</token>
+  </line>
+  <line no="95">
+    <token name="T_INLINE_HTML">                        "render": function (data) {</token>
+  </line>
+  <line no="96">
+    <token name="T_INLINE_HTML">                            var reassign = '&lt;a href="#coachesModal" role="button" title="View available coaches" class="back-img" data-title="' + data['video_id'] + '" data-toggle="modal"&gt;&lt;img src="/images/available-updates.png" alt="View available coaches"&gt;&lt;/a&gt;';</token>
+  </line>
+  <line no="97">
+    <token name="T_INLINE_HTML">                            return reassign;</token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">                        },</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">                        "targets": 2,</token>
+  </line>
+  <line no="100">
+    <token name="T_INLINE_HTML">                        "className": "text-center",</token>
+  </line>
+  <line no="101">
+    <token name="T_INLINE_HTML">                        "width": "10%"</token>
+  </line>
+  <line no="102">
+    <token name="T_INLINE_HTML">                    },</token>
+  </line>
+  <line no="103">
+    <token name="T_INLINE_HTML">                    // Refund</token>
+  </line>
+  <line no="104">
+    <token name="T_INLINE_HTML">                    {</token>
+  </line>
+  <line no="105">
+    <token name="T_INLINE_HTML">                        "render": function (data) {</token>
+  </line>
+  <line no="106">
+    <token name="T_INLINE_HTML">                            var refundButton = '&lt;a href="javascript:;" class="refund-btn back-img" onclick="refundAction(' + data + ');" data-video_id="' + data + '"&gt;&lt;img src="/images/transaction.png" alt="Refund"&gt;&lt;/a&gt;';</token>
+  </line>
+  <line no="107">
+    <token name="T_INLINE_HTML">                            return refundButton;</token>
+  </line>
+  <line no="108">
+    <token name="T_INLINE_HTML">                        },</token>
+  </line>
+  <line no="109">
+    <token name="T_INLINE_HTML">                        "targets": 3,</token>
+  </line>
+  <line no="110">
+    <token name="T_INLINE_HTML">                        "className": "text-center",</token>
+  </line>
+  <line no="111">
+    <token name="T_INLINE_HTML">                        "width": "10%"</token>
+  </line>
+  <line no="112">
+    <token name="T_INLINE_HTML">                    }</token>
+  </line>
+  <line no="113">
+    <token name="T_INLINE_HTML">                ]</token>
+  </line>
+  <line no="114">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="115">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="116">
+    <token name="T_INLINE_HTML">    &lt;/script&gt;</token>
+  </line>
+  <line no="117">
+    <token name="T_INLINE_HTML">    &lt;script type="text/javascript"&gt;</token>
+  </line>
+  <line no="118">
+    <token name="T_INLINE_HTML">        $(document).ready(function(){</token>
+  </line>
+  <line no="119">
+    <token name="T_INLINE_HTML">            $("#coachesModal").on('show.bs.modal', function(event){</token>
+  </line>
+  <line no="120">
+    <token name="T_INLINE_HTML">                // Get button that triggered the modal</token>
+  </line>
+  <line no="121">
+    <token name="T_INLINE_HTML">                var button = $(event.relatedTarget);</token>
+  </line>
+  <line no="122">
+    <token name="T_INLINE_HTML">                // Extract value from data-* attributes</token>
+  </line>
+  <line no="123">
+    <token name="T_INLINE_HTML">                var titleData = button.data('title');</token>
+  </line>
+  <line no="124"/>
+  <line no="125">
+    <token name="T_INLINE_HTML">                $.ajax({</token>
+  </line>
+  <line no="126">
+    <token name="T_INLINE_HTML">                    type: 'get',</token>
+  </line>
+  <line no="127">
+    <token name="T_INLINE_HTML">                    url: '{{ route("admin.analytics.remedy-coaches") }}',</token>
+  </line>
+  <line no="128">
+    <token name="T_INLINE_HTML">                    dataType: 'json',</token>
+  </line>
+  <line no="129">
+    <token name="T_INLINE_HTML">                    beforeSend: function () {</token>
+  </line>
+  <line no="130">
+    <token name="T_INLINE_HTML">                        $("#free-coach-table").remove();</token>
+  </line>
+  <line no="131">
+    <token name="T_INLINE_HTML">                        $('.modal-body').append('&lt;div class="spinner" style="text-align: center"&gt;&lt;i class="fa fa-circle-o-notch fa-spin" style="font-size:24px"&gt;&lt;/i&gt;&lt;/div&gt;');</token>
+  </line>
+  <line no="132">
+    <token name="T_INLINE_HTML">                    },</token>
+  </line>
+  <line no="133">
+    <token name="T_INLINE_HTML">                    success: function(data){</token>
+  </line>
+  <line no="134">
+    <token name="T_INLINE_HTML">                        $('.spinner').remove();</token>
+  </line>
+  <line no="135"/>
+  <line no="136">
+    <token name="T_INLINE_HTML">                        $('.modal-body').append('&lt;table id="free-coach-table" class="table table-hover table-striped table-bordered" cellspacing="0" width="100%"&gt;' +</token>
+  </line>
+  <line no="137">
+    <token name="T_INLINE_HTML">                            '                &lt;thead&gt;' +</token>
+  </line>
+  <line no="138">
+    <token name="T_INLINE_HTML">                            '                &lt;tr&gt;' +</token>
+  </line>
+  <line no="139">
+    <token name="T_INLINE_HTML">                            '                    &lt;th&gt;Coach Name&lt;/th&gt;' +</token>
+  </line>
+  <line no="140">
+    <token name="T_INLINE_HTML">                            '                    &lt;th&gt;Coach Email&lt;/th&gt;' +</token>
+  </line>
+  <line no="141">
+    <token name="T_INLINE_HTML">                            '                    &lt;th&gt;Action&lt;/th&gt;' +</token>
+  </line>
+  <line no="142">
+    <token name="T_INLINE_HTML">                            '                &lt;/tr&gt;' +</token>
+  </line>
+  <line no="143">
+    <token name="T_INLINE_HTML">                            '                &lt;/thead&gt;' +</token>
+  </line>
+  <line no="144">
+    <token name="T_INLINE_HTML">                            '                &lt;tbody&gt;&lt;/tbody&gt;' +</token>
+  </line>
+  <line no="145">
+    <token name="T_INLINE_HTML">                            '            &lt;/table&gt;');</token>
+  </line>
+  <line no="146">
+    <token name="T_INLINE_HTML">                        $.each(data, function (item, val) {</token>
+  </line>
+  <line no="147">
+    <token name="T_INLINE_HTML">                            $('#free-coach-table tbody').append('&lt;tr&gt;' +</token>
+  </line>
+  <line no="148">
+    <token name="T_INLINE_HTML">                                    '&lt;th&gt;' + val.first_name + ' ' + val.last_name + '&lt;/th&gt;' +</token>
+  </line>
+  <line no="149">
+    <token name="T_INLINE_HTML">                                    '&lt;th&gt;' + val.email + '&lt;/th&gt;' +</token>
+  </line>
+  <line no="150">
+    <token name="T_INLINE_HTML">                                    '&lt;th&gt;' +</token>
+  </line>
+  <line no="151">
+    <token name="T_INLINE_HTML">                                        '&lt;i role="button"  title="Pick this coach" class="fa fa-user-plus change-coach" data-coach_id="' + val.id + '" data-video_id="' + titleData + '"&gt;&lt;/i&gt;' +</token>
+  </line>
+  <line no="152">
+    <token name="T_INLINE_HTML">                                    '&lt;/th&gt;' +</token>
+  </line>
+  <line no="153">
+    <token name="T_INLINE_HTML">                                '&lt;/tr&gt;');</token>
+  </line>
+  <line no="154">
+    <token name="T_INLINE_HTML">                        });</token>
+  </line>
+  <line no="155"/>
+  <line no="156">
+    <token name="T_INLINE_HTML">                        $('.change-coach').on('click', function () {</token>
+  </line>
+  <line no="157">
+    <token name="T_INLINE_HTML">                            //console.log($(this).data());</token>
+  </line>
+  <line no="158">
+    <token name="T_INLINE_HTML">                            $.ajax({</token>
+  </line>
+  <line no="159">
+    <token name="T_INLINE_HTML">                                type: 'post',</token>
+  </line>
+  <line no="160">
+    <token name="T_INLINE_HTML">                                data: $(this).data(),</token>
+  </line>
+  <line no="161">
+    <token name="T_INLINE_HTML">                                url: '{{ route("admin.analytics.remedy-coaches") }}',</token>
+  </line>
+  <line no="162">
+    <token name="T_INLINE_HTML">                                beforeSend: function () {</token>
+  </line>
+  <line no="163">
+    <token name="T_INLINE_HTML">                                    //$('.modal-body').append('&lt;div class="spinner" style="text-align: center"&gt;&lt;i class="fa fa-circle-o-notch fa-spin" style="font-size:24px"&gt;&lt;/i&gt;&lt;/div&gt;');</token>
+  </line>
+  <line no="164">
+    <token name="T_INLINE_HTML">                                },</token>
+  </line>
+  <line no="165">
+    <token name="T_INLINE_HTML">                                success: function (message) {</token>
+  </line>
+  <line no="166">
+    <token name="T_INLINE_HTML">                                    $('#coachesModal .modal-body').html(message);</token>
+  </line>
+  <line no="167">
+    <token name="T_INLINE_HTML">                                },</token>
+  </line>
+  <line no="168">
+    <token name="T_INLINE_HTML">                                error: function () {</token>
+  </line>
+  <line no="169">
+    <token name="T_INLINE_HTML">                                    alert("Can't find data... Page will be reloaded");</token>
+  </line>
+  <line no="170">
+    <token name="T_INLINE_HTML">                                    //location.reload();</token>
+  </line>
+  <line no="171">
+    <token name="T_INLINE_HTML">                                }</token>
+  </line>
+  <line no="172">
+    <token name="T_INLINE_HTML">                            });</token>
+  </line>
+  <line no="173">
+    <token name="T_INLINE_HTML">                        });</token>
+  </line>
+  <line no="174">
+    <token name="T_INLINE_HTML">                    },</token>
+  </line>
+  <line no="175">
+    <token name="T_INLINE_HTML">                    error: function () {</token>
+  </line>
+  <line no="176">
+    <token name="T_INLINE_HTML">                        // alert("Oops something went wrong.");</token>
+  </line>
+  <line no="177">
+    <token name="T_INLINE_HTML">                        // location.reload();</token>
+  </line>
+  <line no="178">
+    <token name="T_INLINE_HTML">                    }</token>
+  </line>
+  <line no="179">
+    <token name="T_INLINE_HTML">                });</token>
+  </line>
+  <line no="180">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="181">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="182"/>
+  <line no="183">
+    <token name="T_INLINE_HTML">        function refundAction(data) {</token>
+  </line>
+  <line no="184">
+    <token name="T_INLINE_HTML">            var table = $('#users-table').DataTable();</token>
+  </line>
+  <line no="185">
+    <token name="T_INLINE_HTML">            $.ajax({</token>
+  </line>
+  <line no="186">
+    <token name="T_INLINE_HTML">                type: 'post',</token>
+  </line>
+  <line no="187">
+    <token name="T_INLINE_HTML">                url: '{{ route("admin.analytics.refund") }}',</token>
+  </line>
+  <line no="188">
+    <token name="T_INLINE_HTML">                data: '&amp;video_id=' + data,</token>
+  </line>
+  <line no="189">
+    <token name="T_INLINE_HTML">                dataType: 'json',</token>
+  </line>
+  <line no="190">
+    <token name="T_INLINE_HTML">                beforeSend: function () {</token>
+  </line>
+  <line no="191"/>
+  <line no="192">
+    <token name="T_INLINE_HTML">                },</token>
+  </line>
+  <line no="193">
+    <token name="T_INLINE_HTML">                success: function (json) {</token>
+  </line>
+  <line no="194">
+    <token name="T_INLINE_HTML">                    // console.log(json);</token>
+  </line>
+  <line no="195">
+    <token name="T_INLINE_HTML">                    if(json.error){</token>
+  </line>
+  <line no="196">
+    <token name="T_INLINE_HTML">                        swal("Error!", json.error, "error");</token>
+  </line>
+  <line no="197">
+    <token name="T_INLINE_HTML">                    }</token>
+  </line>
+  <line no="198"/>
+  <line no="199">
+    <token name="T_INLINE_HTML">                    if(json.success){</token>
+  </line>
+  <line no="200">
+    <token name="T_INLINE_HTML">                        swal("Success!", "The video was successfully submitted for refund!", "success");</token>
+  </line>
+  <line no="201">
+    <token name="T_INLINE_HTML">                        table.row($(this).parents('tr')).remove().draw();</token>
+  </line>
+  <line no="202">
+    <token name="T_INLINE_HTML">                    }</token>
+  </line>
+  <line no="203">
+    <token name="T_INLINE_HTML">                },</token>
+  </line>
+  <line no="204">
+    <token name="T_INLINE_HTML">                error: function (obj, err, message) {</token>
+  </line>
+  <line no="205">
+    <token name="T_INLINE_HTML">                    console.log('obj: ' + obj);</token>
+  </line>
+  <line no="206">
+    <token name="T_INLINE_HTML">                    console.log('err: ' + err);</token>
+  </line>
+  <line no="207">
+    <token name="T_INLINE_HTML">                    console.log('message: ' + message);</token>
+  </line>
+  <line no="208">
+    <token name="T_INLINE_HTML">                    alert(message);</token>
+  </line>
+  <line no="209">
+    <token name="T_INLINE_HTML">                    location.reload();</token>
+  </line>
+  <line no="210">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="211">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="212">
+    <token name="T_INLINE_HTML">        };</token>
+  </line>
+  <line no="213">
+    <token name="T_INLINE_HTML">    &lt;/script&gt;</token>
+  </line>
+  <line no="214">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+</source>

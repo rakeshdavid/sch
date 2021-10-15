@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-18-05/auth" file="login.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-18-05/auth/login.blade.php" size="2960" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="8514255e01b273801cf3313079dbd20aea8c191d" relative="resources/views-18-05/auth/login.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layouts.app')</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">&lt;div class="container"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">    &lt;div class="row"&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">        &lt;div class="col-md-8 col-md-offset-2"&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">            &lt;div class="panel panel-default"&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">                &lt;div class="panel-heading"&gt;Login&lt;/div&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">                &lt;div class="panel-body"&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">                    &lt;form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}"&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">                        {{ csrf_field() }}</token>
+  </line>
+  <line no="12"/>
+  <line no="13">
+    <token name="T_INLINE_HTML">                        &lt;div class="form-group{{ $errors-&gt;has('email') ? ' has-error' : '' }}"&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">                            &lt;label for="email" class="col-md-4 control-label"&gt;E-Mail Address&lt;/label&gt;</token>
+  </line>
+  <line no="15"/>
+  <line no="16">
+    <token name="T_INLINE_HTML">                            &lt;div class="col-md-6"&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">                                &lt;input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}"&gt;</token>
+  </line>
+  <line no="18"/>
+  <line no="19">
+    <token name="T_INLINE_HTML">                                @if ($errors-&gt;has('email'))</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">                                    &lt;span class="help-block"&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">                                        &lt;strong&gt;{{ $errors-&gt;first('email') }}&lt;/strong&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">                                    &lt;/span&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">                                @endif</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="26"/>
+  <line no="27">
+    <token name="T_INLINE_HTML">                        &lt;div class="form-group{{ $errors-&gt;has('password') ? ' has-error' : '' }}"&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">                            &lt;label for="password" class="col-md-4 control-label"&gt;Password&lt;/label&gt;</token>
+  </line>
+  <line no="29"/>
+  <line no="30">
+    <token name="T_INLINE_HTML">                            &lt;div class="col-md-6"&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">                                &lt;input id="password" type="password" class="form-control" name="password"&gt;</token>
+  </line>
+  <line no="32"/>
+  <line no="33">
+    <token name="T_INLINE_HTML">                                @if ($errors-&gt;has('password'))</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">                                    &lt;span class="help-block"&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">                                        &lt;strong&gt;{{ $errors-&gt;first('password') }}&lt;/strong&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">                                    &lt;/span&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">                                @endif</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="40"/>
+  <line no="41">
+    <token name="T_INLINE_HTML">                        &lt;div class="form-group"&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">                            &lt;div class="col-md-6 col-md-offset-4"&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">                                &lt;div class="checkbox"&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">                                    &lt;label&gt;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">                                        &lt;input type="checkbox" name="remember"&gt; Remember Me</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">                                    &lt;/label&gt;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="50"/>
+  <line no="51">
+    <token name="T_INLINE_HTML">                        &lt;div class="form-group"&gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">                            &lt;div class="col-md-6 col-md-offset-4"&gt;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">                                &lt;button type="submit" class="btn btn-primary"&gt;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">                                    &lt;i class="fa fa-btn fa-sign-in"&gt;&lt;/i&gt; Login</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">                                &lt;/button&gt;</token>
+  </line>
+  <line no="56"/>
+  <line no="57">
+    <token name="T_INLINE_HTML">                                &lt;a class="btn btn-link" href="{{ url('/password/reset') }}"&gt;Forgot Your Password?&lt;/a&gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">                    &lt;/form&gt;</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="67"/>
+</source>

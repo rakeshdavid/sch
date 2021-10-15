@@ -1,0 +1,1123 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-22-05/admin/users" file="edit.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-22-05/admin/users/edit.blade.php" size="21103" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="191379180a0d5604d3658f74c2935b84a1a89857" relative="resources/views-22-05/admin/users/edit.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layouts.app')</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">@section('css')</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="/assets/css/select2-v4.0.4.min.css"/&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/5.3.4/sweetalert2.min.css"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">    &lt;link type="text/css" rel="stylesheet" href="/assets/js/datatables/datatables.min.css"&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">    &lt;div class="row m-b-20"&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">        &lt;div class="col-xs-12"&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">            &lt;h3&gt;Update user profile&lt;/h3&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">            &lt;h4 class="m-b-20 m-t-20"&gt;Profile Data&lt;/h4&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">            &lt;form action="{{ route('admin.users.update', ['id' =&gt; $user['id']]) }}" method="POST" class="form-horizontal" enctype="multipart/form-data"&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">                {{ csrf_field() }}</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">                &lt;div class="form-group row {{ $errors-&gt;has('first_name') ? ' has-danger' : '' }}"&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">                    &lt;label class="col-sm-3 form-control-label" for="first_name"&gt;First name*&lt;/label&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">                    &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">                        &lt;input type="text" maxlength="254" class="form-control {{ $errors-&gt;has('first_name') ? ' form-control-danger' : '' }}" name="first_name" autocomplete="off"</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">                               value="{{ !empty(old('first_name')) ? old('first_name') : $user['first_name'] }}"&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">                        @if($errors-&gt;has('first_name'))</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">                            &lt;small class="text-danger"&gt;{{ $errors-&gt;first('first_name') }}&lt;/small&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">                        @endif</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="24"/>
+  <line no="25">
+    <token name="T_INLINE_HTML">                &lt;div class="form-group row {{ $errors-&gt;has('last_name') ? ' has-danger' : '' }}"&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">                    &lt;label class="col-sm-3 form-control-label" for="last_name"&gt;Last name*&lt;/label&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">                    &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">                        &lt;input type="text" maxlength="254" class="form-control {{ $errors-&gt;has('last_name') ? ' form-control-danger' : '' }}" name="last_name" autocomplete="off"</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">                               value="{{ !empty(old('last_name')) ? old('last_name') : $user['last_name'] }}"&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">                        @if($errors-&gt;has('last_name'))</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">                            &lt;small class="text-danger"&gt;{{ $errors-&gt;first('last_name') }}&lt;/small&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">                        @endif</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">                &lt;div class="form-group row {{ $errors-&gt;has('email') ? ' has-danger' : '' }}"&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">                    &lt;label class="col-sm-3 form-control-label" for="email"&gt;Email*&lt;/label&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">                    &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">                        &lt;input type="email" maxlength="254" class="form-control {{ $errors-&gt;has('email') ? ' form-control-danger' : '' }}" name="email" autocomplete="off"</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">                               value="{{ !empty(old('email')) ? old('email') : $user['email'] }}"&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">                        @if($errors-&gt;has('email'))</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">                            &lt;small class="text-danger"&gt;{{ $errors-&gt;first('email') }}&lt;/small&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">                        @endif</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">                &lt;div class="form-group row {{ $errors-&gt;has('birthday') ? ' has-danger' : '' }}"&gt;</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">                    &lt;label class="col-sm-3 form-control-label"&gt;Birth date&lt;/label&gt;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">                    &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">                        &lt;input type="text" maxlength="254" class="form-control" name="birthday" id="birthday"</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">                               value="{{ !empty(old('birthday')) ? old('birthday') : $user['birthday'] }}"&gt;</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">                        @if($errors-&gt;has('birthday'))</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">                            &lt;small class="text-danger"&gt;{{ $errors-&gt;first('birthday') }}&lt;/small&gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">                        @endif</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">                &lt;div class="form-group row {{ $errors-&gt;has('gender') ? ' has-danger' : '' }}"&gt;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">                    &lt;label class="col-sm-3 form-control-label" for="gender"&gt;Gender&lt;/label&gt;</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">                    &lt;div class="col-sm-9 m-t-5"&gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">                        &lt;label class="c-input c-radio"&gt;</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">                            &lt;input type="radio" name="gender" id="inlineRadio1" value="famale"</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">                                   @if($user['gender'] == 'famale') checked @endif &gt;</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">                            &lt;span class="c-indicator c-indicator-warning"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">                            Female</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">                        &lt;/label&gt;</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">                        &lt;label class="c-input c-radio"&gt;</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">                            &lt;input type="radio" name="gender" id="inlineRadio2" value="male"</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">                                   @if($user['gender'] == 'male') checked @endif &gt;</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">                            &lt;span class="c-indicator c-indicator-warning"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">                            Male</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">                        &lt;/label&gt;</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">                        @if($errors-&gt;has('gender'))</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">                            &lt;small class="text-danger"&gt;{{ $errors-&gt;first('gender') }}&lt;/small&gt;</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">                        @endif</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="75"/>
+  <line no="76">
+    <token name="T_INLINE_HTML">                {{--&lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">                    &lt;label class="col-sm-3 form-control-label" for="title"&gt;Activity type/s&lt;/label&gt;</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">                    &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">                        &lt;select class="form-control" name="activity_type[]" id="activity_type" autocomplete="off" multiple="multiple"&gt;</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">                            @if (count($activity_types))</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">                                @foreach($activity_types as $activity_type)</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">                                    @foreach($userActivityTypes as $userActivityType)</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">                                        &lt;option value="{{ $activity_type['id'] }}"</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">                                                {{ ($userActivityType['activity_type_id'] == $activity_type['id']) ? 'selected' : '' }}&gt;</token>
+  </line>
+  <line no="85">
+    <token name="T_INLINE_HTML">                                            {{ $activity_type['name']}}</token>
+  </line>
+  <line no="86">
+    <token name="T_INLINE_HTML">                                        &lt;/option&gt;</token>
+  </line>
+  <line no="87">
+    <token name="T_INLINE_HTML">                                    @endforeach</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">                                @endforeach</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">                            @endif</token>
+  </line>
+  <line no="90">
+    <token name="T_INLINE_HTML">                        &lt;/select&gt;</token>
+  </line>
+  <line no="91">
+    <token name="T_INLINE_HTML">                        @if($errors-&gt;has('activity_type'))</token>
+  </line>
+  <line no="92">
+    <token name="T_INLINE_HTML">                            &lt;small class="text-danger"&gt;{{ $errors-&gt;first('activity_type') }}&lt;/small&gt;</token>
+  </line>
+  <line no="93">
+    <token name="T_INLINE_HTML">                        @endif</token>
+  </line>
+  <line no="94">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="95">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;--}}</token>
+  </line>
+  <line no="96">
+    <token name="T_INLINE_HTML">                &lt;select class="form-control" name="activity_type" style="display: none"&gt; {{--crunch--}}</token>
+  </line>
+  <line no="97">
+    <token name="T_INLINE_HTML">                    &lt;option value="1" selected&gt;</token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">                        Dance</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">                    &lt;/option&gt;</token>
+  </line>
+  <line no="100">
+    <token name="T_INLINE_HTML">                &lt;/select&gt;</token>
+  </line>
+  <line no="101"/>
+  <line no="102">
+    <token name="T_INLINE_HTML">                @php</token>
+  </line>
+  <line no="103">
+    <token name="T_INLINE_HTML">                    $user_act = $user_crunch-&gt;activity_genres;</token>
+  </line>
+  <line no="104">
+    <token name="T_INLINE_HTML">                @endphp</token>
+  </line>
+  <line no="105">
+    <token name="T_INLINE_HTML">                &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="106">
+    <token name="T_INLINE_HTML">                    &lt;label class="col-sm-3 form-control-label" for="title"&gt;Genre/s&lt;/label&gt;</token>
+  </line>
+  <line no="107">
+    <token name="T_INLINE_HTML">                    &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="108">
+    <token name="T_INLINE_HTML">                        &lt;select class="form-control" name="genres[]" id="activity_type_genres"</token>
+  </line>
+  <line no="109">
+    <token name="T_INLINE_HTML">                                autocomplete="off" multiple="multiple"&gt;</token>
+  </line>
+  <line no="110">
+    <token name="T_INLINE_HTML">                            @foreach($activity_genres as $activity_genre)</token>
+  </line>
+  <line no="111">
+    <token name="T_INLINE_HTML">                                &lt;option value="{{ $activity_genre-&gt;id }}"</token>
+  </line>
+  <line no="112">
+    <token name="T_INLINE_HTML">                                        {{ $user_act-&gt;where('id', $activity_genre-&gt;id)-&gt;first() ? 'selected' : ''}}&gt;{{ $activity_genre-&gt;name }}</token>
+  </line>
+  <line no="113">
+    <token name="T_INLINE_HTML">                                &lt;/option&gt;</token>
+  </line>
+  <line no="114">
+    <token name="T_INLINE_HTML">                            @endforeach</token>
+  </line>
+  <line no="115">
+    <token name="T_INLINE_HTML">                        &lt;/select&gt;</token>
+  </line>
+  <line no="116">
+    <token name="T_INLINE_HTML">                        @if($errors-&gt;has('genres'))</token>
+  </line>
+  <line no="117">
+    <token name="T_INLINE_HTML">                            &lt;small class="text-danger"&gt;{{ $errors-&gt;first('genres') }}&lt;/small&gt;</token>
+  </line>
+  <line no="118">
+    <token name="T_INLINE_HTML">                        @endif</token>
+  </line>
+  <line no="119">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="120">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="121"/>
+  <line no="122">
+    <token name="T_INLINE_HTML">                &lt;div class="form-group row {{ $errors-&gt;has('location') ? ' has-danger' : '' }}"&gt;</token>
+  </line>
+  <line no="123">
+    <token name="T_INLINE_HTML">                    &lt;label class="col-sm-3 form-control-label" for="location"&gt;City&lt;/label&gt;</token>
+  </line>
+  <line no="124">
+    <token name="T_INLINE_HTML">                    &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="125">
+    <token name="T_INLINE_HTML">                        &lt;input type="text" maxlength="254" class="form-control {{ $errors-&gt;has('location') ? ' form-control-danger' : '' }}" name="location" autocomplete="off"</token>
+  </line>
+  <line no="126">
+    <token name="T_INLINE_HTML">                               value="{{ !empty(old('location')) ? old('location') : $user['location'] }}"&gt;</token>
+  </line>
+  <line no="127">
+    <token name="T_INLINE_HTML">                        @if($errors-&gt;has('location'))</token>
+  </line>
+  <line no="128">
+    <token name="T_INLINE_HTML">                            &lt;small class="text-danger"&gt;{{ $errors-&gt;first('location') }}&lt;/small&gt;</token>
+  </line>
+  <line no="129">
+    <token name="T_INLINE_HTML">                        @endif</token>
+  </line>
+  <line no="130">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="131">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="132">
+    <token name="T_INLINE_HTML">                &lt;div class="form-group row {{ $errors-&gt;has('location_state') ? ' has-danger' : '' }}"&gt;</token>
+  </line>
+  <line no="133">
+    <token name="T_INLINE_HTML">                    &lt;label class="col-sm-3 form-control-label" for="location_state"&gt;State&lt;/label&gt;</token>
+  </line>
+  <line no="134">
+    <token name="T_INLINE_HTML">                    &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="135">
+    <token name="T_INLINE_HTML">                        &lt;input type="text" maxlength="254" class="form-control {{ $errors-&gt;has('location_state') ? ' form-control-danger' : '' }}" name="location_state" autocomplete="off"</token>
+  </line>
+  <line no="136">
+    <token name="T_INLINE_HTML">                               value="{{ !empty(old('location_state')) ? old('location_state') : $user['location_state'] }}"&gt;</token>
+  </line>
+  <line no="137">
+    <token name="T_INLINE_HTML">                        @if($errors-&gt;has('location_state'))</token>
+  </line>
+  <line no="138">
+    <token name="T_INLINE_HTML">                            &lt;small class="text-danger"&gt;{{ $errors-&gt;first('location_state') }}&lt;/small&gt;</token>
+  </line>
+  <line no="139">
+    <token name="T_INLINE_HTML">                        @endif</token>
+  </line>
+  <line no="140">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="141">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="142"/>
+  <line no="143">
+    <token name="T_INLINE_HTML">                &lt;div class="form-group row @if($errors-&gt;has('profile_photo'))has-danger @endif"&gt;</token>
+  </line>
+  <line no="144">
+    <token name="T_INLINE_HTML">                    &lt;label class="col-sm-3 form-control-label"&gt;Upload Profile Photo&lt;/label&gt;</token>
+  </line>
+  <line no="145">
+    <token name="T_INLINE_HTML">                    &lt;div class="col-sm-9 m-t-5"&gt;</token>
+  </line>
+  <line no="146">
+    <token name="T_INLINE_HTML">                        &lt;div class="input-group m-b-10"&gt;</token>
+  </line>
+  <line no="147">
+    <token name="T_INLINE_HTML">                            &lt;label class="input-group-btn"&gt;</token>
+  </line>
+  <line no="148">
+    <token name="T_INLINE_HTML">                                &lt;span class="btn btn-primary"&gt;</token>
+  </line>
+  <line no="149">
+    <token name="T_INLINE_HTML">                                Upload file (jpg, png, gif)</token>
+  </line>
+  <line no="150">
+    <token name="T_INLINE_HTML">                                    &lt;input type="file" name="profile_photo" accept="image/jpeg,image/png,image/gif"</token>
+  </line>
+  <line no="151">
+    <token name="T_INLINE_HTML">                                           id="avatar_upload" style="display: none;"&gt;</token>
+  </line>
+  <line no="152">
+    <token name="T_INLINE_HTML">                                &lt;/span&gt;</token>
+  </line>
+  <line no="153">
+    <token name="T_INLINE_HTML">                            &lt;/label&gt;</token>
+  </line>
+  <line no="154">
+    <token name="T_INLINE_HTML">                            &lt;input type="text" class="form-control @if($errors-&gt;has('profile_photo'))form-control-danger @endif" readonly=""&gt;</token>
+  </line>
+  <line no="155">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="156">
+    <token name="T_INLINE_HTML">                        @if($errors-&gt;has('profile_photo'))</token>
+  </line>
+  <line no="157">
+    <token name="T_INLINE_HTML">                            &lt;small class="text-danger"&gt;{{ $errors-&gt;first('profile_photo') }}&lt;/small&gt;</token>
+  </line>
+  <line no="158">
+    <token name="T_INLINE_HTML">                        @endif</token>
+  </line>
+  <line no="159">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="160">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="161"/>
+  <line no="162">
+    <token name="T_INLINE_HTML">                &lt;div class="form-group row {{ $errors-&gt;has('overview') ? ' has-danger' : '' }}"&gt;</token>
+  </line>
+  <line no="163">
+    <token name="T_INLINE_HTML">                    &lt;label class="col-sm-3 form-control-label" for="contact_email"&gt;About user&lt;/label&gt;</token>
+  </line>
+  <line no="164">
+    <token name="T_INLINE_HTML">                    &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="165">
+    <token name="T_INLINE_HTML">                        @php</token>
+  </line>
+  <line no="166">
+    <token name="T_INLINE_HTML">                            $review = strip_tags($user['about']);</token>
+  </line>
+  <line no="167">
+    <token name="T_INLINE_HTML">                            $review = str_replace("&lt;p&gt;", "", $review);</token>
+  </line>
+  <line no="168">
+    <token name="T_INLINE_HTML">                            $review = str_replace("&lt;/p&gt;", "\n", $review);</token>
+  </line>
+  <line no="169">
+    <token name="T_INLINE_HTML">                        @endphp</token>
+  </line>
+  <line no="170">
+    <token name="T_INLINE_HTML">                        &lt;textarea type="text" maxlength="254" class="form-control {{ $errors-&gt;has('overview') ? ' form-control-danger' : '' }}"</token>
+  </line>
+  <line no="171">
+    <token name="T_INLINE_HTML">                                  rows="5" name="overview" autocomplete="off"&gt;{!! !empty (old('overview')) ? old('overview') : $review !!}&lt;/textarea&gt;</token>
+  </line>
+  <line no="172">
+    <token name="T_INLINE_HTML">                        @if($errors-&gt;has('overview'))</token>
+  </line>
+  <line no="173">
+    <token name="T_INLINE_HTML">                            &lt;small class="text-danger"&gt;{{ $errors-&gt;first('overview') }}&lt;/small&gt;</token>
+  </line>
+  <line no="174">
+    <token name="T_INLINE_HTML">                        @endif</token>
+  </line>
+  <line no="175">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="176">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="177"/>
+  <line no="178">
+    <token name="T_INLINE_HTML">                @if (count($performance_levels))</token>
+  </line>
+  <line no="179">
+    <token name="T_INLINE_HTML">                    &lt;div class="form-group row"&gt;</token>
+  </line>
+  <line no="180">
+    <token name="T_INLINE_HTML">                        &lt;label class="col-sm-3 form-control-label"&gt;Performance Level/s&lt;/label&gt;</token>
+  </line>
+  <line no="181">
+    <token name="T_INLINE_HTML">                        &lt;div class="col-sm-9 m-t-5"&gt;</token>
+  </line>
+  <line no="182">
+    <token name="T_INLINE_HTML">                            &lt;select class="form-control" name="performance_levels[]" id="performance_levels" autocomplete="off"&gt;</token>
+  </line>
+  <line no="183">
+    <token name="T_INLINE_HTML">                                &lt;option value=""&gt;&lt;/option&gt;</token>
+  </line>
+  <line no="184">
+    <token name="T_INLINE_HTML">                                @foreach($performance_levels as $level)</token>
+  </line>
+  <line no="185">
+    <token name="T_INLINE_HTML">                                    &lt;option value="{{ $level['id'] }}"</token>
+  </line>
+  <line no="186">
+    <token name="T_INLINE_HTML">                                        {{ ($userPerformanceLevels['performance_level_id'] == $level['id']) ? 'selected' : '' }}&gt;</token>
+  </line>
+  <line no="187">
+    <token name="T_INLINE_HTML">                                        {{ $level['name']}}</token>
+  </line>
+  <line no="188">
+    <token name="T_INLINE_HTML">                                    &lt;/option&gt;</token>
+  </line>
+  <line no="189">
+    <token name="T_INLINE_HTML">                                @endforeach</token>
+  </line>
+  <line no="190">
+    <token name="T_INLINE_HTML">                            &lt;/select&gt;</token>
+  </line>
+  <line no="191">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="192">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="193">
+    <token name="T_INLINE_HTML">                @endif</token>
+  </line>
+  <line no="194"/>
+  <line no="195">
+    <token name="T_INLINE_HTML">                &lt;h4 class="m-b-20"&gt;Contact&lt;/h4&gt;</token>
+  </line>
+  <line no="196">
+    <token name="T_INLINE_HTML">                &lt;div class="form-group row {{ $errors-&gt;has('contact_email') ? ' has-danger' : '' }}"&gt;</token>
+  </line>
+  <line no="197">
+    <token name="T_INLINE_HTML">                    &lt;label class="col-sm-3 form-control-label" for="contact_email"&gt;Contact email&lt;/label&gt;</token>
+  </line>
+  <line no="198">
+    <token name="T_INLINE_HTML">                    &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="199">
+    <token name="T_INLINE_HTML">                        &lt;input type="email" maxlength="254" class="form-control {{ $errors-&gt;has('contact_email') ? ' form-control-danger' : '' }}" name="contact_email" autocomplete="off"</token>
+  </line>
+  <line no="200">
+    <token name="T_INLINE_HTML">                               value="{{ !empty(old('contact_email')) ? old('contact_email') : $user['contact_email'] }}"&gt;</token>
+  </line>
+  <line no="201">
+    <token name="T_INLINE_HTML">                        @if($errors-&gt;has('contact_email'))</token>
+  </line>
+  <line no="202">
+    <token name="T_INLINE_HTML">                            &lt;small class="text-danger"&gt;{{ $errors-&gt;first('contact_email') }}&lt;/small&gt;</token>
+  </line>
+  <line no="203">
+    <token name="T_INLINE_HTML">                        @endif</token>
+  </line>
+  <line no="204">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="205">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="206"/>
+  <line no="207">
+    <token name="T_INLINE_HTML">                &lt;div class="form-group row {{ $errors-&gt;has('phone') ? ' has-danger' : '' }}"&gt;</token>
+  </line>
+  <line no="208">
+    <token name="T_INLINE_HTML">                    &lt;label class="col-sm-3 form-control-label"&gt;Phone&lt;/label&gt;</token>
+  </line>
+  <line no="209">
+    <token name="T_INLINE_HTML">                    &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="210">
+    <token name="T_INLINE_HTML">                        &lt;input type="text" class="form-control" name="phone" autocomplete="off"</token>
+  </line>
+  <line no="211">
+    <token name="T_INLINE_HTML">                               value="{{ !empty(old('phone')) ? old('phone') : $user['phone'] }}"&gt;</token>
+  </line>
+  <line no="212">
+    <token name="T_INLINE_HTML">                        @if($errors-&gt;has('phone'))</token>
+  </line>
+  <line no="213">
+    <token name="T_INLINE_HTML">                            &lt;small class="text-danger"&gt;{{ $errors-&gt;first('phone') }}&lt;/small&gt;</token>
+  </line>
+  <line no="214">
+    <token name="T_INLINE_HTML">                        @endif</token>
+  </line>
+  <line no="215">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="216">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="217">
+    <token name="T_INLINE_HTML">                &lt;div class="form-group row {{ $errors-&gt;has('wevsites') ? ' has-danger' : '' }}"&gt;</token>
+  </line>
+  <line no="218">
+    <token name="T_INLINE_HTML">                    &lt;label class="col-sm-3 form-control-label"&gt;Website&lt;/label&gt;</token>
+  </line>
+  <line no="219">
+    <token name="T_INLINE_HTML">                    &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="220">
+    <token name="T_INLINE_HTML">                        &lt;input type="text" class="form-control {{ $errors-&gt;has('wevsites') ? ' form-control-danger' : '' }}"</token>
+  </line>
+  <line no="221">
+    <token name="T_INLINE_HTML">                               name="wevsites" autocomplete="off" value="{{ !empty(old('wevsites')) ? old('wevsites') : $user['wevsites'] }}"&gt;</token>
+  </line>
+  <line no="222">
+    <token name="T_INLINE_HTML">                        @if($errors-&gt;has('wevsites'))</token>
+  </line>
+  <line no="223">
+    <token name="T_INLINE_HTML">                            &lt;small class="text-danger"&gt;{{ $errors-&gt;first('wevsites') }}&lt;/small&gt;</token>
+  </line>
+  <line no="224">
+    <token name="T_INLINE_HTML">                        @endif</token>
+  </line>
+  <line no="225">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="226">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="227"/>
+  <line no="228">
+    <token name="T_INLINE_HTML">                &lt;div class="form-group row {{ $errors-&gt;has('social_links') ? ' has-danger' : '' }}"&gt;</token>
+  </line>
+  <line no="229">
+    <token name="T_INLINE_HTML">                    &lt;label class="col-sm-3 form-control-label" for="social_links"&gt;Social links&lt;/label&gt;</token>
+  </line>
+  <line no="230">
+    <token name="T_INLINE_HTML">                    &lt;div class="col-sm-9"&gt;</token>
+  </line>
+  <line no="231">
+    <token name="T_INLINE_HTML">                        &lt;input type="text" class="form-control {{ $errors-&gt;has('social_links') ? ' form-control-danger' : '' }}"</token>
+  </line>
+  <line no="232">
+    <token name="T_INLINE_HTML">                               name="social_links" value="{{ !empty(old('social_links')) ? old('social_links') : $user['social_links'] }}"&gt;</token>
+  </line>
+  <line no="233">
+    <token name="T_INLINE_HTML">                        @if($errors-&gt;has('social_links'))</token>
+  </line>
+  <line no="234">
+    <token name="T_INLINE_HTML">                            &lt;small class="text-danger"&gt;{{ $errors-&gt;first('social_links') }}&lt;/small&gt;</token>
+  </line>
+  <line no="235">
+    <token name="T_INLINE_HTML">                        @endif</token>
+  </line>
+  <line no="236">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="237">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="238"/>
+  <line no="239">
+    <token name="T_INLINE_HTML">                &lt;div class="row"&gt;</token>
+  </line>
+  <line no="240">
+    <token name="T_INLINE_HTML">                    &lt;div class="col-sm-offset-3 col-sm-9"&gt;</token>
+  </line>
+  <line no="241">
+    <token name="T_INLINE_HTML">                        &lt;button type="submit" class="btn btn-warning m-r-10 m-b-10"&gt;</token>
+  </line>
+  <line no="242">
+    <token name="T_INLINE_HTML">                            &lt;i class="btn-icon fa fa-check"&gt;&lt;/i&gt;Update</token>
+  </line>
+  <line no="243">
+    <token name="T_INLINE_HTML">                        &lt;/button&gt;</token>
+  </line>
+  <line no="244">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="245">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="246">
+    <token name="T_INLINE_HTML">            &lt;/form&gt;</token>
+  </line>
+  <line no="247">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="248">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="249">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="250"/>
+  <line no="251">
+    <token name="T_INLINE_HTML">@section('js')</token>
+  </line>
+  <line no="252">
+    <token name="T_INLINE_HTML">    &lt;script src="/assets/js/select2-v4.0.4.full.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="253">
+    <token name="T_INLINE_HTML">    &lt;script src="https://cdn.jsdelivr.net/sweetalert2/5.3.4/sweetalert2.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="254">
+    <token name="T_INLINE_HTML">    &lt;script src="/vendor/jildertmiedema/laravel-plupload/js/plupload.full.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="255">
+    <token name="T_INLINE_HTML">    &lt;script type="text/javascript"&gt;</token>
+  </line>
+  <line no="256">
+    <token name="T_INLINE_HTML">        var successMsg = "{{ session()-&gt;has('success') ? session('success') : '' }}";</token>
+  </line>
+  <line no="257">
+    <token name="T_INLINE_HTML">        var user_genres = {{ $activity_types[0]['id'] }};</token>
+  </line>
+  <line no="258"/>
+  <line no="259">
+    <token name="T_INLINE_HTML">        $(document).ready(function() {</token>
+  </line>
+  <line no="260">
+    <token name="T_INLINE_HTML">            if(successMsg){</token>
+  </line>
+  <line no="261">
+    <token name="T_INLINE_HTML">                swal(successMsg);</token>
+  </line>
+  <line no="262">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="263"/>
+  <line no="264">
+    <token name="T_INLINE_HTML">            /*$('#activity_type').val([{{ old('activity_type') ? old('activity_type') : '' }}]).select2({</token>
+  </line>
+  <line no="265">
+    <token name="T_INLINE_HTML">                placeholder: "Select activity type/s",</token>
+  </line>
+  <line no="266">
+    <token name="T_INLINE_HTML">                multiple: true</token>
+  </line>
+  <line no="267">
+    <token name="T_INLINE_HTML">            }).on("change", function () {</token>
+  </line>
+  <line no="268">
+    <token name="T_INLINE_HTML">                $.ajax({</token>
+  </line>
+  <line no="269">
+    <token name="T_INLINE_HTML">                    url: '{{ route('get-genres') }}',</token>
+  </line>
+  <line no="270">
+    <token name="T_INLINE_HTML">                    type: 'POST',</token>
+  </line>
+  <line no="271">
+    <token name="T_INLINE_HTML">                    data: {activityTypesIds: $(this).val()},</token>
+  </line>
+  <line no="272">
+    <token name="T_INLINE_HTML">                    dataType: 'JSON',</token>
+  </line>
+  <line no="273">
+    <token name="T_INLINE_HTML">                    success: function (res) {</token>
+  </line>
+  <line no="274">
+    <token name="T_INLINE_HTML">                        //var $genres = result;</token>
+  </line>
+  <line no="275">
+    <token name="T_INLINE_HTML">                        $('#activity_type_genres').select2('destroy').empty().select2({</token>
+  </line>
+  <line no="276">
+    <token name="T_INLINE_HTML">                            placeholder: "Select genre/s",</token>
+  </line>
+  <line no="277">
+    <token name="T_INLINE_HTML">                            multiple: true,</token>
+  </line>
+  <line no="278">
+    <token name="T_INLINE_HTML">                            data: res,</token>
+  </line>
+  <line no="279">
+    <token name="T_INLINE_HTML">                            processResults: function (result) {</token>
+  </line>
+  <line no="280">
+    <token name="T_INLINE_HTML">                                return {</token>
+  </line>
+  <line no="281">
+    <token name="T_INLINE_HTML">                                    results: $.map(result, function(obj) {</token>
+  </line>
+  <line no="282">
+    <token name="T_INLINE_HTML">                                        return { id: obj.id, text: obj.name };</token>
+  </line>
+  <line no="283">
+    <token name="T_INLINE_HTML">                                    })</token>
+  </line>
+  <line no="284">
+    <token name="T_INLINE_HTML">                                };</token>
+  </line>
+  <line no="285">
+    <token name="T_INLINE_HTML">                            }</token>
+  </line>
+  <line no="286">
+    <token name="T_INLINE_HTML">                        });</token>
+  </line>
+  <line no="287">
+    <token name="T_INLINE_HTML">                    },</token>
+  </line>
+  <line no="288">
+    <token name="T_INLINE_HTML">                    error: function (z,x,v) {</token>
+  </line>
+  <line no="289"/>
+  <line no="290">
+    <token name="T_INLINE_HTML">                    }</token>
+  </line>
+  <line no="291">
+    <token name="T_INLINE_HTML">                });</token>
+  </line>
+  <line no="292">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="293">
+    <token name="T_INLINE_HTML">            */</token>
+  </line>
+  <line no="294">
+    <token name="T_INLINE_HTML">            $('#activity_type_genres').select2({</token>
+  </line>
+  <line no="295">
+    <token name="T_INLINE_HTML">                placeholder: "Select genre/s",</token>
+  </line>
+  <line no="296">
+    <token name="T_INLINE_HTML">                multiple: true</token>
+  </line>
+  <line no="297">
+    <token name="T_INLINE_HTML">            }).change(function () {</token>
+  </line>
+  <line no="298">
+    <token name="T_INLINE_HTML">                //crunch</token>
+  </line>
+  <line no="299">
+    <token name="T_INLINE_HTML">                $.ajax({</token>
+  </line>
+  <line no="300">
+    <token name="T_INLINE_HTML">                    url: '{{ route('get-genres') }}',</token>
+  </line>
+  <line no="301">
+    <token name="T_INLINE_HTML">                    type: 'POST',</token>
+  </line>
+  <line no="302">
+    <token name="T_INLINE_HTML">                    data: {activityTypesIds: user_genres},</token>
+  </line>
+  <line no="303">
+    <token name="T_INLINE_HTML">                    dataType: 'JSON',</token>
+  </line>
+  <line no="304">
+    <token name="T_INLINE_HTML">                    success: function (res) {</token>
+  </line>
+  <line no="305">
+    <token name="T_INLINE_HTML">                        //var $genres = result;</token>
+  </line>
+  <line no="306">
+    <token name="T_INLINE_HTML">                        $('#activity_type_genres').select2({</token>
+  </line>
+  <line no="307">
+    <token name="T_INLINE_HTML">                            placeholder: "Select genre/s",</token>
+  </line>
+  <line no="308">
+    <token name="T_INLINE_HTML">                            multiple: true,</token>
+  </line>
+  <line no="309">
+    <token name="T_INLINE_HTML">                            data: res,</token>
+  </line>
+  <line no="310">
+    <token name="T_INLINE_HTML">                            processResults: function (result) {</token>
+  </line>
+  <line no="311">
+    <token name="T_INLINE_HTML">                                return {</token>
+  </line>
+  <line no="312">
+    <token name="T_INLINE_HTML">                                    results: $.map(result, function(obj) {</token>
+  </line>
+  <line no="313">
+    <token name="T_INLINE_HTML">                                        return { id: obj.id, text: obj.name };</token>
+  </line>
+  <line no="314">
+    <token name="T_INLINE_HTML">                                    })</token>
+  </line>
+  <line no="315">
+    <token name="T_INLINE_HTML">                                };</token>
+  </line>
+  <line no="316">
+    <token name="T_INLINE_HTML">                            }</token>
+  </line>
+  <line no="317">
+    <token name="T_INLINE_HTML">                        });</token>
+  </line>
+  <line no="318">
+    <token name="T_INLINE_HTML">                    },</token>
+  </line>
+  <line no="319">
+    <token name="T_INLINE_HTML">                    error: function (z,x,v) {</token>
+  </line>
+  <line no="320">
+    <token name="T_INLINE_HTML">                    }</token>
+  </line>
+  <line no="321">
+    <token name="T_INLINE_HTML">                });</token>
+  </line>
+  <line no="322">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="323"/>
+  <line no="324">
+    <token name="T_INLINE_HTML">            $('#performance_levels').select2({</token>
+  </line>
+  <line no="325">
+    <token name="T_INLINE_HTML">                placeholder: "Select Performance Level"</token>
+  </line>
+  <line no="326">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="327"/>
+  <line no="328">
+    <token name="T_INLINE_HTML">            /*//crunch</token>
+  </line>
+  <line no="329">
+    <token name="T_INLINE_HTML">            $.ajax({</token>
+  </line>
+  <line no="330">
+    <token name="T_INLINE_HTML">                url: '{{ route('get-genres') }}',</token>
+  </line>
+  <line no="331">
+    <token name="T_INLINE_HTML">                type: 'POST',</token>
+  </line>
+  <line no="332">
+    <token name="T_INLINE_HTML">                data: {activityTypesIds: user_genres},</token>
+  </line>
+  <line no="333">
+    <token name="T_INLINE_HTML">                dataType: 'JSON',</token>
+  </line>
+  <line no="334">
+    <token name="T_INLINE_HTML">                success: function (res) {</token>
+  </line>
+  <line no="335">
+    <token name="T_INLINE_HTML">                    //var $genres = result;</token>
+  </line>
+  <line no="336">
+    <token name="T_INLINE_HTML">                    $('#activity_type_genres').select2({</token>
+  </line>
+  <line no="337">
+    <token name="T_INLINE_HTML">                        placeholder: "Select genre/s",</token>
+  </line>
+  <line no="338">
+    <token name="T_INLINE_HTML">                        multiple: true,</token>
+  </line>
+  <line no="339">
+    <token name="T_INLINE_HTML">                        data: res,</token>
+  </line>
+  <line no="340">
+    <token name="T_INLINE_HTML">                        processResults: function (result) {</token>
+  </line>
+  <line no="341">
+    <token name="T_INLINE_HTML">                            return {</token>
+  </line>
+  <line no="342">
+    <token name="T_INLINE_HTML">                                results: $.map(result, function(obj) {</token>
+  </line>
+  <line no="343">
+    <token name="T_INLINE_HTML">                                    return { id: obj.id, text: obj.name };</token>
+  </line>
+  <line no="344">
+    <token name="T_INLINE_HTML">                                })</token>
+  </line>
+  <line no="345">
+    <token name="T_INLINE_HTML">                            };</token>
+  </line>
+  <line no="346">
+    <token name="T_INLINE_HTML">                        }</token>
+  </line>
+  <line no="347">
+    <token name="T_INLINE_HTML">                    });</token>
+  </line>
+  <line no="348">
+    <token name="T_INLINE_HTML">                },</token>
+  </line>
+  <line no="349">
+    <token name="T_INLINE_HTML">                error: function (z,x,v) {</token>
+  </line>
+  <line no="350">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="351">
+    <token name="T_INLINE_HTML">            });*/</token>
+  </line>
+  <line no="352">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="353"/>
+  <line no="354">
+    <token name="T_INLINE_HTML">        $(function () {</token>
+  </line>
+  <line no="355">
+    <token name="T_INLINE_HTML">            // We can attach the `fileselect` event to all file inputs on the page</token>
+  </line>
+  <line no="356">
+    <token name="T_INLINE_HTML">            $(document).on('change', $('#avatar_upload'), function () {</token>
+  </line>
+  <line no="357">
+    <token name="T_INLINE_HTML">                var input = $('#avatar_upload'),</token>
+  </line>
+  <line no="358">
+    <token name="T_INLINE_HTML">                    numFiles = input.get(0).files ? input.get(0).files.length : 1,</token>
+  </line>
+  <line no="359">
+    <token name="T_INLINE_HTML">                    label = input.val().replace(/\\/g, '/').replace(/.*\//, '');</token>
+  </line>
+  <line no="360">
+    <token name="T_INLINE_HTML">                input.trigger('fileselect', [numFiles, label]);</token>
+  </line>
+  <line no="361">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="362">
+    <token name="T_INLINE_HTML">            // We can watch for our custom `fileselect` event like this</token>
+  </line>
+  <line no="363">
+    <token name="T_INLINE_HTML">            $(document).ready(function () {</token>
+  </line>
+  <line no="364">
+    <token name="T_INLINE_HTML">                $('#avatar_upload').on('fileselect', function (event, numFiles, label) {</token>
+  </line>
+  <line no="365">
+    <token name="T_INLINE_HTML">                    var input = $('#avatar_upload').parents('.input-group').find(':text'),</token>
+  </line>
+  <line no="366">
+    <token name="T_INLINE_HTML">                        log = numFiles &gt; 1 ? numFiles + ' files selected' : label;</token>
+  </line>
+  <line no="367">
+    <token name="T_INLINE_HTML">                    if (input.length) {</token>
+  </line>
+  <line no="368">
+    <token name="T_INLINE_HTML">                        input.val(log);</token>
+  </line>
+  <line no="369">
+    <token name="T_INLINE_HTML">                    } else {</token>
+  </line>
+  <line no="370">
+    <token name="T_INLINE_HTML">                        if (log) alert(log);</token>
+  </line>
+  <line no="371">
+    <token name="T_INLINE_HTML">                    }</token>
+  </line>
+  <line no="372">
+    <token name="T_INLINE_HTML">                });</token>
+  </line>
+  <line no="373">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="374">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="375"/>
+  <line no="376">
+    <token name="T_INLINE_HTML">        $(document).ready(function () {</token>
+  </line>
+  <line no="377">
+    <token name="T_INLINE_HTML">            $('#birthday').datepicker({</token>
+  </line>
+  <line no="378">
+    <token name="T_INLINE_HTML">                format: 'yyyy-mm-dd'</token>
+  </line>
+  <line no="379">
+    <token name="T_INLINE_HTML">            }).on('changeDate', function (e) {</token>
+  </line>
+  <line no="380">
+    <token name="T_INLINE_HTML">                $('#birthday').datepicker('setStartDate', '');</token>
+  </line>
+  <line no="381">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="382">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="383"/>
+  <line no="384">
+    <token name="T_INLINE_HTML">        $('[data-toggle="tooltip"]').tooltip();</token>
+  </line>
+  <line no="385">
+    <token name="T_INLINE_HTML">    &lt;/script&gt;</token>
+  </line>
+  <line no="386">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="387"/>
+</source>

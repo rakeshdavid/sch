@@ -1,0 +1,293 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/public/assets/marino/bower_components/nouislider/documentation" file="index.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/public/assets/marino/bower_components/nouislider/documentation/index.php" size="3208" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="5b136133036542c26cf3d0b7c990c81324f0bd73" relative="public/assets/marino/bower_components/nouislider/documentation/index.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_VARIABLE">$title</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"noUiSlider - JavaScript Range Slider"</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="3">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_VARIABLE">$description</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"noUiSlider is a free and lightweight JavaScript range slider with full touch support (iOS, Android, Windows 8). Great for responsive designs, and no dependencies!"</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="4">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="5"/>
+  <line no="6">
+    <token name="T_INLINE_HTML">&lt;h3&gt;noUiSlider: lightweight JavaScript range slider&lt;/h3&gt;</token>
+  </line>
+  <line no="7"/>
+  <line no="8">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="9"/>
+  <line no="10">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="11"/>
+  <line no="12">
+    <token name="T_INLINE_HTML">		&lt;p&gt;noUiSlider is a range slider &lt;strong&gt;without bloat&lt;/strong&gt;. It offers a ton off &lt;strong&gt;features&lt;/strong&gt;, and it is as small, &lt;strong&gt;lightweight&lt;/strong&gt; and minimal as possible, which is great for mobile use on the many supported &lt;strong&gt;devices&lt;/strong&gt;, including iPhone, iPad, Android devices &amp;amp; Windows (Phone) 8 desktops, tablets and all-in-ones. It works on desktops too, of course!&lt;/p&gt;</token>
+  </line>
+  <line no="13"/>
+  <line no="14">
+    <token name="T_INLINE_HTML">		&lt;div class="example" id="showcase"&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">			&lt;div id="range"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">			&lt;span id="value-span"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">			&lt;input id="value-input"&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'showcase'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'showcase-connect'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="22"/>
+  <line no="23">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="24"/>
+  <line no="25">
+    <token name="T_INLINE_HTML">		</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'showcase'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="26"/>
+  <line no="27">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Connect the input to the slider&lt;/div&gt;</token>
+  </line>
+  <line no="28"/>
+  <line no="29">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'showcase-connect'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="32"/>
+  <line no="33">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;CSS in this example&lt;/div&gt;</token>
+  </line>
+  <line no="34"/>
+  <line no="35">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">loadShowCSS</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'showcase'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="40"/>
+  <line no="41"/>
+  <line no="42">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="43"/>
+  <line no="44">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="45"/>
+  <line no="46">
+    <token name="T_INLINE_HTML">		&lt;h3 class="quotable"&gt;"Lightweight JavaScript range slider with full touch support."&lt;/h3&gt;</token>
+  </line>
+  <line no="47"/>
+  <line no="48">
+    <token name="T_INLINE_HTML">		&lt;ul class="pro-list"&gt;</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">			&lt;li&gt;Responsive design friendly&lt;/li&gt;</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">			&lt;li&gt;Touch support for iOS, Android &amp;amp; Windows (phone)&lt;/li&gt;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">			&lt;li&gt;Draggable range&lt;/li&gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">			&lt;li&gt;&lt;strong&gt;No jQuery, jQueryUI or other dependencies&lt;/strong&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">			&lt;li&gt;Tested in IE9 - IE11, Chrome, Opera, Firefox &amp;amp; Safari&lt;/li&gt;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">		&lt;/ul&gt;</token>
+  </line>
+  <line no="55"/>
+  <line no="56">
+    <token name="T_INLINE_HTML">		&lt;p&gt;noUiSlider works with pretty much any device, mouse, touchscreen or both, and it'll work beautifully in &lt;strong&gt;responsive designs&lt;/strong&gt;. Have you tried this documentation on your phone?&lt;/p&gt;</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="59"/>
+  <line no="60"/>
+  <line no="61">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'getting-started'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">&lt;h2&gt;Getting started&lt;/h2&gt;</token>
+  </line>
+  <line no="63"/>
+  <line no="64">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="65"/>
+  <line no="66">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="67"/>
+  <line no="68">
+    <token name="T_INLINE_HTML">		&lt;p&gt;noUiSlider 8 has no dependencies, so you don't need jQuery, jQuery UI, Zepto, etc. to use it.&lt;/p&gt;</token>
+  </line>
+  <line no="69"/>
+  <line no="70">
+    <token name="T_INLINE_HTML">		&lt;p&gt;Putting all your scripts in the page &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; will slow down your site. If you'd like to know why, consider reading &lt;a href="http://developer.yahoo.com/performance/rules.html#js_bottom"&gt;this article by Yahoo!&lt;/a&gt;. Put the slider CSS in your &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;, and the script at the end of the &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt;.&lt;/p&gt;</token>
+  </line>
+  <line no="71"/>
+  <line no="72">
+    <token name="T_INLINE_HTML">		&lt;p&gt;To create a slider, call &lt;code&gt;noUiSlider.create()&lt;/code&gt; with an element and your options.&lt;/p&gt;</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="74"/>
+  <line no="75">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="76"/>
+  <line no="77">
+    <token name="T_INLINE_HTML">&lt;pre class="language-markup"&gt;&lt;code&gt;&amp;lt;!-- In &amp;lt;head&amp;gt; --&amp;gt;</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">&amp;lt;link href="nouislider.min.css" rel="stylesheet"&amp;gt;</token>
+  </line>
+  <line no="79"/>
+  <line no="80">
+    <token name="T_INLINE_HTML">&amp;lt;!-- In &amp;lt;body&amp;gt; --&amp;gt;</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">&amp;lt;script src="nouislider.min.js"&amp;gt;&amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/pre&gt;</token>
+  </line>
+  <line no="82"/>
+  <line no="83">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="85"/>
+  <line no="86"/>
+  <line no="87">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'browser-support'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">&lt;h2&gt;Browser support&lt;/h2&gt;</token>
+  </line>
+  <line no="89"/>
+  <line no="90">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="91"/>
+  <line no="92">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="93"/>
+  <line no="94">
+    <token name="T_INLINE_HTML">		&lt;p&gt;noUiSlider supports &lt;strong&gt;IE9 and up&lt;/strong&gt;, and the latest versions of the &lt;em&gt;'evergreen'&lt;/em&gt; browsers: &lt;strong&gt;Chrome&lt;/strong&gt;, &lt;strong&gt;Safari&lt;/strong&gt;, &lt;strong&gt;Firefox&lt;/strong&gt; and &lt;strong&gt;Opera&lt;/strong&gt;.&lt;/p&gt;</token>
+  </line>
+  <line no="95">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="96">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="97"/>
+</source>

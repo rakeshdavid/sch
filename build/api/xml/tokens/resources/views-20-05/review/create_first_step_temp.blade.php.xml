@@ -1,0 +1,276 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-20-05/review" file="create_first_step_temp.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-20-05/review/create_first_step_temp.blade.php" size="4624" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="2e91b0df963a22876d89f1e97705fa1cad3c3106" relative="resources/views-20-05/review/create_first_step_temp.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layouts.app')</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">    &lt;div class="container"&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">        &lt;h1 class="f-s-48 color-danger text-center f-w-500 m-b-15 text-uppercase"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">            &lt;a href="/profile/{{ $video-&gt;user-&gt;id }}" target="_blank" style="color: #d9534f !important"&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">                {{ $video-&gt;user-&gt;first_name . ' ' . $video-&gt;user-&gt;last_name }}</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">            &lt;/a&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">        &lt;/h1&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">        &lt;div class="row m-b-20"&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">            &lt;div class="col-xs-12"&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">                &lt;h3 class="text-center m-b-0"&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">                    &lt;span class="f-s-18 text-uppercase f-w-500 text-gray"&gt;Level:&lt;/span&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">                    &lt;span class="f-s-18"&gt;{{ $video-&gt;performance_level-&gt;name }}&lt;/span&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">                &lt;/h3&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">        &lt;div id="video_blk" class=""&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">            &lt;div class="row" id="coach_review" &gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">                &lt;div class="col-xs-12 col-md-10 col-md-offset-1"&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">                &lt;div align="center" class="embed-responsive embed-responsive-16by9"&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">                        &lt;video width="728" height="410" controls id="coach_review_player" class="embed-responsive-item"&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">                            &lt;source id="review_src"</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">                                    src="{{url('/') . config('video.temp_review_path') . $video-&gt;temporary_review-&gt;review_url}}"&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">                            Your browser does not support HTML5 video.</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">                        &lt;/video&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">            &lt;div class="row m-t-15"&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">                &lt;div class="col-xs-12 col-md-10 col-md-offset-1"&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">                &lt;div class="col-md-12" id="reload_block"&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">                        &lt;a class="btn btn-danger" href="{{route('review.rewrite', $video-&gt;id)}}"&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">                            &lt;i class="btn-icon fa fa-check"&gt;&lt;/i&gt;Re-record video</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">                        &lt;/a&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">                &lt;div class="col-xs-12 col-md-10 col-md-offset-1"&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">                    &lt;div class="row m-t-15"&gt;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">                        &lt;div class="col-xs-12 col-md-6"&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">                            &lt;h2 class="text-danger f-s-22 f-w-500 text-uppercase"&gt;Profile&lt;/h2&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">                            &lt;ul class="p-l-25"&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">                                &lt;li&gt; &lt;span class="text-uppercase"&gt;Location: &lt;/span&gt; {{ $video-&gt;user-&gt;location }}&lt;/li&gt;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">                                @php</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">                                    $age = '';</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">                                    try {</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">                                        $age = Carbon\Carbon::parse($video-&gt;user-&gt;birthday);</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">                                        $age = $age-&gt;diffInYears(Carbon\Carbon::now());</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">                                    } catch (\Exception $e) {</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">                                        $age = '';</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">                                    }</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">                                @endphp</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">                                &lt;li&gt; &lt;span class="text-uppercase"&gt;Age: &lt;/span&gt; {{ $age }}&lt;/li&gt;</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">                                &lt;li&gt; &lt;span class="text-uppercase"&gt;Activity experience &lt;/span&gt;(years): {{ $video-&gt;activity_experience }}&lt;/li&gt;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">                                &lt;li&gt; &lt;span class="text-uppercase"&gt;Seeking auditions: &lt;/span&gt;</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">                                    &lt;span class="text-capitalize"&gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">                                        {{ str_replace('_', ' ', $video-&gt;seeking_auditions)}}</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">                                    &lt;/span&gt;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">                                &lt;/li&gt;</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">                            &lt;/ul&gt;</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">                        &lt;div class="col-xs-12 col-md-6"&gt;</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">                            &lt;h2 class="text-danger f-s-22 f-w-500 text-uppercase"&gt;Feedback Summary&lt;/h2&gt;</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">                            &lt;p style="overflow-x: hidden" &gt; {{ $video-&gt;description }}&lt;/p&gt;</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">                    &lt;div style="display: none;"&gt;</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">                        &lt;span id="video_id" data-video-id="{{$video-&gt;id}}"&gt;{{$video-&gt;name}}&lt;/span&gt;</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">                        &lt;span id="user_id" data-user-id="{{$video-&gt;user_id}}"&gt;{{$video-&gt;user_first_name}}  {{$video-&gt;user_last_name}}&lt;/span&gt;</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">        &lt;hr&gt;</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">        &lt;div class="row"&gt;</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">            &lt;div style="text-align: center;" class="col-xs-12"&gt;</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">                &lt;a href="{{route('review.create-second-step', $video-&gt;id)}}" class="btn btn-warning m-r-10 m-b-10"&gt;</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">                    &lt;i class="btn-icon fa fa-check"&gt;&lt;/i&gt;Report</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">                &lt;/a&gt;</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="85">
+    <token name="T_INLINE_HTML">@section('js')</token>
+  </line>
+  <line no="86">
+    <token name="T_INLINE_HTML">    &lt;script type="text/javascript"&gt;</token>
+  </line>
+  <line no="87">
+    <token name="T_INLINE_HTML">        $(document).ready(function () {</token>
+  </line>
+  <line no="88"/>
+  <line no="89">
+    <token name="T_INLINE_HTML">        })</token>
+  </line>
+  <line no="90">
+    <token name="T_INLINE_HTML">    &lt;/script&gt;</token>
+  </line>
+  <line no="91">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="92"/>
+</source>

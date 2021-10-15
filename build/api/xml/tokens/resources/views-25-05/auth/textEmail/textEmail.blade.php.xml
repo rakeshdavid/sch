@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-25-05/auth/textEmail" file="textEmail.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-25-05/auth/textEmail/textEmail.blade.php" size="18" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="bd23560a25189fe31bfd5b1058f7bd88625e5a5e" relative="resources/views-25-05/auth/textEmail/textEmail.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">Text version mail.</token>
+  </line>
+</source>

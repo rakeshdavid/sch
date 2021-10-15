@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-22-05/profile" file="header.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-22-05/profile/header.blade.php" size="833" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="1724ab833820a7c20c49ba68c3eae0ac4cc65f4e" relative="resources/views-22-05/profile/header.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;div class="user-profile" {{--style="background-image: url(/images/user_profile.jpeg)"--}}&gt;</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">    &lt;div class="container-fluid"&gt;</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">        &lt;div class="row"&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">            &lt;div class="col-xs-12"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">                &lt;div class="media"&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">                    &lt;a class="media-left"&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">                        &lt;img class="media-object img-circle h-100 w-100" src="{{$user-&gt;avatar}}"&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">                    &lt;/a&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">                    &lt;div class="media-body"&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">                        &lt;h5 class="color-white media-heading"&gt; {{$user-&gt;first_name}} {{$user-&gt;last_name}} &lt;/h5&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">                        &lt;p class="text-muted m-b-5 color-white"&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">                            &lt;span class="m-r-10 color-white"&gt;{{$user-&gt;email}}&lt;/span&gt; &lt;/p&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">                        &lt;/p&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt; </token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+</source>

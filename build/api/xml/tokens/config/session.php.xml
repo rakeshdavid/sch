@@ -1,0 +1,566 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/config" file="session.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/config/session.php" size="5827" time="2021-10-13T18:44:11+00:00" unixtime="1634150651" sha1="2cd42ffe62974a4ec0695920f29b07d593229d21" relative="config/session.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="4"/>
+  <line no="5">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="6">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="7">
+    <token name="T_COMMENT">    | Default Session Driver</token>
+  </line>
+  <line no="8">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="9">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="10">
+    <token name="T_COMMENT">    | This option controls the default session "driver" that will be used on</token>
+  </line>
+  <line no="11">
+    <token name="T_COMMENT">    | requests. By default, we will use the lightweight native driver but</token>
+  </line>
+  <line no="12">
+    <token name="T_COMMENT">    | you may specify any of the other wonderful drivers provided here.</token>
+  </line>
+  <line no="13">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="14">
+    <token name="T_COMMENT">    | Supported: "file", "cookie", "database", "apc",</token>
+  </line>
+  <line no="15">
+    <token name="T_COMMENT">    |            "memcached", "redis", "array"</token>
+  </line>
+  <line no="16">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="17">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="18"/>
+  <line no="19">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'driver'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">env</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'SESSION_DRIVER'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'file'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="20"/>
+  <line no="21">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="22">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="23">
+    <token name="T_COMMENT">    | Session Lifetime</token>
+  </line>
+  <line no="24">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="25">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="26">
+    <token name="T_COMMENT">    | Here you may specify the number of minutes that you wish the session</token>
+  </line>
+  <line no="27">
+    <token name="T_COMMENT">    | to be allowed to remain idle before it expires. If you want them</token>
+  </line>
+  <line no="28">
+    <token name="T_COMMENT">    | to immediately expire on the browser closing, set that option.</token>
+  </line>
+  <line no="29">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="30">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="31"/>
+  <line no="32">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'lifetime'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">120</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="33"/>
+  <line no="34">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'expire_on_close'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">false</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="35"/>
+  <line no="36">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="37">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="38">
+    <token name="T_COMMENT">    | Session Encryption</token>
+  </line>
+  <line no="39">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="40">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="41">
+    <token name="T_COMMENT">    | This option allows you to easily specify that all of your session data</token>
+  </line>
+  <line no="42">
+    <token name="T_COMMENT">    | should be encrypted before it is stored. All encryption will be run</token>
+  </line>
+  <line no="43">
+    <token name="T_COMMENT">    | automatically by Laravel and you can use the Session like normal.</token>
+  </line>
+  <line no="44">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="45">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="46"/>
+  <line no="47">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'encrypt'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">false</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="48"/>
+  <line no="49">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="50">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="51">
+    <token name="T_COMMENT">    | Session File Location</token>
+  </line>
+  <line no="52">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="53">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="54">
+    <token name="T_COMMENT">    | When using the native session driver, we need a location where session</token>
+  </line>
+  <line no="55">
+    <token name="T_COMMENT">    | files may be stored. A default has been set for you but a different</token>
+  </line>
+  <line no="56">
+    <token name="T_COMMENT">    | location may be specified. This is only needed for file sessions.</token>
+  </line>
+  <line no="57">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="58">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="59"/>
+  <line no="60">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'files'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">storage_path</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'framework/sessions'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="61"/>
+  <line no="62">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="63">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="64">
+    <token name="T_COMMENT">    | Session Database Connection</token>
+  </line>
+  <line no="65">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="66">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="67">
+    <token name="T_COMMENT">    | When using the "database" or "redis" session drivers, you may specify a</token>
+  </line>
+  <line no="68">
+    <token name="T_COMMENT">    | connection that should be used to manage these sessions. This should</token>
+  </line>
+  <line no="69">
+    <token name="T_COMMENT">    | correspond to a connection in your database configuration options.</token>
+  </line>
+  <line no="70">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="71">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="72"/>
+  <line no="73">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'connection'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">null</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="74"/>
+  <line no="75">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="76">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="77">
+    <token name="T_COMMENT">    | Session Database Table</token>
+  </line>
+  <line no="78">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="79">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="80">
+    <token name="T_COMMENT">    | When using the "database" session driver, you may specify the table we</token>
+  </line>
+  <line no="81">
+    <token name="T_COMMENT">    | should use to manage the sessions. Of course, a sensible default is</token>
+  </line>
+  <line no="82">
+    <token name="T_COMMENT">    | provided for you; however, you are free to change this as needed.</token>
+  </line>
+  <line no="83">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="84">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="85"/>
+  <line no="86">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'table'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'sessions'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="87"/>
+  <line no="88">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="89">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="90">
+    <token name="T_COMMENT">    | Session Sweeping Lottery</token>
+  </line>
+  <line no="91">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="92">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="93">
+    <token name="T_COMMENT">    | Some session drivers must manually sweep their storage location to get</token>
+  </line>
+  <line no="94">
+    <token name="T_COMMENT">    | rid of old sessions from storage. Here are the chances that it will</token>
+  </line>
+  <line no="95">
+    <token name="T_COMMENT">    | happen on a given request. By default, the odds are 2 out of 100.</token>
+  </line>
+  <line no="96">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="97">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="98"/>
+  <line no="99">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'lottery'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_LNUMBER">2</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">100</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="100"/>
+  <line no="101">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="102">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="103">
+    <token name="T_COMMENT">    | Session Cookie Name</token>
+  </line>
+  <line no="104">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="105">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="106">
+    <token name="T_COMMENT">    | Here you may change the name of the cookie used to identify a session</token>
+  </line>
+  <line no="107">
+    <token name="T_COMMENT">    | instance by ID. The name specified here will get used every time a</token>
+  </line>
+  <line no="108">
+    <token name="T_COMMENT">    | new session cookie is created by the framework for every driver.</token>
+  </line>
+  <line no="109">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="110">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="111"/>
+  <line no="112">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'cookie'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'laravel_session'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="113"/>
+  <line no="114">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="115">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="116">
+    <token name="T_COMMENT">    | Session Cookie Path</token>
+  </line>
+  <line no="117">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="118">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="119">
+    <token name="T_COMMENT">    | The session cookie path determines the path for which the cookie will</token>
+  </line>
+  <line no="120">
+    <token name="T_COMMENT">    | be regarded as available. Typically, this will be the root path of</token>
+  </line>
+  <line no="121">
+    <token name="T_COMMENT">    | your application but you are free to change this when necessary.</token>
+  </line>
+  <line no="122">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="123">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="124"/>
+  <line no="125">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'path'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'/'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="126"/>
+  <line no="127">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'lockfile_dir'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'../storage/framework/sessions/lock_sessions'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="128"/>
+  <line no="129">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="130">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="131">
+    <token name="T_COMMENT">    | Session Cookie Domain</token>
+  </line>
+  <line no="132">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="133">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="134">
+    <token name="T_COMMENT">    | Here you may change the domain of the cookie used to identify a session</token>
+  </line>
+  <line no="135">
+    <token name="T_COMMENT">    | in your application. This will determine which domains the cookie is</token>
+  </line>
+  <line no="136">
+    <token name="T_COMMENT">    | available to in your application. A sensible default has been set.</token>
+  </line>
+  <line no="137">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="138">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="139"/>
+  <line no="140">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'domain'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">null</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="141"/>
+  <line no="142">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="143">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="144">
+    <token name="T_COMMENT">    | HTTPS Only Cookies</token>
+  </line>
+  <line no="145">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="146">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="147">
+    <token name="T_COMMENT">    | By setting this option to true, session cookies will only be sent back</token>
+  </line>
+  <line no="148">
+    <token name="T_COMMENT">    | to the server if the browser has a HTTPS connection. This will keep</token>
+  </line>
+  <line no="149">
+    <token name="T_COMMENT">    | the cookie from being sent to you if it can not be done securely.</token>
+  </line>
+  <line no="150">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="151">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="152"/>
+  <line no="153">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'secure'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">false</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="154"/>
+  <line no="155">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="156">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="157">
+    <token name="T_COMMENT">    | HTTP Access Only</token>
+  </line>
+  <line no="158">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="159">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="160">
+    <token name="T_COMMENT">    | Setting this value to true will prevent JavaScript from accessing the</token>
+  </line>
+  <line no="161">
+    <token name="T_COMMENT">    | value of the cookie and the cookie will only be accessible through</token>
+  </line>
+  <line no="162">
+    <token name="T_COMMENT">    | the HTTP protocol. You are free to modify this option if needed.</token>
+  </line>
+  <line no="163">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="164">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="165"/>
+  <line no="166">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'http_only'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">true</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="167"/>
+  <line no="168">
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="169"/>
+</source>

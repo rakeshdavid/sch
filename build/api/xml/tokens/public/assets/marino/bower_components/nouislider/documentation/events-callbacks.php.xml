@@ -1,0 +1,595 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/public/assets/marino/bower_components/nouislider/documentation" file="events-callbacks.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/public/assets/marino/bower_components/nouislider/documentation/events-callbacks.php" size="6211" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="ea5405c3e62b20fe5d91a1d862985d81e4deee0b" relative="public/assets/marino/bower_components/nouislider/documentation/events-callbacks.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_VARIABLE">$title</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"noUiSlider - Events and callbacks"</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="3">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_VARIABLE">$description</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"Listen to everything that happens, and run your code when you want too. noUiSlider has a bunch of events and callbacks. Read all about them!"</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="4">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="5"/>
+  <line no="6">
+    <token name="T_INLINE_HTML">&lt;h1&gt;Events&lt;/h1&gt;</token>
+  </line>
+  <line no="7"/>
+  <line no="8">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="9"/>
+  <line no="10">
+    <token name="T_INLINE_HTML">	&lt;div class="view-more"&gt;</token>
+  </line>
+  <line no="11"/>
+  <line no="12">
+    <token name="T_INLINE_HTML">		&lt;p&gt;noUiSlider offers several ways to listen to interaction: &lt;code&gt;'update'&lt;/code&gt;, &lt;code&gt;'change'&lt;/code&gt;, &lt;code&gt;'set'&lt;/code&gt; and &lt;code&gt;'slide'&lt;/code&gt;. You can use these events all at the same time. There are also the &lt;code&gt;'start'&lt;/code&gt; and &lt;code&gt;'end'&lt;/code&gt; events, that fire when a drag is started or ended.&lt;/p&gt;</token>
+  </line>
+  <line no="13"/>
+  <line no="14">
+    <token name="T_INLINE_HTML">		&lt;div class="example"&gt;</token>
+  </line>
+  <line no="15"/>
+  <line no="16">
+    <token name="T_INLINE_HTML">			&lt;div id="slider-events"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="17"/>
+  <line no="18">
+    <token name="T_INLINE_HTML">			&lt;div class="logger"&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">				&lt;div id="l-update"&gt;Update&lt;/div&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">				&lt;div id="l-slide"&gt;Slide&lt;/div&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">				&lt;div id="l-set"&gt;Set&lt;/div&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">				&lt;div id="l-change"&gt;Change&lt;/div&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">				&lt;div id="l-start"&gt;Start&lt;/div&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">				&lt;div id="l-end"&gt;End&lt;/div&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">			&lt;/div&gt;</token>
+  </line>
+  <line no="26"/>
+  <line no="27">
+    <token name="T_INLINE_HTML">			&lt;div class="logger"&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">				&lt;input id="input-log"&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">				&lt;button id="setter"&gt;.set([ 5, 15 ])&lt;/button&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">			&lt;/div&gt;</token>
+  </line>
+  <line no="31"/>
+  <line no="32">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'class'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'demo'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'buttoninput'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'binding-events'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="37"/>
+  <line no="38">
+    <token name="T_INLINE_HTML">		&lt;table class="data-table events-table"&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">			&lt;thead&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">				&lt;tr&gt;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">					&lt;th&gt;&amp;nbsp;&lt;/th&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">					&lt;th width="65"&gt;Update&lt;/th&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">					&lt;th width="65"&gt;Slide&lt;/th&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">					&lt;th width="65"&gt;Set&lt;/th&gt;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">					&lt;th width="65"&gt;Change&lt;/th&gt;</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">				&lt;/tr&gt;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">			&lt;/thead&gt;</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">			&lt;tbody&gt;</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">				&lt;tr&gt;</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">					&lt;td&gt;&lt;span&gt;A handle is &lt;strong&gt;released&lt;/strong&gt; after dragging&lt;/span&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">					&lt;td class="events-yes"&gt;&lt;span&gt;Yes&lt;/span&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">					&lt;td class="events-no"&gt;&lt;span&gt;No&lt;/span&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">					&lt;td class="events-yes"&gt;&lt;span&gt;Yes&lt;/span&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">					&lt;td class="events-yes"&gt;&lt;span&gt;Yes&lt;/span&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">				&lt;/tr&gt;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">				&lt;tr&gt;</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">					&lt;td&gt;&lt;span&gt;A slider is moved by &lt;strong&gt;tapping&lt;/strong&gt; it&lt;/span&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">					&lt;td class="events-yes"&gt;&lt;span&gt;Yes&lt;/span&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">					&lt;td class="events-yes"&gt;&lt;span&gt;Yes&lt;/span&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">					&lt;td class="events-yes"&gt;&lt;span&gt;Yes&lt;/span&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">					&lt;td class="events-yes"&gt;&lt;span&gt;Yes&lt;/span&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">				&lt;/tr&gt;</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">				&lt;tr&gt;</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">					&lt;td&gt;&lt;span&gt;A handle moves while &lt;strong&gt;dragging&lt;/strong&gt;&lt;/span&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">					&lt;td class="events-yes"&gt;&lt;span&gt;Yes&lt;/span&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">					&lt;td class="events-yes"&gt;&lt;span&gt;Yes&lt;/span&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">					&lt;td class="events-no"&gt;&lt;span&gt;No&lt;/span&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">					&lt;td class="events-no"&gt;&lt;span&gt;No&lt;/span&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">				&lt;/tr&gt;</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">				&lt;tr&gt;</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">					&lt;td&gt;&lt;span&gt;The &lt;strong&gt;&lt;code&gt;.set()&lt;/code&gt;&lt;/strong&gt; method is called&lt;/span&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">					&lt;td class="events-yes"&gt;&lt;span&gt;Yes&lt;/span&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">					&lt;td class="events-no"&gt;&lt;span&gt;No&lt;/span&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">					&lt;td class="events-yes"&gt;&lt;span&gt;Yes&lt;/span&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">					&lt;td class="events-no"&gt;&lt;span&gt;No&lt;/span&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">				&lt;/tr&gt;</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">				&lt;tr&gt;</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">					&lt;td&gt;&lt;span&gt;When bound using the &lt;strong&gt;&lt;code&gt;.on()&lt;/code&gt;&lt;/strong&gt; method&lt;/span&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">					&lt;td class="events-yes"&gt;&lt;span&gt;Yes&lt;/span&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">					&lt;td class="events-no"&gt;&lt;span&gt;No&lt;/span&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">					&lt;td class="events-no"&gt;&lt;span&gt;No&lt;/span&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">					&lt;td class="events-no"&gt;&lt;span&gt;No&lt;/span&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">				&lt;/tr&gt;</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">			&lt;/tbody&gt;</token>
+  </line>
+  <line no="85">
+    <token name="T_INLINE_HTML">		&lt;/table&gt;</token>
+  </line>
+  <line no="86">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="87"/>
+  <line no="88">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="89"/>
+  <line no="90">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Temporary set a class&lt;/div&gt;</token>
+  </line>
+  <line no="91"/>
+  <line no="92">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="93">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'class'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="94">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="95"/>
+  <line no="96">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Setting up the slider&lt;/div&gt;</token>
+  </line>
+  <line no="97"/>
+  <line no="98">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'demo'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="100">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="101"/>
+  <line no="102"/>
+  <line no="103">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Bind button and input&lt;/div&gt;</token>
+  </line>
+  <line no="104"/>
+  <line no="105">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="106">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'buttoninput'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="107">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="108"/>
+  <line no="109">
+    <token name="T_INLINE_HTML">		</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'binding-events'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="110"/>
+  <line no="111">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="112">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="113"/>
+  <line no="114"/>
+  <line no="115">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'binding'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="116">
+    <token name="T_INLINE_HTML">&lt;h2&gt;Binding&lt;/h2&gt;</token>
+  </line>
+  <line no="117"/>
+  <line no="118">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="119"/>
+  <line no="120">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="121">
+    <token name="T_INLINE_HTML">		&lt;p&gt;noUiSlider uses a custom binding model with support for namespaces. The event system looks similar to jQuery's. There are two methods, &lt;code&gt;.on( eventName, callback )&lt;/code&gt; and &lt;code&gt;.off( eventName )&lt;/code&gt;. Events can be namespaced by appending a period ('.') and an identifier to the event name.&lt;/p&gt;</token>
+  </line>
+  <line no="122"/>
+  <line no="123">
+    <token name="T_INLINE_HTML">		&lt;p&gt;Nested namespaces ('slide.something.else') are not supported, and are threated as a single namespace (so '.a.b' isn't related to '.a').&lt;/p&gt;</token>
+  </line>
+  <line no="124"/>
+  <line no="125">
+    <token name="T_INLINE_HTML">		&lt;p&gt;Event callbacks receive three arguments. &lt;code&gt;values&lt;/code&gt; is &lt;strong&gt;always an array&lt;/strong&gt;, for both one-handle and two-handle sliders. It contains the current slider values, with formatting applied. &lt;code&gt;handle&lt;/code&gt; is &lt;code&gt;0&lt;/code&gt; or &lt;code&gt;1&lt;/code&gt; and indicates the handle that caused the event. &lt;code&gt;values[handle]&lt;/code&gt; gives the value for the current handle. Should you need it, &lt;code&gt;unencodedValues&lt;/code&gt; contains the slider values without any formatting.&lt;/p&gt;</token>
+  </line>
+  <line no="126"/>
+  <line no="127">
+    <token name="T_INLINE_HTML">		&lt;p&gt;For all events, &lt;code&gt;this&lt;/code&gt; is set to the current slider's public API, containing (among others) the &lt;code&gt;'get'&lt;/code&gt; and &lt;code&gt;'set'&lt;/code&gt; methods.&lt;/p&gt;</token>
+  </line>
+  <line no="128">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="129"/>
+  <line no="130">
+    <token name="T_INLINE_HTML">	</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'binding'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="131"/>
+  <line no="132">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="133"/>
+  <line no="134"/>
+  <line no="135">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'note'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="136">
+    <token name="T_INLINE_HTML">&lt;h2&gt;Note&lt;/h2&gt;</token>
+  </line>
+  <line no="137"/>
+  <line no="138">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="139"/>
+  <line no="140">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="141">
+    <token name="T_INLINE_HTML">		&lt;p&gt;&lt;strong&gt;Take care!&lt;/strong&gt; When any of the events fire, the slider state has updated. However, it's &lt;strong&gt;visual&lt;/strong&gt; &lt;em&gt;might&lt;/em&gt; not have been updated yet. This happens asynchronically to increase paint performance.&lt;/p&gt;</token>
+  </line>
+  <line no="142">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="143">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="144"/>
+  <line no="145"/>
+  <line no="146">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'update'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="147">
+    <token name="T_INLINE_HTML">&lt;h2&gt;Update&lt;/h2&gt;</token>
+  </line>
+  <line no="148"/>
+  <line no="149">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="150"/>
+  <line no="151">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="152">
+    <token name="T_INLINE_HTML">		&lt;p&gt;Use this event when synchronising the slider value to another element, such as an &lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt;. It fires anytime the slider is changed. Additionally, it fires &lt;strong&gt;immediately&lt;/strong&gt; when bound.&lt;/p&gt;</token>
+  </line>
+  <line no="153">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="154">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="155"/>
+  <line no="156"/>
+  <line no="157">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'slide'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="158">
+    <token name="T_INLINE_HTML">&lt;h2&gt;Slide&lt;/h2&gt;</token>
+  </line>
+  <line no="159"/>
+  <line no="160">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="161"/>
+  <line no="162">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="163">
+    <token name="T_INLINE_HTML">		&lt;p&gt;This event is useful when you want to update a value or perform an actions every time a handle is dragged. For example, you can use the &lt;code&gt;'slide'&lt;/code&gt; event to update graphs. For convenience, this function also fires on a change by 'tap'.&lt;/p&gt;</token>
+  </line>
+  <line no="164">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="165">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="166"/>
+  <line no="167"/>
+  <line no="168">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'set'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="169">
+    <token name="T_INLINE_HTML">&lt;h2&gt;Set&lt;/h2&gt;</token>
+  </line>
+  <line no="170"/>
+  <line no="171">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="172"/>
+  <line no="173">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="174">
+    <token name="T_INLINE_HTML">		&lt;p&gt;Whenever a slider is changed to a new value, this event is fired. This function will trigger every time a slider &lt;em&gt;stops&lt;/em&gt; changing, &lt;strong&gt;including&lt;/strong&gt; after calls to the &lt;code&gt;.val()&lt;/code&gt; method. You can consider this 'end of slide'.&lt;/p&gt;</token>
+  </line>
+  <line no="175">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="176"/>
+  <line no="177">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="178"/>
+  <line no="179"/>
+  <line no="180">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'change'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="181">
+    <token name="T_INLINE_HTML">&lt;h2&gt;Change&lt;/h2&gt;</token>
+  </line>
+  <line no="182"/>
+  <line no="183">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="184"/>
+  <line no="185">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="186">
+    <token name="T_INLINE_HTML">		&lt;p&gt;This event is similar to the &lt;code&gt;change&lt;/code&gt; events on regular &lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt; elements. It fires when a user &lt;em&gt;stops&lt;/em&gt; sliding, or when a slider value is changed by 'tap'.&lt;/p&gt;</token>
+  </line>
+  <line no="187">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="188">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="189"/>
+</source>

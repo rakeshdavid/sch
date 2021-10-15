@@ -1,0 +1,285 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/public/assets/marino/bower_components/nouislider/documentation" file="new-version.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/public/assets/marino/bower_components/nouislider/documentation/new-version.php" size="4539" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="75fac44c201d0d9e55227d2e641d58af789013ac" relative="public/assets/marino/bower_components/nouislider/documentation/new-version.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_VARIABLE">$title</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"noUiSlider - New Version: noUiSlider 7"</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="3">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_VARIABLE">$description</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">""</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="4">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="5"/>
+  <line no="6">
+    <token name="T_INLINE_HTML">&lt;h1&gt;noUiSlider 8 release information&lt;/h1&gt;</token>
+  </line>
+  <line no="7"/>
+  <line no="8">
+    <token name="T_INLINE_HTML">&lt;style&gt;ul { list-style: disc; padding: 0 20px; }&lt;/style&gt;</token>
+  </line>
+  <line no="9"/>
+  <line no="10">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="11"/>
+  <line no="12">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="13"/>
+  <line no="14">
+    <token name="T_INLINE_HTML">		&lt;p&gt;After a slower, more incremental development period for noUiSlider, it is time for a shakeup. With a lot of attention going to &lt;a href="http://youmightnotneedjquery.com/"&gt;'You might not need jQuery'&lt;/a&gt; and other initiatives, I felt removing the jQuery dependancy in noUiSlider would be a nice project to spend some time on.&lt;/p&gt;</token>
+  </line>
+  <line no="15"/>
+  <line no="16">
+    <token name="T_INLINE_HTML">		&lt;p&gt;Add to that the rapid progress on the Internet Explorer front. Up to noUiSlider 7, IE7 remained supported, mainly because there was never any need to explicity break compatibility. With IE currently at version 11 and Microsoft Edge ('Project Spartan') approaching, now is as good a time as any to drop the really old versions.&lt;/p&gt;</token>
+  </line>
+  <line no="17"/>
+  <line no="18">
+    <token name="T_INLINE_HTML">		&lt;p&gt;&lt;strong&gt;noUiSlider 8 removes the jQuery dependancy completely.&lt;/strong&gt;&lt;/p&gt;</token>
+  </line>
+  <line no="19"/>
+  <line no="20">
+    <token name="T_INLINE_HTML">		&lt;p&gt;Rewriting the plugin, all tests and the documentation is quite an undertaking, so I wanted to get at least the following out of it:&lt;/p&gt;</token>
+  </line>
+  <line no="21"/>
+  <line no="22">
+    <token name="T_INLINE_HTML">		&lt;ul&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">			&lt;li&gt;The release cycle has to be easier&lt;/li&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">			&lt;li&gt;Overall file size has to go down&lt;/li&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">			&lt;li&gt;API's had to be simplified&lt;/li&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">		&lt;/ul&gt;</token>
+  </line>
+  <line no="27"/>
+  <line no="28">
+    <token name="T_INLINE_HTML">		&lt;p&gt;The LibLink project, which I've always liked working on, formed a problem in this port. It's API is completely rooted in jQuery's method system. Considering the number of support request for this feature, even though it is rather complex, was low, I'm going to assume it wasn't used a lot. I wanted the spirit to remain in place, so I put a lot of thought into a replacement feature. It had to be 1) simpler, 2) have a smaller footprint and 3) be more obvious to use.&lt;/p&gt;</token>
+  </line>
+  <line no="29"/>
+  <line no="30">
+    <token name="T_INLINE_HTML">		&lt;p&gt;The solution I came up with is the new &lt;code&gt;update&lt;/code&gt; event. It fires on any change in the slider value, &lt;strong&gt;and when it is bound&lt;/strong&gt;. This allows synchronizing with input elements without calling the bound function manually. A feature that is missing is the automatic adding of &lt;code&gt;change&lt;/code&gt; events to the inputs: I've attempted to compensate this by providing some additional examples.&lt;/p&gt;</token>
+  </line>
+  <line no="31"/>
+  <line no="32">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="33"/>
+  <line no="34">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="35"/>
+  <line no="36"/>
+  <line no="37">
+    <token name="T_INLINE_HTML">&lt;h2&gt;What else is new?&lt;/h2&gt;</token>
+  </line>
+  <line no="38"/>
+  <line no="39">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="40"/>
+  <line no="41">
+    <token name="T_INLINE_HTML">	&lt;ul&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">		&lt;li&gt;Rebuilding is gone =&gt; destroy and rebuild now.&lt;/li&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">		&lt;li&gt;&lt;code&gt;GetOriginalOptions&lt;/code&gt; removed&lt;/li&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">		&lt;li&gt;Looping and iterating in the initializer have been removed.&lt;br&gt;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">			&lt;code&gt;create&lt;/code&gt; takes one node, and one node only. This saves a &lt;em&gt;lot&lt;/em&gt; of code.&lt;/li&gt;</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">		&lt;li&gt;Slider fires no native events anymore.&lt;/li&gt;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">			&lt;ul&gt;</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">				&lt;li&gt;No issues in change events with inputs&lt;/li&gt;</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">				&lt;li&gt;The &lt;code&gt;slide&lt;/code&gt; event now fires for both handles when using the &lt;code&gt;drag&lt;/code&gt; option.&lt;/li&gt;</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">				&lt;li&gt;Events now have the handle number as an argument.&lt;/li&gt;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">			&lt;/ul&gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">		&lt;li&gt;Submodules are no longer in the repository. Want wNumb()? Include it!&lt;/li&gt;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">		&lt;li&gt;The Pips feature, an optional addition in noUiSlider 7, has been merged into the core.&lt;br&gt;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">			This allowed removing some overhead, shrinking the overall file size.&lt;/li&gt;</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">		&lt;li&gt;Individual handles can now be disabled.&lt;/li&gt;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">		&lt;li&gt;Slider no longer responds to middle/right clicks.&lt;/li&gt;</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">	&lt;/ul&gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="59"/>
+  <line no="60"/>
+  <line no="61">
+    <token name="T_INLINE_HTML">&lt;h2&gt;Version 7 to 8 migration guide&lt;/h2&gt;</token>
+  </line>
+  <line no="62"/>
+  <line no="63">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="64"/>
+  <line no="65">
+    <token name="T_INLINE_HTML">	&lt;table&gt;</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">		&lt;tr&gt;&lt;th&gt;noUiSlider 7&lt;/th&gt;&lt;th&gt;noUiSlider 8&lt;/th&gt;&lt;/tr&gt;</token>
+  </line>
+  <line no="67"/>
+  <line no="68">
+    <token name="T_INLINE_HTML">&lt;tr&gt;&lt;td colspan="2"&gt;Initialization&lt;/td&gt;&lt;/tr&gt;</token>
+  </line>
+  <line no="69"/>
+  <line no="70">
+    <token name="T_INLINE_HTML">&lt;tr&gt;</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">	&lt;td&gt;&lt;pre&gt;&lt;code&gt;$('#slider').noUiSlider({options});&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">	&lt;td&gt;&lt;pre&gt;&lt;code&gt;var slider = document.getElementById('slider');</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">noUiSlider.create(slider, {options});&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">&lt;/tr&gt;</token>
+  </line>
+  <line no="75"/>
+  <line no="76">
+    <token name="T_INLINE_HTML">&lt;tr&gt;&lt;td colspan="2"&gt;Get the slider value&lt;/td&gt;&lt;/tr&gt;</token>
+  </line>
+  <line no="77"/>
+  <line no="78">
+    <token name="T_INLINE_HTML">&lt;tr&gt;</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">	&lt;td&gt;&lt;pre&gt;&lt;code&gt;var value = $('#slider').val();&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">	&lt;td&gt;&lt;pre&gt;&lt;code&gt;var value = slider.noUiSlider.get();&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">&lt;/tr&gt;</token>
+  </line>
+  <line no="82"/>
+  <line no="83">
+    <token name="T_INLINE_HTML">&lt;tr&gt;&lt;td colspan="2"&gt;Set the slider value&lt;/td&gt;&lt;/tr&gt;</token>
+  </line>
+  <line no="84"/>
+  <line no="85">
+    <token name="T_INLINE_HTML">&lt;tr&gt;</token>
+  </line>
+  <line no="86">
+    <token name="T_INLINE_HTML">	&lt;td&gt;&lt;pre&gt;&lt;code&gt;$('#slider').val( 50 );&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="87">
+    <token name="T_INLINE_HTML">	&lt;td&gt;&lt;pre&gt;&lt;code&gt;slider.noUiSlider.set( 50 );&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">&lt;/tr&gt;</token>
+  </line>
+  <line no="89"/>
+  <line no="90">
+    <token name="T_INLINE_HTML">&lt;tr&gt;&lt;td colspan="2"&gt;Add an event listener&lt;/td&gt;&lt;/tr&gt;</token>
+  </line>
+  <line no="91"/>
+  <line no="92">
+    <token name="T_INLINE_HTML">&lt;tr&gt;</token>
+  </line>
+  <line no="93">
+    <token name="T_INLINE_HTML">	&lt;td&gt;&lt;pre&gt;&lt;code&gt;$('#slider').on('change', function());&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="94">
+    <token name="T_INLINE_HTML">	&lt;td&gt;&lt;pre&gt;&lt;code&gt;slider.noUiSlider.on('change', function());&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="95">
+    <token name="T_INLINE_HTML">&lt;/tr&gt;</token>
+  </line>
+  <line no="96"/>
+  <line no="97">
+    <token name="T_INLINE_HTML">&lt;tr&gt;&lt;td colspan="2"&gt;Bind to an &lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt; element&lt;/td&gt;&lt;/tr&gt;</token>
+  </line>
+  <line no="98"/>
+  <line no="99">
+    <token name="T_INLINE_HTML">&lt;tr&gt;</token>
+  </line>
+  <line no="100">
+    <token name="T_INLINE_HTML">	&lt;td&gt;&lt;pre&gt;&lt;code&gt;$('#slider').Link().to($('input'));&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="101"/>
+  <line no="102">
+    <token name="T_INLINE_HTML">&lt;td&gt;&lt;pre&gt;&lt;code&gt;slider.noUiSlider.on('update', function( values, handle ) {</token>
+  </line>
+  <line no="103">
+    <token name="T_INLINE_HTML">	input.value = values[handle];</token>
+  </line>
+  <line no="104">
+    <token name="T_INLINE_HTML">});</token>
+  </line>
+  <line no="105"/>
+  <line no="106">
+    <token name="T_INLINE_HTML">input.addEventListener('change', function(){</token>
+  </line>
+  <line no="107">
+    <token name="T_INLINE_HTML">	slider.noUiSlider.set(this.value);</token>
+  </line>
+  <line no="108">
+    <token name="T_INLINE_HTML">});&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="109">
+    <token name="T_INLINE_HTML">&lt;/tr&gt;</token>
+  </line>
+  <line no="110">
+    <token name="T_INLINE_HTML">	&lt;/table&gt;</token>
+  </line>
+  <line no="111"/>
+  <line no="112">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="113"/>
+</source>

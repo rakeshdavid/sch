@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-22-05/pages" file="maintenance.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-22-05/pages/maintenance.blade.php" size="2162" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="aadb5b0fdadd69202e355f9a050df2ed71e3cca1" relative="resources/views-22-05/pages/maintenance.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;!doctype html&gt;</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">&lt;html lang="en"&gt;</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">    &lt;head&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">        &lt;meta charset="utf-8"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">        &lt;meta name="csrf-token" content="{{ csrf_token() }}"&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">        &lt;title&gt;Showcase&lt;/title&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">        &lt;link rel="stylesheet" href="{{url('/')}}/assets/marino/styles/components/bootstrap.css"&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">        &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">        &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css"&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">        &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">        &lt;link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">        &lt;link rel="stylesheet" href="{{url('/')}}/assets/marino/styles/main.css"&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">    &lt;/head&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">    &lt;body style="background: url('/images/maintenance.png') no-repeat center center fixed;background-size: cover;"&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">        &lt;div class="container-fluid"&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">            &lt;div class="maintenance-logo" style="width: 100%; color: #fff; font-family: 'Montserrat', sans-serif; text-align: center;"&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">                &lt;a href="/" style=" display: block; float: left;"&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">                    &lt;img class="main-logo-img" src="/images/logo-black.png" width="90" height="102" style="margin: 10px 0 0 50px;"&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">                &lt;/a&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">                &lt;span style="font-size: 70px;"&gt;Wait... something went wrong.&lt;/span&gt;</token>
+  </line>
+  <line no="21"/>
+  <line no="22">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">            &lt;div class="maintenance-bottom" style="width: 100%; color: #fff; text-align: center;position: absolute; bottom: 50px;"&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">                &lt;span style="font-size: 32px;"&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">                    @if ($platform == 'coach')</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">                    Somebody get me my cape, i'm on it - Buddy</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">                    @elseif ($platform == 'user')</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">                    Somebody get me my cape, i'm on it - Buddy</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">                    @else</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">                    {{ $platform }} is under maintenance.</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">                    @endif</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">                &lt;/span&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">                &lt;br /&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">                &lt;span style="font-size: 20px;"&gt;PS - He's great with sniffing out problems&lt;/span&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">    &lt;/body&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">&lt;/html&gt;</token>
+  </line>
+</source>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views/video" file="show.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views/video/show.blade.php" size="334" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="a863b19ac9ed3ff64ed4a47f1f0559d5c07f59f3" relative="resources/views/video/show.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layouts.app')</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">    &lt;div class="container"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">        &lt;div class="row"&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">            &lt;div class="col-md-12"&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">                &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/{{$video-&gt;url}}" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+</source>

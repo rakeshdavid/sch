@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-25-05/video" file="question.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-25-05/video/question.blade.php" size="338" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="db3448e7d105b5e7df371e986ddbf16857966a3d" relative="resources/views-25-05/video/question.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;form method="post" action="" id="ask-question"&gt;</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">	{!! csrf_field() !!}</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">	&lt;div class="row"&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">    	&lt;div class="col-lg-12"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">            &lt;input type="text" name="question-title" class="form-control" placeholder="Ask your question..." value="{{$filter['name']}}"&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">        &lt;div class="col-lg-12"&gt;</token>
+  </line>
+  <line no="8"/>
+  <line no="9">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">&lt;/form&gt;</token>
+  </line>
+</source>

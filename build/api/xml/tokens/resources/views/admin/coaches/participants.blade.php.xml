@@ -1,0 +1,300 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views/admin/coaches" file="participants.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views/admin/coaches/participants.blade.php" size="4059" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="29c82f78131d348462e4d7ff8cf9743965752209" relative="resources/views/admin/coaches/participants.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layouts.app')</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">@section('css')</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/5.3.4/sweetalert2.min.css"&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">    &lt;link type="text/css" rel="stylesheet" href="/assets/js/datatables/datatables.min.css"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" /&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">    &lt;style&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">        .modal a.close-modal{</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">            top: -3px;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">            right: -2px;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">        .blocker{</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">            z-index: 9999;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">    &lt;/style&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">&lt;div class="row m-b-20"&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">        &lt;div class="col-xs-12"&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">            &lt;h3&gt;Participants List &lt;/h3&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">        &lt;div class="col-xs-12"&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">            &lt;h3&gt;Coach Name: {{$agency-&gt;first_name}} {{$agency-&gt;last_name}} &lt;/h3&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="25"/>
+  <line no="26">
+    <token name="T_INLINE_HTML">    &lt;div class="row m-b-20"&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">        &lt;div class="col-xs-12"&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">            &lt;table id="coaches-table" class="table table-hover table-striped table-bordered" cellspacing="0" width="100%"&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">                </token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">                    &lt;thead&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">                        &lt;th&gt;Name&lt;/th&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">                        &lt;th&gt;Audition&lt;/th&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">                        &lt;th&gt;Payment Status&lt;/th&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">                        </token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">                        &lt;th&gt;Video&lt;/th&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">                        &lt;th&gt;Action&lt;/th&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">                    &lt;/thead&gt;</token>
+  </line>
+  <line no="38"/>
+  <line no="39">
+    <token name="T_INLINE_HTML">                    @foreach($participants as $participant)</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">                        &lt;tr&gt;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">                            &lt;td&gt;{{$participant-&gt;user-&gt;first_name}}&lt;/td&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">                            &lt;td&gt;@if($participant-&gt;challenges){{$participant-&gt;challenges-&gt;challenges_name}}@endif&lt;/td&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">                            &lt;td&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">                                @if($participant-&gt;payment_status == 1 &amp;&amp; $participant-&gt;stripe_id !='NULL')</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">                                    Paid</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">                                @else</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">                                    Pending</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">                                @endif</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">                            &lt;/td&gt;</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">                            </token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">                            &lt;td&gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">                                &lt;a href="#ex-video-{{$participant-&gt;id}}" rel="modal:open"&gt;See Video&lt;/a&gt;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">                                &lt;div id="ex-video-{{$participant-&gt;id}}" class="modal"&gt;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">                                    &lt;p&gt;Video&lt;/p&gt;</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">                                    &lt;video class="video-pause" id="challenge-video-{{$participant-&gt;id}}" width="100%" height="300" controls=""&gt;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">                                        &lt;source src="/uploads/challenge/{{$participant-&gt;video_link}}"&gt;</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">                                        Your browser does not support HTML5 video.</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">                                    &lt;/video&gt;</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">                                    &lt;a href="#" rel="modal:close"&gt;Close&lt;/a&gt;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">                            &lt;/td&gt;</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">                            &lt;td&gt;</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">                                </token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">                                @if($participant-&gt;review == '')</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">                                   &lt;span class="alert-danger"&gt; Waiting for Review&lt;/span&gt;</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">                                @else</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">                                    &lt;span class="alert-success"&gt;Reviewed&lt;/span&gt;</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">                                @endif</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">                            &lt;/td&gt;</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">                        &lt;/tr&gt;</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">                    @endforeach</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">                </token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">            &lt;/table&gt;</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">@section('js')</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">    &lt;script src="/assets/js/datatables/datatables.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">    &lt;script src="https://cdn.jsdelivr.net/sweetalert2/5.3.4/sweetalert2.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">    &lt;script&gt;</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">    	$(document).ready(function () {</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">    		 $('#coaches-table').DataTable({</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">                "serverSide": false,</token>
+  </line>
+  <line no="85">
+    <token name="T_INLINE_HTML">                "showInfo": true,</token>
+  </line>
+  <line no="86">
+    <token name="T_INLINE_HTML">                "orderable": false,</token>
+  </line>
+  <line no="87">
+    <token name="T_INLINE_HTML">                "bSort" : false</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">    	});</token>
+  </line>
+  <line no="90">
+    <token name="T_INLINE_HTML">    &lt;/script&gt;</token>
+  </line>
+  <line no="91">
+    <token name="T_INLINE_HTML">     &lt;script type="text/javascript"&gt;</token>
+  </line>
+  <line no="92">
+    <token name="T_INLINE_HTML">    </token>
+  </line>
+  <line no="93">
+    <token name="T_INLINE_HTML">    jQuery("body").on('click', function(){</token>
+  </line>
+  <line no="94">
+    <token name="T_INLINE_HTML">        console.log('pausevideo');</token>
+  </line>
+  <line no="95">
+    <token name="T_INLINE_HTML">      $('.video-pause').each(function() {</token>
+  </line>
+  <line no="96">
+    <token name="T_INLINE_HTML">          $(this).get(0).pause();</token>
+  </line>
+  <line no="97">
+    <token name="T_INLINE_HTML">      });</token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">    });</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">&lt;/script&gt;</token>
+  </line>
+  <line no="100">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+</source>

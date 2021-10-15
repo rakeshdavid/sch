@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpdocumentor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://www.phpdoc.org" configVersion="3">
+  <title>phpDocumentor</title>
+  <paths>
+    <output>docs/.build</output>
+  </paths>
+  <phar xmlns="https://phar.io/phive" name="phpdocumentor" version="^3.1.2" installed="3.1.2" location="./tools/phpdocumentor" copy="false"/>
+</phpdocumentor>

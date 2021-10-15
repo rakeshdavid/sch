@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views/video" file="question.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views/video/question.blade.php" size="464" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="d6f2d0a37ac805aa93a12bdcd16bc1898d994b5f" relative="resources/views/video/question.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;form method="post" action="" id="ask-question-"&gt;</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">	{!! csrf_field() !!}</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">	&lt;div class="row"&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">    	&lt;div class="col-lg-12"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">    		&lt;input type="hidden" name="video-id" value="" /&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">            &lt;input type="text" name="question-title" class="form-control" placeholder="Ask your question..." /&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">        &lt;div class="col-lg-12"&gt;</token>
+  </line>
+  <line no="9"/>
+  <line no="10">
+    <token name="T_INLINE_HTML">			&lt;button class="btn btn-outline-danger submit-question" data-videoid=""&gt;Ask Question&lt;/button&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">&lt;/form&gt;</token>
+  </line>
+</source>

@@ -1,0 +1,611 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/public/assets/marino/bower_components/nouislider/documentation" file="more.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/public/assets/marino/bower_components/nouislider/documentation/more.php" size="6743" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="5d1ff00755f03c10c98524e8536677ccd4ddcc92" relative="public/assets/marino/bower_components/nouislider/documentation/more.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_VARIABLE">$title</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"noUiSlider - Disabling, Updating and Styling"</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="3">
+    <token name="T_WHITESPACE">	</token>
+    <token name="T_VARIABLE">$description</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"noUiSlider comes with a beautiful theme. You can temporarily disable a slider element."</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="4">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="5"/>
+  <line no="6">
+    <token name="T_INLINE_HTML">&lt;h1&gt;More...&lt;/h1&gt;</token>
+  </line>
+  <line no="7"/>
+  <line no="8">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'disable'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">&lt;h2&gt;Disabling a slider&lt;/h2&gt;</token>
+  </line>
+  <line no="10"/>
+  <line no="11">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="12"/>
+  <line no="13">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="14"/>
+  <line no="15">
+    <token name="T_INLINE_HTML">		&lt;p&gt;Disabling a slider is identical to disabling a checkbox or textarea; simply set the &lt;code class="language-markup"&gt;disabled&lt;/code&gt; attribute.&lt;/p&gt;</token>
+  </line>
+  <line no="16"/>
+  <line no="17">
+    <token name="T_INLINE_HTML">		&lt;p&gt;A disabled slider can't be changed by sliding, click or touching, but you can still change its value using the &lt;code&gt;.set()&lt;/code&gt; method. You can use CSS to show the disabled state. The default theme also sets a &lt;code&gt;not-allowed&lt;/code&gt; cursor.&lt;/p&gt;</token>
+  </line>
+  <line no="18"/>
+  <line no="19">
+    <token name="T_INLINE_HTML">		&lt;p&gt;The slider below is disabled when the checkbox gets checked, and re-enabled when it is unchecked.&lt;/p&gt;</token>
+  </line>
+  <line no="20"/>
+  <line no="21">
+    <token name="T_INLINE_HTML">		&lt;p&gt;Individual handles can also be disabled by setting the &lt;code&gt;disabled&lt;/code&gt; attribute on a &lt;code&gt;.noUi-origin&lt;/code&gt; element.&lt;/p&gt;</token>
+  </line>
+  <line no="22"/>
+  <line no="23">
+    <token name="T_INLINE_HTML">		&lt;div class="example"&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">			&lt;div id="disable1"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">			&lt;label&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">				&lt;input type="checkbox" id="checkbox1"&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">				Disable slider</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">			&lt;/label&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="30"/>
+  <line no="31">
+    <token name="T_INLINE_HTML">		&lt;div class="example"&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">			&lt;div id="disable2"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">			&lt;label&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">				&lt;input type="checkbox" id="checkbox2"&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">				Disable handle 1</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">			&lt;/label&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">			&lt;br&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">			&lt;label&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">				&lt;input type="checkbox" id="checkbox3"&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">				Disable handle 2</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">			&lt;/label&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'disable'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">false</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="45"/>
+  <line no="46">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="47"/>
+  <line no="48">
+    <token name="T_INLINE_HTML">		</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'disable-all'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="49"/>
+  <line no="50">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Toggling the &lt;code&gt;disabled&lt;/code&gt; attribute&lt;/div&gt;</token>
+  </line>
+  <line no="51"/>
+  <line no="52">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'disable'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="56"/>
+  <line no="57">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="58"/>
+  <line no="59">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'update'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">&lt;h2&gt;Updating slider options&lt;/h2&gt;</token>
+  </line>
+  <line no="61"/>
+  <line no="62">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="63"/>
+  <line no="64">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="65"/>
+  <line no="66">
+    <token name="T_INLINE_HTML">		&lt;p&gt;noUiSlider has an &lt;code&gt;updateOptions&lt;/code&gt; method that can change the &lt;code&gt;'margin'&lt;/code&gt;, &lt;code&gt;'limit'&lt;/code&gt;, &lt;code&gt;'step'&lt;/code&gt;, &lt;code&gt;'range'&lt;/code&gt;, &lt;code&gt;'animate'&lt;/code&gt; and &lt;code&gt;'snap'&lt;/code&gt; options. All other options require changes to the slider's HTML or event bindings.&lt;/p&gt;</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">		</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">		&lt;p&gt;The &lt;code&gt;'update'&lt;/code&gt; event fires after updating the slider. The value the slider has &lt;em&gt;before&lt;/em&gt; updating is applied to it &lt;em&gt;after&lt;/em&gt; updating, and the &lt;code&gt;'set'&lt;/code&gt; event fires to reflect this.&lt;/p&gt;</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">		</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">		&lt;p&gt;To update another option, destroy the slider (&lt;code&gt;slider.noUiSlider.destroy()&lt;/code&gt;) and create a new one.&lt;/p&gt;</token>
+  </line>
+  <line no="71"/>
+  <line no="72">
+    <token name="T_INLINE_HTML">		&lt;div class="example"&gt;</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">			&lt;div id="slider-update"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">			&lt;span class="example-val" id="slider-update-value"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="75"/>
+  <line no="76">
+    <token name="T_INLINE_HTML">			&lt;button class="update-button" id="update-1"&gt;Set range [20, 50]&lt;/button&gt;</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">			&lt;button class="update-button" id="update-2"&gt;Set range [10, 40]&lt;/button&gt;</token>
+  </line>
+  <line no="78"/>
+  <line no="79">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'update-setup'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">run</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'update'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="83"/>
+  <line no="84">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="85"/>
+  <line no="86">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;The HTML for this example&lt;/div&gt;</token>
+  </line>
+  <line no="87"/>
+  <line no="88">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="89"/>
+  <line no="90">
+    <token name="T_INLINE_HTML">&lt;pre class="language-markup"&gt;&lt;code&gt;&amp;lt;div id="update"&amp;gt;&amp;lt;/div&amp;gt;</token>
+  </line>
+  <line no="91">
+    <token name="T_INLINE_HTML">&amp;lt;span id="value"&amp;gt;&amp;lt;/span&amp;gt;</token>
+  </line>
+  <line no="92"/>
+  <line no="93">
+    <token name="T_INLINE_HTML">&amp;lt;button class="update-button" id="update-1"&amp;gt;</token>
+  </line>
+  <line no="94">
+    <token name="T_INLINE_HTML">	Set range [20, 50]</token>
+  </line>
+  <line no="95">
+    <token name="T_INLINE_HTML">&amp;lt;/button&amp;gt;</token>
+  </line>
+  <line no="96"/>
+  <line no="97">
+    <token name="T_INLINE_HTML">&amp;lt;button class="update-button" id="update-2"&amp;gt;</token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">	Set range [10, 40]</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">&amp;lt;/button&amp;gt;&lt;/code&gt;&lt;/pre&gt;</token>
+  </line>
+  <line no="100"/>
+  <line no="101">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="102"/>
+  <line no="103">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Setting up the slider&lt;/div&gt;</token>
+  </line>
+  <line no="104"/>
+  <line no="105">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="106">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'update-setup'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="107">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="108"/>
+  <line no="109">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Updating the slider with new options on &lt;code&gt;button&lt;/code&gt; click&lt;/div&gt;</token>
+  </line>
+  <line no="110"/>
+  <line no="111">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="112">
+    <token name="T_INLINE_HTML">			</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">code</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'update'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="113">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="114">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="115"/>
+  <line no="116">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="117"/>
+  <line no="118"/>
+  <line no="119">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_STRING">sect</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'styling'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="120">
+    <token name="T_INLINE_HTML">&lt;h2&gt;Styling&lt;/h2&gt;</token>
+  </line>
+  <line no="121"/>
+  <line no="122">
+    <token name="T_INLINE_HTML">&lt;section&gt;</token>
+  </line>
+  <line no="123"/>
+  <line no="124">
+    <token name="T_INLINE_HTML">	&lt;div class="view"&gt;</token>
+  </line>
+  <line no="125">
+    <token name="T_INLINE_HTML">		&lt;p&gt;Styling noUiSlider is easy. The default stylesheet contains helpful comments to get a head start. I &lt;strong&gt;strongly&lt;/strong&gt; recommend using the default stylesheet as a starting point when re-styling noUiSlider.&lt;/p&gt;</token>
+  </line>
+  <line no="126"/>
+  <line no="127">
+    <token name="T_INLINE_HTML">		&lt;h3&gt;Things to watch out for&lt;/h3&gt;</token>
+  </line>
+  <line no="128"/>
+  <line no="129">
+    <token name="T_INLINE_HTML">		&lt;ul style="margin: 20px"&gt;</token>
+  </line>
+  <line no="130">
+    <token name="T_INLINE_HTML">			&lt;li&gt;If you want the handles to stay within the slider bar (instead of the default overlap), have a look at the CSS detailed to the right. Add the styles to your stylesheet and give your element the &lt;code&gt;noUi-extended&lt;/code&gt; class for this effect.&lt;/li&gt;</token>
+  </line>
+  <line no="131">
+    <token name="T_INLINE_HTML">			&lt;li&gt;The &lt;code&gt;.noUi-connect&lt;/code&gt; and &lt;code&gt;.noUi-background&lt;/code&gt; classes are applied to various elements.&lt;/a&gt;</token>
+  </line>
+  <line no="132">
+    <token name="T_INLINE_HTML">			&lt;li&gt;To position your handles on the center of its relative position, it should have a &lt;strong&gt;negative offset&lt;/strong&gt; of half the handle width. See the default theme for reference.&lt;/li&gt;</token>
+  </line>
+  <line no="133">
+    <token name="T_INLINE_HTML">		&lt;/ul&gt;</token>
+  </line>
+  <line no="134">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="135"/>
+  <line no="136">
+    <token name="T_INLINE_HTML">	&lt;div class="side"&gt;</token>
+  </line>
+  <line no="137"/>
+  <line no="138">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;CSS classes overview&lt;/div&gt;</token>
+  </line>
+  <line no="139"/>
+  <line no="140">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="141"/>
+  <line no="142">
+    <token name="T_INLINE_HTML">			&lt;table class="language-css data-table styling-table"&gt;</token>
+  </line>
+  <line no="143">
+    <token name="T_INLINE_HTML">				&lt;thead&gt;</token>
+  </line>
+  <line no="144">
+    <token name="T_INLINE_HTML">					&lt;tr&gt;</token>
+  </line>
+  <line no="145">
+    <token name="T_INLINE_HTML">						&lt;th width="250"&gt;Selector&lt;/th&gt;</token>
+  </line>
+  <line no="146">
+    <token name="T_INLINE_HTML">						&lt;th&gt;Effect&lt;/th&gt;</token>
+  </line>
+  <line no="147">
+    <token name="T_INLINE_HTML">					&lt;/tr&gt;</token>
+  </line>
+  <line no="148">
+    <token name="T_INLINE_HTML">				&lt;/thead&gt;</token>
+  </line>
+  <line no="149">
+    <token name="T_INLINE_HTML">				&lt;tbody&gt;</token>
+  </line>
+  <line no="150">
+    <token name="T_INLINE_HTML">					&lt;tr&gt;</token>
+  </line>
+  <line no="151">
+    <token name="T_INLINE_HTML">						&lt;td&gt;&lt;code&gt;.noUi-target&lt;/code&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="152">
+    <token name="T_INLINE_HTML">						&lt;td&gt;This class is added to the element you call &lt;code&gt;.noUiSlider()&lt;/code&gt; on. Has &lt;code&gt;border&lt;/code&gt;, &lt;code&gt;background&lt;/code&gt; and other styling properties to establish the slider design. &lt;/td&gt;</token>
+  </line>
+  <line no="153">
+    <token name="T_INLINE_HTML">					&lt;/tr&gt;</token>
+  </line>
+  <line no="154">
+    <token name="T_INLINE_HTML">					&lt;tr&gt;</token>
+  </line>
+  <line no="155">
+    <token name="T_INLINE_HTML">						&lt;td&gt;&lt;code&gt;.noUi-base&lt;/code&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="156">
+    <token name="T_INLINE_HTML">						&lt;td&gt;The slider bar. Serves as the calculating point for the slider handles, and has no visible styling.&lt;/td&gt;</token>
+  </line>
+  <line no="157">
+    <token name="T_INLINE_HTML">					&lt;/tr&gt;</token>
+  </line>
+  <line no="158">
+    <token name="T_INLINE_HTML">					&lt;tr&gt;</token>
+  </line>
+  <line no="159">
+    <token name="T_INLINE_HTML">						&lt;td&gt;&lt;code&gt;.noUi-origin&lt;/code&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="160">
+    <token name="T_INLINE_HTML">						&lt;td&gt;The elements connected to the base, defining the handle locations.&lt;/td&gt;</token>
+  </line>
+  <line no="161">
+    <token name="T_INLINE_HTML">					&lt;/tr&gt;</token>
+  </line>
+  <line no="162">
+    <token name="T_INLINE_HTML">					&lt;tr&gt;</token>
+  </line>
+  <line no="163">
+    <token name="T_INLINE_HTML">						&lt;td&gt;&lt;code&gt;.noUi-handle&lt;/code&gt;&lt;br&gt;&lt;code&gt;.noUi-handle-lower&lt;/code&gt;&lt;br&gt;&lt;code&gt;.noUi-handle-upper&lt;/code&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="164">
+    <token name="T_INLINE_HTML">						&lt;td&gt;The actual, visible handles. Style these any way you like! The lower and upper handles can be targeted individually.&lt;/td&gt;</token>
+  </line>
+  <line no="165">
+    <token name="T_INLINE_HTML">					&lt;/tr&gt;</token>
+  </line>
+  <line no="166">
+    <token name="T_INLINE_HTML">					&lt;tr&gt;</token>
+  </line>
+  <line no="167">
+    <token name="T_INLINE_HTML">						&lt;td&gt;&lt;code&gt;.noUi-connect&lt;/code&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="168">
+    <token name="T_INLINE_HTML">						&lt;td&gt;Styling class for setting properties related to the slider &lt;code&gt;connect&lt;/code&gt; segment.&lt;/td&gt;</token>
+  </line>
+  <line no="169">
+    <token name="T_INLINE_HTML">					&lt;/tr&gt;</token>
+  </line>
+  <line no="170">
+    <token name="T_INLINE_HTML">					&lt;tr&gt;</token>
+  </line>
+  <line no="171">
+    <token name="T_INLINE_HTML">						&lt;td&gt;&lt;code&gt;.noUi-background&lt;/code&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="172">
+    <token name="T_INLINE_HTML">						&lt;td&gt;Styling class for setting properties related to the slider background.&lt;/td&gt;</token>
+  </line>
+  <line no="173">
+    <token name="T_INLINE_HTML">					&lt;/tr&gt;</token>
+  </line>
+  <line no="174">
+    <token name="T_INLINE_HTML">					&lt;tr&gt;</token>
+  </line>
+  <line no="175">
+    <token name="T_INLINE_HTML">						&lt;td&gt;&lt;code&gt;.noUi-state-tap&lt;/code&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="176">
+    <token name="T_INLINE_HTML">						&lt;td&gt;This class is added when the slider bar is tapped or clicked. A slider with this call will reject any user input. noUiSlider will remove this class after 300ms, leaving that timespan to perform visual animations.&lt;/td&gt;</token>
+  </line>
+  <line no="177">
+    <token name="T_INLINE_HTML">					&lt;/tr&gt;</token>
+  </line>
+  <line no="178">
+    <token name="T_INLINE_HTML">					&lt;tr&gt;</token>
+  </line>
+  <line no="179">
+    <token name="T_INLINE_HTML">						&lt;td&gt;&lt;code&gt;[disabled]&lt;/code&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="180">
+    <token name="T_INLINE_HTML">						&lt;td&gt;Apply this to your slider to disable it, and make sure the slider visuals reflect the disabled state.&lt;/td&gt;</token>
+  </line>
+  <line no="181">
+    <token name="T_INLINE_HTML">					&lt;/tr&gt;</token>
+  </line>
+  <line no="182">
+    <token name="T_INLINE_HTML">				&lt;/tbody&gt;</token>
+  </line>
+  <line no="183">
+    <token name="T_INLINE_HTML">			&lt;/table&gt;</token>
+  </line>
+  <line no="184">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="185"/>
+  <line no="186">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Containing handles within the slider bar (horizontal)&lt;/div&gt;</token>
+  </line>
+  <line no="187"/>
+  <line no="188">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="189">
+    <token name="T_INLINE_HTML">&lt;pre&gt;&lt;code&gt;</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_INCLUDE">include</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'more/horizontal-contain.css'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">&lt;/code&gt;&lt;/pre&gt;</token>
+  </line>
+  <line no="190">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="191"/>
+  <line no="192">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-header"&gt;Containing handles within the slider bar (vertical)&lt;/div&gt;</token>
+  </line>
+  <line no="193"/>
+  <line no="194">
+    <token name="T_INLINE_HTML">		&lt;div class="viewer-content"&gt;</token>
+  </line>
+  <line no="195">
+    <token name="T_INLINE_HTML">&lt;pre&gt;&lt;code&gt;</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_INCLUDE">include</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'more/vertical-contain.css'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">&lt;/code&gt;&lt;/pre&gt;</token>
+  </line>
+  <line no="196">
+    <token name="T_INLINE_HTML">		&lt;/div&gt;</token>
+  </line>
+  <line no="197">
+    <token name="T_INLINE_HTML">	&lt;/div&gt;</token>
+  </line>
+  <line no="198"/>
+  <line no="199">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+</source>

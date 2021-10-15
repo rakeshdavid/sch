@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views/layouts" file="uploadvideo.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views/layouts/uploadvideo.blade.php" size="1217" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="a8b7f276faf8b9cbf5d486a6b3283c1a7c86e3cc" relative="resources/views/layouts/uploadvideo.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;!doctype html&gt;</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">&lt;html lang="en"&gt;</token>
+  </line>
+  <line no="3"/>
+  <line no="4">
+    <token name="T_INLINE_HTML">&lt;head&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">    &lt;!-- Required meta tags --&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">    &lt;meta charset="utf-8"&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">    &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">    &lt;title&gt;Showcase Hub&lt;/title&gt;</token>
+  </line>
+  <line no="9"/>
+  <line no="10">
+    <token name="T_INLINE_HTML">    &lt;!-- Bootstrap CSS --&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="/platform/css/font-awesome.css"&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="/platform/css/bootstrap.min.css"&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="/platform/css/custom.css"&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="/platform/css/dropzone.css"&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="/platform/css/newcss.css?v=@php echo date('Y-m-d-h-i-s');@endphp"&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">    &lt;link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,700&amp;display=swap" rel="stylesheet"&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">    @yield('css')</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">&lt;/head&gt;</token>
+  </line>
+  <line no="19"/>
+  <line no="20">
+    <token name="T_INLINE_HTML">&lt;body&gt;</token>
+  </line>
+  <line no="21"/>
+  <line no="22">
+    <token name="T_INLINE_HTML">    @yield('content')</token>
+  </line>
+  <line no="23"/>
+  <line no="24"/>
+  <line no="25">
+    <token name="T_INLINE_HTML"> </token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">    &lt;!-- Optional JavaScript --&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">    &lt;script src="/platform/js/jquery.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">    &lt;script src="/platform/js/popper.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">    &lt;script src="/platform/js/bootstrap.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">    &lt;script src="/platform/js/fontawesome-all.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">    &lt;script src="/platform/js/dropzone.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">    &lt;script src="/platform/js/custom.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">    @yield('js')</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">&lt;/body&gt;</token>
+  </line>
+  <line no="35"/>
+  <line no="36">
+    <token name="T_INLINE_HTML">&lt;/html&gt;</token>
+  </line>
+</source>

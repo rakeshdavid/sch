@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-20-05/errors" file="503.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-20-05/errors/503.blade.php" size="1104" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="b54074b983d30efa766b1d6cc805588b9652f985" relative="resources/views-20-05/errors/503.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;!DOCTYPE html&gt;</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">&lt;html&gt;</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">    &lt;head&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">        &lt;title&gt;Be right back.&lt;/title&gt;</token>
+  </line>
+  <line no="5"/>
+  <line no="6">
+    <token name="T_INLINE_HTML">        &lt;link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css"&gt;</token>
+  </line>
+  <line no="7"/>
+  <line no="8">
+    <token name="T_INLINE_HTML">        &lt;style&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">            html, body {</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">                height: 100%;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="12"/>
+  <line no="13">
+    <token name="T_INLINE_HTML">            body {</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">                margin: 0;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">                padding: 0;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">                width: 100%;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">                color: #B0BEC5;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">                display: table;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">                font-weight: 100;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">                font-family: 'Lato';</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="22"/>
+  <line no="23">
+    <token name="T_INLINE_HTML">            .container {</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">                text-align: center;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">                display: table-cell;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">                vertical-align: middle;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="28"/>
+  <line no="29">
+    <token name="T_INLINE_HTML">            .content {</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">                text-align: center;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">                display: inline-block;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="33"/>
+  <line no="34">
+    <token name="T_INLINE_HTML">            .title {</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">                font-size: 72px;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">                margin-bottom: 40px;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">        &lt;/style&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">    &lt;/head&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">    &lt;body&gt;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">        &lt;div class="container"&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">            &lt;div class="content"&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">                &lt;div class="title"&gt;Be right back.&lt;/div&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">    &lt;/body&gt;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">&lt;/html&gt;</token>
+  </line>
+  <line no="48"/>
+</source>

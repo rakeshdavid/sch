@@ -1,0 +1,621 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-25-05/admin/users" file="index.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-25-05/admin/users/index.blade.php" size="9017" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="ce76d8fdfd26e7cb912112ada125edabeaaccd73" relative="resources/views-25-05/admin/users/index.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layouts.app')</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">@section('css')</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/5.3.4/sweetalert2.min.css"&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">    &lt;link type="text/css" rel="stylesheet" href="/assets/js/datatables/datatables.min.css"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">    &lt;div class="row m-b-20"&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">        &lt;div class="col-xs-12"&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">            &lt;h3&gt;Users List&lt;/h3&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="12"/>
+  <line no="13">
+    <token name="T_INLINE_HTML">    &lt;div class="row m-b-20"&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">        &lt;div class="col-xs-12"&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">            &lt;table id="users-table" class="table table-hover table-striped table-bordered" cellspacing="0"</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">                   width="100%"&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">                &lt;thead&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">                &lt;tr&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">                    &lt;th&gt;First name&lt;/th&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">                    &lt;th&gt;Last name&lt;/th&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">                    &lt;th&gt;Email&lt;/th&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">                    &lt;th&gt;Action&lt;/th&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">                &lt;/tr&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">                &lt;/thead&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">            &lt;/table&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="29"/>
+  <line no="30">
+    <token name="T_INLINE_HTML">@section('js')</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">    &lt;script src="/assets/js/datatables/datatables.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">    &lt;script src="https://cdn.jsdelivr.net/sweetalert2/5.3.4/sweetalert2.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">    &lt;script&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">        var table,</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">            successMsg = "{{ session()-&gt;has('success') ? session('success') : '' }}";</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">        $(document).ready(function () {</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">            if(successMsg){</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">                swal(successMsg);</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="40"/>
+  <line no="41">
+    <token name="T_INLINE_HTML">            setTimeout(function () {</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">                table = $('#users-table').DataTable({</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">                    "serverSide": true,</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">                    "showInfo": true,</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">                    "orderable": false,</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">                    "bSort" : false,</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">                    ajax: {</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">                        "url": "{!! route('admin.users.data') !!}" + "?_token=" + '{{ csrf_token() }}'</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">                    },</token>
+  </line>
+  <line no="50"/>
+  <line no="51">
+    <token name="T_INLINE_HTML">                    "columns": [</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">                        // First name</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">                        {</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">                            "render": function (data) {</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">                                return data;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">                            },</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">                            "targets": 0,</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">                            "className": "text-left",</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">                            "width": "10%"</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">                        },</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">                        // Last name</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">                        {</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">                            "render": function (data) {</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">                                return data;</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">                            },</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">                            "targets": 0,</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">                            "className": "text-left",</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">                            "width": "10%"</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">                        },</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">                        // Email</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">                        {</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">                            "render": function (data, type, row, meta) {</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">                                var isTest = row[3],</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">                                    viewData = '';</token>
+  </line>
+  <line no="75"/>
+  <line no="76">
+    <token name="T_INLINE_HTML">                                if (isTest == 1) {</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">                                    viewData = row[2] + ' &lt;span class="text-danger"&gt;Test user!&lt;/span&gt;';</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">                                } else {</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">                                    viewData = row[2];</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">                                }</token>
+  </line>
+  <line no="81"/>
+  <line no="82">
+    <token name="T_INLINE_HTML">                                return viewData;</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">                            },</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">                            "targets": 0,</token>
+  </line>
+  <line no="85">
+    <token name="T_INLINE_HTML">                            "className": "text-left",</token>
+  </line>
+  <line no="86">
+    <token name="T_INLINE_HTML">                            "width": "10%"</token>
+  </line>
+  <line no="87">
+    <token name="T_INLINE_HTML">                        },</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">                        // Action</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">                        {</token>
+  </line>
+  <line no="90">
+    <token name="T_INLINE_HTML">                            "render": function (data, type, row, meta) {</token>
+  </line>
+  <line no="91">
+    <token name="T_INLINE_HTML">                                var editButton = '&lt;a href="{{ url('users/edit')}}/'+row[4]+'"&gt;&lt;i class="fa fa-edit"&gt;&lt;/i&gt;&lt;/a&gt;',</token>
+  </line>
+  <line no="92">
+    <token name="T_INLINE_HTML">                                    deleteButton = '&lt;a class="m-l-10 delete-user" href="javascript:;" title="Delete this user" onclick="deleteUser(' + row[4] + ')"&gt;&lt;i class="fa fa-trash-o"&gt;&lt;/i&gt;&lt;/a&gt;',</token>
+  </line>
+  <line no="93">
+    <token name="T_INLINE_HTML">                                    testUserButton = '',</token>
+  </line>
+  <line no="94">
+    <token name="T_INLINE_HTML">                                    loginButton = '&lt;a class="m-l-10 login-as" title="Login as this user" href="{{ url('login-as/') }}/'+row[4]+'"&gt;&lt;i class="fa fa-sign-in"&gt;&lt;/i&gt;&lt;/a&gt;';</token>
+  </line>
+  <line no="95"/>
+  <line no="96">
+    <token name="T_INLINE_HTML">                                if(row[3] == 1) {</token>
+  </line>
+  <line no="97">
+    <token name="T_INLINE_HTML">                                    testUserButton = '&lt;a class="m-l-10" title="Test coach. Make real" href="javascript:;" onclick="changeTestUser('+row[4]+', '+row[3]+')"&gt;Test&lt;/a&gt;';</token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">                                } else {</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">                                    testUserButton = '&lt;a class="m-l-10" title="Real coach. Make test" href="javascript:;" onclick="changeTestUser('+row[4]+', '+row[3]+')"&gt;Real&lt;/a&gt;';</token>
+  </line>
+  <line no="100">
+    <token name="T_INLINE_HTML">                                }</token>
+  </line>
+  <line no="101"/>
+  <line no="102">
+    <token name="T_INLINE_HTML">                                return editButton   + deleteButton + testUserButton;//+ loginButton + hideButton</token>
+  </line>
+  <line no="103">
+    <token name="T_INLINE_HTML">                            },</token>
+  </line>
+  <line no="104">
+    <token name="T_INLINE_HTML">                            "targets": 0,</token>
+  </line>
+  <line no="105">
+    <token name="T_INLINE_HTML">                            "className": "text-left",</token>
+  </line>
+  <line no="106">
+    <token name="T_INLINE_HTML">                            "width": "10%"</token>
+  </line>
+  <line no="107">
+    <token name="T_INLINE_HTML">                        }</token>
+  </line>
+  <line no="108">
+    <token name="T_INLINE_HTML">                    ]</token>
+  </line>
+  <line no="109">
+    <token name="T_INLINE_HTML">                });</token>
+  </line>
+  <line no="110">
+    <token name="T_INLINE_HTML">            },1000)</token>
+  </line>
+  <line no="111"/>
+  <line no="112">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="113"/>
+  <line no="114">
+    <token name="T_INLINE_HTML">        function deleteUser(userId) {</token>
+  </line>
+  <line no="115">
+    <token name="T_INLINE_HTML">            swal({</token>
+  </line>
+  <line no="116">
+    <token name="T_INLINE_HTML">                title: 'Confirm your action',</token>
+  </line>
+  <line no="117">
+    <token name="T_INLINE_HTML">                html: 'Delete this user?',</token>
+  </line>
+  <line no="118">
+    <token name="T_INLINE_HTML">                showCancelButton: true,</token>
+  </line>
+  <line no="119">
+    <token name="T_INLINE_HTML">                confirmButtonText: 'Ok',</token>
+  </line>
+  <line no="120">
+    <token name="T_INLINE_HTML">                cancelButtonText: 'Cancel',</token>
+  </line>
+  <line no="121">
+    <token name="T_INLINE_HTML">                confirmButtonClass: 'confirm',</token>
+  </line>
+  <line no="122">
+    <token name="T_INLINE_HTML">                showLoaderOnConfirm: true,</token>
+  </line>
+  <line no="123">
+    <token name="T_INLINE_HTML">                allowOutsideClick: false,</token>
+  </line>
+  <line no="124">
+    <token name="T_INLINE_HTML">                preConfirm: function () {</token>
+  </line>
+  <line no="125">
+    <token name="T_INLINE_HTML">                    return new Promise(function (resolve, reject) {</token>
+  </line>
+  <line no="126">
+    <token name="T_INLINE_HTML">                        var formData = new FormData();</token>
+  </line>
+  <line no="127">
+    <token name="T_INLINE_HTML">                        formData.append('userId', userId);</token>
+  </line>
+  <line no="128">
+    <token name="T_INLINE_HTML">                        $.ajax({</token>
+  </line>
+  <line no="129">
+    <token name="T_INLINE_HTML">                            data: formData,</token>
+  </line>
+  <line no="130">
+    <token name="T_INLINE_HTML">                            url: '{{ url('users/delete') }}/' + userId,</token>
+  </line>
+  <line no="131">
+    <token name="T_INLINE_HTML">                            processData: false,</token>
+  </line>
+  <line no="132">
+    <token name="T_INLINE_HTML">                            contentType: false,</token>
+  </line>
+  <line no="133">
+    <token name="T_INLINE_HTML">                            type: 'POST',</token>
+  </line>
+  <line no="134">
+    <token name="T_INLINE_HTML">                            success: function (response) {</token>
+  </line>
+  <line no="135">
+    <token name="T_INLINE_HTML">                                if (response.success) {</token>
+  </line>
+  <line no="136">
+    <token name="T_INLINE_HTML">                                    resolve();</token>
+  </line>
+  <line no="137">
+    <token name="T_INLINE_HTML">                                    table.ajax.reload(null, false);</token>
+  </line>
+  <line no="138">
+    <token name="T_INLINE_HTML">                                } else {</token>
+  </line>
+  <line no="139">
+    <token name="T_INLINE_HTML">                                    if (response.error) {</token>
+  </line>
+  <line no="140">
+    <token name="T_INLINE_HTML">                                        reject('Oops! Something went wrong. Please, reload the page.');</token>
+  </line>
+  <line no="141">
+    <token name="T_INLINE_HTML">                                    }</token>
+  </line>
+  <line no="142">
+    <token name="T_INLINE_HTML">                                }</token>
+  </line>
+  <line no="143">
+    <token name="T_INLINE_HTML">                            },</token>
+  </line>
+  <line no="144">
+    <token name="T_INLINE_HTML">                            error: function (response) {</token>
+  </line>
+  <line no="145">
+    <token name="T_INLINE_HTML">                                if(response.error) {</token>
+  </line>
+  <line no="146">
+    <token name="T_INLINE_HTML">                                    reject(response.responseJSON.error);</token>
+  </line>
+  <line no="147">
+    <token name="T_INLINE_HTML">                                }</token>
+  </line>
+  <line no="148">
+    <token name="T_INLINE_HTML">                            }</token>
+  </line>
+  <line no="149">
+    <token name="T_INLINE_HTML">                        });</token>
+  </line>
+  <line no="150">
+    <token name="T_INLINE_HTML">                    });</token>
+  </line>
+  <line no="151">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="152">
+    <token name="T_INLINE_HTML">            }).then(function () {</token>
+  </line>
+  <line no="153">
+    <token name="T_INLINE_HTML">                swal({</token>
+  </line>
+  <line no="154">
+    <token name="T_INLINE_HTML">                    type: 'success',</token>
+  </line>
+  <line no="155">
+    <token name="T_INLINE_HTML">                    title: 'Success!',</token>
+  </line>
+  <line no="156">
+    <token name="T_INLINE_HTML">                    html: 'User was deleted!',</token>
+  </line>
+  <line no="157">
+    <token name="T_INLINE_HTML">                    onClose: function() {</token>
+  </line>
+  <line no="158"/>
+  <line no="159">
+    <token name="T_INLINE_HTML">                    }</token>
+  </line>
+  <line no="160">
+    <token name="T_INLINE_HTML">                })</token>
+  </line>
+  <line no="161">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="162">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="163"/>
+  <line no="164">
+    <token name="T_INLINE_HTML">        function changeTestUser(userId, testOption) {</token>
+  </line>
+  <line no="165">
+    <token name="T_INLINE_HTML">            swal({</token>
+  </line>
+  <line no="166">
+    <token name="T_INLINE_HTML">                title: 'Confirm your action',</token>
+  </line>
+  <line no="167">
+    <token name="T_INLINE_HTML">                html: (testOption == 0) ? 'Make this user test?' : 'Make this user real?',</token>
+  </line>
+  <line no="168">
+    <token name="T_INLINE_HTML">                showCancelButton: true,</token>
+  </line>
+  <line no="169">
+    <token name="T_INLINE_HTML">                confirmButtonText: 'Ok',</token>
+  </line>
+  <line no="170">
+    <token name="T_INLINE_HTML">                cancelButtonText: 'Cancel',</token>
+  </line>
+  <line no="171">
+    <token name="T_INLINE_HTML">                confirmButtonClass: 'confirm',</token>
+  </line>
+  <line no="172">
+    <token name="T_INLINE_HTML">                showLoaderOnConfirm: true,</token>
+  </line>
+  <line no="173">
+    <token name="T_INLINE_HTML">                allowOutsideClick: false,</token>
+  </line>
+  <line no="174">
+    <token name="T_INLINE_HTML">                preConfirm: function () {</token>
+  </line>
+  <line no="175">
+    <token name="T_INLINE_HTML">                    return new Promise(function (resolve, reject) {</token>
+  </line>
+  <line no="176">
+    <token name="T_INLINE_HTML">                        var formData = new FormData();</token>
+  </line>
+  <line no="177">
+    <token name="T_INLINE_HTML">                        formData.append('userId', userId);</token>
+  </line>
+  <line no="178">
+    <token name="T_INLINE_HTML">                        $.ajax({</token>
+  </line>
+  <line no="179">
+    <token name="T_INLINE_HTML">                            data: formData,</token>
+  </line>
+  <line no="180">
+    <token name="T_INLINE_HTML">                            url: '{!! route('admin.changeTestUser') !!}',</token>
+  </line>
+  <line no="181">
+    <token name="T_INLINE_HTML">                            processData: false,</token>
+  </line>
+  <line no="182">
+    <token name="T_INLINE_HTML">                            contentType: false,</token>
+  </line>
+  <line no="183">
+    <token name="T_INLINE_HTML">                            type: 'POST',</token>
+  </line>
+  <line no="184">
+    <token name="T_INLINE_HTML">                            success: function (response) {</token>
+  </line>
+  <line no="185">
+    <token name="T_INLINE_HTML">                                if (response.success) {</token>
+  </line>
+  <line no="186">
+    <token name="T_INLINE_HTML">                                    resolve();</token>
+  </line>
+  <line no="187">
+    <token name="T_INLINE_HTML">                                    table.ajax.reload(null, false);</token>
+  </line>
+  <line no="188">
+    <token name="T_INLINE_HTML">                                } else {</token>
+  </line>
+  <line no="189">
+    <token name="T_INLINE_HTML">                                    if (response.error) {</token>
+  </line>
+  <line no="190">
+    <token name="T_INLINE_HTML">                                        reject('Oops! Something went wrong. Please, reload the page.');</token>
+  </line>
+  <line no="191">
+    <token name="T_INLINE_HTML">                                    }</token>
+  </line>
+  <line no="192">
+    <token name="T_INLINE_HTML">                                }</token>
+  </line>
+  <line no="193">
+    <token name="T_INLINE_HTML">                            },</token>
+  </line>
+  <line no="194">
+    <token name="T_INLINE_HTML">                            error: function (response) {</token>
+  </line>
+  <line no="195">
+    <token name="T_INLINE_HTML">                                if(response.error) {</token>
+  </line>
+  <line no="196">
+    <token name="T_INLINE_HTML">                                    reject(response.responseJSON.error);</token>
+  </line>
+  <line no="197">
+    <token name="T_INLINE_HTML">                                }</token>
+  </line>
+  <line no="198">
+    <token name="T_INLINE_HTML">                            }</token>
+  </line>
+  <line no="199">
+    <token name="T_INLINE_HTML">                        });</token>
+  </line>
+  <line no="200">
+    <token name="T_INLINE_HTML">                    });</token>
+  </line>
+  <line no="201">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="202">
+    <token name="T_INLINE_HTML">            }).then(function () {</token>
+  </line>
+  <line no="203">
+    <token name="T_INLINE_HTML">                swal({</token>
+  </line>
+  <line no="204">
+    <token name="T_INLINE_HTML">                    type: 'success',</token>
+  </line>
+  <line no="205">
+    <token name="T_INLINE_HTML">                    title: 'Success!',</token>
+  </line>
+  <line no="206">
+    <token name="T_INLINE_HTML">                    html: 'User status successfully updated!',</token>
+  </line>
+  <line no="207">
+    <token name="T_INLINE_HTML">                    onClose: function() {</token>
+  </line>
+  <line no="208"/>
+  <line no="209">
+    <token name="T_INLINE_HTML">                    }</token>
+  </line>
+  <line no="210">
+    <token name="T_INLINE_HTML">                })</token>
+  </line>
+  <line no="211">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="212">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="213"/>
+  <line no="214">
+    <token name="T_INLINE_HTML">    &lt;/script&gt;</token>
+  </line>
+  <line no="215">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+</source>

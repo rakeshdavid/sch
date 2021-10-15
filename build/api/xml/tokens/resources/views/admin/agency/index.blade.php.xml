@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views/admin/agency" file="index.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views/admin/agency/index.blade.php" size="1996" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="df82adf7affb0a358b9aafa128f801e8a050e824" relative="resources/views/admin/agency/index.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layouts.app')</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">@section('css')</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/5.3.4/sweetalert2.min.css"&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">    &lt;link type="text/css" rel="stylesheet" href="/assets/js/datatables/datatables.min.css"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">&lt;div class="row m-b-20"&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">        &lt;div class="col-xs-12"&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">            &lt;h3&gt; Agency List &lt;/h3&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="12"/>
+  <line no="13">
+    <token name="T_INLINE_HTML">    &lt;div class="row m-b-20"&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">        &lt;div class="col-xs-12"&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">            &lt;table id="coaches-table" class="table table-hover table-striped table-bordered" cellspacing="0"</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">                   width="100%"&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">                &lt;thead&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">                &lt;tr&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">                    &lt;th&gt;First name&lt;/th&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">                    &lt;th&gt;Last name&lt;/th&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">                    &lt;th&gt;Email&lt;/th&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">                    &lt;th&gt;Action&lt;/th&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">                    &lt;th&gt;Audition&lt;/th&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">                &lt;/tr&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">                &lt;/thead&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">                &lt;tbody&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">                    @foreach($agency as $agenci)</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">                        &lt;tr&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">                            &lt;td&gt;{{ $agenci-&gt;first_name }}&lt;/td&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">                            &lt;td&gt;{{ $agenci-&gt;last_name }}&lt;/td&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">                            &lt;td&gt;{{ $agenci-&gt;email }}&lt;/td&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">                            &lt;td class=" text-left"&gt;&lt;a href="{{ url('agency/'.$agenci-&gt;id.'/edit') }}"&gt;&lt;i class="fa fa-edit"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">                            &lt;td&gt;&lt;a href="{{url('agency/auditions/')}}/{{$agenci-&gt;id}}"&gt;Check Auditions&lt;/a&gt;&lt;/td&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">                        &lt;/tr&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">                    @endforeach</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">                &lt;/tbody&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">            &lt;/table&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">@section('js')</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">    &lt;script src="/assets/js/datatables/datatables.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">    &lt;script src="https://cdn.jsdelivr.net/sweetalert2/5.3.4/sweetalert2.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">    &lt;script&gt;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">    	$(document).ready(function () {</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">    		 $('#coaches-table').DataTable({</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">                "serverSide": false,</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">                "showInfo": true,</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">                "orderable": false,</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">                "bSort" : false</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">    	});</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">    &lt;/script&gt;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+</source>

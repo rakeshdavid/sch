@@ -1,0 +1,1821 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-16-05/auth/emails" file="coachCompletedReview.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-16-05/auth/emails/coachCompletedReview.blade.php" size="32386" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="a1f4011d9bc1ac190613518c5f727de70e2ca286" relative="resources/views-16-05/auth/emails/coachCompletedReview.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;&lt;!--[if IE]&gt;&lt;html xmlns="http://www.w3.org/1999/xhtml" class="ie"&gt;&lt;![endif]--&gt;&lt;!--[if !IE]&gt;&lt;!--&gt;&lt;html style="margin: 0;padding: 0;" xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;!--&lt;![endif]--&gt;&lt;head&gt;</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">    &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">    &lt;title&gt;&lt;/title&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">    &lt;!--[if !mso]&gt;&lt;!--&gt;&lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;&lt;!--&lt;![endif]--&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">    &lt;meta name="viewport" content="width=device-width" /&gt;&lt;style type="text/css"&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">        @media only screen and (min-width: 620px){.wrapper{min-width:600px !important}.wrapper h1{}.wrapper h1{font-size:64px !important;line-height:63px !important}.wrapper h2{}.wrapper h2{font-size:30px !important;line-height:38px !important}.wrapper h3{}.wrapper h3{font-size:22px !important;line-height:31px !important}.column{}.wrapper .size-8{font-size:8px !important;line-height:14px !important}.wrapper .size-9{font-size:9px !important;line-height:16px !important}.wrapper .size-10{font-size:10px !important;line-height:18px !important}.wrapper .size-11{font-size:11px !important;line-height:19px !important}.wrapper .size-12{font-size:12px !important;line-height:19px !important}.wrapper .size-13{font-size:13px !important;line-height:21px !important}.wrapper .size-14{font-size:14px !important;line-height:21px !important}.wrapper .size-15{font-size:15px !important;line-height:23px</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">        !important}.wrapper .size-16{font-size:16px !important;line-height:24px !important}.wrapper .size-17{font-size:17px !important;line-height:26px !important}.wrapper .size-18{font-size:18px !important;line-height:26px !important}.wrapper .size-20{font-size:20px !important;line-height:28px !important}.wrapper .size-22{font-size:22px !important;line-height:31px !important}.wrapper .size-24{font-size:24px !important;line-height:32px !important}.wrapper .size-26{font-size:26px !important;line-height:34px !important}.wrapper .size-28{font-size:28px !important;line-height:36px !important}.wrapper .size-30{font-size:30px !important;line-height:38px !important}.wrapper .size-32{font-size:32px !important;line-height:40px !important}.wrapper .size-34{font-size:34px !important;line-height:43px !important}.wrapper .size-36{font-size:36px !important;line-height:43px !important}.wrapper</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   .size-40{font-size:40px !important;line-height:47px !important}.wrapper .size-44{font-size:44px !important;line-height:50px !important}.wrapper .size-48{font-size:48px !important;line-height:54px !important}.wrapper .size-56{font-size:56px !important;line-height:60px !important}.wrapper .size-64{font-size:64px !important;line-height:63px !important}}</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">    &lt;/style&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">    &lt;style type="text/css"&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">        body {</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">            margin: 0;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">            padding: 0;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">        table {</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">            border-collapse: collapse;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">            table-layout: fixed;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">        * {</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">            line-height: inherit;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">        [x-apple-data-detectors],</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">        [href^="tel"],</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">        [href^="sms"] {</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">            color: inherit !important;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">            text-decoration: none !important;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">        .wrapper .footer__share-button a:hover,</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">        .wrapper .footer__share-button a:focus {</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">            color: #ffffff !important;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">        .btn a:hover,</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">        .btn a:focus,</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">        .footer__share-button a:hover,</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">        .footer__share-button a:focus,</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">        .email-footer__links a:hover,</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">        .email-footer__links a:focus {</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">            opacity: 0.8;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">        .preheader,</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">        .header,</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">        .layout,</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">        .column {</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">            transition: width 0.25s ease-in-out, max-width 0.25s ease-in-out;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">        .layout,</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">        div.header {</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">            max-width: 400px !important;</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">            -fallback-width: 95% !important;</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">            width: calc(100% - 20px) !important;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">        div.preheader {</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">            max-width: 360px !important;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">            -fallback-width: 90% !important;</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">            width: calc(100% - 60px) !important;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">        .snippet,</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">        .webversion {</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">            Float: none !important;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">        .column {</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">            max-width: 400px !important;</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">            width: 100% !important;</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">        .fixed-width.has-border {</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">            max-width: 402px !important;</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">        .fixed-width.has-border .layout__inner {</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">            box-sizing: border-box;</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">        .snippet,</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">        .webversion {</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">            width: 50% !important;</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">        .ie .btn {</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">            width: 100%;</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">        [owa] .column div,</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">        [owa] .column button {</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">            display: block !important;</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">        .ie .column,</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">        [owa] .column,</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">        .ie .gutter,</token>
+  </line>
+  <line no="85">
+    <token name="T_INLINE_HTML">        [owa] .gutter {</token>
+  </line>
+  <line no="86">
+    <token name="T_INLINE_HTML">            display: table-cell;</token>
+  </line>
+  <line no="87">
+    <token name="T_INLINE_HTML">            float: none !important;</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">            vertical-align: top;</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="90">
+    <token name="T_INLINE_HTML">        .ie div.preheader,</token>
+  </line>
+  <line no="91">
+    <token name="T_INLINE_HTML">        [owa] div.preheader,</token>
+  </line>
+  <line no="92">
+    <token name="T_INLINE_HTML">        .ie .email-footer,</token>
+  </line>
+  <line no="93">
+    <token name="T_INLINE_HTML">        [owa] .email-footer {</token>
+  </line>
+  <line no="94">
+    <token name="T_INLINE_HTML">            max-width: 560px !important;</token>
+  </line>
+  <line no="95">
+    <token name="T_INLINE_HTML">            width: 560px !important;</token>
+  </line>
+  <line no="96">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="97">
+    <token name="T_INLINE_HTML">        .ie .snippet,</token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">        [owa] .snippet,</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">        .ie .webversion,</token>
+  </line>
+  <line no="100">
+    <token name="T_INLINE_HTML">        [owa] .webversion {</token>
+  </line>
+  <line no="101">
+    <token name="T_INLINE_HTML">            width: 280px !important;</token>
+  </line>
+  <line no="102">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="103">
+    <token name="T_INLINE_HTML">        .ie div.header,</token>
+  </line>
+  <line no="104">
+    <token name="T_INLINE_HTML">        [owa] div.header,</token>
+  </line>
+  <line no="105">
+    <token name="T_INLINE_HTML">        .ie .layout,</token>
+  </line>
+  <line no="106">
+    <token name="T_INLINE_HTML">        [owa] .layout,</token>
+  </line>
+  <line no="107">
+    <token name="T_INLINE_HTML">        .ie .one-col .column,</token>
+  </line>
+  <line no="108">
+    <token name="T_INLINE_HTML">        [owa] .one-col .column {</token>
+  </line>
+  <line no="109">
+    <token name="T_INLINE_HTML">            max-width: 600px !important;</token>
+  </line>
+  <line no="110">
+    <token name="T_INLINE_HTML">            width: 600px !important;</token>
+  </line>
+  <line no="111">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="112">
+    <token name="T_INLINE_HTML">        .ie .fixed-width.has-border,</token>
+  </line>
+  <line no="113">
+    <token name="T_INLINE_HTML">        [owa] .fixed-width.has-border,</token>
+  </line>
+  <line no="114">
+    <token name="T_INLINE_HTML">        .ie .has-gutter.has-border,</token>
+  </line>
+  <line no="115">
+    <token name="T_INLINE_HTML">        [owa] .has-gutter.has-border {</token>
+  </line>
+  <line no="116">
+    <token name="T_INLINE_HTML">            max-width: 602px !important;</token>
+  </line>
+  <line no="117">
+    <token name="T_INLINE_HTML">            width: 602px !important;</token>
+  </line>
+  <line no="118">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="119">
+    <token name="T_INLINE_HTML">        .ie .two-col .column,</token>
+  </line>
+  <line no="120">
+    <token name="T_INLINE_HTML">        [owa] .two-col .column {</token>
+  </line>
+  <line no="121">
+    <token name="T_INLINE_HTML">            max-width: 300px !important;</token>
+  </line>
+  <line no="122">
+    <token name="T_INLINE_HTML">            width: 300px !important;</token>
+  </line>
+  <line no="123">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="124">
+    <token name="T_INLINE_HTML">        .ie .three-col .column,</token>
+  </line>
+  <line no="125">
+    <token name="T_INLINE_HTML">        [owa] .three-col .column,</token>
+  </line>
+  <line no="126">
+    <token name="T_INLINE_HTML">        .ie .narrow,</token>
+  </line>
+  <line no="127">
+    <token name="T_INLINE_HTML">        [owa] .narrow {</token>
+  </line>
+  <line no="128">
+    <token name="T_INLINE_HTML">            max-width: 200px !important;</token>
+  </line>
+  <line no="129">
+    <token name="T_INLINE_HTML">            width: 200px !important;</token>
+  </line>
+  <line no="130">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="131">
+    <token name="T_INLINE_HTML">        .ie .wide,</token>
+  </line>
+  <line no="132">
+    <token name="T_INLINE_HTML">        [owa] .wide {</token>
+  </line>
+  <line no="133">
+    <token name="T_INLINE_HTML">            width: 400px !important;</token>
+  </line>
+  <line no="134">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="135">
+    <token name="T_INLINE_HTML">        .ie .two-col.has-gutter .column,</token>
+  </line>
+  <line no="136">
+    <token name="T_INLINE_HTML">        [owa] .two-col.x_has-gutter .column {</token>
+  </line>
+  <line no="137">
+    <token name="T_INLINE_HTML">            max-width: 290px !important;</token>
+  </line>
+  <line no="138">
+    <token name="T_INLINE_HTML">            width: 290px !important;</token>
+  </line>
+  <line no="139">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="140">
+    <token name="T_INLINE_HTML">        .ie .three-col.has-gutter .column,</token>
+  </line>
+  <line no="141">
+    <token name="T_INLINE_HTML">        [owa] .three-col.x_has-gutter .column,</token>
+  </line>
+  <line no="142">
+    <token name="T_INLINE_HTML">        .ie .has-gutter .narrow,</token>
+  </line>
+  <line no="143">
+    <token name="T_INLINE_HTML">        [owa] .has-gutter .narrow {</token>
+  </line>
+  <line no="144">
+    <token name="T_INLINE_HTML">            max-width: 188px !important;</token>
+  </line>
+  <line no="145">
+    <token name="T_INLINE_HTML">            width: 188px !important;</token>
+  </line>
+  <line no="146">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="147">
+    <token name="T_INLINE_HTML">        .ie .has-gutter .wide,</token>
+  </line>
+  <line no="148">
+    <token name="T_INLINE_HTML">        [owa] .has-gutter .wide {</token>
+  </line>
+  <line no="149">
+    <token name="T_INLINE_HTML">            max-width: 394px !important;</token>
+  </line>
+  <line no="150">
+    <token name="T_INLINE_HTML">            width: 394px !important;</token>
+  </line>
+  <line no="151">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="152">
+    <token name="T_INLINE_HTML">        .ie .two-col.has-gutter.has-border .column,</token>
+  </line>
+  <line no="153">
+    <token name="T_INLINE_HTML">        [owa] .two-col.x_has-gutter.x_has-border .column {</token>
+  </line>
+  <line no="154">
+    <token name="T_INLINE_HTML">            max-width: 292px !important;</token>
+  </line>
+  <line no="155">
+    <token name="T_INLINE_HTML">            width: 292px !important;</token>
+  </line>
+  <line no="156">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="157">
+    <token name="T_INLINE_HTML">        .ie .three-col.has-gutter.has-border .column,</token>
+  </line>
+  <line no="158">
+    <token name="T_INLINE_HTML">        [owa] .three-col.x_has-gutter.x_has-border .column,</token>
+  </line>
+  <line no="159">
+    <token name="T_INLINE_HTML">        .ie .has-gutter.has-border .narrow,</token>
+  </line>
+  <line no="160">
+    <token name="T_INLINE_HTML">        [owa] .has-gutter.x_has-border .narrow {</token>
+  </line>
+  <line no="161">
+    <token name="T_INLINE_HTML">            max-width: 190px !important;</token>
+  </line>
+  <line no="162">
+    <token name="T_INLINE_HTML">            width: 190px !important;</token>
+  </line>
+  <line no="163">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="164">
+    <token name="T_INLINE_HTML">        .ie .has-gutter.has-border .wide,</token>
+  </line>
+  <line no="165">
+    <token name="T_INLINE_HTML">        [owa] .has-gutter.x_has-border .wide {</token>
+  </line>
+  <line no="166">
+    <token name="T_INLINE_HTML">            max-width: 396px !important;</token>
+  </line>
+  <line no="167">
+    <token name="T_INLINE_HTML">            width: 396px !important;</token>
+  </line>
+  <line no="168">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="169">
+    <token name="T_INLINE_HTML">        .ie .fixed-width .layout__inner {</token>
+  </line>
+  <line no="170">
+    <token name="T_INLINE_HTML">            border-left: 0 none white !important;</token>
+  </line>
+  <line no="171">
+    <token name="T_INLINE_HTML">            border-right: 0 none white !important;</token>
+  </line>
+  <line no="172">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="173">
+    <token name="T_INLINE_HTML">        .ie .layout__edges {</token>
+  </line>
+  <line no="174">
+    <token name="T_INLINE_HTML">            display: none;</token>
+  </line>
+  <line no="175">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="176">
+    <token name="T_INLINE_HTML">        .mso .layout__edges {</token>
+  </line>
+  <line no="177">
+    <token name="T_INLINE_HTML">            font-size: 0;</token>
+  </line>
+  <line no="178">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="179">
+    <token name="T_INLINE_HTML">        .layout-fixed-width,</token>
+  </line>
+  <line no="180">
+    <token name="T_INLINE_HTML">        .mso .layout-full-width {</token>
+  </line>
+  <line no="181">
+    <token name="T_INLINE_HTML">            background-color: #ffffff;</token>
+  </line>
+  <line no="182">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="183">
+    <token name="T_INLINE_HTML">        @media only screen and (min-width: 620px) {</token>
+  </line>
+  <line no="184">
+    <token name="T_INLINE_HTML">            .column,</token>
+  </line>
+  <line no="185">
+    <token name="T_INLINE_HTML">            .gutter {</token>
+  </line>
+  <line no="186">
+    <token name="T_INLINE_HTML">                display: table-cell;</token>
+  </line>
+  <line no="187">
+    <token name="T_INLINE_HTML">                Float: none !important;</token>
+  </line>
+  <line no="188">
+    <token name="T_INLINE_HTML">                vertical-align: top;</token>
+  </line>
+  <line no="189">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="190">
+    <token name="T_INLINE_HTML">            div.preheader,</token>
+  </line>
+  <line no="191">
+    <token name="T_INLINE_HTML">            .email-footer {</token>
+  </line>
+  <line no="192">
+    <token name="T_INLINE_HTML">                max-width: 560px !important;</token>
+  </line>
+  <line no="193">
+    <token name="T_INLINE_HTML">                width: 560px !important;</token>
+  </line>
+  <line no="194">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="195">
+    <token name="T_INLINE_HTML">            .snippet,</token>
+  </line>
+  <line no="196">
+    <token name="T_INLINE_HTML">            .webversion {</token>
+  </line>
+  <line no="197">
+    <token name="T_INLINE_HTML">                width: 280px !important;</token>
+  </line>
+  <line no="198">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="199">
+    <token name="T_INLINE_HTML">            div.header,</token>
+  </line>
+  <line no="200">
+    <token name="T_INLINE_HTML">            .layout,</token>
+  </line>
+  <line no="201">
+    <token name="T_INLINE_HTML">            .one-col .column {</token>
+  </line>
+  <line no="202">
+    <token name="T_INLINE_HTML">                max-width: 600px !important;</token>
+  </line>
+  <line no="203">
+    <token name="T_INLINE_HTML">                width: 600px !important;</token>
+  </line>
+  <line no="204">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="205">
+    <token name="T_INLINE_HTML">            .fixed-width.has-border,</token>
+  </line>
+  <line no="206">
+    <token name="T_INLINE_HTML">            .fixed-width.ecxhas-border,</token>
+  </line>
+  <line no="207">
+    <token name="T_INLINE_HTML">            .has-gutter.has-border,</token>
+  </line>
+  <line no="208">
+    <token name="T_INLINE_HTML">            .has-gutter.ecxhas-border {</token>
+  </line>
+  <line no="209">
+    <token name="T_INLINE_HTML">                max-width: 602px !important;</token>
+  </line>
+  <line no="210">
+    <token name="T_INLINE_HTML">                width: 602px !important;</token>
+  </line>
+  <line no="211">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="212">
+    <token name="T_INLINE_HTML">            .two-col .column {</token>
+  </line>
+  <line no="213">
+    <token name="T_INLINE_HTML">                max-width: 300px !important;</token>
+  </line>
+  <line no="214">
+    <token name="T_INLINE_HTML">                width: 300px !important;</token>
+  </line>
+  <line no="215">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="216">
+    <token name="T_INLINE_HTML">            .three-col .column,</token>
+  </line>
+  <line no="217">
+    <token name="T_INLINE_HTML">            .column.narrow {</token>
+  </line>
+  <line no="218">
+    <token name="T_INLINE_HTML">                max-width: 200px !important;</token>
+  </line>
+  <line no="219">
+    <token name="T_INLINE_HTML">                width: 200px !important;</token>
+  </line>
+  <line no="220">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="221">
+    <token name="T_INLINE_HTML">            .column.wide {</token>
+  </line>
+  <line no="222">
+    <token name="T_INLINE_HTML">                width: 400px !important;</token>
+  </line>
+  <line no="223">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="224">
+    <token name="T_INLINE_HTML">            .two-col.has-gutter .column,</token>
+  </line>
+  <line no="225">
+    <token name="T_INLINE_HTML">            .two-col.ecxhas-gutter .column {</token>
+  </line>
+  <line no="226">
+    <token name="T_INLINE_HTML">                max-width: 290px !important;</token>
+  </line>
+  <line no="227">
+    <token name="T_INLINE_HTML">                width: 290px !important;</token>
+  </line>
+  <line no="228">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="229">
+    <token name="T_INLINE_HTML">            .three-col.has-gutter .column,</token>
+  </line>
+  <line no="230">
+    <token name="T_INLINE_HTML">            .three-col.ecxhas-gutter .column,</token>
+  </line>
+  <line no="231">
+    <token name="T_INLINE_HTML">            .has-gutter .narrow {</token>
+  </line>
+  <line no="232">
+    <token name="T_INLINE_HTML">                max-width: 188px !important;</token>
+  </line>
+  <line no="233">
+    <token name="T_INLINE_HTML">                width: 188px !important;</token>
+  </line>
+  <line no="234">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="235">
+    <token name="T_INLINE_HTML">            .has-gutter .wide {</token>
+  </line>
+  <line no="236">
+    <token name="T_INLINE_HTML">                max-width: 394px !important;</token>
+  </line>
+  <line no="237">
+    <token name="T_INLINE_HTML">                width: 394px !important;</token>
+  </line>
+  <line no="238">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="239">
+    <token name="T_INLINE_HTML">            .two-col.has-gutter.has-border .column,</token>
+  </line>
+  <line no="240">
+    <token name="T_INLINE_HTML">            .two-col.ecxhas-gutter.ecxhas-border .column {</token>
+  </line>
+  <line no="241">
+    <token name="T_INLINE_HTML">                max-width: 292px !important;</token>
+  </line>
+  <line no="242">
+    <token name="T_INLINE_HTML">                width: 292px !important;</token>
+  </line>
+  <line no="243">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="244">
+    <token name="T_INLINE_HTML">            .three-col.has-gutter.has-border .column,</token>
+  </line>
+  <line no="245">
+    <token name="T_INLINE_HTML">            .three-col.ecxhas-gutter.ecxhas-border .column,</token>
+  </line>
+  <line no="246">
+    <token name="T_INLINE_HTML">            .has-gutter.has-border .narrow,</token>
+  </line>
+  <line no="247">
+    <token name="T_INLINE_HTML">            .has-gutter.ecxhas-border .narrow {</token>
+  </line>
+  <line no="248">
+    <token name="T_INLINE_HTML">                max-width: 190px !important;</token>
+  </line>
+  <line no="249">
+    <token name="T_INLINE_HTML">                width: 190px !important;</token>
+  </line>
+  <line no="250">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="251">
+    <token name="T_INLINE_HTML">            .has-gutter.has-border .wide,</token>
+  </line>
+  <line no="252">
+    <token name="T_INLINE_HTML">            .has-gutter.ecxhas-border .wide {</token>
+  </line>
+  <line no="253">
+    <token name="T_INLINE_HTML">                max-width: 396px !important;</token>
+  </line>
+  <line no="254">
+    <token name="T_INLINE_HTML">                width: 396px !important;</token>
+  </line>
+  <line no="255">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="256">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="257">
+    <token name="T_INLINE_HTML">        @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {</token>
+  </line>
+  <line no="258">
+    <token name="T_INLINE_HTML">            .fblike {</token>
+  </line>
+  <line no="259">
+    <token name="T_INLINE_HTML">                background-image: url(https://i7.createsend1.com/static/eb/master/13-the-blueprint-3/images/fblike@2x.png) !important;</token>
+  </line>
+  <line no="260">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="261">
+    <token name="T_INLINE_HTML">            .tweet {</token>
+  </line>
+  <line no="262">
+    <token name="T_INLINE_HTML">                background-image: url(https://i9.createsend1.com/static/eb/master/13-the-blueprint-3/images/tweet@2x.png) !important;</token>
+  </line>
+  <line no="263">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="264">
+    <token name="T_INLINE_HTML">            .linkedinshare {</token>
+  </line>
+  <line no="265">
+    <token name="T_INLINE_HTML">                background-image: url(https://i8.createsend1.com/static/eb/master/13-the-blueprint-3/images/lishare@2x.png) !important;</token>
+  </line>
+  <line no="266">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="267">
+    <token name="T_INLINE_HTML">            .forwardtoafriend {</token>
+  </line>
+  <line no="268">
+    <token name="T_INLINE_HTML">                background-image: url(https://i10.createsend1.com/static/eb/master/13-the-blueprint-3/images/forward@2x.png) !important;</token>
+  </line>
+  <line no="269">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="270">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="271">
+    <token name="T_INLINE_HTML">        @media (max-width: 321px) {</token>
+  </line>
+  <line no="272">
+    <token name="T_INLINE_HTML">            .fixed-width.has-border .layout__inner {</token>
+  </line>
+  <line no="273">
+    <token name="T_INLINE_HTML">                border-width: 1px 0 !important;</token>
+  </line>
+  <line no="274">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="275">
+    <token name="T_INLINE_HTML">            .layout,</token>
+  </line>
+  <line no="276">
+    <token name="T_INLINE_HTML">            .column {</token>
+  </line>
+  <line no="277">
+    <token name="T_INLINE_HTML">                min-width: 320px !important;</token>
+  </line>
+  <line no="278">
+    <token name="T_INLINE_HTML">                width: 320px !important;</token>
+  </line>
+  <line no="279">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="280">
+    <token name="T_INLINE_HTML">            .border {</token>
+  </line>
+  <line no="281">
+    <token name="T_INLINE_HTML">                display: none;</token>
+  </line>
+  <line no="282">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="283">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="284">
+    <token name="T_INLINE_HTML">        .mso div {</token>
+  </line>
+  <line no="285">
+    <token name="T_INLINE_HTML">            border: 0 none white !important;</token>
+  </line>
+  <line no="286">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="287">
+    <token name="T_INLINE_HTML">        .mso .w560 .divider {</token>
+  </line>
+  <line no="288">
+    <token name="T_INLINE_HTML">            Margin-left: 260px !important;</token>
+  </line>
+  <line no="289">
+    <token name="T_INLINE_HTML">            Margin-right: 260px !important;</token>
+  </line>
+  <line no="290">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="291">
+    <token name="T_INLINE_HTML">        .mso .w360 .divider {</token>
+  </line>
+  <line no="292">
+    <token name="T_INLINE_HTML">            Margin-left: 160px !important;</token>
+  </line>
+  <line no="293">
+    <token name="T_INLINE_HTML">            Margin-right: 160px !important;</token>
+  </line>
+  <line no="294">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="295">
+    <token name="T_INLINE_HTML">        .mso .w260 .divider {</token>
+  </line>
+  <line no="296">
+    <token name="T_INLINE_HTML">            Margin-left: 110px !important;</token>
+  </line>
+  <line no="297">
+    <token name="T_INLINE_HTML">            Margin-right: 110px !important;</token>
+  </line>
+  <line no="298">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="299">
+    <token name="T_INLINE_HTML">        .mso .w160 .divider {</token>
+  </line>
+  <line no="300">
+    <token name="T_INLINE_HTML">            Margin-left: 60px !important;</token>
+  </line>
+  <line no="301">
+    <token name="T_INLINE_HTML">            Margin-right: 60px !important;</token>
+  </line>
+  <line no="302">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="303">
+    <token name="T_INLINE_HTML">        .mso .w354 .divider {</token>
+  </line>
+  <line no="304">
+    <token name="T_INLINE_HTML">            Margin-left: 157px !important;</token>
+  </line>
+  <line no="305">
+    <token name="T_INLINE_HTML">            Margin-right: 157px !important;</token>
+  </line>
+  <line no="306">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="307">
+    <token name="T_INLINE_HTML">        .mso .w250 .divider {</token>
+  </line>
+  <line no="308">
+    <token name="T_INLINE_HTML">            Margin-left: 105px !important;</token>
+  </line>
+  <line no="309">
+    <token name="T_INLINE_HTML">            Margin-right: 105px !important;</token>
+  </line>
+  <line no="310">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="311">
+    <token name="T_INLINE_HTML">        .mso .w148 .divider {</token>
+  </line>
+  <line no="312">
+    <token name="T_INLINE_HTML">            Margin-left: 54px !important;</token>
+  </line>
+  <line no="313">
+    <token name="T_INLINE_HTML">            Margin-right: 54px !important;</token>
+  </line>
+  <line no="314">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="315">
+    <token name="T_INLINE_HTML">        .mso .size-8,</token>
+  </line>
+  <line no="316">
+    <token name="T_INLINE_HTML">        .ie .size-8 {</token>
+  </line>
+  <line no="317">
+    <token name="T_INLINE_HTML">            font-size: 8px !important;</token>
+  </line>
+  <line no="318">
+    <token name="T_INLINE_HTML">            line-height: 14px !important;</token>
+  </line>
+  <line no="319">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="320">
+    <token name="T_INLINE_HTML">        .mso .size-9,</token>
+  </line>
+  <line no="321">
+    <token name="T_INLINE_HTML">        .ie .size-9 {</token>
+  </line>
+  <line no="322">
+    <token name="T_INLINE_HTML">            font-size: 9px !important;</token>
+  </line>
+  <line no="323">
+    <token name="T_INLINE_HTML">            line-height: 16px !important;</token>
+  </line>
+  <line no="324">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="325">
+    <token name="T_INLINE_HTML">        .mso .size-10,</token>
+  </line>
+  <line no="326">
+    <token name="T_INLINE_HTML">        .ie .size-10 {</token>
+  </line>
+  <line no="327">
+    <token name="T_INLINE_HTML">            font-size: 10px !important;</token>
+  </line>
+  <line no="328">
+    <token name="T_INLINE_HTML">            line-height: 18px !important;</token>
+  </line>
+  <line no="329">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="330">
+    <token name="T_INLINE_HTML">        .mso .size-11,</token>
+  </line>
+  <line no="331">
+    <token name="T_INLINE_HTML">        .ie .size-11 {</token>
+  </line>
+  <line no="332">
+    <token name="T_INLINE_HTML">            font-size: 11px !important;</token>
+  </line>
+  <line no="333">
+    <token name="T_INLINE_HTML">            line-height: 19px !important;</token>
+  </line>
+  <line no="334">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="335">
+    <token name="T_INLINE_HTML">        .mso .size-12,</token>
+  </line>
+  <line no="336">
+    <token name="T_INLINE_HTML">        .ie .size-12 {</token>
+  </line>
+  <line no="337">
+    <token name="T_INLINE_HTML">            font-size: 12px !important;</token>
+  </line>
+  <line no="338">
+    <token name="T_INLINE_HTML">            line-height: 19px !important;</token>
+  </line>
+  <line no="339">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="340">
+    <token name="T_INLINE_HTML">        .mso .size-13,</token>
+  </line>
+  <line no="341">
+    <token name="T_INLINE_HTML">        .ie .size-13 {</token>
+  </line>
+  <line no="342">
+    <token name="T_INLINE_HTML">            font-size: 13px !important;</token>
+  </line>
+  <line no="343">
+    <token name="T_INLINE_HTML">            line-height: 21px !important;</token>
+  </line>
+  <line no="344">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="345">
+    <token name="T_INLINE_HTML">        .mso .size-14,</token>
+  </line>
+  <line no="346">
+    <token name="T_INLINE_HTML">        .ie .size-14 {</token>
+  </line>
+  <line no="347">
+    <token name="T_INLINE_HTML">            font-size: 14px !important;</token>
+  </line>
+  <line no="348">
+    <token name="T_INLINE_HTML">            line-height: 21px !important;</token>
+  </line>
+  <line no="349">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="350">
+    <token name="T_INLINE_HTML">        .mso .size-15,</token>
+  </line>
+  <line no="351">
+    <token name="T_INLINE_HTML">        .ie .size-15 {</token>
+  </line>
+  <line no="352">
+    <token name="T_INLINE_HTML">            font-size: 15px !important;</token>
+  </line>
+  <line no="353">
+    <token name="T_INLINE_HTML">            line-height: 23px !important;</token>
+  </line>
+  <line no="354">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="355">
+    <token name="T_INLINE_HTML">        .mso .size-16,</token>
+  </line>
+  <line no="356">
+    <token name="T_INLINE_HTML">        .ie .size-16 {</token>
+  </line>
+  <line no="357">
+    <token name="T_INLINE_HTML">            font-size: 16px !important;</token>
+  </line>
+  <line no="358">
+    <token name="T_INLINE_HTML">            line-height: 24px !important;</token>
+  </line>
+  <line no="359">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="360">
+    <token name="T_INLINE_HTML">        .mso .size-17,</token>
+  </line>
+  <line no="361">
+    <token name="T_INLINE_HTML">        .ie .size-17 {</token>
+  </line>
+  <line no="362">
+    <token name="T_INLINE_HTML">            font-size: 17px !important;</token>
+  </line>
+  <line no="363">
+    <token name="T_INLINE_HTML">            line-height: 26px !important;</token>
+  </line>
+  <line no="364">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="365">
+    <token name="T_INLINE_HTML">        .mso .size-18,</token>
+  </line>
+  <line no="366">
+    <token name="T_INLINE_HTML">        .ie .size-18 {</token>
+  </line>
+  <line no="367">
+    <token name="T_INLINE_HTML">            font-size: 18px !important;</token>
+  </line>
+  <line no="368">
+    <token name="T_INLINE_HTML">            line-height: 26px !important;</token>
+  </line>
+  <line no="369">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="370">
+    <token name="T_INLINE_HTML">        .mso .size-20,</token>
+  </line>
+  <line no="371">
+    <token name="T_INLINE_HTML">        .ie .size-20 {</token>
+  </line>
+  <line no="372">
+    <token name="T_INLINE_HTML">            font-size: 20px !important;</token>
+  </line>
+  <line no="373">
+    <token name="T_INLINE_HTML">            line-height: 28px !important;</token>
+  </line>
+  <line no="374">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="375">
+    <token name="T_INLINE_HTML">        .mso .size-22,</token>
+  </line>
+  <line no="376">
+    <token name="T_INLINE_HTML">        .ie .size-22 {</token>
+  </line>
+  <line no="377">
+    <token name="T_INLINE_HTML">            font-size: 22px !important;</token>
+  </line>
+  <line no="378">
+    <token name="T_INLINE_HTML">            line-height: 31px !important;</token>
+  </line>
+  <line no="379">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="380">
+    <token name="T_INLINE_HTML">        .mso .size-24,</token>
+  </line>
+  <line no="381">
+    <token name="T_INLINE_HTML">        .ie .size-24 {</token>
+  </line>
+  <line no="382">
+    <token name="T_INLINE_HTML">            font-size: 24px !important;</token>
+  </line>
+  <line no="383">
+    <token name="T_INLINE_HTML">            line-height: 32px !important;</token>
+  </line>
+  <line no="384">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="385">
+    <token name="T_INLINE_HTML">        .mso .size-26,</token>
+  </line>
+  <line no="386">
+    <token name="T_INLINE_HTML">        .ie .size-26 {</token>
+  </line>
+  <line no="387">
+    <token name="T_INLINE_HTML">            font-size: 26px !important;</token>
+  </line>
+  <line no="388">
+    <token name="T_INLINE_HTML">            line-height: 34px !important;</token>
+  </line>
+  <line no="389">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="390">
+    <token name="T_INLINE_HTML">        .mso .size-28,</token>
+  </line>
+  <line no="391">
+    <token name="T_INLINE_HTML">        .ie .size-28 {</token>
+  </line>
+  <line no="392">
+    <token name="T_INLINE_HTML">            font-size: 28px !important;</token>
+  </line>
+  <line no="393">
+    <token name="T_INLINE_HTML">            line-height: 36px !important;</token>
+  </line>
+  <line no="394">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="395">
+    <token name="T_INLINE_HTML">        .mso .size-30,</token>
+  </line>
+  <line no="396">
+    <token name="T_INLINE_HTML">        .ie .size-30 {</token>
+  </line>
+  <line no="397">
+    <token name="T_INLINE_HTML">            font-size: 30px !important;</token>
+  </line>
+  <line no="398">
+    <token name="T_INLINE_HTML">            line-height: 38px !important;</token>
+  </line>
+  <line no="399">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="400">
+    <token name="T_INLINE_HTML">        .mso .size-32,</token>
+  </line>
+  <line no="401">
+    <token name="T_INLINE_HTML">        .ie .size-32 {</token>
+  </line>
+  <line no="402">
+    <token name="T_INLINE_HTML">            font-size: 32px !important;</token>
+  </line>
+  <line no="403">
+    <token name="T_INLINE_HTML">            line-height: 40px !important;</token>
+  </line>
+  <line no="404">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="405">
+    <token name="T_INLINE_HTML">        .mso .size-34,</token>
+  </line>
+  <line no="406">
+    <token name="T_INLINE_HTML">        .ie .size-34 {</token>
+  </line>
+  <line no="407">
+    <token name="T_INLINE_HTML">            font-size: 34px !important;</token>
+  </line>
+  <line no="408">
+    <token name="T_INLINE_HTML">            line-height: 43px !important;</token>
+  </line>
+  <line no="409">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="410">
+    <token name="T_INLINE_HTML">        .mso .size-36,</token>
+  </line>
+  <line no="411">
+    <token name="T_INLINE_HTML">        .ie .size-36 {</token>
+  </line>
+  <line no="412">
+    <token name="T_INLINE_HTML">            font-size: 36px !important;</token>
+  </line>
+  <line no="413">
+    <token name="T_INLINE_HTML">            line-height: 43px !important;</token>
+  </line>
+  <line no="414">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="415">
+    <token name="T_INLINE_HTML">        .mso .size-40,</token>
+  </line>
+  <line no="416">
+    <token name="T_INLINE_HTML">        .ie .size-40 {</token>
+  </line>
+  <line no="417">
+    <token name="T_INLINE_HTML">            font-size: 40px !important;</token>
+  </line>
+  <line no="418">
+    <token name="T_INLINE_HTML">            line-height: 47px !important;</token>
+  </line>
+  <line no="419">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="420">
+    <token name="T_INLINE_HTML">        .mso .size-44,</token>
+  </line>
+  <line no="421">
+    <token name="T_INLINE_HTML">        .ie .size-44 {</token>
+  </line>
+  <line no="422">
+    <token name="T_INLINE_HTML">            font-size: 44px !important;</token>
+  </line>
+  <line no="423">
+    <token name="T_INLINE_HTML">            line-height: 50px !important;</token>
+  </line>
+  <line no="424">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="425">
+    <token name="T_INLINE_HTML">        .mso .size-48,</token>
+  </line>
+  <line no="426">
+    <token name="T_INLINE_HTML">        .ie .size-48 {</token>
+  </line>
+  <line no="427">
+    <token name="T_INLINE_HTML">            font-size: 48px !important;</token>
+  </line>
+  <line no="428">
+    <token name="T_INLINE_HTML">            line-height: 54px !important;</token>
+  </line>
+  <line no="429">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="430">
+    <token name="T_INLINE_HTML">        .mso .size-56,</token>
+  </line>
+  <line no="431">
+    <token name="T_INLINE_HTML">        .ie .size-56 {</token>
+  </line>
+  <line no="432">
+    <token name="T_INLINE_HTML">            font-size: 56px !important;</token>
+  </line>
+  <line no="433">
+    <token name="T_INLINE_HTML">            line-height: 60px !important;</token>
+  </line>
+  <line no="434">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="435">
+    <token name="T_INLINE_HTML">        .mso .size-64,</token>
+  </line>
+  <line no="436">
+    <token name="T_INLINE_HTML">        .ie .size-64 {</token>
+  </line>
+  <line no="437">
+    <token name="T_INLINE_HTML">            font-size: 64px !important;</token>
+  </line>
+  <line no="438">
+    <token name="T_INLINE_HTML">            line-height: 63px !important;</token>
+  </line>
+  <line no="439">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="440">
+    <token name="T_INLINE_HTML">    &lt;/style&gt;</token>
+  </line>
+  <line no="441"/>
+  <line no="442">
+    <token name="T_INLINE_HTML">    &lt;style type="text/css"&gt;</token>
+  </line>
+  <line no="443">
+    <token name="T_INLINE_HTML">        body{background-color:#fff}.logo a:hover,.logo a:focus{color:#859bb1 !important}.mso .layout-has-border{border-top:1px solid #ccc;border-bottom:1px solid #ccc}.mso .layout-has-bottom-border{border-bottom:1px solid #ccc}.mso .border,.ie .border{background-color:#ccc}.mso h1,.ie h1{}.mso h1,.ie h1{font-size:64px !important;line-height:63px !important}.mso h2,.ie h2{}.mso h2,.ie h2{font-size:30px !important;line-height:38px !important}.mso h3,.ie h3{}.mso h3,.ie h3{font-size:22px !important;line-height:31px !important}.mso .layout__inner,.ie .layout__inner{}.mso .footer__share-button p{}.mso .footer__share-button p{font-family:sans-serif}</token>
+  </line>
+  <line no="444">
+    <token name="T_INLINE_HTML">    &lt;/style&gt;&lt;meta name="robots" content="noindex,nofollow" /&gt;</token>
+  </line>
+  <line no="445">
+    <token name="T_INLINE_HTML">    &lt;meta property="og:title" content="My First Campaign" /&gt;</token>
+  </line>
+  <line no="446">
+    <token name="T_INLINE_HTML">&lt;/head&gt;</token>
+  </line>
+  <line no="447">
+    <token name="T_INLINE_HTML">&lt;!--[if mso]&gt;</token>
+  </line>
+  <line no="448">
+    <token name="T_INLINE_HTML">&lt;body class="mso"&gt;</token>
+  </line>
+  <line no="449">
+    <token name="T_INLINE_HTML">&lt;![endif]--&gt;</token>
+  </line>
+  <line no="450">
+    <token name="T_INLINE_HTML">&lt;!--[if !mso]&gt;&lt;!--&gt;</token>
+  </line>
+  <line no="451">
+    <token name="T_INLINE_HTML">&lt;body class="no-padding" style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;"&gt;</token>
+  </line>
+  <line no="452">
+    <token name="T_INLINE_HTML">&lt;!--&lt;![endif]--&gt;</token>
+  </line>
+  <line no="453">
+    <token name="T_INLINE_HTML">&lt;table class="wrapper" style="border-collapse: collapse;table-layout: fixed;min-width: 320px;width: 100%;background-color: #fff;" cellpadding="0" cellspacing="0" role="presentation"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;</token>
+  </line>
+  <line no="454">
+    <token name="T_INLINE_HTML">            &lt;div role="banner"&gt;</token>
+  </line>
+  <line no="455">
+    <token name="T_INLINE_HTML">                &lt;div class="preheader" style="Margin: 0 auto;max-width: 560px;min-width: 280px; width: 280px;width: calc(28000% - 167440px);"&gt;</token>
+  </line>
+  <line no="456">
+    <token name="T_INLINE_HTML">                    &lt;div style="border-collapse: collapse;display: table;width: 100%;"&gt;</token>
+  </line>
+  <line no="457">
+    <token name="T_INLINE_HTML">                        &lt;!--[if (mso)|(IE)]&gt;&lt;table align="center" class="preheader" cellpadding="0" cellspacing="0" role="presentation"&gt;&lt;tr&gt;&lt;td style="width: 280px" valign="top"&gt;&lt;![endif]--&gt;</token>
+  </line>
+  <line no="458">
+    <token name="T_INLINE_HTML">                        &lt;div class="snippet" style="display: table-cell;Float: left;font-size: 12px;line-height: 19px;max-width: 280px;min-width: 140px; width: 140px;width: calc(14000% - 78120px);padding: 10px 0 5px 0;color: #adb3b9;font-family: sans-serif;"&gt;</token>
+  </line>
+  <line no="459"/>
+  <line no="460">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="461">
+    <token name="T_INLINE_HTML">                        &lt;!--[if (mso)|(IE)]&gt;&lt;/td&gt;&lt;td style="width: 280px" valign="top"&gt;&lt;![endif]--&gt;</token>
+  </line>
+  <line no="462">
+    <token name="T_INLINE_HTML">                        &lt;div class="webversion" style="display: table-cell;Float: left;font-size: 12px;line-height: 19px;max-width: 280px;min-width: 139px; width: 139px;width: calc(14100% - 78680px);padding: 10px 0 5px 0;text-align: right;color: #adb3b9;font-family: sans-serif;"&gt;</token>
+  </line>
+  <line no="463"/>
+  <line no="464">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="465">
+    <token name="T_INLINE_HTML">                        &lt;!--[if (mso)|(IE)]&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;![endif]--&gt;</token>
+  </line>
+  <line no="466">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="467">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="468"/>
+  <line no="469">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="470">
+    <token name="T_INLINE_HTML">            &lt;div role="section"&gt;</token>
+  </line>
+  <line no="471">
+    <token name="T_INLINE_HTML">                &lt;div style="margin: auto; max-width: 600px;right: 0px; left:0; background-color: #e31212;"&gt;</token>
+  </line>
+  <line no="472">
+    <token name="T_INLINE_HTML">                    &lt;div class="layout one-col" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;"&gt;</token>
+  </line>
+  <line no="473">
+    <token name="T_INLINE_HTML">                        &lt;div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;"&gt;</token>
+  </line>
+  <line no="474">
+    <token name="T_INLINE_HTML">                            &lt;!--[if (mso)|(IE)]&gt;&lt;table width="100%" cellpadding="0" cellspacing="0" role="presentation"&gt;&lt;tr class="layout-full-width" style="background-color: #e31212;"&gt;&lt;td class="layout__edges"&gt;&amp;nbsp;&lt;/td&gt;&lt;td style="width: 600px" class="w560"&gt;&lt;![endif]--&gt;</token>
+  </line>
+  <line no="475">
+    <token name="T_INLINE_HTML">                            &lt;div class="column" style="max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);text-align: left;color: #8e959c;font-size: 14px;line-height: 21px;font-family: sans-serif;"&gt;</token>
+  </line>
+  <line no="476"/>
+  <line no="477">
+    <token name="T_INLINE_HTML">                                &lt;div style="Margin-left: 20px;Margin-right: 20px;"&gt;</token>
+  </line>
+  <line no="478">
+    <token name="T_INLINE_HTML">                                    &lt;div style="line-height:10px;font-size:1px"&gt;&amp;nbsp;&lt;/div&gt;</token>
+  </line>
+  <line no="479">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="480"/>
+  <line no="481">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="482">
+    <token name="T_INLINE_HTML">                            &lt;!--[if (mso)|(IE)]&gt;&lt;/td&gt;&lt;td class="layout__edges"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;![endif]--&gt;</token>
+  </line>
+  <line no="483">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="484">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="485">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="486"/>
+  <line no="487">
+    <token name="T_INLINE_HTML">                &lt;div style="background-color: #fff;"&gt;</token>
+  </line>
+  <line no="488">
+    <token name="T_INLINE_HTML">                    &lt;div class="layout two-col" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;"&gt;</token>
+  </line>
+  <line no="489">
+    <token name="T_INLINE_HTML">                        &lt;div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;"&gt;</token>
+  </line>
+  <line no="490">
+    <token name="T_INLINE_HTML">                            &lt;!--[if (mso)|(IE)]&gt;&lt;table width="100%" cellpadding="0" cellspacing="0" role="presentation"&gt;&lt;tr class="layout-full-width" style="background-color: #fff;"&gt;&lt;td class="layout__edges"&gt;&amp;nbsp;&lt;/td&gt;&lt;td style="width: 300px" valign="top" class="w260"&gt;&lt;![endif]--&gt;</token>
+  </line>
+  <line no="491">
+    <token name="T_INLINE_HTML">                            &lt;div class="column" style="Float: left;max-width: 320px;min-width: 300px; width: 320px;width: calc(12300px - 2000%);text-align: left;color: #8e959c;font-size: 14px;line-height: 21px;font-family: sans-serif;"&gt;</token>
+  </line>
+  <line no="492"/>
+  <line no="493">
+    <token name="T_INLINE_HTML">                                &lt;div style="Margin-left: 20px;Margin-right: 20px;"&gt;</token>
+  </line>
+  <line no="494">
+    <token name="T_INLINE_HTML">                                    &lt;div style="line-height:25px;font-size:1px"&gt;&amp;nbsp;&lt;/div&gt;</token>
+  </line>
+  <line no="495">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="496"/>
+  <line no="497">
+    <token name="T_INLINE_HTML">                                &lt;div style="Margin-left: 20px;Margin-right: 20px;"&gt;</token>
+  </line>
+  <line no="498">
+    <token name="T_INLINE_HTML">                                    &lt;div style="font-size: 12px;font-style: normal;font-weight: normal;" align="left"&gt;</token>
+  </line>
+  <line no="499">
+    <token name="T_INLINE_HTML">                                        &lt;img style="border: 0;display: block;height: auto;width: 100%;max-width: 100px;" alt="Showcase Hub" width="100" src="{{URL::to('/')}}/images/logo-black.png" /&gt;</token>
+  </line>
+  <line no="500">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="501">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="502">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="503">
+    <token name="T_INLINE_HTML">                            &lt;!--[if (mso)|(IE)]&gt;&lt;/td&gt;&lt;td style="width: 300px" valign="top" class="w260"&gt;&lt;![endif]--&gt;</token>
+  </line>
+  <line no="504">
+    <token name="T_INLINE_HTML">                            &lt;div class="column" style="Float: left;max-width: 320px;min-width: 300px; width: 320px;width: calc(12300px - 2000%);text-align: left;color: #8e959c;font-size: 14px;line-height: 21px;font-family: sans-serif;"&gt;</token>
+  </line>
+  <line no="505"/>
+  <line no="506">
+    <token name="T_INLINE_HTML">                                &lt;div style="Margin-left: 20px;Margin-right: 20px;"&gt;</token>
+  </line>
+  <line no="507">
+    <token name="T_INLINE_HTML">                                    &lt;div style="line-height:20px;font-size:1px"&gt;&amp;nbsp;&lt;/div&gt;</token>
+  </line>
+  <line no="508">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="509"/>
+  <line no="510">
+    <token name="T_INLINE_HTML">                                &lt;div style="Margin-left: 20px;Margin-right: 20px;"&gt;</token>
+  </line>
+  <line no="511">
+    <token name="T_INLINE_HTML">                                    &lt;div style="line-height:20px;font-size:1px"&gt;&amp;nbsp;&lt;/div&gt;</token>
+  </line>
+  <line no="512">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="513"/>
+  <line no="514">
+    <token name="T_INLINE_HTML">                                &lt;div style="Margin-left: 20px;Margin-right: 20px;"&gt;</token>
+  </line>
+  <line no="515">
+    <token name="T_INLINE_HTML">                                    &lt;h3 style="Margin-top: 0;Margin-bottom: 0;font-style: normal;font-weight: normal;color: #281557;font-size: 18px;line-height: 26px;font-family: Avenir,sans-serif;"&gt;&lt;span style="color:#8e959c"&gt;&lt;strong&gt;Coach completed a review &lt;/strong&gt;&lt;/span&gt;&lt;/h3&gt;</token>
+  </line>
+  <line no="516">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="517"/>
+  <line no="518">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="519">
+    <token name="T_INLINE_HTML">                            &lt;!--[if (mso)|(IE)]&gt;&lt;/td&gt;&lt;td class="layout__edges"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;![endif]--&gt;</token>
+  </line>
+  <line no="520">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="521">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="522">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="523"/>
+  <line no="524">
+    <token name="T_INLINE_HTML">                &lt;div style="line-height:50px;font-size:50px;"&gt;&amp;nbsp;&lt;/div&gt;</token>
+  </line>
+  <line no="525"/>
+  <line no="526">
+    <token name="T_INLINE_HTML">                &lt;div class="layout one-col fixed-width" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;"&gt;</token>
+  </line>
+  <line no="527">
+    <token name="T_INLINE_HTML">                    &lt;div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #fff;"&gt;</token>
+  </line>
+  <line no="528">
+    <token name="T_INLINE_HTML">                        &lt;!--[if (mso)|(IE)]&gt;&lt;table align="center" cellpadding="0" cellspacing="0" role="presentation"&gt;&lt;tr class="layout-fixed-width" style="background-color: #fff;"&gt;&lt;td style="width: 600px" class="w560"&gt;&lt;![endif]--&gt;</token>
+  </line>
+  <line no="529">
+    <token name="T_INLINE_HTML">                        &lt;div class="column" style="text-align: left;color: #8e959c;font-size: 14px;line-height: 21px;font-family: sans-serif;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);"&gt;</token>
+  </line>
+  <line no="530"/>
+  <line no="531">
+    <token name="T_INLINE_HTML">                            &lt;div style="Margin-left: 20px;Margin-right: 20px;"&gt;</token>
+  </line>
+  <line no="532">
+    <token name="T_INLINE_HTML">                                &lt;p style="Margin-top: 0;Margin-bottom: 0;"&gt;&lt;strong&gt;Dear {{$user_name}},&lt;/strong&gt;&lt;/p&gt;</token>
+  </line>
+  <line no="533">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="534"/>
+  <line no="535">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="536">
+    <token name="T_INLINE_HTML">                        &lt;!--[if (mso)|(IE)]&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;![endif]--&gt;</token>
+  </line>
+  <line no="537">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="538">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="539"/>
+  <line no="540">
+    <token name="T_INLINE_HTML">                &lt;div class="layout one-col fixed-width" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;"&gt;</token>
+  </line>
+  <line no="541">
+    <token name="T_INLINE_HTML">                    &lt;div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #fff;"&gt;</token>
+  </line>
+  <line no="542">
+    <token name="T_INLINE_HTML">                        &lt;!--[if (mso)|(IE)]&gt;&lt;table align="center" cellpadding="0" cellspacing="0" role="presentation"&gt;&lt;tr class="layout-fixed-width" style="background-color: #fff;"&gt;&lt;td style="width: 600px" class="w560"&gt;&lt;![endif]--&gt;</token>
+  </line>
+  <line no="543">
+    <token name="T_INLINE_HTML">                        &lt;div class="column" style="text-align: left;color: #8e959c;font-size: 14px;line-height: 21px;font-family: sans-serif;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);"&gt;</token>
+  </line>
+  <line no="544"/>
+  <line no="545">
+    <token name="T_INLINE_HTML">                            &lt;div style="Margin-left: 20px;Margin-right: 20px;"&gt;</token>
+  </line>
+  <line no="546">
+    <token name="T_INLINE_HTML">                                &lt;p style="Margin-top: 0;Margin-bottom: 0;"&gt;</token>
+  </line>
+  <line no="547">
+    <token name="T_INLINE_HTML">                                    &lt;strong style="transition: opacity 0.1s ease-in;color: #8e959c;"&gt; &lt;br&gt;</token>
+  </line>
+  <line no="548">
+    <token name="T_INLINE_HTML">                                        {{$coach_name}} has completed your review.</token>
+  </line>
+  <line no="549">
+    <token name="T_INLINE_HTML">                                        Sign into your profile, go to my videos and click on the show review button.</token>
+  </line>
+  <line no="550">
+    <token name="T_INLINE_HTML">                                        Hit the play button underneath the video, hear what {{$coach_name}} had to say, read through the review and look over your scorecard.</token>
+  </line>
+  <line no="551">
+    <token name="T_INLINE_HTML">                                        &lt;br&gt;</token>
+  </line>
+  <line no="552">
+    <token name="T_INLINE_HTML">                                        &lt;br&gt;</token>
+  </line>
+  <line no="553">
+    <token name="T_INLINE_HTML">                                        We hope that you are satisfied with your review and that {{$coach_name}} was able to help.</token>
+  </line>
+  <line no="554">
+    <token name="T_INLINE_HTML">                                        &lt;br&gt;</token>
+  </line>
+  <line no="555">
+    <token name="T_INLINE_HTML">                                        &lt;br&gt;</token>
+  </line>
+  <line no="556">
+    <token name="T_INLINE_HTML">                                        We encourage any feedback of your experience and of {{$coach_name}} submitted review.</token>
+  </line>
+  <line no="557">
+    <token name="T_INLINE_HTML">                                        Submit your feedback to &lt;a target="_top" href="mailto:support@showcasehub.com"&gt;support@showcasehub.com&lt;/a&gt;</token>
+  </line>
+  <line no="558">
+    <token name="T_INLINE_HTML">                                        &lt;br&gt;</token>
+  </line>
+  <line no="559">
+    <token name="T_INLINE_HTML">                                        &lt;br&gt;</token>
+  </line>
+  <line no="560">
+    <token name="T_INLINE_HTML">                                        &lt;a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: blue;" href="http://www.showcasehub.com/rate-your-coach.html"&gt;Rate your coach&lt;/a&gt;</token>
+  </line>
+  <line no="561">
+    <token name="T_INLINE_HTML">                                        &lt;br&gt;</token>
+  </line>
+  <line no="562">
+    <token name="T_INLINE_HTML">                                        &lt;br&gt;</token>
+  </line>
+  <line no="563">
+    <token name="T_INLINE_HTML">                                        Again, as a reminder, as we state in our &lt;a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: blue;" href="http://www.showcasehub.com/terms.html"&gt; http://www.showcasehub.com/terms.html&lt;/a&gt;</token>
+  </line>
+  <line no="564">
+    <token name="T_INLINE_HTML">                                        this review only pertains to this particular video submitted.</token>
+  </line>
+  <line no="565">
+    <token name="T_INLINE_HTML">                                        This review is not a judgment of you as an all around performer(s); it pertains only to this specific performance.</token>
+  </line>
+  <line no="566">
+    <token name="T_INLINE_HTML">                                        &lt;br&gt;</token>
+  </line>
+  <line no="567">
+    <token name="T_INLINE_HTML">                                        &lt;br&gt;</token>
+  </line>
+  <line no="568">
+    <token name="T_INLINE_HTML">                                        Sincerely,&lt;br&gt;</token>
+  </line>
+  <line no="569">
+    <token name="T_INLINE_HTML">                                        Showcase Hub</token>
+  </line>
+  <line no="570">
+    <token name="T_INLINE_HTML">                                    &lt;/strong&gt;</token>
+  </line>
+  <line no="571">
+    <token name="T_INLINE_HTML">                                &lt;/p&gt;</token>
+  </line>
+  <line no="572">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="573"/>
+  <line no="574">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="575">
+    <token name="T_INLINE_HTML">                        &lt;!--[if (mso)|(IE)]&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;![endif]--&gt;</token>
+  </line>
+  <line no="576">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="577">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="578"/>
+  <line no="579">
+    <token name="T_INLINE_HTML">                &lt;div style="line-height:20px;font-size:20px;"&gt;&amp;nbsp;&lt;/div&gt;</token>
+  </line>
+  <line no="580"/>
+  <line no="581"/>
+  <line no="582">
+    <token name="T_INLINE_HTML">                &lt;div role="contentinfo"&gt;</token>
+  </line>
+  <line no="583">
+    <token name="T_INLINE_HTML">                    &lt;div class="layout email-footer" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;"&gt;</token>
+  </line>
+  <line no="584">
+    <token name="T_INLINE_HTML">                        &lt;div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;"&gt;</token>
+  </line>
+  <line no="585">
+    <token name="T_INLINE_HTML">                            &lt;!--[if (mso)|(IE)]&gt;&lt;table align="center" cellpadding="0" cellspacing="0" role="presentation"&gt;&lt;tr class="layout-email-footer"&gt;&lt;td style="width: 400px;" valign="top" class="w360"&gt;&lt;![endif]--&gt;</token>
+  </line>
+  <line no="586">
+    <token name="T_INLINE_HTML">                            &lt;div class="column wide" style="text-align: left;font-size: 12px;line-height: 19px;color: #adb3b9;font-family: sans-serif;Float: left;max-width: 400px;min-width: 320px; width: 320px;width: calc(8000% - 47600px);"&gt;</token>
+  </line>
+  <line no="587">
+    <token name="T_INLINE_HTML">                                &lt;div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 10px;Margin-bottom: 10px;"&gt;</token>
+  </line>
+  <line no="588"/>
+  <line no="589">
+    <token name="T_INLINE_HTML">                                    &lt;div style="font-size: 12px;line-height: 19px;"&gt;</token>
+  </line>
+  <line no="590"/>
+  <line no="591">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="592">
+    <token name="T_INLINE_HTML">                                    &lt;div style="font-size: 12px;line-height: 19px;Margin-top: 18px;"&gt;</token>
+  </line>
+  <line no="593"/>
+  <line no="594">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="595">
+    <token name="T_INLINE_HTML">                                    &lt;!--[if mso]&gt;&amp;nbsp;&lt;![endif]--&gt;</token>
+  </line>
+  <line no="596">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="597">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="598">
+    <token name="T_INLINE_HTML">                            &lt;!--[if (mso)|(IE)]&gt;&lt;/td&gt;&lt;td style="width: 200px;" valign="top" class="w160"&gt;&lt;![endif]--&gt;</token>
+  </line>
+  <line no="599">
+    <token name="T_INLINE_HTML">                            &lt;div class="column narrow" style="text-align: left;font-size: 12px;line-height: 19px;color: #adb3b9;font-family: sans-serif;Float: left;max-width: 320px;min-width: 200px; width: 320px;width: calc(72200px - 12000%);"&gt;</token>
+  </line>
+  <line no="600">
+    <token name="T_INLINE_HTML">                                &lt;div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 10px;Margin-bottom: 10px;"&gt;</token>
+  </line>
+  <line no="601"/>
+  <line no="602">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="603">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="604">
+    <token name="T_INLINE_HTML">                            &lt;!--[if (mso)|(IE)]&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;![endif]--&gt;</token>
+  </line>
+  <line no="605">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="606">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="607">
+    <token name="T_INLINE_HTML">                    &lt;div class="layout one-col email-footer" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;"&gt;</token>
+  </line>
+  <line no="608">
+    <token name="T_INLINE_HTML">                        &lt;div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;"&gt;</token>
+  </line>
+  <line no="609">
+    <token name="T_INLINE_HTML">                            &lt;!--[if (mso)|(IE)]&gt;&lt;table align="center" cellpadding="0" cellspacing="0" role="presentation"&gt;&lt;tr class="layout-email-footer"&gt;&lt;td style="width: 600px;" class="w560"&gt;&lt;![endif]--&gt;</token>
+  </line>
+  <line no="610">
+    <token name="T_INLINE_HTML">                            &lt;div class="column" style="text-align: left;font-size: 12px;line-height: 19px;color: #adb3b9;font-family: sans-serif;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);"&gt;</token>
+  </line>
+  <line no="611">
+    <token name="T_INLINE_HTML">                                &lt;div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 10px;Margin-bottom: 10px;"&gt;</token>
+  </line>
+  <line no="612">
+    <token name="T_INLINE_HTML">                                    &lt;div style="font-size: 12px;line-height: 19px; display:none"&gt;</token>
+  </line>
+  <line no="613">
+    <token name="T_INLINE_HTML">                                        &lt;unsubscribe style="text-decoration: underline display:none;"&gt;Unsubscribe&lt;/unsubscribe&gt;</token>
+  </line>
+  <line no="614">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="615">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="616">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="617">
+    <token name="T_INLINE_HTML">                            &lt;!--[if (mso)|(IE)]&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;![endif]--&gt;</token>
+  </line>
+  <line no="618">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="619">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="620">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="621">
+    <token name="T_INLINE_HTML">                &lt;div style="line-height:40px;font-size:40px;"&gt;&amp;nbsp;&lt;/div&gt;</token>
+  </line>
+  <line no="622">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</token>
+  </line>
+  <line no="623"/>
+  <line no="624">
+    <token name="T_INLINE_HTML">&lt;/body&gt;&lt;/html&gt;</token>
+  </line>
+  <line no="625"/>
+</source>

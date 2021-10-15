@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-11-05/review" file="index.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-11-05/review/index.blade.php" size="1837" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="0b30f175a6a9e57bdc0dcc912e3d13eee4bff415" relative="resources/views-11-05/review/index.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layouts.app')</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">    &lt;div class="container"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">        &lt;h3&gt;My reviews&lt;/h3&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">        &lt;div class="row"&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">            @if(!empty($reviews))</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">                &lt;div  class="col-md-8" style="min-width: 760px"&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">                    @foreach($reviews as $review)</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">                        &lt;iframe width="728" height="410" src="https://www.youtube.com/embed/{{$review-&gt;video_url}}" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</token>
+  </line>
+  <line no="11"/>
+  <line no="12">
+    <token name="T_INLINE_HTML">                        &lt;div class="m-b-40" style="width: 728px"&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">                            &lt;ul class="list-group"&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">                                &lt;li class="list-group-item"&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">                                    Video name: {{$review-&gt;video_name}}</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">                                &lt;/li&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">                                &lt;li class="list-group-item"&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">                                    Video description: {{$review-&gt;video_description}}</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">                                &lt;/li&gt; </token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">                                &lt;li class="list-group-item"&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">                                    Genres: {{$review-&gt;video_genres}}</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">                                &lt;/li&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">                                &lt;li class="list-group-item"&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">                                    Level: {{$review-&gt;video_level}}</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">                                &lt;/li&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">                                &lt;li class="list-group-item"&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">                                     Posted at: {{$review-&gt;created_at}}</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">                                &lt;/li&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">                            &lt;/ul&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">                            &lt;a class="btn btn-warning m-r-10 m-b-10 m-t-10" href="/review/show-my/{{$review-&gt;video_id}}"&gt;Show review&lt;/a&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">                        &lt;hr&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">                    @endforeach</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">                    @include('pagination.default', ['paginator' =&gt; $reviews])</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">            @endif</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+</source>

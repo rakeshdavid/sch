@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-18-05/proposal" file="show.blade.php" realpath="/Users/kesh/Documents/Maslow AI, INC/Code/GitHub/sch/resources/views-18-05/proposal/show.blade.php" size="2157" time="2021-10-13T18:44:12+00:00" unixtime="1634150652" sha1="e0cd2cd715a19e1cba02eb57e3147f702bf69a90" relative="resources/views-18-05/proposal/show.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layouts.app')</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">    &lt;div class="row m-b-20"&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">        &lt;div class="col-xs-12"&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">            &lt;h3&gt;Reviews&lt;/h3&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">    &lt;div class="row m-b-20"&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">        &lt;div class="col-xs-12"&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">            &lt;div class="m-b-40"&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">                &lt;div class="activity-widget-5"&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">                    &lt;div class="row"&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">                        &lt;div class="col-xs-12 bs-media"&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">                            @foreach($proposals as $proposal)</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">                                &lt;div class="media"&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">                                    &lt;a class="media-left media-middle"&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">                                        &lt;img class="media-object img-circle h-40 w-40" alt="/assets/faces/m1.png" src="{{$proposal-&gt;user_avatar}}"&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">                                    &lt;/a&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">                                    &lt;div class="media-body"&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">                                        &lt;h5 class="media-heading"&gt; {{$proposal-&gt;user_first_name}} {{$proposal-&gt;user_last_name}} &lt;/h5&gt; </token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">                                        &lt;p&gt;{{$proposal-&gt;description}}&lt;/p&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">                                        &lt;p class="text-muted"&gt;{{$proposal-&gt;created_at}}&lt;/p&gt; </token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">                                        @if($proposal-&gt;status == 0)</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">                                            &lt;button class="btn btn-default btn-accept-proposal" data-video_id="{{$video_id}}" data-proposal-id="{{$proposal-&gt;id}}"&gt;Accept&lt;/button&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">                                            &lt;button class="btn btn-default btn-deny-proposal" data-video_id="{{$video_id}}" data-proposal-id="{{$proposal-&gt;id}}"&gt;Deny&lt;/button&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">                                        @else</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">                                            &lt;p class="text-muted"&gt;Status: @if($proposal-&gt;status == 1) Accept @elseif($proposal-&gt;status == 2) Deny @endif&lt;/p&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">                                        @endif</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt; </token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt; </token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">                            @endforeach</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">                            @include('pagination.default', ['paginator' =&gt; $proposals])</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+</source>
